@@ -14,3 +14,5 @@ evidence/design/
 
 .maestri/
 .vercel
+
+node_modules

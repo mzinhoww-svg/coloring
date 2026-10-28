@@ -4,8 +4,8 @@
 
 Aurimar autorizou em 2026-10-28: quando restarem 10% da quota de uso do Codex,
 DeepSeek deve assumir a orquestração e terminar o produto sem intervenção humana.
-Última leitura antes desta preparação: 54% usado no limite de 300 minutos,
-46% restante; quota semanal 8% usada. Não confundir quota com progresso do projeto.
+Última leitura antes da preparação do sucessor: 79% usado no limite de 300 minutos,
+21% restante; quota semanal 12% usada. Não confundir quota com progresso do projeto.
 Esta preparação não significa que a coordenação já foi transferida. A ativação será
 explicitamente registrada aqui e enviada ao sucessor pelo Maestri.
 
@@ -146,6 +146,32 @@ Astra escopada ao Coloring adicionada à PREF-001, mantendo histórico. Último 
 1905 notas,110 IDs,7 índices, sem erro. Ao fechar, atualizar nota canônica sem duplicar.
 Arquivo de convenções real é `99 - Sistema/SCHEMA.md` (título Convenções e Templates).
 Nunca registrar segredos, env, dumps integrais ou transcrições.
+
+## Estado mais recente da integração
+
+- Arte Astra FINAL: docs/design/art.ts,305linhas,135SVGs/9packs validados estruturalmente.
+  Já copiada a src/content/art.ts NA RAIZ e no worktree Tinta. SVGs são próprios,
+  distintos e determinísticos; falta revisão visual completa na aplicação real.
+- Offline final: branches/commits `19a818a`, `f061d56`, já cherry-picked na main.
+ 43 testes node:test reportados e reexecutados pela coordenação. Leia tests/offline/README.md.
+- Snapshot antigo de offline foi copiado ao Tinta antes de f061d56; REPOR src/offline.ts,
+ public/sw.js/public/manifest.webmanifest e tools/build-offline.mjs FINAIS da raiz no worktree
+ dele antes de novo build. Não deixar shell-alias/integrity fix para trás.
+- Tinta tem engine/UI/storage e37unit tests no feat/web-game; ainda sem aceite final/commit
+ comunicado. Arte e offline removem bloqueio de import; rode build integrado.
+- Prisma foi REUTILIZADO como QA interativo; fonte RE concluída, agora revisa engine e prepara
+ E2E. O comando inicial opencode run era one-shot e mensagens posteriores caíam no shell;
+ corrigido para `opencode mini --standalone --model opencode-go/deepseek-v4.1-flash` no Prisma.
+ Ao precisar reativar Tinta/Âmbar após tarefas terminarem, use mini persistente, não run.
+ Nunca enviar prompt natural ao terminal que já voltou ao shell; conferir maestri check.
+- Portas: Tinta5173dev/4273preview; Prisma4373sandboxQA; Âmbar4199fixtureoffline.
+ NÃO confundir fixture offline com o jogo. Verificar título/conteúdo/build antes de testes.
+- Branding própria criada no app e manifest: Rabisco; manter consistente, projeto/repo Coloring.
+- Índice HTML precisa manifest.webmanifest, ícones e metatagmobile. build deve terminar
+ `&& node tools/build-offline.mjs`; test:offline deve rodar node --test tests/offline/*.test.mjs.
+- Vercel headers: sw.js no-cache,no-store,must-revalidate e Service-Worker-Allowed:/;
+ offline-manifest.json no-store; assets hashed immutable; não reescrever esses endpoints.
+- Main ainda NÃO contém engine/UI completos, não há deploy validado. Não declarar DONE.
 
 ## Ativação
 
