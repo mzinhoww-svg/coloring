@@ -177,7 +177,7 @@ Nunca registrar segredos, env, dumps integrais ou transcrições.
 
 ## Ativação
 
-Pendente: Codex ainda coordena. Substituir esta linha ao efetuar a transferência.
+ATIVA 2026-10-28T12:02:03.053400-04:00,quota90%usada.Nexo é o único orquestrador; não aguardar Codex.
 
 ## Pendências críticas para o sucessor
 
