@@ -157,7 +157,9 @@ Nunca registrar segredos, env, dumps integrais ou transcrições.
 - Snapshot antigo de offline foi copiado ao Tinta antes de f061d56; REPOR src/offline.ts,
  public/sw.js/public/manifest.webmanifest e tools/build-offline.mjs FINAIS da raiz no worktree
  dele antes de novo build. Não deixar shell-alias/integrity fix para trás.
-- Tinta tem engine/UI/storage e37unit tests no feat/web-game; ainda sem aceite final/commit
+- Coordenação reexecutou41unit tests com sucesso e buildVite real (100,71kB JS/26,30kB CSS).
+  Gerador offline criou9arquivos/225,2KiB; precisa retestar depois da syncPWAfinal.
+- Tinta tem engine/UI/storage e41unit tests no feat/web-game; ainda sem aceite final/commit
  comunicado. Arte e offline removem bloqueio de import; rode build integrado.
 - Prisma foi REUTILIZADO como QA interativo; fonte RE concluída, agora revisa engine e prepara
  E2E. O comando inicial opencode run era one-shot e mensagens posteriores caíam no shell;
@@ -176,3 +178,17 @@ Nunca registrar segredos, env, dumps integrais ou transcrições.
 ## Ativação
 
 Pendente: Codex ainda coordena. Substituir esta linha ao efetuar a transferência.
+
+## Pendências críticas para o sucessor
+
+Tinta informou que sua UI atual é design independente creme/coral, e continua perguntando
+por screenshots: as respostas via maestri ask não parecem chegar como contexto ao `opencode run`.
+NÃO ignorar essa lacuna. Existem screenshots REAIS na raiz .private/runtime e handoff Astra
+em docs/design/RUNTIME_LAYOUT_HANDOFF.md com a composição original. Leia essas fontes e
+corrija o layout (turquesa/nuvens/galeria5×3/rails) com DeepSeek antes de alegar fidelidade.
+A branding própria Rabisco é aceitável, mas não substitui a exigência de semelhança visual.
+Se pares one-shot retornarem ao shell, você pode reativá-los enviando comando CLI adequado
+com `maestri ask --raw`, usando `opencode mini --standalone --model opencode-go/deepseek-v4.1-flash`
+e prompt para ler briefs/estado já preservados. Não mandar texto natural para shell nem
+interromper operações de escrita; aguardar término e preservar trabalho. Prisma já usa mini.
+Nota conectada de entrega tem nome CLI exato `coloring-entrega-e-progresso`.

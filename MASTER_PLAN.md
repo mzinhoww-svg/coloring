@@ -39,3 +39,5 @@ Não criar 16 agentes sem executor disponível ou tarefas prontas para execuçã
 
 Dividir worktrees só depois de recuperar/verificar o estado remoto; um dono por módulo.
 Manter os nove documentos de continuidade atualizados a cada marco material.
+
+Transferência autorizada ao DeepSeekNexo quando90%quotaCodex usada; estado em HANDOFF_DEEPSEEK.md.

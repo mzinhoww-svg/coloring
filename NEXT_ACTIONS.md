@@ -1,14 +1,12 @@
-# Retomada
+# Próximas ações
 
-1. Ler os nove documentos de continuidade e verificar diretório/remoto antes de mudanças.
-2. Revalidar IPC Maestri e executor OpenCode; listar presets, nota conectada e modelo real.
-3. Usar somente DeepSeek confirmado para código/QA; Astra permanece designer.
-4. Verificar consentimento Vercel sem inventar que está concedido; confirmar Git Integration.
-5. Rodar APK em Android ARM64; capturar galerias, ferramentas, estados e persistência.
-6. Completar evidências e direitos dos conteúdos; atualizar matriz sem porcentagem artificial.
-7. Executar experimento do renderer; registrar escolha e contratos definitivos.
-8. Delegar implementação isolada, testes e PWA, integrar e publicar main em etapas válidas.
-9. Fazer deploy existente e executar aceite completo na URL de produção, inclusive offline.
+Leia HANDOFF_DEEPSEEK.md (completo) e TASK_BOARD.md. Não reiniciar análise.
 
-Não reiniciar análise estática: reutilizar hashes e relatórios. Não interpretar este checkpoint
-como entrega do jogo. Enquanto houver ações independentes permitidas, executá-las.
+1. Integrar commit final Tinta à main, reusar arte e PWA já integrados.
+2. Sincronizar última versão offline e scripts build/test:offline; conferir branding.
+3. Corrigir UI creme/coral para semelhança geométrica/cores com original,tendo capturas reais.
+4. QA Prisma: E2Edesktop/tablet/mobile,pintura,touch,save/retomar e coldreopen offline.
+5. Corrigir findings importantes,headers/configVercel/CI,vercelignore sem conteúdo privado.
+6. Build/test,commit/push,deployprojetoexistente; testar URL efetivamente publicada.
+7. Atualizar docs e nota Maestri coloring-entrega-e-progresso com URL/commit/evidências.
+8. Fechar memória PROJ038 e validar. Não declarar DONE antes do aceite real.

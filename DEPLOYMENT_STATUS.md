@@ -12,3 +12,6 @@
 
 Não criar projeto paralelo, não usar outro scope e não publicar referência proprietária.
 Após acesso, inspecionar projeto, vinculação Git e configuração antes de alterar.
+
+Checkpoint: arte135 e PWA integrados main; engine/UI em feat/web-game.
+VercelCLIlinked existente,GitIntegrationconfirmada.Nenhum deploy de JOGO validado ainda.

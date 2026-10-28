@@ -1,6 +1,8 @@
 # Matriz de paridade
 
-Nenhum recurso web implementado ou aceito. Símbolos são candidatos de investigação.
+Código do jogo está no worktree Tinta e ainda passa por integração/QA; nenhum aceite final.
+Runtime original observado em docs/RUNTIME_FINDINGS.md. Matriz abaixo é baseline inicial
+e deve ser atualizada pelo sucessor com testesE2E reais antes do aceite.
 
 | Recurso | Original/evidência | Classificação | Web/teste | Divergência/status |
 |---|---|---|---|---|

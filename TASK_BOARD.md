@@ -1,17 +1,16 @@
-# Tarefas
+# Tarefas — checkpoint para sucessor
 
-| ID | Tarefa | Responsável | Estado | Dependência | Evidência/teste | Próximo passo |
-|---|---|---|---|---|---|---|
-| T01 | Localizar APK e REA | Codex | Concluído | Nenhuma | APK local e zip REA em Downloads/chapeu | Inventário |
-| T02 | Verificar repo existente | Codex | Concluído | Integração GitHub | get_repo: push/admin; contents: repository empty | Publicar documentação válida |
-| T03 | Confirmar executor e presets | Codex | Bloqueado | Sockets Maestri/OpenCode | Maestri EPERM; OpenCode 2.0.28 não inicia servidor | Reexecutar após acesso permitido |
-| T04 | Localizar nota autorizada | Codex | Bloqueado | T03 | maestri list falhou; nome/conteúdo desconhecido | Ler somente nota conectada pertinente |
-| T05 | Inventário estático | Codex | Parcial | APK | tools/inspect_apk.py e evidence/static | Análise de tipos, recursos e métodos |
-| T06 | Referência de design estática | Astra | Concluído, runtime pendente | APK | docs/design/DESIGN_EVIDENCE.md, DESIGN_HANDOFF.md | Capturar telas reais após B05 |
-| T07 | Runtime original | DeepSeek | Bloqueado | Executor e ADB | ADB existe, listener EPERM | Rodar ARM64 e capturar fluxos |
-| T08 | Arquitetura e PoC | DeepSeek/Codex | Pendente | T03 e T05–T07 | DECISIONS.md | Comparar três opções e medir |
-| T09 | Implementar motor/galeria | DeepSeek | Pendente | T08 | Nenhum código de jogo | Worktrees e contratos |
-| T10 | PWA e persistência | DeepSeek | Pendente | T09 | Nenhum teste web executado | Testar salvar/reabrir offline |
-| T11 | QA completo | DeepSeek + Astra visual | Pendente | T09/T10 | QA_STATUS.md | Validar runtime equivalente |
-| T12 | Projeto Vercel e Git Integration | Codex | Bloqueado | Acesso ao time | API 403 requer consentimento de conta | Retentar projeto após autorização |
-| T13 | Produção e homologação | Codex/DeepSeek | Pendente | T11/T12 | Sem URL/commit publicado do jogo | Deploy e E2E produção |
+| ID | Responsável | Estado | Dependência/evidência | Próximo passo |
+|---|---|---|---|---|
+| T01 Descoberta | Codex | Concluído | APK,REA,repo/projeto corretos,modelo confirmado | Reusar estado |
+| T02 RE estática | Prisma | Concluído | evidence/reverse/REPORT.md,37arquivos,hashes verificados | Consultar fatos sem confundir runtime |
+| T03 Runtime | Codex | Parcial | docs/RUNTIME_FINDINGS.md; screenshots privados,fill+thumbnail observados | Ampliar comparação de fluxos |
+| T04 Arte própria | Astra | Concluído estrutural | src/content/art.ts135SVG/9packs; XML/IDs/determinismo | QA visual renderizado |
+| T05 Game/UI/storage | Tinta | Em integração | worktree a66e feat/web-game;41unit tests+build passaram | Commit,migração,ajustar layout original |
+| T06 PWA/offline | Âmbar | Integrado na main |43node tests reexecutados;7824352/a7f9102 | Testar JOGO real cold offline |
+| T07 QA independente | Prisma | Em andamento | evidence/qa,tests/e2e,playwright.config.ts | Rodar no buildreal/produção |
+| T08 CI/Vercel | Sucessor DeepSeek | Pendente | CLI/link/GitIntegration confirmados | Headers,vercelignore,CI,deploy |
+| T09 Aceite | Sucessor DeepSeek | Pendente | Nenhum E2Eprodução validado | URL+commit+evidências |
+
+Codex transfere ao Nexo ao atingir90%quota usada. HANDOFF_DEEPSEEK.md é o estado detalhado.
+Não há jogo homologado ou URL de produção entregue. Não reiniciar do zero.

@@ -10,3 +10,7 @@
 
 CLI/presets Maestri verificados. Executor confirmado por execução real, sem substituição.
 Não criar agentes ociosos. Reutilizar os existentes em QA/correções conforme terminarem.
+
+Nexo:sucessorDeepSeek preparado em terminal Maestri,conectado aos3peers,portais e nota
+coloring-entrega-e-progresso; wrapper espera flag .private/DEEPSEEK_TAKEOVER.
+Prisma agora QAinterativo via opencode mini; Astra terminou arte/handoff.

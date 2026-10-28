@@ -1,24 +1,13 @@
-# QA
+# QA — estado verificado
 
-Estado: produto ainda não implementado. Nenhum teste funcional, visual ou de produção passou.
+- Coordenação reexecutou41testes unitários em6arquivos no worktree Tinta: todos passaram.
+- Build Vite7.3.7 com TypeScript passou; bundle100,71kB JS e26,30kB CSS.
+- Gerador offline no dist criou9recursos,225,2KiB. Ainda retestar syncPWAfinal.
+- Coordenação reexecutou43node tests offline/PWA:43pass,0fail.
+- Arte:9packs/135IDs/135SVG únicos verificados; XML/determinismo/TSestrito pelo Astra.
+- Runtime original: galeria,pintura,fillregião,retorno com thumbnail; screenshots privados.
 
-Executado: inventário ZIP, cabeçalho de metadados IL2CPP e probes de capacidades.
-Evidência estática: `python3 tools/inspect_apk.py`.
-Resultado: 197 membros, IL2CPP v29, 212 símbolos candidatos; SHA-256 confere com o Astra.
-`aapt dump badging` e `dump xmltree` executados com sucesso; identidade em docs/APK_FINDINGS.md.
-Ref main remota lida após publicação do checkpoint documental.
-
-## Suite de aceite a implementar pelo DeepSeek
-
-- Abrir pack e desenho; pintar com mouse e pointer touch; trocar ferramenta/cor.
-- Strokes atravessando região e borda; limites, zoom/transformações, multitouch e cancel.
-- Desfazer/refazer conforme comportamento observado; limpeza com recuperação adequada.
-- Autosave e reabertura; navegar durante gravação; falha/quota de IndexedDB; schema migration.
-- Offline readiness: verificar recursos, bloquear rede real, reload e nova sessão offline.
-- Criar/modificar pintura offline, fechar/reabrir offline e comparar pixels/estado persistido.
-- SW atualização sem perder progresso; recurso ausente não recebe indicador offline pronto.
-- Desktop, tablet e celular; orientação; Safari/Chromium; acessibilidade dos controles.
-- Comparar screenshots runtime original/web em estados equivalentes.
-- Repetir fluxos na URL Vercel efetivamente publicada; checar console, assets e SW.
-
-Não existem screenshots runtime nem resultado comparativo. Build não executado: sem código do jogo.
+NÃO CONCLUÍDOS: E2E integrado gameplay/touch/persistência,cold browser reopen offline
+no JOGO real,comparação visual renderizada e E2Eprodução. QA Prisma em andamento.
+UI Tinta independente creme/coral ainda precisa confronto com layout turquesa observado.
+Ver docs/design/RUNTIME_LAYOUT_HANDOFF.md e HANDOFF_DEEPSEEK.md.
