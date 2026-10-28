@@ -1,0 +1,10 @@
+*.apk
+*.zip
+.runtime/
+.private/
+.env*
+node_modules/
+dist/
+playwright-report/
+test-results/
+evidence/design/
