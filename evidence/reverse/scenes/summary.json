@@ -1,0 +1,135 @@
+{
+  "evidence_id": "APK-REV-SCENE-SUMMARY",
+  "source_member": "assets/bin/Data/data.unity3d",
+  "scene_order_from_buildsettings": [
+    "PreloadScene",
+    "IntroScene",
+    "MainMenu",
+    "GalleryMenu",
+    "ColoringPage",
+    "ShelfScene",
+    "EmptyScene",
+    "ForParents"
+  ],
+  "scenes": [
+    {
+      "level": "level0",
+      "scene": "PreloadScene",
+      "objects": 10,
+      "gameobjects": 2,
+      "recttransforms": 0,
+      "roots": [
+        "Main Camera",
+        "PreloadScene"
+      ]
+    },
+    {
+      "level": "level1",
+      "scene": "IntroScene",
+      "objects": 85,
+      "gameobjects": 21,
+      "recttransforms": 12,
+      "roots": [
+        "Main Camera",
+        "IAPmanager",
+        "FirebaseSetup",
+        "EscapeButtonClickHandler",
+        "[GetCache]",
+        "BackgroundMusic",
+        "InitialSettings",
+        "RateUs",
+        "EventSystem",
+        "Canvas",
+        "LoadingLayerCanvas"
+      ]
+    },
+    {
+      "level": "level2",
+      "scene": "MainMenu",
+      "objects": 380,
+      "gameobjects": 79,
+      "recttransforms": 75,
+      "roots": [
+        "Main Camera",
+        "[LoadMenuImages]",
+        "[InAppPurchaseManager]",
+        "EventSystem",
+        "Canvas",
+        "Scroll",
+        "InAppPurchasePanel",
+        "ParentalGateMathCanvas",
+        "Shelf Canvas Controller",
+        "SimplifyCanvas"
+      ]
+    },
+    {
+      "level": "level3",
+      "scene": "GalleryMenu",
+      "objects": 457,
+      "gameobjects": 103,
+      "recttransforms": 101,
+      "roots": [
+        "EventSystem",
+        "Main Camera",
+        "Canvas"
+      ]
+    },
+    {
+      "level": "level4",
+      "scene": "ColoringPage",
+      "objects": 667,
+      "gameobjects": 151,
+      "recttransforms": 128,
+      "roots": [
+        "[ScriptedParticles]",
+        "[ColoringPage]",
+        "Draw",
+        "bg",
+        "EventSystem",
+        "Main Camera",
+        "[Save&Load]",
+        "Background",
+        "Purchase panel",
+        "LoadingLayerCanvas"
+      ]
+    },
+    {
+      "level": "level5",
+      "scene": "ShelfScene",
+      "objects": 225,
+      "gameobjects": 53,
+      "recttransforms": 51,
+      "roots": [
+        "EventSystem",
+        "Main Camera",
+        "Canvas_landscape_portrail",
+        "Canvas_landscape_iphone"
+      ]
+    },
+    {
+      "level": "level6",
+      "scene": "EmptyScene",
+      "objects": 18,
+      "gameobjects": 3,
+      "recttransforms": 2,
+      "roots": [
+        "Main Camera",
+        "Background"
+      ]
+    },
+    {
+      "level": "level7",
+      "scene": "ForParents",
+      "objects": 1764,
+      "gameobjects": 338,
+      "recttransforms": 334,
+      "roots": [
+        "[ContentController]",
+        "EventSystem",
+        "[Controller]",
+        "Main Camera",
+        "Canvas"
+      ]
+    }
+  ]
+}

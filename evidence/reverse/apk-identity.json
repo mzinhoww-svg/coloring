@@ -1,0 +1,1224 @@
+{
+  "evidence_id": "APK-REV-IDENTITY",
+  "source": "coloring-1-116(2).apk",
+  "sha256": "1bb17ff5d70eae1a4287d67832deccfc5f24ae23948db4667842756f418d9d95",
+  "bytes": 135423615,
+  "member_count": 197,
+  "extracted_member_count": 23,
+  "extraction_root": ".private/reverse/apk (git-ignored, not published)",
+  "analysis_inputs": [
+    "AndroidManifest.xml",
+    "assets/aa/AddressablesLink/link.xml",
+    "assets/aa/catalog.json",
+    "assets/aa/settings.json",
+    "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "assets/bin/Data/Managed/Resources/Newtonsoft.Json.dll-resources.dat",
+    "assets/bin/Data/Managed/Resources/System.Data.dll-resources.dat",
+    "assets/bin/Data/Managed/Resources/mscorlib.dll-resources.dat",
+    "assets/bin/Data/RuntimeInitializeOnLoads.json",
+    "assets/bin/Data/ScriptingAssemblies.json",
+    "assets/bin/Data/boot.config",
+    "assets/bin/Data/data.unity3d",
+    "assets/bin/Data/resources.resource",
+    "assets/bin/Data/sharedassets2.resource",
+    "assets/bin/Data/unity default resources",
+    "assets/bin/Data/unity_app_guid",
+    "classes.dex",
+    "lib/arm64-v8a/libFirebaseCppAnalytics.so",
+    "lib/arm64-v8a/libFirebaseCppApp-11_6_0.so",
+    "lib/arm64-v8a/libil2cpp.so",
+    "lib/arm64-v8a/libmain.so",
+    "lib/arm64-v8a/libunity.so",
+    "resources.arsc"
+  ],
+  "members_with_sha256": [
+    {
+      "path": "AndroidManifest.xml",
+      "bytes": 15308,
+      "crc32": "c2546a9b",
+      "sha256": "a51884d1d9cf9843a28a92fa21db935c6b72a30d0266aa70ac21809f590e49df"
+    },
+    {
+      "path": "assets/aa/AddressablesLink/link.xml",
+      "bytes": 676,
+      "crc32": "a0ca3215",
+      "sha256": "76f4a2fc235de132f1370f5be5d81bde388f5cc4c8c357fc3d1a56a836c4244a"
+    },
+    {
+      "path": "assets/aa/catalog.json",
+      "bytes": 136740,
+      "crc32": "ca78014f",
+      "sha256": "435a583b11d9a69e24084a2137689d755475d3e02234ce198d4f2fa5b71764a0"
+    },
+    {
+      "path": "assets/aa/settings.json",
+      "bytes": 849,
+      "crc32": "a7c9048a",
+      "sha256": "7a900aec454d51d0c06046779db6025376db6b662524b27c8a5789398fdd2563"
+    },
+    {
+      "path": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "bytes": 8003632,
+      "crc32": "dcf1d308",
+      "sha256": "bdce7a16260f3439bb44b63817942d3bc00e794d748dbafe03b216b3210806ef"
+    },
+    {
+      "path": "assets/bin/Data/Managed/Resources/Newtonsoft.Json.dll-resources.dat",
+      "bytes": 900,
+      "crc32": "c1c26f60",
+      "sha256": "531de49e73ddea25554c9f656f54da2a665946f3fec57048e0cfe3b9e49b03f8"
+    },
+    {
+      "path": "assets/bin/Data/Managed/Resources/System.Data.dll-resources.dat",
+      "bytes": 93718,
+      "crc32": "6622a023",
+      "sha256": "98a7950ec6de3242c2e190dfa630188dfa32511a125542b94baa952d1c757d49"
+    },
+    {
+      "path": "assets/bin/Data/Managed/Resources/mscorlib.dll-resources.dat",
+      "bytes": 337563,
+      "crc32": "d475b854",
+      "sha256": "c5baa176a5b72cd545266340e42102d393a5e43d38c95796bc828918bb95277f"
+    },
+    {
+      "path": "assets/bin/Data/RuntimeInitializeOnLoads.json",
+      "bytes": 3580,
+      "crc32": "887c4c79",
+      "sha256": "fccce6927511495f08de3201fffbc2b5054b9225aaa0fa728033139d26f704d1"
+    },
+    {
+      "path": "assets/bin/Data/ScriptingAssemblies.json",
+      "bytes": 4095,
+      "crc32": "93e002be",
+      "sha256": "7d9110ddbad646eb33b7147ea3f7d555605ffba9aa578755a995aadd3990999a"
+    },
+    {
+      "path": "assets/bin/Data/boot.config",
+      "bytes": 107,
+      "crc32": "eb3ffd96",
+      "sha256": "f5c65ba0b2bec77444bfabe8bafdb87281283247c976eaf1b4fe2553cfbe5e3b"
+    },
+    {
+      "path": "assets/bin/Data/data.unity3d",
+      "bytes": 73265690,
+      "crc32": "d3415b2f",
+      "sha256": "6761c6cd07387b9413232fa0aac435009b2e1238e4f989cf8048828e7b60e5a7"
+    },
+    {
+      "path": "assets/bin/Data/resources.resource",
+      "bytes": 8146304,
+      "crc32": "a73e0da8",
+      "sha256": "55046ffa3de95a7606d8a1a5e0128ccebc3207de33fc6d85a09043a5adeb9a55"
+    },
+    {
+      "path": "assets/bin/Data/sharedassets2.resource",
+      "bytes": 62624,
+      "crc32": "b80a06c0",
+      "sha256": "a051ab9c260a36fefb1b1d12c03a6964f50beaae3184d2ceba3032d3db531cdf"
+    },
+    {
+      "path": "assets/bin/Data/unity default resources",
+      "bytes": 4222168,
+      "crc32": "7a183a85",
+      "sha256": "334a5b71b17b7206138749ca74debd16dec009c61adeccfe17216e56d7b76dc6"
+    },
+    {
+      "path": "assets/bin/Data/unity_app_guid",
+      "bytes": 36,
+      "crc32": "617845e7",
+      "sha256": "b10139095e5cd9d4afab33a250b94a528f7059b60b758120ebcb75321942dc13"
+    },
+    {
+      "path": "classes.dex",
+      "bytes": 1598044,
+      "crc32": "4288c66b",
+      "sha256": "b258225159f32bca52558e29f91b24bd9c82b2e03d09a5228025450ccb1b0f9c"
+    },
+    {
+      "path": "lib/arm64-v8a/libFirebaseCppAnalytics.so",
+      "bytes": 77776,
+      "crc32": "a84da672",
+      "sha256": "02fa3bd8d0f64ec466e1802e5d3c9a5cec7fd284f31a1a85719d7eb4b4303427"
+    },
+    {
+      "path": "lib/arm64-v8a/libFirebaseCppApp-11_6_0.so",
+      "bytes": 6104056,
+      "crc32": "52fe8477",
+      "sha256": "8f9c411701a5a1518fcb0a8db294ba9170c0cb2efef283153295dac0c730d0ea"
+    },
+    {
+      "path": "lib/arm64-v8a/libil2cpp.so",
+      "bytes": 45063680,
+      "crc32": "821cc9e7",
+      "sha256": "f59c0bbb0157f0b60ee079e9796cff80e22bd34658b37be4f7f237f039b46372"
+    },
+    {
+      "path": "lib/arm64-v8a/libmain.so",
+      "bytes": 10416,
+      "crc32": "8f90c185",
+      "sha256": "76013a528743dbc6fe2c15e58e5c07503b3a67204e8c520b3ddc1afc3228bbec"
+    },
+    {
+      "path": "lib/arm64-v8a/libunity.so",
+      "bytes": 25700560,
+      "crc32": "205c8c06",
+      "sha256": "cde83736dfd9d84728535a43acd726da350ee4dff13cd678ab4d95549f689020"
+    },
+    {
+      "path": "resources.arsc",
+      "bytes": 169452,
+      "crc32": "6122b70a",
+      "sha256": "947a6493517b8680b27490a7d8300c34be59548f7e3addfe3a5e092602d46043"
+    }
+  ],
+  "members_metadata_only": [
+    {
+      "path": "META-INF/androidx.arch.core_core-runtime.version",
+      "bytes": 6,
+      "crc32": "7beadac6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.coordinatorlayout_coordinatorlayout.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.core_core.version",
+      "bytes": 6,
+      "crc32": "577760e3",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.cursoradapter_cursoradapter.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.customview_customview.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.documentfile_documentfile.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.drawerlayout_drawerlayout.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.fragment_fragment.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.interpolator_interpolator.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.legacy_legacy-support-core-ui.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.legacy_legacy-support-core-utils.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.lifecycle_lifecycle-livedata-core.version",
+      "bytes": 6,
+      "crc32": "7beadac6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.lifecycle_lifecycle-livedata.version",
+      "bytes": 6,
+      "crc32": "7beadac6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.lifecycle_lifecycle-runtime.version",
+      "bytes": 6,
+      "crc32": "7beadac6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.lifecycle_lifecycle-viewmodel.version",
+      "bytes": 6,
+      "crc32": "7beadac6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.loader_loader.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.print_print.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.slidingpanelayout_slidingpanelayout.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.versionedparcelable_versionedparcelable.version",
+      "bytes": 6,
+      "crc32": "45c2cf0d",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/androidx.viewpager_viewpager.version",
+      "bytes": 6,
+      "crc32": "fd7ea868",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/annotation.kotlin_module",
+      "bytes": 24,
+      "crc32": "50213a06",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/com.android.games.engine.build_fingerprint",
+      "bytes": 68,
+      "crc32": "83960584",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/com.google.play.common.version",
+      "bytes": 6,
+      "crc32": "21d1b1c6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/com.google.play.core.version",
+      "bytes": 6,
+      "crc32": "21d1b1c6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/com.google.play.review.version",
+      "bytes": 6,
+      "crc32": "21d1b1c6",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/kotlin-stdlib-common.kotlin_module",
+      "bytes": 1623,
+      "crc32": "a894a73f",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/kotlin-stdlib.kotlin_module",
+      "bytes": 6937,
+      "crc32": "8bb9444d",
+      "sha256": null
+    },
+    {
+      "path": "assets/UnityServicesProjectConfiguration.json",
+      "bytes": 1003,
+      "crc32": "739f8614",
+      "sha256": null
+    },
+    {
+      "path": "assets/google-services-desktop.json",
+      "bytes": 996,
+      "crc32": "8f699162",
+      "sha256": null
+    },
+    {
+      "path": "billing.properties",
+      "bytes": 50,
+      "crc32": "7ffeb29a",
+      "sha256": null
+    },
+    {
+      "path": "core-common.properties",
+      "bytes": 58,
+      "crc32": "cb2bf8df",
+      "sha256": null
+    },
+    {
+      "path": "firebase-analytics.properties",
+      "bytes": 74,
+      "crc32": "4719290b",
+      "sha256": null
+    },
+    {
+      "path": "firebase-annotations.properties",
+      "bytes": 78,
+      "crc32": "c1d3dcf2",
+      "sha256": null
+    },
+    {
+      "path": "firebase-components.properties",
+      "bytes": 76,
+      "crc32": "ea37ca76",
+      "sha256": null
+    },
+    {
+      "path": "firebase-installations-interop.properties",
+      "bytes": 98,
+      "crc32": "73732fc8",
+      "sha256": null
+    },
+    {
+      "path": "firebase-installations.properties",
+      "bytes": 82,
+      "crc32": "c9acc34e",
+      "sha256": null
+    },
+    {
+      "path": "firebase-measurement-connector.properties",
+      "bytes": 98,
+      "crc32": "59c9abbf",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/annotation/annotation.kotlin_builtins",
+      "bytes": 926,
+      "crc32": "d36c8b5b",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/collections/collections.kotlin_builtins",
+      "bytes": 3685,
+      "crc32": "f41c30cf",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/coroutines/coroutines.kotlin_builtins",
+      "bytes": 200,
+      "crc32": "c69fe143",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/internal/internal.kotlin_builtins",
+      "bytes": 939,
+      "crc32": "58a9c257",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/kotlin.kotlin_builtins",
+      "bytes": 14256,
+      "crc32": "b3044c78",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/ranges/ranges.kotlin_builtins",
+      "bytes": 2301,
+      "crc32": "5eced940",
+      "sha256": null
+    },
+    {
+      "path": "kotlin/reflect/reflect.kotlin_builtins",
+      "bytes": 2338,
+      "crc32": "098a0852",
+      "sha256": null
+    },
+    {
+      "path": "lib/armeabi-v7a/libFirebaseCppAnalytics.so",
+      "bytes": 82828,
+      "crc32": "45f039b9",
+      "sha256": null
+    },
+    {
+      "path": "lib/armeabi-v7a/libFirebaseCppApp-11_6_0.so",
+      "bytes": 5682136,
+      "crc32": "32361f96",
+      "sha256": null
+    },
+    {
+      "path": "lib/armeabi-v7a/libil2cpp.so",
+      "bytes": 40640156,
+      "crc32": "4e569dc2",
+      "sha256": null
+    },
+    {
+      "path": "lib/armeabi-v7a/libmain.so",
+      "bytes": 22304,
+      "crc32": "c69ff711",
+      "sha256": null
+    },
+    {
+      "path": "lib/armeabi-v7a/libunity.so",
+      "bytes": 17959920,
+      "crc32": "c5c549ac",
+      "sha256": null
+    },
+    {
+      "path": "play-services-ads-identifier.properties",
+      "bytes": 94,
+      "crc32": "e4f01a4a",
+      "sha256": null
+    },
+    {
+      "path": "play-services-base.properties",
+      "bytes": 74,
+      "crc32": "42aeb607",
+      "sha256": null
+    },
+    {
+      "path": "play-services-basement.properties",
+      "bytes": 82,
+      "crc32": "f2dfb99d",
+      "sha256": null
+    },
+    {
+      "path": "play-services-measurement-api.properties",
+      "bytes": 96,
+      "crc32": "0040cc26",
+      "sha256": null
+    },
+    {
+      "path": "play-services-measurement-base.properties",
+      "bytes": 98,
+      "crc32": "2bccf19d",
+      "sha256": null
+    },
+    {
+      "path": "play-services-measurement-impl.properties",
+      "bytes": 98,
+      "crc32": "9d3a0287",
+      "sha256": null
+    },
+    {
+      "path": "play-services-measurement-sdk-api.properties",
+      "bytes": 104,
+      "crc32": "9ba6ae41",
+      "sha256": null
+    },
+    {
+      "path": "play-services-measurement-sdk.properties",
+      "bytes": 96,
+      "crc32": "7e72cd70",
+      "sha256": null
+    },
+    {
+      "path": "play-services-measurement.properties",
+      "bytes": 88,
+      "crc32": "d212ac04",
+      "sha256": null
+    },
+    {
+      "path": "play-services-stats.properties",
+      "bytes": 76,
+      "crc32": "4452cfc2",
+      "sha256": null
+    },
+    {
+      "path": "play-services-tasks.properties",
+      "bytes": 76,
+      "crc32": "bf0f9fb2",
+      "sha256": null
+    },
+    {
+      "path": "res/color/common_google_signin_btn_text_dark.xml",
+      "bytes": 712,
+      "crc32": "0576fded",
+      "sha256": null
+    },
+    {
+      "path": "res/color/common_google_signin_btn_text_light.xml",
+      "bytes": 712,
+      "crc32": "1629a9b2",
+      "sha256": null
+    },
+    {
+      "path": "res/color/common_google_signin_btn_tint.xml",
+      "bytes": 464,
+      "crc32": "14b27af0",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_dark.xml",
+      "bytes": 588,
+      "crc32": "89365c84",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_dark_focused.xml",
+      "bytes": 892,
+      "crc32": "03920692",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_dark_normal.xml",
+      "bytes": 548,
+      "crc32": "692bfddd",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_disabled.xml",
+      "bytes": 1132,
+      "crc32": "6a82c4d4",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_light.xml",
+      "bytes": 588,
+      "crc32": "0199e2a5",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_light_focused.xml",
+      "bytes": 892,
+      "crc32": "d0f068db",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_icon_light_normal.xml",
+      "bytes": 548,
+      "crc32": "985ee30f",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_dark.xml",
+      "bytes": 588,
+      "crc32": "50f20b4f",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_dark_focused.xml",
+      "bytes": 892,
+      "crc32": "b78e81dc",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_dark_normal.xml",
+      "bytes": 584,
+      "crc32": "6d0b9184",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_disabled.xml",
+      "bytes": 1152,
+      "crc32": "d4d44629",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_light.xml",
+      "bytes": 588,
+      "crc32": "bdc87d9c",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_light_focused.xml",
+      "bytes": 892,
+      "crc32": "7e977b3e",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/common_google_signin_btn_text_light_normal.xml",
+      "bytes": 584,
+      "crc32": "f8027b50",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/notification_bg.xml",
+      "bytes": 532,
+      "crc32": "69c88adb",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/notification_bg_low.xml",
+      "bytes": 532,
+      "crc32": "1f60ae1e",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/notification_icon_background.xml",
+      "bytes": 372,
+      "crc32": "6fddaf63",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable/notification_tile_bg.xml",
+      "bytes": 304,
+      "crc32": "2da51cb2",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v11/icon_grey.png",
+      "bytes": 609,
+      "crc32": "d18cbafa",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v11/icon_large.png",
+      "bytes": 6101,
+      "crc32": "f98cdf4b",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/common_full_open_on_phone.png",
+      "bytes": 681,
+      "crc32": "3ae6b82e",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+      "bytes": 897,
+      "crc32": "85696478",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+      "bytes": 683,
+      "crc32": "58fb3053",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+      "bytes": 960,
+      "crc32": "d939ee0d",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+      "bytes": 694,
+      "crc32": "9a55c238",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/googleg_disabled_color_18.png",
+      "bytes": 410,
+      "crc32": "0cb58331",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/googleg_standard_color_18.png",
+      "bytes": 808,
+      "crc32": "7d62f5a4",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/notification_bg_low_normal.9.png",
+      "bytes": 212,
+      "crc32": "378c117e",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
+      "bytes": 225,
+      "crc32": "5059e725",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/notification_bg_normal.9.png",
+      "bytes": 212,
+      "crc32": "c22cbe9f",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png",
+      "bytes": 225,
+      "crc32": "a1d68cd0",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
+      "bytes": 107,
+      "crc32": "6ed8c1f1",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-ldpi-v11/icon_grey.png",
+      "bytes": 273,
+      "crc32": "839d4d96",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-ldpi-v11/icon_large.png",
+      "bytes": 2188,
+      "crc32": "2af51321",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v11/icon_grey.png",
+      "bytes": 341,
+      "crc32": "4ca68568",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v11/icon_large.png",
+      "bytes": 3184,
+      "crc32": "014cc0ad",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+      "bytes": 610,
+      "crc32": "88698600",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+      "bytes": 500,
+      "crc32": "c6f5722c",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+      "bytes": 615,
+      "crc32": "4199e4d9",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+      "bytes": 465,
+      "crc32": "dd5d7c6f",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/googleg_disabled_color_18.png",
+      "bytes": 281,
+      "crc32": "fa60669e",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/googleg_standard_color_18.png",
+      "bytes": 562,
+      "crc32": "76065920",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+      "bytes": 215,
+      "crc32": "d9fa55b7",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+      "bytes": 223,
+      "crc32": "b80ede38",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/notification_bg_normal.9.png",
+      "bytes": 215,
+      "crc32": "c135d194",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+      "bytes": 223,
+      "crc32": "ed1fee6a",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+      "bytes": 98,
+      "crc32": "2ea3830b",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-v21/notification_action_background.xml",
+      "bytes": 1180,
+      "crc32": "f015f9d4",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v11/icon_grey.png",
+      "bytes": 881,
+      "crc32": "c2831b31",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v11/icon_large.png",
+      "bytes": 8468,
+      "crc32": "0e0b827d",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/common_full_open_on_phone.png",
+      "bytes": 489,
+      "crc32": "cc7eabe9",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+      "bytes": 1032,
+      "crc32": "f4f0cee1",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+      "bytes": 776,
+      "crc32": "c1b93349",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+      "bytes": 1086,
+      "crc32": "fecc21a4",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+      "bytes": 808,
+      "crc32": "db1aed88",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/googleg_disabled_color_18.png",
+      "bytes": 516,
+      "crc32": "edf1a67b",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/googleg_standard_color_18.png",
+      "bytes": 982,
+      "crc32": "bc0a585a",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+      "bytes": 221,
+      "crc32": "3ad03275",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+      "bytes": 252,
+      "crc32": "c8900a8e",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/notification_bg_normal.9.png",
+      "bytes": 221,
+      "crc32": "9944f31a",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+      "bytes": 247,
+      "crc32": "c29ac558",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+      "bytes": 138,
+      "crc32": "04576501",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v11/icon_large.png",
+      "bytes": 18073,
+      "crc32": "a4938463",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+      "bytes": 1510,
+      "crc32": "30b789c3",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+      "bytes": 1138,
+      "crc32": "aefcba59",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+      "bytes": 1638,
+      "crc32": "89e3a379",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+      "bytes": 1255,
+      "crc32": "3dae25e9",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v4/googleg_disabled_color_18.png",
+      "bytes": 727,
+      "crc32": "2c75d16b",
+      "sha256": null
+    },
+    {
+      "path": "res/drawable-xxhdpi-v4/googleg_standard_color_18.png",
+      "bytes": 1441,
+      "crc32": "e1b2a1fb",
+      "sha256": null
+    },
+    {
+      "path": "res/layout/custom_dialog.xml",
+      "bytes": 612,
+      "crc32": "aac3b54d",
+      "sha256": null
+    },
+    {
+      "path": "res/layout/notification_template_part_chronometer.xml",
+      "bytes": 440,
+      "crc32": "b73078ff",
+      "sha256": null
+    },
+    {
+      "path": "res/layout/notification_template_part_time.xml",
+      "bytes": 440,
+      "crc32": "dc087fa3",
+      "sha256": null
+    },
+    {
+      "path": "res/layout-v21/notification_action.xml",
+      "bytes": 1052,
+      "crc32": "462fd599",
+      "sha256": null
+    },
+    {
+      "path": "res/layout-v21/notification_action_tombstone.xml",
+      "bytes": 1228,
+      "crc32": "d11f9119",
+      "sha256": null
+    },
+    {
+      "path": "res/layout-v21/notification_template_custom_big.xml",
+      "bytes": 2456,
+      "crc32": "4a72dfbd",
+      "sha256": null
+    },
+    {
+      "path": "res/layout-v21/notification_template_icon_group.xml",
+      "bytes": 988,
+      "crc32": "ba47fbd7",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-anydpi-v26/app_icon.xml",
+      "bytes": 448,
+      "crc32": "2ad11ef2",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-hdpi-v4/app_icon.png",
+      "bytes": 9364,
+      "crc32": "d8a47637",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-hdpi-v4/app_icon_background.png",
+      "bytes": 4487,
+      "crc32": "708f5f43",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-hdpi-v4/app_icon_foreground.png",
+      "bytes": 15901,
+      "crc32": "5f2a985b",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-hdpi-v4/app_icon_round.png",
+      "bytes": 8308,
+      "crc32": "412be8bd",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-ldpi-v4/app_icon.png",
+      "bytes": 3191,
+      "crc32": "07e0e83a",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-ldpi-v4/app_icon_background.png",
+      "bytes": 2115,
+      "crc32": "6437fe64",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-ldpi-v4/app_icon_foreground.png",
+      "bytes": 5802,
+      "crc32": "54f8d9e9",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-ldpi-v4/app_icon_round.png",
+      "bytes": 2886,
+      "crc32": "45a319c2",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-mdpi-v4/app_icon.png",
+      "bytes": 5002,
+      "crc32": "ceb4b87c",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-mdpi-v4/app_icon_background.png",
+      "bytes": 3059,
+      "crc32": "4971d058",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-mdpi-v4/app_icon_foreground.png",
+      "bytes": 8738,
+      "crc32": "2d953d13",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-mdpi-v4/app_icon_round.png",
+      "bytes": 4453,
+      "crc32": "8e34525b",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xhdpi-v4/app_icon.png",
+      "bytes": 14166,
+      "crc32": "a877938f",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xhdpi-v4/app_icon_background.png",
+      "bytes": 6153,
+      "crc32": "f451b3b4",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xhdpi-v4/app_icon_foreground.png",
+      "bytes": 23844,
+      "crc32": "e8073236",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xhdpi-v4/app_icon_round.png",
+      "bytes": 12899,
+      "crc32": "809cea40",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxhdpi-v4/app_icon.png",
+      "bytes": 24906,
+      "crc32": "da08bc32",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxhdpi-v4/app_icon_background.png",
+      "bytes": 9860,
+      "crc32": "b4733955",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxhdpi-v4/app_icon_foreground.png",
+      "bytes": 42089,
+      "crc32": "13948985",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxhdpi-v4/app_icon_round.png",
+      "bytes": 23122,
+      "crc32": "35609948",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxxhdpi-v4/app_icon.png",
+      "bytes": 36630,
+      "crc32": "1845337d",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxxhdpi-v4/app_icon_background.png",
+      "bytes": 14027,
+      "crc32": "aea2468b",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxxhdpi-v4/app_icon_foreground.png",
+      "bytes": 63101,
+      "crc32": "1f0444fc",
+      "sha256": null
+    },
+    {
+      "path": "res/mipmap-xxxhdpi-v4/app_icon_round.png",
+      "bytes": 34164,
+      "crc32": "7db41360",
+      "sha256": null
+    },
+    {
+      "path": "res/raw/firebase_common_keep.xml",
+      "bytes": 290,
+      "crc32": "51cf4ab5",
+      "sha256": null
+    },
+    {
+      "path": "res/xml/splits0.xml",
+      "bytes": 8404,
+      "crc32": "7b91bb99",
+      "sha256": null
+    },
+    {
+      "path": "review.properties",
+      "bytes": 48,
+      "crc32": "3a701136",
+      "sha256": null
+    },
+    {
+      "path": "stamp-cert-sha256",
+      "bytes": 32,
+      "crc32": "62d68276",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/BNDLTOOL.SF",
+      "bytes": 23082,
+      "crc32": "fa27cc0b",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/BNDLTOOL.RSA",
+      "bytes": 1106,
+      "crc32": "2cc2a6c0",
+      "sha256": null
+    },
+    {
+      "path": "META-INF/MANIFEST.MF",
+      "bytes": 22955,
+      "crc32": "573b0f82",
+      "sha256": null
+    }
+  ],
+  "limitations": [
+    "Static bytes only; the APK was not executed.",
+    "Art, fonts and audio remain private reference with unconfirmed rights."
+  ]
+}

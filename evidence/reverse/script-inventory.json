@@ -1,0 +1,2750 @@
+{
+  "evidence_id": "APK-REV-SCRIPTS-001",
+  "source_member": "assets/bin/Data/data.unity3d",
+  "monoscript_count": 1694,
+  "monoscript_assemblies": {
+    "Assembly-CSharp.dll": 350,
+    "Unity.Localization.dll": 168,
+    "UnityEngine.Purchasing.Stores.dll": 149,
+    "PaintIn3D.dll": 132,
+    "UnityEngine.TestRunner.dll": 113,
+    "spine-unity.dll": 97,
+    "UnityEngine.UI.dll": 85,
+    "Unity.Services.Core.Internal.dll": 78,
+    "UnityEngine.Purchasing.dll": 76,
+    "Unity.Timeline.dll": 73,
+    "Unity.TextMeshPro.dll": 59,
+    "Unity.ResourceManager.dll": 44,
+    "Unity.Services.Core.Telemetry.dll": 34,
+    "Unity.Addressables.dll": 26,
+    "Tayx.Graphy.dll": 23,
+    "CW.Common.dll": 21,
+    "UnityEngine.Purchasing.Security.dll": 18,
+    "IngameDebugConsole.Runtime.dll": 17,
+    "Unity.Services.Core.dll": 16,
+    "Unity.Services.Core.Configuration.dll": 12,
+    "Google.Play.Core.dll": 9,
+    "UnityEngine.Purchasing.Codeless.dll": 9,
+    "Unity.Notifications.Android.dll": 9,
+    "Google.Play.Common.dll": 8,
+    "Unity.Services.Core.Scheduler.dll": 7,
+    "Unity.Services.Core.Device.dll": 7,
+    "Google.Play.Review.dll": 5,
+    "Purchasing.Common.dll": 4,
+    "Unity.Notifications.Unified.dll": 4,
+    "UnityEngine.Purchasing.SecurityCore.dll": 4,
+    "Unity.InternalAPIEngineBridge.013.dll": 3,
+    "Unity.Services.Core.Networking.dll": 3,
+    "Nobi.UiRoundedCorners.dll": 3,
+    "UnityEngine.Purchasing.WinRTCore.dll": 3,
+    "DOTween.dll": 2,
+    "Unity.ScriptableBuildPipeline.dll": 2,
+    "Unity.Services.Core.Registration.dll": 2,
+    "Unity.Services.Core.Analytics.dll": 2,
+    "UnityEngine.Purchasing.AppleStub.dll": 2,
+    "Unity.Services.Core.Environments.Internal.dll": 2,
+    "Unity.Services.Core.Environments.dll": 2,
+    "UniSafeArea.dll": 2,
+    "Unity.Services.Core.Threading.dll": 2,
+    "UnityEngine.Purchasing.AppleCore.dll": 2,
+    "UnityEngine.Purchasing.AppleMacosStub.dll": 2,
+    "UnityEngine.Purchasing.WinRTStub.dll": 2,
+    "Firebase.Platform.dll": 1
+  },
+  "monobehaviour_instances": 4090,
+  "monobehaviour_unresolved": 15,
+  "top_attached_scripts": [
+    [
+      "UnityEngine.UI.Image",
+      1489
+    ],
+    [
+      "UnityEngine.UI.Button",
+      302
+    ],
+    [
+      "UnityEngine.UI.LayoutElement",
+      294
+    ],
+    [
+      "UnityEngine.UI.VerticalLayoutGroup",
+      254
+    ],
+    [
+      "TMPro.TextMeshProUGUI",
+      222
+    ],
+    [
+      "ItemsAnimation",
+      213
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.SoundPlayer",
+      150
+    ],
+    [
+      "Coloring.Gallery.GalleryIcon",
+      135
+    ],
+    [
+      "UnityEngine.UI.ContentSizeFitter",
+      128
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.TextAdjuster",
+      87
+    ],
+    [
+      "I2.Loc.Localize",
+      62
+    ],
+    [
+      "UnityEngine.UI.Text",
+      60
+    ],
+    [
+      "UnityEngine.UI.Mask",
+      51
+    ],
+    [
+      "UnityEngine.UI.HorizontalLayoutGroup",
+      48
+    ],
+    [
+      "Nobi.UiRoundedCorners.ImageWithRoundedCorners",
+      39
+    ],
+    [
+      "BBToolkitUtilities.BBToolkitUtilities.AppUtils.Unity.LinkOpener",
+      32
+    ],
+    [
+      "TMProCurve",
+      31
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.Adjuster",
+      29
+    ],
+    [
+      "UnityEngine.UI.GraphicRaycaster",
+      22
+    ],
+    [
+      "UnityEngine.UI.CanvasScaler",
+      21
+    ],
+    [
+      "UnityEngine.UI.GridLayoutGroup",
+      19
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.StateButton",
+      16
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.FlipStateButton",
+      16
+    ],
+    [
+      "BimiBooUtils.BBToolkitUtilities.ForParents.DropDownBehaviour",
+      16
+    ],
+    [
+      "TMPro.TMP_FontAsset",
+      14
+    ],
+    [
+      "InheritRectSize",
+      13
+    ],
+    [
+      "I2.Loc.LocalizeTarget_UnityUI_Image",
+      10
+    ],
+    [
+      "ParentalGateMathUtils.ButtonController",
+      10
+    ],
+    [
+      "PackAnimation",
+      9
+    ],
+    [
+      "Coloring.MainMenu.MainMenuPackName",
+      9
+    ],
+    [
+      "Coloring.MainMenu.MainMenuPackStatus",
+      9
+    ],
+    [
+      "Coloring.MainMenu.MainMenuPack",
+      9
+    ],
+    [
+      "Coloring.Gallery.GalleryPack",
+      9
+    ],
+    [
+      "PurchasePack",
+      9
+    ],
+    [
+      "LoadStrokes",
+      9
+    ],
+    [
+      "UnityEngine.UI.ScrollRect",
+      8
+    ],
+    [
+      "BBToolkitUtilities.BBToolkitUtilities.TMP.LinkOpenerTMP",
+      8
+    ],
+    [
+      "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.SwipeableGallery",
+      8
+    ],
+    [
+      "Brush",
+      7
+    ],
+    [
+      "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.PageSetup",
+      7
+    ],
+    [
+      "UnityEngine.EventSystems.EventSystem",
+      6
+    ],
+    [
+      "UnityEngine.EventSystems.StandaloneInputModule",
+      6
+    ],
+    [
+      "I2.Loc.LocalizeTarget_TextMeshPro_UGUI",
+      6
+    ],
+    [
+      "PaintIn3D.P3dHitScreenFill",
+      6
+    ],
+    [
+      "DinamicInterval",
+      6
+    ],
+    [
+      "UnityUtils.Shelf.ShelfItem",
+      6
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.AdaptiveLayoutGroup",
+      6
+    ],
+    [
+      "Nobi.UiRoundedCorners.ImageWithIndependentRoundedCorners",
+      6
+    ],
+    [
+      "BimiBooUtils.BBToolkitAppIntegration.ForParents.MenuItemAdjuster",
+      6
+    ],
+    [
+      "UnityEngine.UI.AspectRatioFitter",
+      5
+    ],
+    [
+      "PaintIn3D.P3dPaintSphere",
+      5
+    ],
+    [
+      "BimiBooUtils.BBToolkitAppIntegration.ForParents.PageData",
+      5
+    ],
+    [
+      "SafeAreaImage",
+      4
+    ],
+    [
+      "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.FaqContent",
+      4
+    ],
+    [
+      "BimiBooUtils.BBToolkitAppIntegration.ForParents.CalloutAdjuster",
+      4
+    ],
+    [
+      "BimiBooUtils.BBToolkitUIElements.UIKit.Switcher",
+      4
+    ],
+    [
+      "UnityEngine.EventSystems.Physics2DRaycaster",
+      3
+    ],
+    [
+      "GameContents.VladimirCompany.puzzlese4e80f298000474e93ff3c6628fd8cf0.Common.Scripts.SafeAreaCanvasHelper",
+      3
+    ],
+    [
+      "PaletteContent",
+      3
+    ],
+    [
+      "PaletteController",
+      3
+    ]
+  ],
+  "app_specific_scripts": [
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 49,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ABTestStatus"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1016,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ActionManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1450,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "AppPlatform"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 163,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "AppSection"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1489,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "AppStorageKey"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1395,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "Brush"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 880,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ButtonSwitcher"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1108,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "CalendarController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1549,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "CalendarDateItem"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 691,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ChangeLanguage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 661,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ChangePatternTileScale"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1444,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "CollapsableMenu"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1422,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ColoringMainMenuManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 543,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ColoringPage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 248,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ColoringPageDataManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 86,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "CommonHelper"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 525,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "CustomGarbageCollector"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 369,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "CustomIntroSettings"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 56,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "DataManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1469,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "DinamicInterval"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1588,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "DisplayParticles"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 769,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "Enums"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 850,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "FirebaseSetup"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1597,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ForParentsController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1467,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "GalleryMenu"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1304,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "GalleryMenuUIAnimations"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1156,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "GalleryPackItems"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 800,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "GetCache"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 996,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "GoogleTranslation_Post"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 195,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "GoogleTranslation_Queries"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 169,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAPButtonsAnimation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1361,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAPHandler"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1617,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAPMainMenuPanel"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 268,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAPToolsPanel"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 504,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAdaptive"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 333,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAlertAdapter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1615,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAudioController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 611,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IAudioPlayer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1222,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IDownloads"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 663,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ILocalizeTargetDesc"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 622,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IMusicPlayer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1592,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IParentalContent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1234,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IfLanguage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1271,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "InAppPurchaseManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1513,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "InheritRectSize"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1493,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "IntroSceneColoring"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1431,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ItemsAnimation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1260,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Assets"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 810,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Export_CSV"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 901,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Export_Google"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 723,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Import_CSV"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 649,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Import_Google"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 409,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Languages"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1551,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Misc"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1619,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LanguageSourceData_Terms"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 981,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LayerSelection"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1093,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LinkOpenerOld"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 159,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LoadIcons"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1214,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LoadImage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1215,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LoadStrokes"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 385,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LoaderIndicators"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 392,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "Locale"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 52,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocaleSample"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 828,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_Language"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1036,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_Parameters"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1415,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_RTL"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1671,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_Sources"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1675,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_SystemLanguage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 889,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_Targets"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 484,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizationManager_Translation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 733,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizedCommonTexts"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 82,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "LocalizedString"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1544,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ManagePalettes"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 81,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ManagePhysicalBrushes"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 892,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ManageTools"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 210,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "MenuController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 670,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "NewNotificationLocalizedTexts"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 657,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "NotificationLocalizedTexts"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 886,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "NotificationSettings"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1518,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "OpenBuyMenu"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 608,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "OpenURL"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1270,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "OpenUrlByPlatform"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 186,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PackAnimation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1244,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "Paintable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1484,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaintablesController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 614,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaletteColor"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 201,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaletteContent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 47,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaletteController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 653,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaletteItem"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 22,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaletteLock"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 118,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "Palettes"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1046,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ParentalGateType"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 227,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ParentalPageMenu"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1262,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ParticleEffectManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1392,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PaywallType"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1608,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PersistantAudioManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 362,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PopupView"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 812,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PreloadScene"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 541,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PurchasePack"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1456,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "PurchasePanel"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 578,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "RateUsLocalization"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 941,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "RestoreButton"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1543,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SafeAreaImage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 243,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SavableValue"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1151,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SaveImage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1195,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SceneInformation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1206,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SettingsController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 594,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ShelfCanvasController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 155,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ShelfLocals"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1311,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SimpleJSON"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 573,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "SimplePopupExample"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 121,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "Singleton"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 576,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "StrechImage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1296,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "StrechRectRelativeTo"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 191,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "StringObfuscator"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 467,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "TMProCurve"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1449,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "TestDiskUtils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 37,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "TestScroll"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 894,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "TextGradient"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1228,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "TextMover"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 724,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "ToolsManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1504,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "",
+      "class": "UnloadResourcesOnLoad"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 492,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BBToolkitUtilities.BBToolkitUtilities.AppUtils.Unity",
+      "class": "LinkOpener"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 126,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BBToolkitUtilities.BBToolkitUtilities.TMP",
+      "class": "LinkOpenerTMP"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 468,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BBToolkitUtilities.NativeBindings",
+      "class": "MyNativeBindings"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1027,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "CalloutAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1194,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "CanvasAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 910,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "ColumnAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 252,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "FlexibleGrid3in1Adjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1040,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "FooterAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 59,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "ForParentsController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1218,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "ForParentsSettings"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 716,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "Grid2in1Adjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 615,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "MenuAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 315,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "MenuItemAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 272,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "PageData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 945,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents",
+      "class": "TwoOneColumnsAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 156,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "AboutUsFiller"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1160,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "DownloadsContent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1538,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "DownloadsController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1128,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "DownloadsFiller"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 567,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "FaqContent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1211,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "FaqFiller"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 377,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "ForParentsData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 631,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "HomeContent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 722,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "HomeFiller"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1689,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "PageFiller"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1191,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "PageSetup"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 961,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "ProductsContent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1690,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages",
+      "class": "SettingsController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1616,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitAppIntegration.ParentalGates",
+      "class": "ParentalGateYear"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 900,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "AdaptiveLayoutGroup"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 235,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "Adjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1458,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "Checkbox"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 869,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "FlipStateButton"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1152,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "InlineImage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 859,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "SoundPlayer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 704,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "StateButton"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 129,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "Switcher"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1379,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "TextAdjuster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 942,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "UIKitConfig"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 183,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "class": "UIKitSounds"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 257,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ABTests",
+      "class": "ABTestData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1602,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ABTests",
+      "class": "ABTestRequester"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 95,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ABTests",
+      "class": "ABTestResultPoster"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1055,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ABTests",
+      "class": "ActiveABTestList"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1014,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Events",
+      "class": "CustomUnityEvent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1510,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Events",
+      "class": "GameEvent"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 778,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Events",
+      "class": "GameEventListener"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1011,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.PlatformUtils",
+      "class": "Utils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 356,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage",
+      "class": "AppPlayerPrefs"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1517,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage",
+      "class": "AppStorage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1571,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage",
+      "class": "DataLoader"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1288,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "AppBuild"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 854,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "DownUpScaler"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 101,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "FPSMeter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 577,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "Popup"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1529,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "PostponedAction"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1485,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "Preloader"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 827,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "Pulse"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1095,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "SceneSwitcher"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1057,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "ScreenTransition"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1146,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "SwipeableGallery"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 763,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "TweenMover"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 253,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity",
+      "class": "WebContentRequester"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1647,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "BoolVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 416,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "ColorVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 956,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "FloatVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 907,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "IntVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1371,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "PrefabVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 584,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "StringVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 925,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "Texture2DVariable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1393,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables",
+      "class": "Variable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 675,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ForParents",
+      "class": "DropDownBehaviour"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 645,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ForParents",
+      "class": "OrientationToggleBehaviour"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 494,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ForParents",
+      "class": "ParentalMetaRequester"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 294,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ScreenUtils",
+      "class": "BBTweener"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 458,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ScreenUtils",
+      "class": "DimensionsChangeChecker"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 245,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUtilities.ScreenUtils",
+      "class": "ScreenUtils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1635,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Bimiboo.unity_utils.BackButton",
+      "class": "EscapeButtonClickHandler"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 957,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Bimiboo.unity_utils.QuitGameScreen",
+      "class": "QuitGamePopup"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1681,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Bimiboo.unity_utils.QuitGameTitle",
+      "class": "QuitGameTitle"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 642,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.ContentDelivery",
+      "class": "ContentDeliveryController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1335,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.ContentDelivery",
+      "class": "ContentDeliveryData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1594,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.ContentDelivery",
+      "class": "ContentDeliveryLoader"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1171,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.ContentDelivery",
+      "class": "DataExtensions"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 269,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.ContentDelivery",
+      "class": "SystemPopups"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 349,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.Gallery",
+      "class": "GalleryIcon"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1658,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.Gallery",
+      "class": "GalleryPack"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1278,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.Gallery",
+      "class": "GalleryScroll"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1512,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.MainMenu",
+      "class": "MainMenuPack"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1081,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.MainMenu",
+      "class": "MainMenuPackName"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 780,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.MainMenu",
+      "class": "MainMenuPackStatus"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1511,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.MainMenu",
+      "class": "MainMenuScroll"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 893,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Coloring.MainMenu",
+      "class": "MenuImagesLoader"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 130,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModuleAudio"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 117,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModuleEPOOutline"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 749,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModulePhysics"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 816,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModulePhysics2D"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 78,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModuleSprite"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1145,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModuleUI"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 145,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModuleUnityVersion"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 194,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DG.Tweening",
+      "class": "DOTweenModuleUtils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 527,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+      "class": "DynamicContentController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 879,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+      "class": "ExpandInformation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1302,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+      "class": "FileSelected"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1436,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+      "class": "Rotator"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 554,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+      "class": "SimpleScrollSnap"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1599,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+      "class": "SlotMachine"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 23,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "GameContents.VladimirCompany.puzzlese4e80f298000474e93ff3c6628fd8cf0.Common.Scripts",
+      "class": "SafeAreaCanvasHelper"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1661,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Hellmade.Sound",
+      "class": "Audio"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 32,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "Hellmade.Sound",
+      "class": "EazySoundManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1048,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "AutoChangeCultureInfo"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 199,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "CoroutineManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 225,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "CustomLocalizeCallback"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 805,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "EventCallback"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 241,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "GoogleLanguages"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1351,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "GoogleTranslation"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 819,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "HindiFixer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 813,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "I2Utils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1255,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "ILocalizeTarget"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1360,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LanguageData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 479,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LanguageSource"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 298,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LanguageSourceAsset"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 602,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LanguageSourceData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1471,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizationManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1328,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizationParamsManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 728,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizationReader"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 346,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "Localize"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1100,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeDropdown"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1638,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_2DToolKit_Label"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 545,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_2DToolKit_Sprite"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 401,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_NGUI_Label"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 553,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_NGUI_Sprite"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 884,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_NGUI_Texture"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1254,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_SVGImporter_Image"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1318,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_SVGImporter_Renderer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1443,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_TextMeshPro_Label"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 476,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_TextMeshPro_UGUI"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 10,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_AudioSource"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 638,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_Child"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1208,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_MeshRenderer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1269,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_Prefab"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 396,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_SpriteRenderer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 646,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_TextMesh"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 627,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityStandard_VideoPlayer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1275,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityUI_Image"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1104,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityUI_RawImage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 337,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "LocalizeTarget_UnityUI_Text"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1560,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "PersistentStorage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1336,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "RTLFixer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 915,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "RegisterCallback_AllowSyncFromGoogle"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 322,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "RegisterGlobalParameters"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1606,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "ResourceManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1651,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "SetLanguage"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 340,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "SetLanguageDropdown"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1115,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "SpecializationManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1491,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "TermData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 832,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "TranslationJob"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 128,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "TranslationJob_GET"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1221,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "TranslationJob_Main"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 347,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "TranslationJob_POST"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 399,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "I2.Loc",
+      "class": "TranslationJob_WEB"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 697,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "Alert"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 700,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertAndroid"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 205,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertAndroidAdapter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 244,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertAndroidOptions"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1674,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertIOS"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1640,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertIOSAdapter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 460,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertIOSButton"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 16,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertIOSOptions"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 837,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 643,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertMonoBehaviour"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 450,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertUnityAdapter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 84,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "PaperPlaneTools",
+      "class": "AlertUnityUIAdapter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1112,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "ParentalGateMathUtils",
+      "class": "AudioLocals"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1109,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "ParentalGateMathUtils",
+      "class": "ButtonController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1554,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "ParentalGateMathUtils",
+      "class": "MathController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 173,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "ParentalGateMathUtils",
+      "class": "ParentalGate"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1196,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "ParentalGateMathUtils",
+      "class": "ParentalGateMath"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 28,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "ParentalGateMathUtils",
+      "class": "ParetalGateTitle"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 280,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "SimpleDiskUtils",
+      "class": "DiskUtils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 140,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "SimplePopup",
+      "class": "SimplePopupButton"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 867,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "SimplePopup",
+      "class": "SimplePopupManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 190,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "AssetBundleManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1591,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "BigFileTransfer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1087,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "BundlesController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 982,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "ClearCache"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1432,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "CommonAudioClips"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1281,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "CustomIntroScene"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 12,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "DeviceInfo"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1620,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "FpsStats"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 415,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "InitialSettings"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 994,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "InternetManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 388,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "IntroScene"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 394,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "MenuItemController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1299,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "NotificationController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 773,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "OpenUrl"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 421,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "RateUs"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1373,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "RelativeStreching"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1390,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "SceneTransition"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 829,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils",
+      "class": "ScreenUtils"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 74,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.CustomAudioClipExtension",
+      "class": "AudioClipExtension"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1548,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.CustomDOTweenExtension",
+      "class": "DOTweenExtension"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 423,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.CustomGameObjectExtension",
+      "class": "GameObjectExtension"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1472,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.CustomListExtension",
+      "class": "ListExtension"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 864,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.CustomScrollView",
+      "class": "MenuScrollview"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 446,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.CustomSpriteRendererExtension",
+      "class": "SpriteRendererExtension"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1126,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.IAP",
+      "class": "IAPNonConsumable"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 341,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.IAP",
+      "class": "IapProducts"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1403,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.IAP",
+      "class": "LoadingLayer"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 943,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.IAP",
+      "class": "TestIAPPopup"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 863,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.Shelf",
+      "class": "ShelfData"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 65,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.Shelf",
+      "class": "ShelfForParents"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 262,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.Shelf",
+      "class": "ShelfItem"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1098,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.Shelf",
+      "class": "ShelfScene"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1306,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.Shelf",
+      "class": "ShelfSceneController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1354,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "AudioController"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1031,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "AudioManager"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1464,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "AudioPresenter"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1236,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "BackgroundMusic"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 768,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "SoundEffect"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 604,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "TestAudio"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 264,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "class": "TestGameAudio"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1258,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "pingak9",
+      "class": "MobileDateTimePicker"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 600,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "pingak9",
+      "class": "MobileDialogConfirm"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 171,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "pingak9",
+      "class": "MobileDialogInfo"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1246,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "pingak9",
+      "class": "MobileDialogNeutral"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1452,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "pingak9",
+      "class": "MobileNative"
+    },
+    {
+      "serialized_file": "globalgamemanagers.assets",
+      "path_id": 1561,
+      "assembly": "Assembly-CSharp.dll",
+      "namespace": "pingak9",
+      "class": "NativeDialog"
+    }
+  ]
+}

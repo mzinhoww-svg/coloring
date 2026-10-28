@@ -1,0 +1,905 @@
+{
+  "evidence_id": "APK-REV-COLORINGPAGE-FACTS",
+  "source_member": "assets/bin/Data/data.unity3d::level4",
+  "scene": "ColoringPage",
+  "canvases": [
+    {
+      "canvas_path_id": 300,
+      "path": "Background",
+      "render_mode": 1,
+      "sorting_order": -1,
+      "canvas_scaler": {
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "reference_resolution": [
+          800.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    },
+    {
+      "canvas_path_id": 301,
+      "path": "Draw/DrawCanvas",
+      "render_mode": 0,
+      "sorting_order": 0,
+      "canvas_scaler": {
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "reference_resolution": [
+          800.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    },
+    {
+      "canvas_path_id": 302,
+      "path": "Purchase panel",
+      "render_mode": 0,
+      "sorting_order": 7,
+      "canvas_scaler": {
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "reference_resolution": [
+          1600.0,
+          1000.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    },
+    {
+      "canvas_path_id": 303,
+      "path": "Draw/Canvas",
+      "render_mode": 0,
+      "sorting_order": 0,
+      "canvas_scaler": {
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      }
+    },
+    {
+      "canvas_path_id": 304,
+      "path": "LoadingLayerCanvas",
+      "render_mode": 0,
+      "sorting_order": 9999,
+      "canvas_scaler": {
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      }
+    }
+  ],
+  "tools": {
+    "marker": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/marker",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          400.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    },
+    "pencil": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/pencil",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          260.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    },
+    "brush": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/brush",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          130.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    },
+    "spray": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/spray",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          0.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    },
+    "fill": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/fill",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          -130.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    },
+    "shine": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/shine",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          -260.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    },
+    "pattern": {
+      "path": "Draw/DrawCanvas/ToolsPanel/Tools/pattern",
+      "active": true,
+      "rect": {
+        "anchor_min": [
+          0.5,
+          0.5
+        ],
+        "anchor_max": [
+          0.5,
+          0.5
+        ],
+        "anchored_position": [
+          43.3,
+          -400.0
+        ],
+        "size_delta": [
+          260.0,
+          140.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "UnityEngine.UI.Image",
+        "Brush"
+      ]
+    }
+  },
+  "buttons_by_panel": {
+    "ButtonsPanel": {
+      "Save": {
+        "path": "Draw/DrawCanvas/ButtonsPanel/Save",
+        "rect": {
+          "anchor_min": [
+            0.5,
+            1.0
+          ],
+          "anchor_max": [
+            0.5,
+            1.0
+          ],
+          "anchored_position": [
+            0.0,
+            -115.0
+          ],
+          "size_delta": [
+            150.0,
+            150.0
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "scripts": [
+          "UnityEngine.UI.Image",
+          "UnityEngine.UI.Button"
+        ]
+      },
+      "Trash": {
+        "path": "Draw/DrawCanvas/ButtonsPanel/Trash",
+        "rect": {
+          "anchor_min": [
+            0.5,
+            0.0
+          ],
+          "anchor_max": [
+            0.5,
+            0.0
+          ],
+          "anchored_position": [
+            0.0,
+            291.0
+          ],
+          "size_delta": [
+            150.0,
+            150.0
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "scripts": [
+          "UnityEngine.UI.Image",
+          "UnityEngine.UI.Button"
+        ]
+      },
+      "Undo": {
+        "path": "Draw/DrawCanvas/ButtonsPanel/Undo",
+        "rect": {
+          "anchor_min": [
+            0.5,
+            0.0
+          ],
+          "anchor_max": [
+            0.5,
+            0.0
+          ],
+          "anchored_position": [
+            0.0,
+            115.0
+          ],
+          "size_delta": [
+            150.0,
+            150.0
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "scripts": [
+          "UnityEngine.UI.Image",
+          "UnityEngine.UI.Button",
+          "PaintIn3D.P3dButtonUndoAll"
+        ]
+      }
+    },
+    "ButtonsPanelTablet": {
+      "Save": {
+        "path": "Draw/DrawCanvas/ButtonsPanelTablet/Save",
+        "rect": {
+          "anchor_min": [
+            0.5,
+            1.0
+          ],
+          "anchor_max": [
+            0.5,
+            1.0
+          ],
+          "anchored_position": [
+            -18.65,
+            -57.0
+          ],
+          "size_delta": [
+            194.0,
+            132.0
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_scale": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "scripts": [
+          "UnityEngine.UI.Image",
+          "UnityEngine.UI.Button"
+        ]
+      },
+      "Trash": {
+        "path": "Draw/DrawCanvas/ButtonsPanelTablet/Trash",
+        "rect": {
+          "anchor_min": [
+            0.5,
+            0.0
+          ],
+          "anchor_max": [
+            0.5,
+            0.0
+          ],
+          "anchored_position": [
+            10.8,
+            57.8
+          ],
+          "size_delta": [
+            100.0,
+            100.0
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "scripts": [
+          "UnityEngine.UI.Image",
+          "UnityEngine.UI.Button"
+        ]
+      },
+      "Undo": {
+        "path": "Draw/DrawCanvas/ButtonsPanelTablet/Undo",
+        "rect": {
+          "anchor_min": [
+            0.5,
+            0.0
+          ],
+          "anchor_max": [
+            0.5,
+            0.0
+          ],
+          "anchored_position": [
+            -99.1,
+            57.8
+          ],
+          "size_delta": [
+            100.0,
+            100.0
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "local_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "scripts": [
+          "UnityEngine.UI.Image",
+          "UnityEngine.UI.Button",
+          "PaintIn3D.P3dButtonUndoAll"
+        ]
+      }
+    }
+  },
+  "scroll_palettes": [
+    {
+      "name": "PatternsScrollPalette",
+      "path": "Draw/DrawCanvas/Palettes/PatternsScrollPalette",
+      "rect": {
+        "anchor_min": [
+          1.0,
+          0.5
+        ],
+        "anchor_max": [
+          1.0,
+          0.5
+        ],
+        "anchored_position": [
+          706.19,
+          0.0
+        ],
+        "size_delta": [
+          156.0,
+          1080.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "scripts": [
+        "UnityEngine.UI.Image",
+        "UnityEngine.UI.ScrollRect",
+        "PaletteController"
+      ]
+    },
+    {
+      "name": "ShinesScrollPalette",
+      "path": "Draw/DrawCanvas/Palettes/ShinesScrollPalette",
+      "rect": {
+        "anchor_min": [
+          1.0,
+          0.5
+        ],
+        "anchor_max": [
+          1.0,
+          0.5
+        ],
+        "anchored_position": [
+          706.19,
+          0.0
+        ],
+        "size_delta": [
+          156.0,
+          1080.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "scripts": [
+        "UnityEngine.UI.Image",
+        "UnityEngine.UI.ScrollRect",
+        "PaletteController"
+      ]
+    },
+    {
+      "name": "ColorsScrollPalette",
+      "path": "Draw/DrawCanvas/Palettes/ColorsScrollPalette",
+      "rect": {
+        "anchor_min": [
+          1.0,
+          0.5
+        ],
+        "anchor_max": [
+          1.0,
+          0.5
+        ],
+        "anchored_position": [
+          706.19,
+          0.0
+        ],
+        "size_delta": [
+          156.0,
+          1080.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      },
+      "scripts": [
+        "UnityEngine.UI.Image",
+        "UnityEngine.UI.ScrollRect",
+        "PaletteController"
+      ]
+    }
+  ],
+  "paintables_controller": {
+    "path": "Draw/board",
+    "_paintablePrefab": {
+      "file_id": 4,
+      "path_id": 249,
+      "class": "MonoBehaviour",
+      "name": null
+    },
+    "body_bytes": 24
+  },
+  "masks": [
+    {
+      "path": "Draw/mask",
+      "body_bytes": 24,
+      "channel_byte": 3
+    }
+  ],
+  "sprite_renderers": [
+    {
+      "path": "Draw/board/back texture",
+      "sprite": null,
+      "sprite_size": null
+    },
+    {
+      "path": "bg",
+      "sprite": "bg",
+      "sprite_size": [
+        2048.0,
+        945.0
+      ]
+    }
+  ],
+  "cameras": [
+    {
+      "path": "Main Camera",
+      "m_ClearFlags": 1,
+      "m_Depth": -1.0,
+      "m_Enabled": 1,
+      "m_RenderingPath": -1,
+      "m_AllowDynamicResolution": false,
+      "m_AllowMSAA": true,
+      "m_FocalLength": 50.0,
+      "m_ForceIntoRT": false,
+      "m_GateFitMode": 2,
+      "m_HDR": true,
+      "m_OcclusionCulling": true,
+      "m_StereoConvergence": 10.0,
+      "m_StereoSeparation": 0.02199999988079071,
+      "m_TargetDisplay": 0,
+      "m_TargetEye": 3,
+      "m_projectionMatrixMode": 1,
+      "orthographic": true,
+      "orthographic_size": 5.0,
+      "near_clip_plane": 0.30000001192092896,
+      "far_clip_plane": 1000.0,
+      "field_of_view": 60.0
+    }
+  ],
+  "note": "Geometry values are the serialized RectTransform fields of the scene (anchors, anchoredPosition, sizeDelta, pivot) \u2014 not measured on a device."
+}

@@ -1,0 +1,625 @@
+{
+  "evidence_id": "APK-REV-IL2CPP-001",
+  "source_member": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+  "metadata_version": 29,
+  "counts": {
+    "types": 9580,
+    "methods": 67529,
+    "fields": 38744,
+    "images": 87,
+    "type_definition_bytes": 88,
+    "method_definition_bytes": 32,
+    "image_definition_bytes": 40
+  },
+  "images": [
+    {
+      "index": 0,
+      "name": "mscorlib.dll",
+      "assembly_index": 0,
+      "type_start": 0,
+      "type_count": 1700
+    },
+    {
+      "index": 1,
+      "name": "System.Xml.dll",
+      "assembly_index": 1,
+      "type_start": 1700,
+      "type_count": 669
+    },
+    {
+      "index": 2,
+      "name": "UnityEngine.UIElementsModule.dll",
+      "assembly_index": 2,
+      "type_start": 2369,
+      "type_count": 784
+    },
+    {
+      "index": 3,
+      "name": "System.dll",
+      "assembly_index": 3,
+      "type_start": 3153,
+      "type_count": 722
+    },
+    {
+      "index": 4,
+      "name": "Assembly-CSharp.dll",
+      "assembly_index": 4,
+      "type_start": 3875,
+      "type_count": 706
+    },
+    {
+      "index": 5,
+      "name": "Newtonsoft.Json.dll",
+      "assembly_index": 5,
+      "type_start": 4581,
+      "type_count": 496
+    },
+    {
+      "index": 6,
+      "name": "System.Data.dll",
+      "assembly_index": 6,
+      "type_start": 5077,
+      "type_count": 230
+    },
+    {
+      "index": 7,
+      "name": "System.Core.dll",
+      "assembly_index": 7,
+      "type_start": 5307,
+      "type_count": 656
+    },
+    {
+      "index": 8,
+      "name": "Unity.TextMeshPro.dll",
+      "assembly_index": 8,
+      "type_start": 5963,
+      "type_count": 173
+    },
+    {
+      "index": 9,
+      "name": "UnityEngine.CoreModule.dll",
+      "assembly_index": 9,
+      "type_start": 6136,
+      "type_count": 582
+    },
+    {
+      "index": 10,
+      "name": "spine-unity.dll",
+      "assembly_index": 10,
+      "type_start": 6718,
+      "type_count": 218
+    },
+    {
+      "index": 11,
+      "name": "UnityEngine.UI.dll",
+      "assembly_index": 11,
+      "type_start": 6936,
+      "type_count": 202
+    },
+    {
+      "index": 12,
+      "name": "Unity.Localization.dll",
+      "assembly_index": 12,
+      "type_start": 7138,
+      "type_count": 323
+    },
+    {
+      "index": 13,
+      "name": "PaintIn3D.dll",
+      "assembly_index": 13,
+      "type_start": 7461,
+      "type_count": 194
+    },
+    {
+      "index": 14,
+      "name": "DOTween.dll",
+      "assembly_index": 14,
+      "type_start": 7655,
+      "type_count": 202
+    },
+    {
+      "index": 15,
+      "name": "UnityEngine.Purchasing.Stores.dll",
+      "assembly_index": 15,
+      "type_start": 7857,
+      "type_count": 286
+    },
+    {
+      "index": 16,
+      "name": "UnityEngine.TextCoreTextEngineModule.dll",
+      "assembly_index": 16,
+      "type_start": 8143,
+      "type_count": 59
+    },
+    {
+      "index": 17,
+      "name": "Mono.Security.dll",
+      "assembly_index": 17,
+      "type_start": 8202,
+      "type_count": 85
+    },
+    {
+      "index": 18,
+      "name": "Unity.ResourceManager.dll",
+      "assembly_index": 18,
+      "type_start": 8287,
+      "type_count": 97
+    },
+    {
+      "index": 19,
+      "name": "UnityEngine.IMGUIModule.dll",
+      "assembly_index": 19,
+      "type_start": 8384,
+      "type_count": 45
+    },
+    {
+      "index": 20,
+      "name": "Unity.Addressables.dll",
+      "assembly_index": 20,
+      "type_start": 8429,
+      "type_count": 84
+    },
+    {
+      "index": 21,
+      "name": "Firebase.App.dll",
+      "assembly_index": 21,
+      "type_start": 8513,
+      "type_count": 61
+    },
+    {
+      "index": 22,
+      "name": "CW.Common.dll",
+      "assembly_index": 22,
+      "type_start": 8574,
+      "type_count": 34
+    },
+    {
+      "index": 23,
+      "name": "IngameDebugConsole.Runtime.dll",
+      "assembly_index": 23,
+      "type_start": 8608,
+      "type_count": 24
+    },
+    {
+      "index": 24,
+      "name": "UnityEngine.AndroidJNIModule.dll",
+      "assembly_index": 24,
+      "type_start": 8632,
+      "type_count": 26
+    },
+    {
+      "index": 25,
+      "name": "Unity.Services.Core.Internal.dll",
+      "assembly_index": 25,
+      "type_start": 8658,
+      "type_count": 110
+    },
+    {
+      "index": 26,
+      "name": "UnityEngine.dll",
+      "assembly_index": 26,
+      "type_start": 8768,
+      "type_count": 1
+    },
+    {
+      "index": 27,
+      "name": "UnityEngine.Purchasing.Security.dll",
+      "assembly_index": 27,
+      "type_start": 8769,
+      "type_count": 38
+    },
+    {
+      "index": 28,
+      "name": "UnityEngine.Purchasing.dll",
+      "assembly_index": 28,
+      "type_start": 8807,
+      "type_count": 83
+    },
+    {
+      "index": 29,
+      "name": "Firebase.Analytics.dll",
+      "assembly_index": 29,
+      "type_start": 8890,
+      "type_count": 18
+    },
+    {
+      "index": 30,
+      "name": "Unity.Notifications.Android.dll",
+      "assembly_index": 30,
+      "type_start": 8908,
+      "type_count": 25
+    },
+    {
+      "index": 31,
+      "name": "System.Numerics.dll",
+      "assembly_index": 31,
+      "type_start": 8933,
+      "type_count": 13
+    },
+    {
+      "index": 32,
+      "name": "System.Xml.Linq.dll",
+      "assembly_index": 32,
+      "type_start": 8946,
+      "type_count": 39
+    },
+    {
+      "index": 33,
+      "name": "UnityEngine.UIElementsNativeModule.dll",
+      "assembly_index": 33,
+      "type_start": 8985,
+      "type_count": 32
+    },
+    {
+      "index": 34,
+      "name": "UnityEngine.UnityWebRequestModule.dll",
+      "assembly_index": 34,
+      "type_start": 9017,
+      "type_count": 15
+    },
+    {
+      "index": 35,
+      "name": "Firebase.Platform.dll",
+      "assembly_index": 35,
+      "type_start": 9032,
+      "type_count": 42
+    },
+    {
+      "index": 36,
+      "name": "UnityEngine.TextCoreFontEngineModule.dll",
+      "assembly_index": 36,
+      "type_start": 9074,
+      "type_count": 18
+    },
+    {
+      "index": 37,
+      "name": "Unity.Services.Core.Telemetry.dll",
+      "assembly_index": 37,
+      "type_start": 9092,
+      "type_count": 39
+    },
+    {
+      "index": 38,
+      "name": "UnityEngine.AnimationModule.dll",
+      "assembly_index": 38,
+      "type_start": 9131,
+      "type_count": 33
+    },
+    {
+      "index": 39,
+      "name": "UnityEngine.XRModule.dll",
+      "assembly_index": 39,
+      "type_start": 9164,
+      "type_count": 30
+    },
+    {
+      "index": 40,
+      "name": "UnityEngine.PhysicsModule.dll",
+      "assembly_index": 40,
+      "type_start": 9194,
+      "type_count": 16
+    },
+    {
+      "index": 41,
+      "name": "UnityEngine.UIModule.dll",
+      "assembly_index": 41,
+      "type_start": 9210,
+      "type_count": 11
+    },
+    {
+      "index": 42,
+      "name": "UnityEngine.Physics2DModule.dll",
+      "assembly_index": 42,
+      "type_start": 9221,
+      "type_count": 14
+    },
+    {
+      "index": 43,
+      "name": "UnityEngine.TextRenderingModule.dll",
+      "assembly_index": 43,
+      "type_start": 9235,
+      "type_count": 15
+    },
+    {
+      "index": 44,
+      "name": "UnityEngine.TerrainModule.dll",
+      "assembly_index": 44,
+      "type_start": 9250,
+      "type_count": 16
+    },
+    {
+      "index": 45,
+      "name": "UnityEngine.InputLegacyModule.dll",
+      "assembly_index": 45,
+      "type_start": 9266,
+      "type_count": 9
+    },
+    {
+      "index": 46,
+      "name": "UnityEngine.UnityAnalyticsModule.dll",
+      "assembly_index": 46,
+      "type_start": 9275,
+      "type_count": 14
+    },
+    {
+      "index": 47,
+      "name": "UnityEngine.AudioModule.dll",
+      "assembly_index": 47,
+      "type_start": 9289,
+      "type_count": 17
+    },
+    {
+      "index": 48,
+      "name": "Unity.Services.Core.Registration.dll",
+      "assembly_index": 48,
+      "type_start": 9306,
+      "type_count": 8
+    },
+    {
+      "index": 49,
+      "name": "Google.Play.Common.dll",
+      "assembly_index": 49,
+      "type_start": 9314,
+      "type_count": 13
+    },
+    {
+      "index": 50,
+      "name": "UnityEngine.SharedInternalsModule.dll",
+      "assembly_index": 50,
+      "type_start": 9327,
+      "type_count": 29
+    },
+    {
+      "index": 51,
+      "name": "UnityEngine.TilemapModule.dll",
+      "assembly_index": 51,
+      "type_start": 9356,
+      "type_count": 12
+    },
+    {
+      "index": 52,
+      "name": "UnityEngine.ParticleSystemModule.dll",
+      "assembly_index": 52,
+      "type_start": 9368,
+      "type_count": 12
+    },
+    {
+      "index": 53,
+      "name": "UnityEngine.VFXModule.dll",
+      "assembly_index": 53,
+      "type_start": 9380,
+      "type_count": 11
+    },
+    {
+      "index": 54,
+      "name": "UnityEngine.SubsystemsModule.dll",
+      "assembly_index": 54,
+      "type_start": 9391,
+      "type_count": 14
+    },
+    {
+      "index": 55,
+      "name": "UnityEngine.AssetBundleModule.dll",
+      "assembly_index": 55,
+      "type_start": 9405,
+      "type_count": 5
+    },
+    {
+      "index": 56,
+      "name": "UnityEngine.VideoModule.dll",
+      "assembly_index": 56,
+      "type_start": 9410,
+      "type_count": 15
+    },
+    {
+      "index": 57,
+      "name": "Purchasing.Common.dll",
+      "assembly_index": 57,
+      "type_start": 9425,
+      "type_count": 12
+    },
+    {
+      "index": 58,
+      "name": "UnityEngine.UnityWebRequestTextureModule.dll",
+      "assembly_index": 58,
+      "type_start": 9437,
+      "type_count": 3
+    },
+    {
+      "index": 59,
+      "name": "UnityEngine.InputModule.dll",
+      "assembly_index": 59,
+      "type_start": 9440,
+      "type_count": 5
+    },
+    {
+      "index": 60,
+      "name": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "assembly_index": 60,
+      "type_start": 9445,
+      "type_count": 3
+    },
+    {
+      "index": 61,
+      "name": "UnityEngine.JSONSerializeModule.dll",
+      "assembly_index": 61,
+      "type_start": 9448,
+      "type_count": 2
+    },
+    {
+      "index": 62,
+      "name": "Unity.Services.Core.dll",
+      "assembly_index": 62,
+      "type_start": 9450,
+      "type_count": 16
+    },
+    {
+      "index": 63,
+      "name": "Google.Play.Core.dll",
+      "assembly_index": 63,
+      "type_start": 9466,
+      "type_count": 18
+    },
+    {
+      "index": 64,
+      "name": "Unity.Services.Core.Scheduler.dll",
+      "assembly_index": 64,
+      "type_start": 9484,
+      "type_count": 9
+    },
+    {
+      "index": 65,
+      "name": "UnityEngine.DirectorModule.dll",
+      "assembly_index": 65,
+      "type_start": 9493,
+      "type_count": 2
+    },
+    {
+      "index": 66,
+      "name": "Unity.Services.Core.Configuration.dll",
+      "assembly_index": 66,
+      "type_start": 9495,
+      "type_count": 13
+    },
+    {
+      "index": 67,
+      "name": "UnityEngine.VRModule.dll",
+      "assembly_index": 67,
+      "type_start": 9508,
+      "type_count": 3
+    },
+    {
+      "index": 68,
+      "name": "UnityEngine.ImageConversionModule.dll",
+      "assembly_index": 68,
+      "type_start": 9511,
+      "type_count": 2
+    },
+    {
+      "index": 69,
+      "name": "UnityEngine.SpriteShapeModule.dll",
+      "assembly_index": 69,
+      "type_start": 9513,
+      "type_count": 2
+    },
+    {
+      "index": 70,
+      "name": "UnityEngine.GridModule.dll",
+      "assembly_index": 70,
+      "type_start": 9515,
+      "type_count": 2
+    },
+    {
+      "index": 71,
+      "name": "UnityEngine.PerformanceReportingModule.dll",
+      "assembly_index": 71,
+      "type_start": 9517,
+      "type_count": 2
+    },
+    {
+      "index": 72,
+      "name": "UnityEngine.AIModule.dll",
+      "assembly_index": 72,
+      "type_start": 9519,
+      "type_count": 3
+    },
+    {
+      "index": 73,
+      "name": "UnityEngine.Purchasing.SecurityCore.dll",
+      "assembly_index": 73,
+      "type_start": 9522,
+      "type_count": 6
+    },
+    {
+      "index": 74,
+      "name": "Unity.Services.Core.Device.dll",
+      "assembly_index": 74,
+      "type_start": 9528,
+      "type_count": 6
+    },
+    {
+      "index": 75,
+      "name": "Google.Play.Review.dll",
+      "assembly_index": 75,
+      "type_start": 9534,
+      "type_count": 8
+    },
+    {
+      "index": 76,
+      "name": "Nobi.UiRoundedCorners.dll",
+      "assembly_index": 76,
+      "type_start": 9542,
+      "type_count": 4
+    },
+    {
+      "index": 77,
+      "name": "System.Runtime.Serialization.dll",
+      "assembly_index": 77,
+      "type_start": 9546,
+      "type_count": 5
+    },
+    {
+      "index": 78,
+      "name": "UnityEngine.Purchasing.WinRTCore.dll",
+      "assembly_index": 78,
+      "type_start": 9551,
+      "type_count": 4
+    },
+    {
+      "index": 79,
+      "name": "Unity.Services.Core.Threading.dll",
+      "assembly_index": 79,
+      "type_start": 9555,
+      "type_count": 2
+    },
+    {
+      "index": 80,
+      "name": "System.Configuration.dll",
+      "assembly_index": 80,
+      "type_start": 9557,
+      "type_count": 10
+    },
+    {
+      "index": 81,
+      "name": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "assembly_index": 81,
+      "type_start": 9567,
+      "type_count": 2
+    },
+    {
+      "index": 82,
+      "name": "UnityEngine.Purchasing.AppleCore.dll",
+      "assembly_index": 82,
+      "type_start": 9569,
+      "type_count": 2
+    },
+    {
+      "index": 83,
+      "name": "UnityEngine.Purchasing.AppleStub.dll",
+      "assembly_index": 83,
+      "type_start": 9571,
+      "type_count": 2
+    },
+    {
+      "index": 84,
+      "name": "UnityEngine.Purchasing.WinRTStub.dll",
+      "assembly_index": 84,
+      "type_start": 9573,
+      "type_count": 2
+    },
+    {
+      "index": 85,
+      "name": "Unity.Services.Core.Environments.Internal.dll",
+      "assembly_index": 85,
+      "type_start": 9575,
+      "type_count": 2
+    },
+    {
+      "index": 86,
+      "name": "__Generated",
+      "assembly_index": 86,
+      "type_start": 9577,
+      "type_count": 3
+    }
+  ]
+}

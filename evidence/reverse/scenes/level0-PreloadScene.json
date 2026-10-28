@@ -1,0 +1,80 @@
+{
+ "level": "level0",
+ "scene": "PreloadScene",
+ "serialized_file": "level0",
+ "externals": [
+  "globalgamemanagers.assets",
+  "Library/unity default resources"
+ ],
+ "object_count": 10,
+ "gameobject_count": 2,
+ "recttransform_count": 0,
+ "roots": [
+  {
+   "transform_id": 3,
+   "game_object_id": 1,
+   "name": "Main Camera",
+   "active": true,
+   "components": [
+    "Transform",
+    "Camera",
+    "AudioListener"
+   ],
+   "component_detail": [],
+   "depth": 0,
+   "local_position": [
+    0.0,
+    0.0,
+    -10.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 4,
+   "game_object_id": 2,
+   "name": "PreloadScene",
+   "active": true,
+   "components": [
+    "Transform",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "MonoBehaviour",
+     "script": "PreloadScene",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "local_position": [
+    -12.376,
+    0.395,
+    320.628
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  }
+ ]
+}

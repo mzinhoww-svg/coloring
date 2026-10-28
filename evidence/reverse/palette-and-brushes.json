@@ -1,0 +1,1095 @@
+{
+  "evidence_id": "APK-REV-PALETTE-001",
+  "source_member": "assets/bin/Data/data.unity3d::level4 (ColoringPage scene)",
+  "objects": {
+    "ManageTools": {
+      "path_id": 557,
+      "game_object_path_id": 77
+    },
+    "ManagePhysicalBrushes": {
+      "path_id": 602,
+      "game_object_path_id": 108
+    }
+  },
+  "confirmation": "same 40-entry colour array serialized in two independent components; raw payload walked with int32 count + 4-byte alignment, all components in 0..1",
+  "palette_color_count": 40,
+  "palette_colors": [
+    {
+      "index": 0,
+      "rgba": [
+        0.651,
+        0.1804,
+        0.1529,
+        1.0
+      ],
+      "rgb_hex": "#A62E27"
+    },
+    {
+      "index": 1,
+      "rgba": [
+        0.9098,
+        0.3059,
+        0.2745,
+        1.0
+      ],
+      "rgb_hex": "#E84E46"
+    },
+    {
+      "index": 2,
+      "rgba": [
+        0.8784,
+        0.4627,
+        0.451,
+        1.0
+      ],
+      "rgb_hex": "#E07673"
+    },
+    {
+      "index": 3,
+      "rgba": [
+        0.9451,
+        0.6941,
+        0.6902,
+        1.0
+      ],
+      "rgb_hex": "#F1B1B0"
+    },
+    {
+      "index": 4,
+      "rgba": [
+        0.9216,
+        0.5294,
+        0.2706,
+        1.0
+      ],
+      "rgb_hex": "#EB8745"
+    },
+    {
+      "index": 5,
+      "rgba": [
+        0.9373,
+        0.6667,
+        0.4667,
+        1.0
+      ],
+      "rgb_hex": "#EFAA77"
+    },
+    {
+      "index": 6,
+      "rgba": [
+        0.949,
+        0.7765,
+        0.6471,
+        1.0
+      ],
+      "rgb_hex": "#F2C6A5"
+    },
+    {
+      "index": 7,
+      "rgba": [
+        0.9765,
+        0.8549,
+        0.2863,
+        1.0
+      ],
+      "rgb_hex": "#F9DA49"
+    },
+    {
+      "index": 8,
+      "rgba": [
+        0.9922,
+        0.9843,
+        0.3765,
+        1.0
+      ],
+      "rgb_hex": "#FDFB60"
+    },
+    {
+      "index": 9,
+      "rgba": [
+        0.9765,
+        0.9333,
+        0.6353,
+        1.0
+      ],
+      "rgb_hex": "#F9EEA2"
+    },
+    {
+      "index": 10,
+      "rgba": [
+        0.5294,
+        0.5569,
+        0.1686,
+        1.0
+      ],
+      "rgb_hex": "#878E2B"
+    },
+    {
+      "index": 11,
+      "rgba": [
+        0.6784,
+        0.7137,
+        0.2275,
+        1.0
+      ],
+      "rgb_hex": "#ADB63A"
+    },
+    {
+      "index": 12,
+      "rgba": [
+        0.7961,
+        0.9412,
+        0.302,
+        1.0
+      ],
+      "rgb_hex": "#CBF04D"
+    },
+    {
+      "index": 13,
+      "rgba": [
+        0.2471,
+        0.5451,
+        0.149,
+        1.0
+      ],
+      "rgb_hex": "#3F8B26"
+    },
+    {
+      "index": 14,
+      "rgba": [
+        0.3608,
+        0.7765,
+        0.2275,
+        1.0
+      ],
+      "rgb_hex": "#5CC63A"
+    },
+    {
+      "index": 15,
+      "rgba": [
+        0.502,
+        0.9765,
+        0.3608,
+        1.0
+      ],
+      "rgb_hex": "#80F95C"
+    },
+    {
+      "index": 16,
+      "rgba": [
+        0.251,
+        0.5647,
+        0.4549,
+        1.0
+      ],
+      "rgb_hex": "#409074"
+    },
+    {
+      "index": 17,
+      "rgba": [
+        0.3647,
+        0.7961,
+        0.6392,
+        1.0
+      ],
+      "rgb_hex": "#5DCBA3"
+    },
+    {
+      "index": 18,
+      "rgba": [
+        0.4667,
+        0.9647,
+        0.8,
+        1.0
+      ],
+      "rgb_hex": "#77F6CC"
+    },
+    {
+      "index": 19,
+      "rgba": [
+        0.2667,
+        0.6,
+        0.6667,
+        1.0
+      ],
+      "rgb_hex": "#4499AA"
+    },
+    {
+      "index": 20,
+      "rgba": [
+        0.3647,
+        0.7922,
+        0.8863,
+        1.0
+      ],
+      "rgb_hex": "#5DCAE2"
+    },
+    {
+      "index": 21,
+      "rgba": [
+        0.6196,
+        0.8275,
+        0.8627,
+        1.0
+      ],
+      "rgb_hex": "#9ED3DC"
+    },
+    {
+      "index": 22,
+      "rgba": [
+        0.1529,
+        0.3216,
+        0.6235,
+        1.0
+      ],
+      "rgb_hex": "#27529F"
+    },
+    {
+      "index": 23,
+      "rgba": [
+        0.2431,
+        0.4667,
+        0.8588,
+        1.0
+      ],
+      "rgb_hex": "#3E77DB"
+    },
+    {
+      "index": 24,
+      "rgba": [
+        0.6235,
+        0.7608,
+        0.9647,
+        1.0
+      ],
+      "rgb_hex": "#9FC2F6"
+    },
+    {
+      "index": 25,
+      "rgba": [
+        0.4157,
+        0.1922,
+        0.6549,
+        1.0
+      ],
+      "rgb_hex": "#6A31A7"
+    },
+    {
+      "index": 26,
+      "rgba": [
+        0.6275,
+        0.3373,
+        0.9451,
+        1.0
+      ],
+      "rgb_hex": "#A056F1"
+    },
+    {
+      "index": 27,
+      "rgba": [
+        0.8275,
+        0.702,
+        0.9647,
+        1.0
+      ],
+      "rgb_hex": "#D3B3F6"
+    },
+    {
+      "index": 28,
+      "rgba": [
+        0.6,
+        0.1961,
+        0.6588,
+        1.0
+      ],
+      "rgb_hex": "#9932A8"
+    },
+    {
+      "index": 29,
+      "rgba": [
+        0.8588,
+        0.3098,
+        0.9412,
+        1.0
+      ],
+      "rgb_hex": "#DB4FF0"
+    },
+    {
+      "index": 30,
+      "rgba": [
+        0.9098,
+        0.6431,
+        0.9569,
+        1.0
+      ],
+      "rgb_hex": "#E8A4F4"
+    },
+    {
+      "index": 31,
+      "rgba": [
+        0.6706,
+        0.2392,
+        0.4431,
+        1.0
+      ],
+      "rgb_hex": "#AB3D71"
+    },
+    {
+      "index": 32,
+      "rgba": [
+        0.9059,
+        0.3412,
+        0.6039,
+        1.0
+      ],
+      "rgb_hex": "#E7579A"
+    },
+    {
+      "index": 33,
+      "rgba": [
+        0.9333,
+        0.6314,
+        0.7804,
+        1.0
+      ],
+      "rgb_hex": "#EEA1C7"
+    },
+    {
+      "index": 34,
+      "rgba": [
+        0.3608,
+        0.2706,
+        0.2078,
+        1.0
+      ],
+      "rgb_hex": "#5C4535"
+    },
+    {
+      "index": 35,
+      "rgba": [
+        0.5137,
+        0.4392,
+        0.3843,
+        1.0
+      ],
+      "rgb_hex": "#837062"
+    },
+    {
+      "index": 36,
+      "rgba": [
+        0.4078,
+        0.4275,
+        0.4431,
+        1.0
+      ],
+      "rgb_hex": "#686D71"
+    },
+    {
+      "index": 37,
+      "rgba": [
+        0.6471,
+        0.6706,
+        0.698,
+        1.0
+      ],
+      "rgb_hex": "#A5ABB2"
+    },
+    {
+      "index": 38,
+      "rgba": [
+        0.1922,
+        0.2,
+        0.2078,
+        1.0
+      ],
+      "rgb_hex": "#313335"
+    },
+    {
+      "index": 39,
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rgb_hex": "#FFFFFF"
+    }
+  ],
+  "shine_count": 15,
+  "shine_refs": [
+    {
+      "file_id": 4,
+      "path_id": 153,
+      "class": "Sprite",
+      "name": "shine-tool-colors_1",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 176,
+      "class": "Sprite",
+      "name": "shine-tool-colors_2",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 181,
+      "class": "Sprite",
+      "name": "shine-tool-colors_3",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 151,
+      "class": "Sprite",
+      "name": "shine-tool-colors_4",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 216,
+      "class": "Sprite",
+      "name": "shine-tool-colors_5",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 186,
+      "class": "Sprite",
+      "name": "shine-tool-colors_6",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 173,
+      "class": "Sprite",
+      "name": "shine-tool-colors_7",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 235,
+      "class": "Sprite",
+      "name": "shine-tool-colors_8",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 194,
+      "class": "Sprite",
+      "name": "shine-tool-colors_9",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 231,
+      "class": "Sprite",
+      "name": "shine-tool-colors_10",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 174,
+      "class": "Sprite",
+      "name": "shine-tool-colors_11",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 158,
+      "class": "Sprite",
+      "name": "shine-tool-colors_12",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 225,
+      "class": "Sprite",
+      "name": "shine-tool-colors_13",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 201,
+      "class": "Sprite",
+      "name": "shine-tool-colors_14",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 219,
+      "class": "Sprite",
+      "name": "shine-tool-colors_15",
+      "rect": [
+        237.0,
+        109.0
+      ]
+    }
+  ],
+  "pattern_count": 20,
+  "pattern_refs": [
+    {
+      "file_id": 4,
+      "path_id": 217,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_1",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 175,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_2",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 145,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_3",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 179,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_4",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 212,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_5",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 228,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_6",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 187,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_7",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 214,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_8",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 178,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_9",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 131,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_10",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 184,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_11",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 209,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_12",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 198,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_13",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 199,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_14",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 191,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_15",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 165,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_16",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 123,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_17",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 133,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_18",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 162,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_19",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    },
+    {
+      "file_id": 4,
+      "path_id": 188,
+      "class": "Sprite",
+      "name": "pattern-tool-colors_20",
+      "rect": [
+        230.0,
+        109.0
+      ]
+    }
+  ],
+  "unresolved_pptrs": 0,
+  "light_sheen_field_names_note": "ManagePhysicalBrushes also declares drawColorsShines, drawColorsPatterns, drawPatterns, typePatterns, drawShines; only the plain colour array is asserted here",
+  "colour_array_offset_in_managephysicalbrushes_body": 12,
+  "canvas_scalers_coloring_page": [
+    {
+      "monobehaviour_path_id": 454,
+      "game_object_path_id": 4,
+      "ui_scale_mode": 1,
+      "reference_pixels_per_unit": 100.0,
+      "scale_factor": 1.0,
+      "reference_resolution": [
+        800.0,
+        1080.0
+      ],
+      "screen_match_mode": 0,
+      "match_width_or_height": 1.0
+    },
+    {
+      "monobehaviour_path_id": 492,
+      "game_object_path_id": 28,
+      "ui_scale_mode": 1,
+      "reference_pixels_per_unit": 100.0,
+      "scale_factor": 1.0,
+      "reference_resolution": [
+        800.0,
+        1080.0
+      ],
+      "screen_match_mode": 0,
+      "match_width_or_height": 1.0
+    },
+    {
+      "monobehaviour_path_id": 499,
+      "game_object_path_id": 35,
+      "ui_scale_mode": 1,
+      "reference_pixels_per_unit": 100.0,
+      "scale_factor": 1.0,
+      "reference_resolution": [
+        1600.0,
+        1000.0
+      ],
+      "screen_match_mode": 0,
+      "match_width_or_height": 1.0
+    },
+    {
+      "monobehaviour_path_id": 598,
+      "game_object_path_id": 104,
+      "ui_scale_mode": 0,
+      "reference_pixels_per_unit": 100.0,
+      "scale_factor": 1.0,
+      "reference_resolution": [
+        800.0,
+        600.0
+      ],
+      "screen_match_mode": 0,
+      "match_width_or_height": 0.0
+    },
+    {
+      "monobehaviour_path_id": 622,
+      "game_object_path_id": 123,
+      "ui_scale_mode": 0,
+      "reference_pixels_per_unit": 100.0,
+      "scale_factor": 1.0,
+      "reference_resolution": [
+        800.0,
+        600.0
+      ],
+      "screen_match_mode": 0,
+      "match_width_or_height": 0.0
+    }
+  ],
+  "canvas_scalers_all_scenes": {
+    "level0": [],
+    "level1": [
+      {
+        "monobehaviour_path_id": 71,
+        "game_object_path_id": 8,
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      },
+      {
+        "monobehaviour_path_id": 78,
+        "game_object_path_id": 18,
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      }
+    ],
+    "level2": [
+      {
+        "monobehaviour_path_id": 268,
+        "game_object_path_id": 7,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1024.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 279,
+        "game_object_path_id": 15,
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      },
+      {
+        "monobehaviour_path_id": 296,
+        "game_object_path_id": 25,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1024.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 309,
+        "game_object_path_id": 33,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          943.4
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 333,
+        "game_object_path_id": 50,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 339,
+        "game_object_path_id": 53,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          2340.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    ],
+    "level3": [
+      {
+        "monobehaviour_path_id": 318,
+        "game_object_path_id": 4,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1024.0,
+          1024.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    ],
+    "level4": [
+      {
+        "monobehaviour_path_id": 454,
+        "game_object_path_id": 4,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 492,
+        "game_object_path_id": 28,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 499,
+        "game_object_path_id": 35,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1600.0,
+          1000.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      },
+      {
+        "monobehaviour_path_id": 598,
+        "game_object_path_id": 104,
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      },
+      {
+        "monobehaviour_path_id": 622,
+        "game_object_path_id": 123,
+        "ui_scale_mode": 0,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      }
+    ],
+    "level5": [
+      {
+        "monobehaviour_path_id": 158,
+        "game_object_path_id": 2,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1080.0,
+          600.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      },
+      {
+        "monobehaviour_path_id": 225,
+        "game_object_path_id": 53,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1080.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 0.0
+      }
+    ],
+    "level6": [
+      {
+        "monobehaviour_path_id": 15,
+        "game_object_path_id": 1,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          800.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    ],
+    "level7": [
+      {
+        "monobehaviour_path_id": 1545,
+        "game_object_path_id": 258,
+        "ui_scale_mode": 1,
+        "reference_pixels_per_unit": 100.0,
+        "scale_factor": 1.0,
+        "reference_resolution": [
+          1440.0,
+          1080.0
+        ],
+        "screen_match_mode": 0,
+        "match_width_or_height": 1.0
+      }
+    ]
+  }
+}

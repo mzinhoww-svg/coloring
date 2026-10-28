@@ -1,0 +1,7900 @@
+{
+ "evidence_id": "APK-REV-IL2CPP-003",
+ "source_member": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+ "assembly": "Assembly-CSharp.dll",
+ "type_count": 441,
+ "method_count": 3012,
+ "encoding": "methods as name/parameterCount",
+ "note": "Names and arity from IL2CPP metadata; bodies, callers and runtime use are unverified.",
+ "types": {
+  "CalendarController": {
+   "parent": "LocaleIdentifierValuePair",
+   "fields": [
+    "_calendarPanel",
+    "_yearNumText",
+    "_monthNumText",
+    "_item",
+    "_dateItems",
+    "_totalDateNum",
+    "_dateTime",
+    "_calendarInstance",
+    "_target"
+   ],
+   "methods": [
+    "Start/0",
+    "Show/1",
+    "CreateCalendar/0",
+    "GetDays/1",
+    "YearPrev/0",
+    "YearNext/0",
+    "MonthPrev/0",
+    "MonthNext/0",
+    "ShowCalendar/1",
+    "OnDateItemClick/1",
+    ".ctor/0"
+   ]
+  },
+  "CalendarDateItem": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "OnDateItemClick/0",
+    ".ctor/0"
+   ]
+  },
+  "Singleton`1": {
+   "parent": "<15661>",
+   "fields": [
+    "m_ShuttingDown",
+    "m_Lock",
+    "m_Instance"
+   ],
+   "methods": [
+    "get_Instance/0",
+    "OnApplicationQuit/0",
+    "OnDestroy/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "PopupView": {
+   "parent": "<15661>",
+   "fields": [
+    "txtLog"
+   ],
+   "methods": [
+    "DebugLog/1",
+    "OnDialogInfo/0",
+    "OnDialogConfirm/0",
+    "OnDialogNeutral/0",
+    "OnDatePicker/0",
+    "OnTimePicker/0",
+    ".ctor/0",
+    "<OnDialogInfo>b__2_0/0",
+    "<OnDialogConfirm>b__3_0/0",
+    "<OnDialogConfirm>b__3_1/0",
+    "<OnDialogNeutral>b__4_0/0",
+    "<OnDialogNeutral>b__4_1/0",
+    "<OnDialogNeutral>b__4_2/0",
+    "<OnDatePicker>b__5_0/1",
+    "<OnDatePicker>b__5_1/1",
+    "<OnTimePicker>b__6_0/1",
+    "<OnTimePicker>b__6_1/1"
+   ]
+  },
+  "SimplePopupExample": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    "onDefaultPopup/0",
+    "onCustomPopup/0",
+    ".ctor/0"
+   ]
+  },
+  "ChangePatternTileScale": {
+   "parent": "<15661>",
+   "fields": [
+    "patternNames",
+    "scaleXs",
+    "scaleYs",
+    "tileTransform"
+   ],
+   "methods": [
+    "ChangeTileScale/1",
+    ".ctor/0"
+   ]
+  },
+  "ColoringPage": {
+   "parent": "<15661>",
+   "fields": [
+    "_buttonsTablet",
+    "_buttonsStandart",
+    "_tools",
+    "layersSelection",
+    "loadImage",
+    "paintable",
+    "paintableSecondary",
+    "texture",
+    "btnTrash",
+    "btnTrashTablet",
+    "btnUndo",
+    "btnUndoTablet",
+    "layerSelection",
+    "audioManager",
+    "_back",
+    "_frontground",
+    "_p3DButtonClearAll",
+    "_seq",
+    "layersPrefab",
+    "selectedBoardName",
+    "theTime"
+   ],
+   "methods": [
+    "Awake/0",
+    "Start/0",
+    "SetupSecondaryPaintable/0",
+    "LoadPrefab/0",
+    "OnButtonSave/0",
+    "OnButtonUndo/0",
+    "OnButtonTrash/0",
+    "Update/0",
+    "OnDestroy/0",
+    ".ctor/0",
+    "<OnButtonSave>b__25_0/0",
+    "<OnButtonTrash>b__27_0/0"
+   ]
+  },
+  "DinamicInterval": {
+   "parent": "<15661>",
+   "fields": [
+    "_hitScreenFill",
+    "_minInterval",
+    "_maxInterval"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "LayerSelection": {
+   "parent": "<15661>",
+   "fields": [
+    "_mask",
+    "_paintable",
+    "_paintableSecondary",
+    "displayParticles",
+    "<IsDrawing>k__BackingField"
+   ],
+   "methods": [
+    "get_IsDrawing/0",
+    "set_IsDrawing/1",
+    "Start/0",
+    "SetMask/1",
+    "OnPointerDown/1",
+    "OnPointerUp/1",
+    "PaintOnSecondyBoard/1",
+    "CheckBoardName/0",
+    ".ctor/0"
+   ]
+  },
+  "LoadStrokes": {
+   "parent": "<15661>",
+   "fields": [
+    "strokeTextures"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "Paintable": {
+   "parent": "<15661>",
+   "fields": [
+    "_texture",
+    "_paintableTexture",
+    "_p3DPaintable"
+   ],
+   "methods": [
+    "Initialize/2",
+    "Undo/0",
+    "SetActivePainting/1",
+    ".ctor/0"
+   ]
+  },
+  "PaintablesController": {
+   "parent": "<15661>",
+   "fields": [
+    "_paintablePrefab",
+    "_backTexture",
+    "_paintables",
+    "_quantityPaitables"
+   ],
+   "methods": [
+    "Start/0",
+    "Clear/0",
+    "SetActivePainting/1",
+    ".ctor/0"
+   ]
+  },
+  "PaletteColor": {
+   "parent": "<15661>",
+   "fields": [
+    "_rectTransform",
+    "_image"
+   ],
+   "methods": [
+    "SetColor/2",
+    "GetColor/0",
+    "SetSprite/4",
+    "GetSprite/0",
+    "CheckPosition/0",
+    "SetPosition/1",
+    ".ctor/0"
+   ]
+  },
+  "TypePalette": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "color",
+    "pattern",
+    "shine"
+   ],
+   "methods": []
+  },
+  "PaletteContent": {
+   "parent": "<15661>",
+   "fields": [
+    "_paletteColorPrefab",
+    "_managePhysicalBrushes",
+    "_typePalette",
+    "_rectTransform",
+    "_paletteColors",
+    "_lastPaletteColor",
+    "_maxPosition",
+    "_minPosition",
+    "_positionY",
+    "_activeId",
+    "_currentId",
+    "<OnChangeColor>k__BackingField"
+   ],
+   "methods": [
+    "get_OnChangeColor/0",
+    "set_OnChangeColor/1",
+    "OnEnable/0",
+    "Create/0",
+    "Update/0",
+    "CheckCurrentColor/0",
+    "IsOpenedColor/0",
+    "CheckPosition/0",
+    ".ctor/0"
+   ]
+  },
+  "PaletteController": {
+   "parent": "<15661>",
+   "fields": [
+    "_paletteContent",
+    "_contentRect",
+    "_seq",
+    "_isDrag"
+   ],
+   "methods": [
+    "get_GetContent/0",
+    "Create/0",
+    "OnPointerClick/1",
+    "OnBeginDrag/1",
+    "OnEndDrag/1",
+    "MoveScroll/1",
+    "CheckBrush/1",
+    "SetPosition/1",
+    ".ctor/0"
+   ]
+  },
+  "PaletteLock": {
+   "parent": "<15661>",
+   "fields": [
+    "_locks"
+   ],
+   "methods": [
+    "SwithStatus/1",
+    ".ctor/0"
+   ]
+  },
+  "Palettes": {
+   "parent": "<15661>",
+   "fields": [
+    "_paletteControllers",
+    "_lock",
+    "_activePalette",
+    "IsInitialize"
+   ],
+   "methods": [
+    "Start/0",
+    "SetPalettePosition/2",
+    "SetLock/3",
+    "ActivatePaletteController/1",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "PurchasePanel": {
+   "parent": "<15661>",
+   "fields": [
+    "_priceFullVer",
+    "_priceTools",
+    "_fadeArea",
+    "_popup",
+    "_closeButton",
+    "_restoreButton",
+    "_audioManager",
+    "_seq",
+    "isButtonsBlocked"
+   ],
+   "methods": [
+    "Start/0",
+    "OnFullVersionButton/0",
+    "OnRestoreButtonPressed/0",
+    "OnToolsButton/0",
+    "BlockButtons/0",
+    "Open/0",
+    "OpenAnim/0",
+    "ExitScene/0",
+    "Close/0",
+    "OnSound/0",
+    "OnDestroy/0",
+    ".ctor/0",
+    "<Open>b__14_1/0",
+    "<Close>b__17_0/0"
+   ]
+  },
+  "Brush": {
+   "parent": "<15661>",
+   "fields": [
+    "brushType",
+    "outline",
+    "color",
+    "manageTools",
+    "_audioManager",
+    "_managePhysicalBrushes",
+    "_palettes",
+    "_audioSource",
+    "_currentBrush",
+    "_seq",
+    "_idColor",
+    "isEnabledBrush"
+   ],
+   "methods": [
+    "Start/0",
+    "Starter/0",
+    "GetBrushType/0",
+    "EnableOutline/0",
+    "DisableOutline/0",
+    "SetColor/1",
+    "ChangeColor/1",
+    "ChangeSprite/1",
+    "OnPointerDown/1",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "ManagePalettes": {
+   "parent": "<15661>",
+   "fields": [
+    "paletteType",
+    "palette",
+    "lockPanel"
+   ],
+   "methods": [
+    "get_activeBrush/0",
+    "OnEnable/0",
+    "Start/0",
+    "FixedUpdate/0",
+    "OnDestroy/0",
+    "ActivateLockPanel/0",
+    "OnColorChanged/0",
+    "OnColorChanging/0",
+    "GetPaletteType/0",
+    "MoveToPanel/2",
+    "CheckOpened/0",
+    "RestrictMovement/0",
+    "MoveLockPanel/0",
+    ".ctor/0"
+   ]
+  },
+  "ManagePhysicalBrushes": {
+   "parent": "<15661>",
+   "fields": [
+    "tileScale",
+    "drawColors",
+    "drawColorsShines",
+    "drawColorsPatterns",
+    "drawPatterns",
+    "typePatterns",
+    "pixelsPerMultiplierPatterns",
+    "drawShines",
+    "physicalBrushes",
+    "<CurrentCollor>k__BackingField"
+   ],
+   "methods": [
+    "get_CurrentCollor/0",
+    "set_CurrentCollor/1",
+    "get_GetColors/0",
+    "get_GetPatterns/0",
+    "get_GetTypePatterns/0",
+    "get_PixelsPerMultiplierPatterns/0",
+    "get_GetShines/0",
+    "OnEnable/0",
+    "Start/0",
+    "OnDestroy/0",
+    "ActivateBrush/1",
+    "DisableBrushes/0",
+    "ChangeColor/1",
+    "GetAverageColor/1",
+    ".ctor/0"
+   ]
+  },
+  "ManageTools": {
+   "parent": "<15661>",
+   "fields": [
+    "colors",
+    "shines",
+    "patterns",
+    "brushes",
+    "palettes",
+    "_audioManager",
+    "_colorChanging"
+   ],
+   "methods": [
+    "GetPattern/1",
+    "GetShine/1",
+    "OnEnable/0",
+    "Start/0",
+    "UpdateBrushPresets/1",
+    "InitialBrushesSetup/0",
+    "ChangeBrushColorOrSprite/2",
+    "EnableCorrespondingPalette/0",
+    "ChangeCurrentPaletteItem/1",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "PaletteItem": {
+   "parent": "<15661>",
+   "fields": [
+    "itemID",
+    "palette",
+    "_mousePos"
+   ],
+   "methods": [
+    "OnPointerDown/1",
+    "OnPointerUp/1",
+    "MoveToPanel/2",
+    "RestrictMovement/0",
+    ".ctor/0"
+   ]
+  },
+  "SafeAreaImage": {
+   "parent": "<15661>",
+   "fields": [
+    "drawCanvas",
+    "imageRectTransform",
+    "alignLeft",
+    "previousScreenWidth",
+    "previousScreenHeight",
+    "imageX",
+    "imageY"
+   ],
+   "methods": [
+    "get_ImageX/0",
+    "get_ImageY/0",
+    "Start/0",
+    "OnEnable/0",
+    "ApplySafeArea/0",
+    ".ctor/0"
+   ]
+  },
+  "ToolsManager": {
+   "parent": "<15661>",
+   "fields": [
+    "physicalBrushes",
+    "activePhysicalBrush",
+    "allBrushes",
+    "allBrushesForTablet",
+    "buttonsPanel",
+    "buttonsPanelForTablet",
+    "toolsPanel",
+    "toolsPanelForTablet",
+    "secondaryFillBrush",
+    "activeBrush",
+    "activeColor",
+    "activePattern",
+    "activeShine",
+    "drawColors",
+    "drawPatterns",
+    "drawShines",
+    "colorPickerPatterns",
+    "slotPrefab",
+    "palettes",
+    "contents",
+    "shineBrushTextures",
+    "patternBrushTextures",
+    "paletteColors",
+    "paletteShines",
+    "triangle",
+    "_paintable",
+    "tileScale"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "CommonHelper": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Resize/3",
+    "ShowIconAnimation/1",
+    "HideIconAnimation/1",
+    ".ctor/0"
+   ]
+  },
+  "PersistantAudioManager": {
+   "parent": "<17484>",
+   "fields": [
+    "clickSound",
+    "clickColorSound",
+    "toGallerySound",
+    "toMenuSound",
+    "particleSound",
+    "scrollSound"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "CustomIntroSettings": {
+   "parent": "<14348>",
+   "fields": [
+    "skeletonGraphic",
+    "introSound",
+    "VerticalSpineDataAsset"
+   ],
+   "methods": [
+    "StartGame/0",
+    "SetAnimation/0",
+    "OnEndSpineAction/1",
+    ".ctor/0"
+   ]
+  },
+  "PaletteTypes": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Color",
+    "Shine",
+    "Pattern"
+   ],
+   "methods": []
+  },
+  "BrushTypes": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Marker",
+    "Pencil",
+    "Brush",
+    "Bucket",
+    "Spray",
+    "Shine",
+    "Pattern"
+   ],
+   "methods": []
+  },
+  "ColoringPageDataManager": {
+   "parent": "<15996>",
+   "fields": [
+    "OnActiveBrushChanged",
+    "OnActiveColorIDChanged",
+    "OnActivePaletteChanged",
+    "_activePalette",
+    "_lastActiveColorID",
+    "_activeBrush"
+   ],
+   "methods": [
+    "add_OnActiveBrushChanged/1",
+    "remove_OnActiveBrushChanged/1",
+    "add_OnActiveColorIDChanged/1",
+    "remove_OnActiveColorIDChanged/1",
+    "add_OnActivePaletteChanged/1",
+    "remove_OnActivePaletteChanged/1",
+    "get_GetActivePalette/0",
+    "set_SetActivePalette/1",
+    "GetLastActiveColorID/1",
+    "SetLastActiveColorID/2",
+    "ResetActiveColors/0",
+    "get_GetActiveBrush/0",
+    "set_SetActiveBrush/1",
+    "ResetActiveBrush/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "CustomGarbageCollector": {
+   "parent": "<15996>",
+   "fields": [
+    "_spritesGC",
+    "_texturesGC"
+   ],
+   "methods": [
+    "get_spritesGC/0",
+    "get_texturesGC/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "DeviceRAM": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Low",
+    "High"
+   ],
+   "methods": []
+  },
+  "AllScenes": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "IntroScene",
+    "MainMenu",
+    "GalleryMenu",
+    "ColoringPage"
+   ],
+   "methods": []
+  },
+  "IAPProductTypes": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Animals",
+    "Underwater",
+    "Dinosaurs",
+    "Alien",
+    "Transport",
+    "Princess",
+    "Robots",
+    "Christmas",
+    "Fairytale",
+    "Fullversion",
+    "Palette",
+    "Null"
+   ],
+   "methods": []
+  },
+  "DataManager": {
+   "parent": "<15996>",
+   "fields": [
+    "ActiveBrush",
+    "selectedColoringBoardName",
+    "oldCaches",
+    "previousScene",
+    "nextScene",
+    "currentRAM",
+    "_selectedProductType",
+    "IDs",
+    "PackInfo",
+    "boardNames",
+    "cocosNames"
+   ],
+   "methods": [
+    "get_SelectedProductType/0",
+    "set_SelectedProductType/1",
+    "GetProductID/1",
+    "GetProductID/1",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "UnloadResourcesOnLoad": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    "LoadNextScene/1",
+    ".ctor/0"
+   ]
+  },
+  "FirebaseSetup": {
+   "parent": "<15661>",
+   "fields": [
+    "firebaseReady"
+   ],
+   "methods": [
+    "Start/0",
+    ".ctor/0"
+   ]
+  },
+  "GalleryMenu": {
+   "parent": "<15661>",
+   "fields": [
+    "topics",
+    "galleryMenuScroll",
+    "buttonLeft",
+    "buttonRight",
+    "eventSystem",
+    "packsToRemove",
+    "audioManager",
+    "galleryPacks",
+    "_addressableGalleryPrefabs",
+    "time",
+    "panelIndex"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "WaitLoadGallery/0",
+    "SelectedTopicUpdate/0",
+    "GetTopicIndex/1",
+    "UpdateTopicAtIndex/1",
+    "CheckForPurchasedPacks/0",
+    "RemoveLockedGames/0",
+    "HideNavigationButtons/0",
+    "OnButtonBack/0",
+    "OnButtonLeft/0",
+    "OnButtonRight/0",
+    "OnGalleryIconClick/1",
+    "RemoveListenerFromIcons/0",
+    "AsyncLoadScene/2",
+    "EnableTouch/1",
+    "AutoTouchEnabler/0",
+    "DisableOtherPanels/0",
+    "OnPanelChange/0",
+    "OnDisable/0",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "GalleryMenuUIAnimations": {
+   "parent": "<15661>",
+   "fields": [
+    "leftArrow",
+    "rightArrow",
+    "backButton"
+   ],
+   "methods": [
+    "OnEnable/0",
+    "ShowUIElements/0",
+    "HideUIElements/0",
+    "LeftArrowShow/0",
+    "RightArrowShow/0",
+    "BackButtonShow/0",
+    "LeftArrowHide/0",
+    "RightArrowHide/0",
+    "BackButtonHide/0",
+    ".ctor/0"
+   ]
+  },
+  "GalleryPackItems": {
+   "parent": "<15661>",
+   "fields": [
+    "IAPProductTypes"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "IfLanguage": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Awake/0",
+    ".ctor/0"
+   ]
+  },
+  "IAPButtonsAnimation": {
+   "parent": "<15661>",
+   "fields": [
+    "buttonUnlockFull",
+    "buttonUnlockTool"
+   ],
+   "methods": [
+    "Start/0",
+    "ButtonAnimation/0",
+    ".ctor/0"
+   ]
+  },
+  "IAPMainMenuPanel": {
+   "parent": "<15661>",
+   "fields": [
+    "selectedPack",
+    "fullPackSpine",
+    "animationNames",
+    "saleText",
+    "_salePanel",
+    "fullversionText",
+    "_purchaseButton",
+    "lockedPacksAmount",
+    "_fadeArea",
+    "_full",
+    "_audioManager",
+    "_tMProCurveFull",
+    "quitGamePopup",
+    "_seq",
+    "_isClosing"
+   ],
+   "methods": [
+    "OnEnable/0",
+    "OnDisable/0",
+    "StartAnim/0",
+    "ActivateButtonsUnlock/1",
+    "FullPackSpineAnimationLoop/0",
+    "SetProductPrices/1",
+    "ShowSelectedPack/0",
+    "OpenBuyMenu/1",
+    "OnCloseButton/0",
+    "OnSound/0",
+    ".ctor/0",
+    "<StartAnim>b__17_0/0",
+    "<StartAnim>b__17_1/0",
+    "<OnCloseButton>b__23_0/0"
+   ]
+  },
+  "IAPToolsPanel": {
+   "parent": "<15661>",
+   "fields": [
+    "fullVerPrice",
+    "toolsPrice"
+   ],
+   "methods": [
+    "Start/0",
+    ".ctor/0"
+   ]
+  },
+  "TypeProduct": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Full",
+    "Pack",
+    "Tools"
+   ],
+   "methods": []
+  },
+  "InAppPurchaseManager": {
+   "parent": "<15661>",
+   "fields": [
+    "_audioManager",
+    "<OnPurchased>k__BackingField",
+    "priceFullVer",
+    "priceTools",
+    "instance",
+    "time",
+    "_typeProduct"
+   ],
+   "methods": [
+    "get_OnPurchased/0",
+    "set_OnPurchased/1",
+    "get_iAPNonConsumable/0",
+    "get_FullVersionID/0",
+    "get_CurrentPackID/0",
+    "get_ToolsID/0",
+    "Awake/0",
+    "SetPrices/2",
+    "OnFullVersionButton/0",
+    "OnToolsButton/0",
+    "OnPurchaseButtonPressed/1",
+    "OnRestoreButtonPressed/0",
+    "PurchasedFullVersion/0",
+    "IsProductPurchased/1",
+    "IsFullVersion/0",
+    "OnIAPRequestCompleted/1",
+    "GetFullVersionPrice/0",
+    "GetCurrentPackPrice/0",
+    "GetToolsPrice/0",
+    "GetProductPrice/1",
+    "OnRestoreProcessFinished/0",
+    "GetSalePercentage/0",
+    "GetLockedPacksCount/0",
+    "GetNumbersFromString/1",
+    "OnIAPInitialized/0",
+    "OnIAPInitializeFailed/0",
+    ".ctor/0"
+   ]
+  },
+  "OpenBuyMenu": {
+   "parent": "<15661>",
+   "fields": [
+    "purchasePanel"
+   ],
+   "methods": [
+    "ShowPurchasePanel/0",
+    "OnClose/1",
+    ".ctor/0"
+   ]
+  },
+  "PurchasePack": {
+   "parent": "<15661>",
+   "fields": [
+    "_priceText",
+    "_purchaseButton",
+    "_isClicked",
+    "_audioManager"
+   ],
+   "methods": [
+    "get_priceText/0",
+    "set_priceText/1",
+    "get_PurchaseButton/0",
+    "SetSound/1",
+    "OpenBuyMenu/1",
+    "OpenBuyMenuCor/1",
+    ".ctor/0"
+   ]
+  },
+  "IntroSceneColoring": {
+   "parent": "<14348>",
+   "fields": [
+    "spine"
+   ],
+   "methods": [
+    "StartGame/0",
+    "SetAnimation/0",
+    ".ctor/0"
+   ]
+  },
+  "PreloadScene": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    "Starter/0",
+    ".ctor/0"
+   ]
+  },
+  "ColoringMainMenuManager": {
+   "parent": "<15661>",
+   "fields": [
+    "scroll",
+    "allPacks",
+    "audioManager",
+    "restoreButton"
+   ],
+   "methods": [
+    "Awake/0",
+    "Start/0",
+    "ShowLastSelectedPack/0",
+    "OpenParentsPage/0",
+    "PlayScrollSound/0",
+    ".ctor/0",
+    "<OpenParentsPage>b__7_0/0"
+   ]
+  },
+  "ItemsAnimation": {
+   "parent": "<15661>",
+   "fields": [
+    "duration",
+    "coefficient",
+    "upDownMove",
+    "rotation",
+    "leftRightMove",
+    "rectTransform",
+    "_seq",
+    "_startPosition"
+   ],
+   "methods": [
+    "Initialize/0",
+    "StartAnim/0",
+    "StopAnim/0",
+    "DoUpDownMove/0",
+    "DoRotation/0",
+    "Randomize/2",
+    "DoLeftRightMove/0",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "LoaderIndicators": {
+   "parent": "<15661>",
+   "fields": [
+    "_indicators",
+    "_animCor",
+    "_wait",
+    "_iterations",
+    "_indicatorId",
+    "_colors"
+   ],
+   "methods": [
+    "Start/0",
+    "StartAnim/0",
+    "StopAnim/0",
+    "HideIndicators/0",
+    "StartAnimCor/0",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "PackAnimation": {
+   "parent": "<15661>",
+   "fields": [
+    "_itemsAnimations"
+   ],
+   "methods": [
+    "Initialize/0",
+    "StartAnim/0",
+    "StopAnim/0",
+    ".ctor/0"
+   ]
+  },
+  "RestoreButton": {
+   "parent": "<15661>",
+   "fields": [
+    "button"
+   ],
+   "methods": [
+    "Start/0",
+    "CheckPurchase/0",
+    "CheckPurchasedStatus/1",
+    "OnClick/0",
+    ".ctor/0"
+   ]
+  },
+  "MenuController": {
+   "parent": "<15447>",
+   "fields": [
+    "menuItemprefab"
+   ],
+   "methods": [
+    "Start/0",
+    "OnItemClicked/1",
+    "OnItemPressed/1",
+    "OnItemReleased/1",
+    "OnInnerItemClicked/1",
+    "OnInnerItemPressed/1",
+    "OnInnerItemReleased/1",
+    "OnForParentsPressed/0",
+    ".ctor/0",
+    "<OnForParentsPressed>b__8_0/0"
+   ]
+  },
+  "NewNotificationLocalizedTexts": {
+   "parent": "<15996>",
+   "fields": [
+    "englishText",
+    "fillipinoText",
+    "swedishText",
+    "ukrainianText",
+    "spanishText",
+    "frenchText",
+    "slovakText",
+    "danishText",
+    "greekText",
+    "italianText",
+    "arabicText",
+    "bulgarianText",
+    "catalanText",
+    "simplifiedChineseText",
+    "traditionalChineseText",
+    "croatianText",
+    "czechText",
+    "dutchText",
+    "estonianText",
+    "finnishText",
+    "germanText",
+    "hebrewText",
+    "hindiText",
+    "hungarianText",
+    "russianText",
+    "indonesianText",
+    "japaneseText",
+    "koreanText",
+    "latvianText",
+    "malasianText",
+    "norwegianText",
+    "polishText",
+    "portugueseText",
+    "portugueseBrasilText",
+    "romanianText",
+    "serbianText",
+    "thaiText",
+    "turkishText",
+    "vietnameseText"
+   ],
+   "methods": [
+    ".cctor/0"
+   ]
+  },
+  "DisplayParticles": {
+   "parent": "<15661>",
+   "fields": [
+    "mousePos",
+    "scriptedParticle",
+    "particle",
+    "cam",
+    "audioManager",
+    "particles"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "ButtonUp/0",
+    "ButtonDown/0",
+    "DestroyAllParticles/0",
+    ".ctor/0"
+   ]
+  },
+  "ParticleEffectManager": {
+   "parent": "<15661>",
+   "fields": [
+    "toolsManager",
+    "particles",
+    "particleColorsForShines",
+    "particleSpritesForPatterns",
+    "particleColorsForPatterns1",
+    "particleColorsForPatterns2"
+   ],
+   "methods": [
+    "Start/0",
+    "ChangeColor/0",
+    ".ctor/0"
+   ]
+  },
+  "GetCache": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    "GetOldCache/0",
+    ".ctor/0"
+   ]
+  },
+  "LoadIcons": {
+   "parent": "<15661>",
+   "fields": [
+    "_path",
+    "gameName",
+    "allFileNames"
+   ],
+   "methods": [
+    "Awake/0",
+    "UpdateIcons/0",
+    "LoadIconSprites/1",
+    "HideIcons/0",
+    "EnableOrDisableIcons/1",
+    "GetAllFilesInPath/0",
+    ".ctor/0"
+   ]
+  },
+  "LoadImage": {
+   "parent": "<15661>",
+   "fields": [
+    "_path",
+    "_pathWhiteTexture",
+    "oldFileName",
+    "paintablesController",
+    "_paintableBack",
+    "paintable",
+    "paintableMenuIcons",
+    "texture",
+    "GCTextures"
+   ],
+   "methods": [
+    "Awake/0",
+    "ClearTextures/0",
+    "Load/1",
+    "CreateTexture/0",
+    "MoveOldCache/1",
+    "DestroyBackTexture/0",
+    "LoadTexture/1",
+    "SetSprite/1",
+    "LoadSecondaryTexture/1",
+    ".ctor/0"
+   ]
+  },
+  "SaveImage": {
+   "parent": "<15661>",
+   "fields": [
+    "newTexture",
+    "iconTexture",
+    "mainMenuTexture",
+    "path",
+    "paintablesController",
+    "paintable",
+    "paintableMenuIcons",
+    "displayParticles",
+    "audioManager",
+    "_draw",
+    "_layerSelectionManager",
+    "_camera",
+    "_p3DButtonClearAll"
+   ],
+   "methods": [
+    "Awake/0",
+    "OnSave/0",
+    "SaveCameraView/0",
+    "CopyPaintedTextureToEmptyTexture/0",
+    "ConvertTextureToPNG/0",
+    ".ctor/0"
+   ]
+  },
+  "TextGradient": {
+   "parent": "<15661>",
+   "fields": [
+    "textComponent"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "OnDrawGizmos/0",
+    "ApplyGradient/0",
+    "GetGradients/3",
+    ".ctor/0"
+   ]
+  },
+  "TMProCurve": {
+   "parent": "<15661>",
+   "fields": [
+    "gradientText",
+    "colorUpdated",
+    "_force",
+    "_space",
+    "_secondBuild",
+    "_pi",
+    "_scaleText",
+    "_characters",
+    "_tmpText",
+    "_textInfo",
+    "_textMeshPro",
+    "_matrix",
+    "_vertices",
+    "newVertexColors",
+    "positionY"
+   ],
+   "methods": [
+    "Start/0",
+    "OnEnable/0",
+    "SecondBuild/0",
+    "Build/0",
+    "ModifyCharacter/1",
+    "OnDrawGizmos/0",
+    ".ctor/0"
+   ]
+  },
+  "CharacterData": {
+   "parent": "<19796>",
+   "fields": [
+    "materialIndex",
+    "vertexIndex",
+    "index"
+   ],
+   "methods": []
+  },
+  "TestDiskUtils": {
+   "parent": "<15661>",
+   "fields": [
+    "text",
+    "obj"
+   ],
+   "methods": [
+    "PrintDebug/1",
+    "PrintDebugLn/1",
+    "Update/0",
+    "PrintStorageStats/0",
+    "Tests/0",
+    ".ctor/0"
+   ]
+  },
+  "TextMover": {
+   "parent": "<15661>",
+   "fields": [
+    "speed"
+   ],
+   "methods": [
+    "Update/0",
+    "GetMobile/2",
+    "GetDesktop/2",
+    ".ctor/0"
+   ]
+  },
+  "TestScroll": {
+   "parent": "<15447>",
+   "fields": [
+    "menuItemprefab"
+   ],
+   "methods": [
+    "Start/0",
+    "OnItemClicked/1",
+    "OnItemPressed/1",
+    "OnItemReleased/1",
+    "OnInnerItemClicked/1",
+    "OnInnerItemPressed/1",
+    "OnInnerItemReleased/1",
+    ".ctor/0"
+   ]
+  },
+  "ButtonSwitcher": {
+   "parent": "<15661>",
+   "fields": [
+    "switcher",
+    "switcherBg",
+    "isSwitcherOn",
+    "switchingCoroutine",
+    "switchingColorCoroutine",
+    "switcherOnPosition"
+   ],
+   "methods": [
+    "Start/0",
+    "MoveTheSwitcher/1",
+    "OnButtonSwitcherPressed/0",
+    ".ctor/0"
+   ]
+  },
+  "CollapsableMenu": {
+   "parent": "<15661>",
+   "fields": [
+    "colapsableText",
+    "arrowTextShown",
+    "arrowTextHidden",
+    "clickSound",
+    "audioSource"
+   ],
+   "methods": [
+    "Start/0",
+    "OnCollapsableMenuPressed/0",
+    ".ctor/0"
+   ]
+  },
+  "ForParentsController": {
+   "parent": "<15661>",
+   "fields": [
+    "CanvasVerticalIphone",
+    "CanvasHorizontalIpad",
+    "DownloadBody",
+    "DownloadMenu"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "OnButtonSwitcherPressed/0",
+    "OnRestoreButtonPressed/0",
+    ".ctor/0"
+   ]
+  },
+  "InheritRectSize": {
+   "parent": "<15661>",
+   "fields": [
+    "inheritedRect",
+    "inheritWidth",
+    "inheritHeight",
+    "offsetX",
+    "offsetY",
+    "rectTransform"
+   ],
+   "methods": [
+    "Awake/0",
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "OpenURL": {
+   "parent": "<15661>",
+   "fields": [
+    "url"
+   ],
+   "methods": [
+    "OnUrlButtonPressed/0",
+    ".ctor/0"
+   ]
+  },
+  "OpenUrlByPlatform": {
+   "parent": "<15661>",
+   "fields": [
+    "urlIOS",
+    "urlAndroid",
+    "urlAmazon",
+    "_textWebsite"
+   ],
+   "methods": [
+    "OnEnable/0",
+    "OnUrlButtonPressed/0",
+    ".ctor/0"
+   ]
+  },
+  "MenuItems": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "AboutUs",
+    "Settings",
+    "Downloads",
+    "HelpCenter",
+    "MoreApps"
+   ],
+   "methods": []
+  },
+  "ParentalPageMenu": {
+   "parent": "<15661>",
+   "fields": [
+    "menuShelf",
+    "darkLayerButtonImage",
+    "pageAboutUs",
+    "pageSettings",
+    "pageDownloads",
+    "pageHelpCenter",
+    "pageMoreApps",
+    "buttonAboutUs",
+    "buttonSettings",
+    "buttonDownloads",
+    "buttonHelpCenter",
+    "buttonMoreApps",
+    "menuObjects",
+    "pageObjects",
+    "audioSource",
+    "clickSound"
+   ],
+   "methods": [
+    "Start/0",
+    "OnDestroy/0",
+    "ShowShelfMenuForVerticalPhone/0",
+    "HideShelfMenuForVerticalPhone/1",
+    "OnButtonDarkLayerPressed/0",
+    "ShowDarkLayerButton/0",
+    "HideDarkLayerButton/0",
+    "FadeOverTime/3",
+    "OnPointerClick/1",
+    "OnMenuItemPressed/0",
+    "OnBackButtonPressed/0",
+    "MenuItemsOff/0",
+    "SetActiveMenu/2",
+    "OnMenuButtonPressed/0",
+    ".ctor/0"
+   ]
+  },
+  "SettingsController": {
+   "parent": "<15661>",
+   "fields": [
+    "<HasPurchase>k__BackingField",
+    "restoreButton",
+    "bgMusicButtonSwitcher",
+    "languageContent",
+    "textLanguagePrefab",
+    "languageScrollView",
+    "mainSettingsScroll",
+    "languageChosenText",
+    "_hideLoadingCoroutine",
+    "_sceneIsLoading",
+    "_allLanguages"
+   ],
+   "methods": [
+    "get_HasPurchase/0",
+    "set_HasPurchase/1",
+    "Start/0",
+    "OnBackgroundControllerPressed/0",
+    "OnRestoreButtonPressed/0",
+    "HideLoadingIfNoRestore/0",
+    "OnPointerClick/1",
+    "OnChooseLangOptionChosen/0",
+    "OnBackBtnPressed/0",
+    "OpenSettings/0",
+    "OnIAPRequestCompleted/1",
+    "OnRestoreProcessFinished/0",
+    "OnIAPInitialized/0",
+    "OnIAPInitializeFailed/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "StrechImage": {
+   "parent": "<15661>",
+   "fields": [
+    "imageToStrech",
+    "offsetX",
+    "offsetY",
+    "strechRelativeToWidth",
+    "staticWidth",
+    "staticHeight",
+    "considerDeviceRatio",
+    "relativeRect",
+    "imageWidth",
+    "imageHeight"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "IsDeviceRatioBiggerThan2/0",
+    ".ctor/0"
+   ]
+  },
+  "StrechRectRelativeTo": {
+   "parent": "<15661>",
+   "fields": [
+    "relativeRect",
+    "offsetX",
+    "offsetY"
+   ],
+   "methods": [
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "LinkOpenerOld": {
+   "parent": "<15661>",
+   "fields": [
+    "canOpenUrl",
+    "_commonAudioClips"
+   ],
+   "methods": [
+    "OnPointerClick/1",
+    "OnLinkPressed/1",
+    "OpenUrl/1",
+    "FirstLetterToUpper/1",
+    ".ctor/0"
+   ]
+  },
+  "ChangeLanguage": {
+   "parent": "<15661>",
+   "fields": [
+    "_label",
+    "_dropdown",
+    "_instance"
+   ],
+   "methods": [
+    "Start/0",
+    "PressLanguage/0",
+    ".ctor/0",
+    "<Start>b__3_0/1"
+   ]
+  },
+  "NotificationSettings": {
+   "parent": "<15996>",
+   "fields": [
+    "days",
+    "hours",
+    "minuts",
+    "seconds"
+   ],
+   "methods": [
+    ".ctor/4"
+   ]
+  },
+  "Locale": {
+   "parent": "<15661>",
+   "fields": [
+    "_shortCodeKey",
+    "defaultLanguage",
+    "ShortCodeOfLanguage"
+   ],
+   "methods": [
+    "get_CurrentLanguage/0",
+    "get_GetShortCode/0",
+    "GetDeviceShortCode/0",
+    "SetShortCode/1",
+    "LocalizedPathForResources/1",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "LocaleSample": {
+   "parent": "<15661>",
+   "fields": [
+    "tempImage"
+   ],
+   "methods": [
+    "OnButtonPressed/1",
+    ".ctor/0"
+   ]
+  },
+  "LocalizedCommonTexts": {
+   "parent": "<15661>",
+   "fields": [
+    "textsByLanguage",
+    "englishText",
+    "fillipinoText",
+    "swedishText",
+    "ukrainianText",
+    "spanishText",
+    "frenchText",
+    "slovakText",
+    "danishText",
+    "greekText",
+    "italianText",
+    "arabicText",
+    "bulgarianText",
+    "catalanText",
+    "simplifiedChineseText",
+    "traditionalChineseText",
+    "croatianText",
+    "czechText",
+    "dutchText",
+    "estonianText",
+    "finnishText",
+    "germanText",
+    "hebrewText",
+    "hindiText",
+    "hungarianText",
+    "russianText",
+    "indonesianText",
+    "japaneseText",
+    "koreanText",
+    "latvianText",
+    "malasianText",
+    "norwegianText",
+    "polishText",
+    "portugueseText",
+    "portugueseBrasilText",
+    "romanianText",
+    "serbianText",
+    "thaiText",
+    "turkishText",
+    "vietnameseText"
+   ],
+   "methods": [
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "ShelfCanvasController": {
+   "parent": "<15661>",
+   "fields": [
+    "_timer",
+    "audioController",
+    "clickSound",
+    "shelfButtonRectTransform",
+    "image",
+    "badge",
+    "badgeShown",
+    "instance"
+   ],
+   "methods": [
+    "Start/0",
+    "TryShowShelf/0",
+    "CheckForShelf/0",
+    "Update/0",
+    "ShowShelf/1",
+    "HideShelf/0",
+    "OnShelfButtonPressed/0",
+    "ChangeSceneWithTransition/1",
+    "OnParentalGateFailed/0",
+    ".ctor/0",
+    "<OnShelfButtonPressed>b__14_0/0"
+   ]
+  },
+  "ShelfLocals": {
+   "parent": "<15996>",
+   "fields": [
+    "openLocalization",
+    "getNowLocalization",
+    "featuredLocalization"
+   ],
+   "methods": [
+    "GetDefaultLanguageOpen/0",
+    "GetDefaultLanguageGetNow/0",
+    "GetDefaultLanguageFeatured/0",
+    ".cctor/0"
+   ]
+  },
+  "NotificationLocalizedTexts": {
+   "parent": "<15661>",
+   "fields": [
+    "englishText",
+    "fillipinoText",
+    "swedishText",
+    "ukrainianText",
+    "spanishText",
+    "frenchText",
+    "slovakText",
+    "danishText",
+    "greekText",
+    "italianText",
+    "arabicText",
+    "bulgarianText",
+    "catalanText",
+    "simplifiedChineseText",
+    "traditionalChineseText",
+    "croatianText",
+    "czechText",
+    "dutchText",
+    "estonianText",
+    "finnishText",
+    "germanText",
+    "hebrewText",
+    "hindiText",
+    "hungarianText",
+    "russianText",
+    "indonesianText",
+    "japaneseText",
+    "koreanText",
+    "latvianText",
+    "malasianText",
+    "norwegianText",
+    "polishText",
+    "portugueseText",
+    "portugueseBrasilText",
+    "romanianText",
+    "serbianText",
+    "thaiText",
+    "turkishText",
+    "vietnameseText"
+   ],
+   "methods": [
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "RateUsLocalization": {
+   "parent": "<15996>",
+   "fields": [
+    "fontGeneral",
+    "fontThai",
+    "currentLanguageShortCode",
+    "rateMeTitle",
+    "rateMeDescription",
+    "rateMeNow",
+    "rateMeLater"
+   ],
+   "methods": [
+    "GetDefaultLanguageRateUsTitle/0",
+    "GetDefaultLanguageRateUsDescription/0",
+    "GetDefaultLanguageRateUsNow/0",
+    "GetDefaultLanguageRateUsLater/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "SceneInformation": {
+   "parent": "<15996>",
+   "fields": [
+    "<CrossSceneInformation>k__BackingField"
+   ],
+   "methods": [
+    "get_CrossSceneInformation/0",
+    "set_CrossSceneInformation/1"
+   ]
+  },
+  "ParentalGateMathUtils.AudioLocals": {
+   "parent": "<15996>",
+   "fields": [
+    "english"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "ParentalGateMathUtils.ButtonController": {
+   "parent": "<15661>",
+   "fields": [
+    "text"
+   ],
+   "methods": [
+    "OnPointerDown/1",
+    "OnPointerUp/1",
+    ".ctor/0"
+   ]
+  },
+  "AnswerCheck": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Correct",
+    "Wrong",
+    "None"
+   ],
+   "methods": []
+  },
+  "ParentalGateMathUtils.MathController": {
+   "parent": "<15661>",
+   "fields": [
+    "mathProblemImage",
+    "numbersSprite",
+    "numbersImage",
+    "hasInput",
+    "activeCursor",
+    "<_leftNumber>k__BackingField",
+    "<_rightNumber>k__BackingField",
+    "OnMathCompleted",
+    "input"
+   ],
+   "methods": [
+    "get__answer/0",
+    "set__leftNumber/1",
+    "get__leftNumber/0",
+    "set__rightNumber/1",
+    "get__rightNumber/0",
+    "GenerateMathTask/2",
+    "StopCleanCursor/0",
+    "SetMathImagesSize/0",
+    "ClearTask/0",
+    "ShowTaskAgain/1",
+    "CorrectAnswerAnimation/1",
+    "ClearAnswer/0",
+    "Input/1",
+    "AnimateCursor/0",
+    "CheckAnswer/1",
+    ".ctor/0"
+   ]
+  },
+  "ParentalGateMathUtils.ParentalGate": {
+   "parent": "<15661>",
+   "fields": [
+    "_isParticipatingInABTest"
+   ],
+   "methods": [
+    "GetInstance/1",
+    "Show/3",
+    "PostABTestSuccess/0",
+    ".ctor/0"
+   ]
+  },
+  "Orientation": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Vertical",
+    "Horizontal"
+   ],
+   "methods": []
+  },
+  "ParentalGateMathUtils.ParentalGateMath": {
+   "parent": "<16360>",
+   "fields": [
+    "<instance>k__BackingField",
+    "popupTransform",
+    "mathController",
+    "numberButtons",
+    "closeButton",
+    "layerCloseButton",
+    "clearAnswerButton",
+    "commonAudioClips",
+    "canvasGroup",
+    "canvasScaler",
+    "delayToRepeatedTask",
+    "clearAnswerBtnOriginPosition",
+    "isPopupShown",
+    "_isDifficultProblem",
+    "_calbackOnSuccess",
+    "_calbackOnFailure",
+    "touchEnabled",
+    "taskPlayerTween"
+   ],
+   "methods": [
+    "get__orientation/0",
+    "get_instance/0",
+    "set_instance/1",
+    "SetDifficultyLevel/1",
+    "Awake/0",
+    "SetUpCanvasScale/0",
+    "SetupListenerToButtons/0",
+    "OnNumberPressed/1",
+    "EnableClearButton/2",
+    "ClosePopupForEscape/0",
+    "ClosePopup/2",
+    "Show/3",
+    "PlayTask/0",
+    "RemoveCallbacks/0",
+    "OnMathCompleted/1",
+    "WrongSolutionAnimation/0",
+    "EnableTouch/1",
+    "OnDestroy/0",
+    ".ctor/0",
+    "<Show>b__32_0/0",
+    "<OnMathCompleted>b__35_0/0",
+    "<WrongSolutionAnimation>b__36_0/0",
+    "<WrongSolutionAnimation>b__36_1/0",
+    "<WrongSolutionAnimation>b__36_2/0",
+    "<WrongSolutionAnimation>b__36_3/0"
+   ]
+  },
+  "ParentalGateMathUtils.ParetalGateTitle": {
+   "parent": "<15661>",
+   "fields": [
+    "fontGeneral",
+    "fontThai",
+    "quitGameLocalization"
+   ],
+   "methods": [
+    "GetDefaultLanguageQuitTitle/0",
+    "Start/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "eFileType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Raw",
+    "Persistent",
+    "Temporal",
+    "Streaming"
+   ],
+   "methods": []
+  },
+  "I2.Loc.PersistentStorage": {
+   "parent": "<15996>",
+   "fields": [
+    "mStorage"
+   ],
+   "methods": [
+    "SetSetting_String/2",
+    "GetSetting_String/2",
+    "DeleteSetting/1",
+    "HasSetting/1",
+    "ForceSaveSettings/0",
+    "CanAccessFiles/0",
+    "SaveFile/4",
+    "LoadFile/3",
+    "DeleteFile/3",
+    "HasFile/3"
+   ]
+  },
+  "I2.Loc.I2BasePersistentStorage": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "SetSetting_String/2",
+    "GetSetting_String/2",
+    "DeleteSetting/1",
+    "ForceSaveSettings/0",
+    "HasSetting/1",
+    "CanAccessFiles/0",
+    "UpdateFilename/2",
+    "SaveFile/4",
+    "LoadFile/3",
+    "DeleteFile/3",
+    "HasFile/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.I2CustomPersistentStorage": {
+   "parent": "<13461>",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.BaseSpecializationManager": {
+   "parent": "<15996>",
+   "fields": [
+    "mSpecializations",
+    "mSpecializationsFallbacks"
+   ],
+   "methods": [
+    "InitializeSpecializations/0",
+    "GetCurrentSpecialization/0",
+    "GetFallbackSpecialization/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.SpecializationManager": {
+   "parent": "<10543>",
+   "fields": [
+    "Singleton"
+   ],
+   "methods": [
+    ".ctor/0",
+    "GetSpecializedText/2",
+    "SetSpecializedText/3",
+    "SetSpecializedText/1",
+    "GetSpecializations/2",
+    "AppendSpecializations/2",
+    ".cctor/0"
+   ]
+  },
+  "I2.Loc.EventCallback": {
+   "parent": "<15996>",
+   "fields": [
+    "Target",
+    "MethodName"
+   ],
+   "methods": [
+    "Execute/1",
+    "HasCallback/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.ePluralType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Zero",
+    "One",
+    "Two",
+    "Few",
+    "Many",
+    "Plural"
+   ],
+   "methods": []
+  },
+  "LanguageCodeDef": {
+   "parent": "<19796>",
+   "fields": [
+    "Code",
+    "GoogleCode",
+    "HasJoinedWords",
+    "PluralRule"
+   ],
+   "methods": []
+  },
+  "I2.Loc.GoogleLanguages": {
+   "parent": "<15996>",
+   "fields": [
+    "mLanguageDef"
+   ],
+   "methods": [
+    "GetLanguageCode/2",
+    "GetLanguagesForDropdown/2",
+    "LanguageMatchesFilter/2",
+    "GetFormatedLanguageName/1",
+    "GetCodedLanguage/2",
+    "UnPackCodeFromLanguageName/3",
+    "GetGoogleLanguageCode/1",
+    "GetLanguageName/3",
+    "GetAllInternationalCodes/0",
+    "LanguageCode_HasJoinedWord/1",
+    "GetPluralRule/1",
+    "LanguageHasPluralType/2",
+    "GetPluralType/2",
+    "GetPluralTestNumber/2",
+    "inRange/3",
+    ".cctor/0"
+   ]
+  },
+  "fnOnTranslated": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/2",
+    "BeginInvoke/4",
+    "EndInvoke/1"
+   ]
+  },
+  "fnOnTranslationReady": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/2",
+    "BeginInvoke/4",
+    "EndInvoke/1"
+   ]
+  },
+  "I2.Loc.GoogleTranslation": {
+   "parent": "<15996>",
+   "fields": [
+    "mCurrentTranslations",
+    "mTranslationJobs"
+   ],
+   "methods": [
+    "CanTranslate/0",
+    "Translate/4",
+    "ForceTranslate/3",
+    "Translate/3",
+    "ForceTranslate/2",
+    "ConvertTranslationRequest/2",
+    "AddTranslationJob/1",
+    "WaitForTranslations/0",
+    "ParseTranslationResult/2",
+    "IsTranslating/0",
+    "CancelCurrentGoogleTranslations/0",
+    "CreateQueries/4",
+    "CreateQueries_Plurals/4",
+    "AddQuery/4",
+    "GetTranslation/3",
+    "FindQueryFromOrigText/2",
+    "HasParameters/1",
+    "GetPluralParameter/2",
+    "GetPluralText/2",
+    "FindClosingTag/3",
+    "GetGoogleNoTranslateTag/1",
+    "ParseNonTranslatableElements/1",
+    "GetQueryResult/3",
+    "RebuildTranslation/3",
+    "RebuildTranslation_Plural/3",
+    "UppercaseFirst/1",
+    "TitleCase/1",
+    ".cctor/0"
+   ]
+  },
+  "I2.Loc.TranslationQuery": {
+   "parent": "<19796>",
+   "fields": [
+    "OrigText",
+    "Text",
+    "LanguageCode",
+    "TargetLanguagesCode",
+    "Results",
+    "Tags"
+   ],
+   "methods": []
+  },
+  "eJobState": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Running",
+    "Succeeded",
+    "Failed"
+   ],
+   "methods": []
+  },
+  "I2.Loc.TranslationJob": {
+   "parent": "<15996>",
+   "fields": [
+    "mJobState"
+   ],
+   "methods": [
+    "GetState/0",
+    "Dispose/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.TranslationJob_WWW": {
+   "parent": "<19175>",
+   "fields": [
+    "www"
+   ],
+   "methods": [
+    "Dispose/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.TranslationJob_GET": {
+   "parent": "<19183>",
+   "fields": [
+    "_requests",
+    "_OnTranslationReady",
+    "mQueries",
+    "mErrorMessage"
+   ],
+   "methods": [
+    ".ctor/2",
+    "ExecuteNextQuery/0",
+    "GetState/0",
+    "ProcessResult/2"
+   ]
+  },
+  "I2.Loc.TranslationJob_Main": {
+   "parent": "<19175>",
+   "fields": [
+    "mWeb",
+    "mPost",
+    "mGet",
+    "_requests",
+    "_OnTranslationReady",
+    "mErrorMessage"
+   ],
+   "methods": [
+    ".ctor/2",
+    "GetState/0",
+    "Dispose/0"
+   ]
+  },
+  "I2.Loc.TranslationJob_POST": {
+   "parent": "<19183>",
+   "fields": [
+    "_requests",
+    "_OnTranslationReady"
+   ],
+   "methods": [
+    ".ctor/2",
+    "GetState/0",
+    "ProcessResult/2"
+   ]
+  },
+  "I2.Loc.TranslationJob_WEB": {
+   "parent": "<19183>",
+   "fields": [
+    "_requests",
+    "_OnTranslationReady",
+    "mErrorMessage",
+    "mCurrentBatch_ToLanguageCode",
+    "mCurrentBatch_FromLanguageCode",
+    "mCurrentBatch_Text",
+    "mQueries"
+   ],
+   "methods": [
+    ".ctor/2",
+    "FindAllQueries/0",
+    "ExecuteNextBatch/0",
+    "GetState/0",
+    "ProcessResult/2",
+    "ParseTranslationResult/2"
+   ]
+  },
+  "I2.Loc.eLanguageDataFlags": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "DISABLED",
+    "KEEP_LOADED",
+    "NOT_LOADED"
+   ],
+   "methods": []
+  },
+  "I2.Loc.LanguageData": {
+   "parent": "<15996>",
+   "fields": [
+    "Name",
+    "Code",
+    "Flags",
+    "Compressed"
+   ],
+   "methods": [
+    "IsEnabled/0",
+    "SetEnabled/1",
+    "IsLoaded/0",
+    "CanBeUnloaded/0",
+    "SetLoaded/1",
+    "SetCanBeUnLoaded/1",
+    ".ctor/0"
+   ]
+  },
+  "fnOnSourceUpdated": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/3",
+    "BeginInvoke/5",
+    "EndInvoke/1"
+   ]
+  },
+  "I2.Loc.LanguageSource": {
+   "parent": "<15661>",
+   "fields": [
+    "mSource",
+    "version",
+    "NeverDestroy",
+    "UserAgreesToHaveItOnTheScene",
+    "UserAgreesToHaveItInsideThePluginsFolder",
+    "GoogleLiveSyncIsUptoDate",
+    "Assets",
+    "Google_WebServiceURL",
+    "Google_SpreadsheetKey",
+    "Google_SpreadsheetName",
+    "Google_LastUpdatedVersion",
+    "GoogleUpdateFrequency",
+    "GoogleUpdateDelay",
+    "Event_OnSourceUpdateFromGoogle",
+    "mLanguages",
+    "IgnoreDeviceLanguage",
+    "_AllowUnloadingLanguages",
+    "mTerms",
+    "CaseInsensitiveTerms",
+    "OnMissingTranslation",
+    "mTerm_AppName"
+   ],
+   "methods": [
+    "get_SourceData/0",
+    "set_SourceData/1",
+    "add_Event_OnSourceUpdateFromGoogle/1",
+    "remove_Event_OnSourceUpdateFromGoogle/1",
+    "Awake/0",
+    "OnDestroy/0",
+    "GetSourceName/0",
+    "OnBeforeSerialize/0",
+    "OnAfterDeserialize/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LanguageSourceAsset": {
+   "parent": "<17484>",
+   "fields": [
+    "mSource"
+   ],
+   "methods": [
+    "get_SourceData/0",
+    "set_SourceData/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.ILanguageSource": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "get_SourceData/0",
+    "set_SourceData/1"
+   ]
+  },
+  "MissingTranslationAction": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Empty",
+    "Fallback",
+    "ShowWarning",
+    "ShowTerm"
+   ],
+   "methods": []
+  },
+  "eAllowUnloadLanguages": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Never",
+    "OnlyInDevice",
+    "EditorAndDevice"
+   ],
+   "methods": []
+  },
+  "eGoogleUpdateFrequency": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Always",
+    "Never",
+    "Daily",
+    "Weekly",
+    "Monthly",
+    "OnlyOnce",
+    "EveryOtherDay"
+   ],
+   "methods": []
+  },
+  "eGoogleUpdateSynchronization": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Manual",
+    "OnSceneLoaded",
+    "AsSoonAsDownloaded"
+   ],
+   "methods": []
+  },
+  "I2.Loc.LanguageSourceData": {
+   "parent": "<15996>",
+   "fields": [
+    "owner",
+    "UserAgreesToHaveItOnTheScene",
+    "UserAgreesToHaveItInsideThePluginsFolder",
+    "GoogleLiveSyncIsUptoDate",
+    "mIsGlobalSource",
+    "mTerms",
+    "CaseInsensitiveTerms",
+    "mDictionary",
+    "OnMissingTranslation",
+    "mTerm_AppName",
+    "mLanguages",
+    "IgnoreDeviceLanguage",
+    "_AllowUnloadingLanguages",
+    "Google_WebServiceURL",
+    "Google_SpreadsheetKey",
+    "Google_SpreadsheetName",
+    "Google_LastUpdatedVersion",
+    "GoogleUpdateFrequency",
+    "GoogleInEditorCheckFrequency",
+    "GoogleUpdateSynchronization",
+    "GoogleUpdateDelay",
+    "Event_OnSourceUpdateFromGoogle",
+    "Assets",
+    "mAssetDictionary",
+    "mDelayedGoogleData",
+    "EmptyCategory",
+    "CategorySeparators"
+   ],
+   "methods": [
+    "get_ownerObject/0",
+    "add_Event_OnSourceUpdateFromGoogle/1",
+    "remove_Event_OnSourceUpdateFromGoogle/1",
+    "Awake/0",
+    "OnDestroy/0",
+    "IsEqualTo/1",
+    "ManagerHasASimilarSource/0",
+    "ClearAllData/0",
+    "IsGlobalSource/0",
+    "Editor_SetDirty/0",
+    "UpdateAssetDictionary/0",
+    "FindAsset/1",
+    "HasAsset/1",
+    "AddAsset/1",
+    "Export_Language_to_Cache/2",
+    "Export_I2CSV/3",
+    "AppendI2Term/6",
+    "AppendI2Text/2",
+    "Export_CSV/3",
+    "AppendTerm/6",
+    "AppendString/3",
+    "AppendTranslation/4",
+    "Export_Google_CreateWWWcall/1",
+    "Export_Google_CreateData/0",
+    "Import_CSV/4",
+    "Import_I2CSV/3",
+    "Import_CSV/3",
+    "ArrayContains/2",
+    "GetTermType/1",
+    "Import_Language_from_Cache/4",
+    "FreeUnusedLanguages/0",
+    "Import_Google_FromCache/0",
+    "IsNewerVersion/2",
+    "Import_Google/2",
+    "GetSourcePlayerPrefName/0",
+    "Import_Google_Coroutine/2",
+    "ApplyDownloadedDataOnSceneLoaded/2",
+    "ApplyDownloadedDataFromGoogle/0",
+    "Import_Google_CreateWWWcall/2",
+    "HasGoogleSpreadsheet/0",
+    "Import_Google_Result/3",
+    "GetLanguageIndex/3",
+    "GetLanguageData/2",
+    "IsCurrentLanguage/1",
+    "GetLanguageIndexFromCode/3",
+    "GetCommonWordInLanguageNames/2",
+    "AreTheSameLanguage/2",
+    "GetLanguageWithoutRegion/1",
+    "AddLanguage/1",
+    "AddLanguage/2",
+    "RemoveLanguage/1",
+    "GetLanguages/1",
+    "GetLanguagesCode/2",
+    "IsLanguageEnabled/1",
+    "EnableLanguage/2",
+    "AllowUnloadingLanguages/0",
+    "GetSavedLanguageFileName/1",
+    "LoadLanguage/5",
+    "LoadAllLanguages/1",
+    "UnloadLanguage/1",
+    "SaveLanguages/2",
+    "HasUnloadedLanguages/0",
+    "GetCategories/2",
+    "GetKeyFromFullTerm/2",
+    "GetCategoryFromFullTerm/2",
+    "DeserializeFullTerm/4",
+    "UpdateDictionary/1",
+    "GetTranslation/5",
+    "TryGetTranslation/6",
+    "TryGetFallbackTranslation/5",
+    "AddTerm/1",
+    "GetTermData/2",
+    "ContainsTerm/1",
+    "GetTermsList/1",
+    "AddTerm/3",
+    "RemoveTerm/1",
+    "ValidateFullTerm/1",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "I2.Loc.eSpreadsheetUpdateMode": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "None",
+    "Replace",
+    "Merge",
+    "AddNewTerms"
+   ],
+   "methods": []
+  },
+  "I2.Loc.LocalizationReader": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "ReadTextAsset/1",
+    "TextAsset_ReadLine/6",
+    "ReadCSVfile/2",
+    "ReadCSV/2",
+    "ParseCSVline/3",
+    "AddCSVtoken/4",
+    "ReadI2CSV/1",
+    "ValidateFullTerm/1",
+    "EncodeString/1",
+    "DecodeString/1",
+    ".ctor/0"
+   ]
+  },
+  "TermModification": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "DontModify",
+    "ToUpper",
+    "ToLower",
+    "ToUpperFirst",
+    "ToTitle"
+   ],
+   "methods": []
+  },
+  "I2.Loc.Localize": {
+   "parent": "<15661>",
+   "fields": [
+    "mTerm",
+    "mTermSecondary",
+    "FinalTerm",
+    "FinalSecondaryTerm",
+    "PrimaryTermModifier",
+    "SecondaryTermModifier",
+    "TermPrefix",
+    "TermSuffix",
+    "LocalizeOnAwake",
+    "LastLocalizedLanguage",
+    "IgnoreRTL",
+    "MaxCharactersInRTL",
+    "IgnoreNumbersInRTL",
+    "CorrectAlignmentForRTL",
+    "AddSpacesToJoinedLanguages",
+    "AllowLocalizedParameters",
+    "AllowParameters",
+    "TranslatedObjects",
+    "mAssetDictionary",
+    "LocalizeEvent",
+    "MainTranslation",
+    "SecondaryTranslation",
+    "CallBackTerm",
+    "CallBackSecondaryTerm",
+    "CurrentLocalizeComponent",
+    "AlwaysForceLocalize",
+    "LocalizeCallBack",
+    "mGUI_ShowReferences",
+    "mGUI_ShowTems",
+    "mGUI_ShowCallback",
+    "mLocalizeTarget",
+    "mLocalizeTargetName"
+   ],
+   "methods": [
+    "get_Term/0",
+    "set_Term/1",
+    "get_SecondaryTerm/0",
+    "set_SecondaryTerm/1",
+    "Awake/0",
+    "OnEnable/0",
+    "HasCallback/0",
+    "OnLocalize/1",
+    "FindTarget/0",
+    "GetFinalTerms/2",
+    "GetMainTargetsText/0",
+    "SetFinalTerms/5",
+    "SetTerm/1",
+    "SetTerm/2",
+    "GetSecondaryTranslatedObj/2",
+    "UpdateAssetDictionary/0",
+    "GetObject/1",
+    "GetTranslatedObject/1",
+    "DeserializeTranslation/3",
+    "FindTranslatedObject/1",
+    "HasTranslatedObject/1",
+    "AddTranslatedObject/1",
+    "SetGlobalLanguage/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeDropdown": {
+   "parent": "<15661>",
+   "fields": [
+    "_Terms"
+   ],
+   "methods": [
+    "Start/0",
+    "OnDestroy/0",
+    "OnEnable/0",
+    "OnLocalize/0",
+    "FillValues/0",
+    "UpdateLocalization/0",
+    "UpdateLocalizationTMPro/0",
+    "FillValuesTMPro/0",
+    ".ctor/0"
+   ]
+  },
+  "FnCustomApplyLocalizationParams": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/3",
+    "BeginInvoke/5",
+    "EndInvoke/2"
+   ]
+  },
+  "_GetParam": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/1",
+    "BeginInvoke/3",
+    "EndInvoke/1"
+   ]
+  },
+  "OnLocalizeCallback": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/0",
+    "BeginInvoke/2",
+    "EndInvoke/1"
+   ]
+  },
+  "I2.Loc.LocalizationManager": {
+   "parent": "<15996>",
+   "fields": [
+    "mCurrentLanguage",
+    "mLanguageCode",
+    "mCurrentCulture",
+    "mChangeCultureInfo",
+    "IsRight2Left",
+    "HasJoinedWords",
+    "ParamManagers",
+    "CustomApplyLocalizationParams",
+    "LanguagesRTL",
+    "Sources",
+    "GlobalSources",
+    "Callback_AllowSyncFromGoogle",
+    "mCurrentDeviceLanguage",
+    "mLocalizeTargets",
+    "OnLocalizeEvent",
+    "mLocalizeIsScheduled",
+    "mLocalizeIsScheduledWithForcedValue",
+    "HighlightLocalizedTargets"
+   ],
+   "methods": [
+    "InitializeIfNeeded/0",
+    "GetVersion/0",
+    "GetRequiredWebServiceVersion/0",
+    "GetWebServiceURL/1",
+    "get_CurrentLanguage/0",
+    "set_CurrentLanguage/1",
+    "get_CurrentLanguageCode/0",
+    "set_CurrentLanguageCode/1",
+    "get_CurrentRegion/0",
+    "set_CurrentRegion/1",
+    "get_CurrentRegionCode/0",
+    "set_CurrentRegionCode/1",
+    "get_CurrentCulture/0",
+    "SetLanguageAndCode/4",
+    "CreateCultureForCode/1",
+    "EnableChangingCultureInfo/1",
+    "SetCurrentCultureInfo/0",
+    "SelectStartupLanguage/0",
+    "HasLanguage/4",
+    "GetSupportedLanguage/2",
+    "GetLanguageCode/1",
+    "GetLanguageFromCode/2",
+    "GetAllLanguages/1",
+    "GetAllLanguagesCode/2",
+    "IsLanguageEnabled/1",
+    "LoadCurrentLanguage/0",
+    "PreviewLanguage/1",
+    "AutoLoadGlobalParamManagers/0",
+    "ApplyLocalizationParams/2",
+    "ApplyLocalizationParams/3",
+    "ApplyLocalizationParams/3",
+    "ApplyLocalizationParams/3",
+    "GetLocalizationParam/2",
+    "GetPluralType/3",
+    "ApplyRTLfix/1",
+    "ApplyRTLfix/3",
+    "FixRTL_IfNeeded/3",
+    "IsRTL/1",
+    "UpdateSources/0",
+    "UnregisterDeletededSources/0",
+    "RegisterSceneSources/0",
+    "RegisterSourceInResources/0",
+    "AllowSyncFromGoogle/1",
+    "AddSource/1",
+    "Delayed_Import_Google/3",
+    "RemoveSource/1",
+    "IsGlobalSource/1",
+    "GetSourceContaining/2",
+    "FindAsset/1",
+    "ApplyDownloadedDataFromGoogle/0",
+    "GetCurrentDeviceLanguage/1",
+    "DetectDeviceLanguage/0",
+    "RegisterTarget/1",
+    "add_OnLocalizeEvent/1",
+    "remove_OnLocalizeEvent/1",
+    "GetTranslation/8",
+    "GetTermTranslation/8",
+    "TryGetTranslation/9",
+    "GetTranslatedObject/2",
+    "GetTranslatedObjectByTermName/2",
+    "GetAppName/1",
+    "LocalizeAll/1",
+    "Coroutine_LocalizeAll/0",
+    "DoLocalizeAll/1",
+    "GetCategories/0",
+    "GetTermsList/1",
+    "GetTermData/1",
+    "GetTermData/2",
+    ".cctor/0"
+   ]
+  },
+  "I2.Loc.ILocalizeTarget": {
+   "parent": "<17484>",
+   "fields": [],
+   "methods": [
+    "IsValid/1",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget`1": {
+   "parent": "<13863>",
+   "fields": [
+    "mTarget"
+   ],
+   "methods": [
+    "IsValid/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.ILocalizeTargetDescriptor": {
+   "parent": "<15996>",
+   "fields": [
+    "Name",
+    "Priority"
+   ],
+   "methods": [
+    "CanLocalize/1",
+    "CreateTarget/1",
+    "GetTargetType/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTargetDesc`1": {
+   "parent": "<13865>",
+   "fields": [],
+   "methods": [
+    "CreateTarget/1",
+    "GetTargetType/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTargetDesc_Type`2": {
+   "parent": "MaterialWithRefcount",
+   "fields": [],
+   "methods": [
+    "CanLocalize/1",
+    "CreateTarget/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_TextMeshPro_Label": {
+   "parent": "<Module>",
+   "fields": [
+    "mAlignment_RTL",
+    "mAlignment_LTR",
+    "mAlignmentWasRTL",
+    "mInitializeAlignment"
+   ],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    "GetTMPFontFromMaterial/2",
+    "InitAlignment_TMPro/4",
+    "SetFont/2",
+    "SetMaterial/2",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_TextMeshPro_UGUI": {
+   "parent": "UnityEngine.UI.AnimationTriggers",
+   "fields": [
+    "mAlignment_RTL",
+    "mAlignment_LTR",
+    "mAlignmentWasRTL",
+    "mInitializeAlignment"
+   ],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_AudioSource": {
+   "parent": "ValueCollection",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTargetDesc_Child": {
+   "parent": "SlotMaterialTextureTuple",
+   "fields": [],
+   "methods": [
+    "CanLocalize/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_Child": {
+   "parent": "<GetEnumerator>d__34",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "IsValid/1",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_MeshRenderer": {
+   "parent": "Spine.Collections.OrderedDictionaryDebugView`2",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTargetDesc_Prefab": {
+   "parent": "Spine.Unity.Deprecated.SlotBlendModes",
+   "fields": [],
+   "methods": [
+    "CanLocalize/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_Prefab": {
+   "parent": "<GetEnumerator>d__34",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "IsValid/1",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    "InstantiateNewPrefab/2",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_SpriteRenderer": {
+   "parent": "__StaticArrayInitTypeSize=20",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_TextMesh": {
+   "parent": "<PrivateImplementationDetails>",
+   "fields": [
+    "mAlignment_RTL",
+    "mAlignment_LTR",
+    "mAlignmentWasRTL",
+    "mInitializeAlignment"
+   ],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityStandard_VideoPlayer": {
+   "parent": "ButtonClickedEvent",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityUI_Image": {
+   "parent": "Spine.Collections.OrderedDictionary`2",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityUI_RawImage": {
+   "parent": "Spine.Collections.CollectionExtensions",
+   "fields": [],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizeTarget_UnityUI_Text": {
+   "parent": "__StaticArrayInitTypeSize=24",
+   "fields": [
+    "mAlignment_RTL",
+    "mAlignment_LTR",
+    "mAlignmentWasRTL",
+    "mInitializeAlignment"
+   ],
+   "methods": [
+    ".cctor/0",
+    "AutoRegister/0",
+    "GetPrimaryTermType/1",
+    "GetSecondaryTermType/1",
+    "CanUseSecondaryTerm/0",
+    "AllowMainTermToBeRTL/0",
+    "AllowSecondTermToBeRTL/0",
+    "GetFinalTerms/5",
+    "DoLocalize/3",
+    "InitAlignment/4",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.eTermType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Text",
+    "Font",
+    "Texture",
+    "AudioClip",
+    "GameObject",
+    "Sprite",
+    "Material",
+    "Child",
+    "Mesh",
+    "TextMeshPFont",
+    "Object",
+    "Video"
+   ],
+   "methods": []
+  },
+  "I2.Loc.TranslationFlag": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Normal",
+    "AutoTranslated"
+   ],
+   "methods": []
+  },
+  "I2.Loc.TermData": {
+   "parent": "<15996>",
+   "fields": [
+    "Term",
+    "TermType",
+    "Description",
+    "Languages",
+    "Flags",
+    "Languages_Touch"
+   ],
+   "methods": [
+    "GetTranslation/3",
+    "SetTranslation/3",
+    "RemoveSpecialization/1",
+    "RemoveSpecialization/2",
+    "IsAutoTranslated/2",
+    "Validate/0",
+    "IsTerm/2",
+    "HasSpecializations/0",
+    "GetAllSpecializations/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.TermsPopup": {
+   "parent": "<16706>",
+   "fields": [
+    "<Filter>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/1",
+    "get_Filter/0",
+    "set_Filter/1"
+   ]
+  },
+  "I2.Loc.AutoChangeCultureInfo": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.CoroutineManager": {
+   "parent": "<15661>",
+   "fields": [
+    "mInstance"
+   ],
+   "methods": [
+    "get_pInstance/0",
+    "Awake/0",
+    "Start/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.CustomLocalizeCallback": {
+   "parent": "<15661>",
+   "fields": [
+    "_OnLocalize"
+   ],
+   "methods": [
+    "OnEnable/0",
+    "OnDisable/0",
+    "OnLocalize/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.HindiFixer": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "Fix/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.I2Utils": {
+   "parent": "<15996>",
+   "fields": [
+    "ValidChars",
+    "NumberChars",
+    "ValidNameSymbols"
+   ],
+   "methods": [
+    "ReverseText/1",
+    "RemoveNonASCII/2",
+    "GetValidTermName/2",
+    "SplitLine/2",
+    "FindNextTag/4",
+    "RemoveTags/1",
+    "RemoveResourcesPath/1",
+    "IsPlaying/0",
+    "GetPath/1",
+    "FindObject/1",
+    "FindObject/2",
+    "FindObject/2",
+    "FindInParents/1",
+    "GetCaptureMatch/1",
+    "SendWebRequest/1",
+    "<ReverseText>g__Reverse|3_0/3"
+   ]
+  },
+  "I2.Loc.ILocalizationParamsManager": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "GetParameterValue/1"
+   ]
+  },
+  "ParamValue": {
+   "parent": "<19796>",
+   "fields": [
+    "Name",
+    "Value"
+   ],
+   "methods": []
+  },
+  "I2.Loc.LocalizationParamsManager": {
+   "parent": "<15661>",
+   "fields": [
+    "_Params",
+    "_IsGlobalManager"
+   ],
+   "methods": [
+    "GetParameterValue/1",
+    "SetParameterValue/3",
+    "OnLocalize/0",
+    "OnEnable/0",
+    "DoAutoRegister/0",
+    "OnDisable/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.LocalizedString": {
+   "parent": "<19796>",
+   "fields": [
+    "mTerm",
+    "mRTL_IgnoreArabicFix",
+    "mRTL_MaxLineLength",
+    "mRTL_ConvertNumbers",
+    "m_DontLocalizeParameters"
+   ],
+   "methods": [
+    "op_Implicit/1",
+    "op_Implicit/1",
+    ".ctor/1",
+    "ToString/0"
+   ]
+  },
+  "I2.Loc.RegisterCallback_AllowSyncFromGoogle": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Awake/0",
+    "OnEnable/0",
+    "OnDisable/0",
+    "AllowSyncFromGoogle/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.RegisterGlobalParameters": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "OnEnable/0",
+    "OnDisable/0",
+    "GetParameterValue/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.IResourceManager_Bundles": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "LoadFromBundle/2"
+   ]
+  },
+  "I2.Loc.ResourceManager": {
+   "parent": "<15661>",
+   "fields": [
+    "mInstance",
+    "mBundleManagers",
+    "Assets",
+    "mResourcesCache"
+   ],
+   "methods": [
+    "get_pInstance/0",
+    "MyOnLevelWasLoaded/2",
+    "GetAsset/1",
+    "FindAsset/1",
+    "HasAsset/1",
+    "LoadFromResources/1",
+    "LoadFromBundle/1",
+    "CleanResourceCache/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.RTLFixer": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "Fix/1",
+    "Fix/2",
+    "Fix/3",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.IsolatedArabicLetters": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Hamza",
+    "Alef",
+    "AlefHamza",
+    "WawHamza",
+    "AlefMaksoor",
+    "AlefMaksora",
+    "HamzaNabera",
+    "Ba",
+    "Ta",
+    "Tha2",
+    "Jeem",
+    "H7aa",
+    "Khaa2",
+    "Dal",
+    "Thal",
+    "Ra2",
+    "Zeen",
+    "Seen",
+    "Sheen",
+    "S9a",
+    "Dha",
+    "T6a",
+    "T6ha",
+    "Ain",
+    "Gain",
+    "Fa",
+    "Gaf",
+    "Kaf",
+    "Lam",
+    "Meem",
+    "Noon",
+    "Ha",
+    "Waw",
+    "Ya",
+    "AlefMad",
+    "TaMarboota",
+    "PersianPe",
+    "PersianChe",
+    "PersianZe",
+    "PersianGaf",
+    "PersianGaf2"
+   ],
+   "methods": []
+  },
+  "I2.Loc.GeneralArabicLetters": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Hamza",
+    "Alef",
+    "AlefHamza",
+    "WawHamza",
+    "AlefMaksoor",
+    "AlefMagsora",
+    "HamzaNabera",
+    "Ba",
+    "Ta",
+    "Tha2",
+    "Jeem",
+    "H7aa",
+    "Khaa2",
+    "Dal",
+    "Thal",
+    "Ra2",
+    "Zeen",
+    "Seen",
+    "Sheen",
+    "S9a",
+    "Dha",
+    "T6a",
+    "T6ha",
+    "Ain",
+    "Gain",
+    "Fa",
+    "Gaf",
+    "Kaf",
+    "Lam",
+    "Meem",
+    "Noon",
+    "Ha",
+    "Waw",
+    "Ya",
+    "AlefMad",
+    "TaMarboota",
+    "PersianPe",
+    "PersianChe",
+    "PersianZe",
+    "PersianGaf",
+    "PersianGaf2"
+   ],
+   "methods": []
+  },
+  "I2.Loc.ArabicMapping": {
+   "parent": "<15996>",
+   "fields": [
+    "from",
+    "to"
+   ],
+   "methods": [
+    ".ctor/2"
+   ]
+  },
+  "I2.Loc.ArabicTable": {
+   "parent": "<15996>",
+   "fields": [
+    "mapList",
+    "arabicMapper"
+   ],
+   "methods": [
+    ".ctor/0",
+    "get_ArabicMapper/0",
+    "Convert/1"
+   ]
+  },
+  "I2.Loc.TashkeelLocation": {
+   "parent": "<15996>",
+   "fields": [
+    "tashkeel",
+    "position"
+   ],
+   "methods": [
+    ".ctor/2"
+   ]
+  },
+  "I2.Loc.RTLFixerTool": {
+   "parent": "<15996>",
+   "fields": [
+    "showTashkeel",
+    "useHinduNumbers"
+   ],
+   "methods": [
+    "RemoveTashkeel/2",
+    "ReturnTashkeel/2",
+    "FixLine/1",
+    "IsIgnoredCharacter/1",
+    "IsLeadingLetter/2",
+    "IsFinishingLetter/2",
+    "IsMiddleLetter/2",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "I2.Loc.SetLanguage": {
+   "parent": "<15661>",
+   "fields": [
+    "_Language"
+   ],
+   "methods": [
+    "OnClick/0",
+    "ApplyLanguage/0",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.SetLanguageDropdown": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "OnEnable/0",
+    "OnValueChanged/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.StringObfucator": {
+   "parent": "<15996>",
+   "fields": [
+    "StringObfuscatorPassword"
+   ],
+   "methods": [
+    "Encode/1",
+    "Decode/1",
+    "ToBase64/1",
+    "FromBase64/1",
+    "XoREncode/1",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "I2.Loc.SimpleJSON.JSONBinaryTag": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Array",
+    "Class",
+    "Value",
+    "IntValue",
+    "DoubleValue",
+    "BoolValue",
+    "FloatValue"
+   ],
+   "methods": []
+  },
+  "I2.Loc.SimpleJSON.JSONNode": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "Add/2",
+    "get_Item/1",
+    "set_Item/2",
+    "get_Item/1",
+    "set_Item/2",
+    "get_Value/0",
+    "set_Value/1",
+    "get_Count/0",
+    "Add/1",
+    "Remove/1",
+    "Remove/1",
+    "Remove/1",
+    "get_Childs/0",
+    "get_DeepChilds/0",
+    "ToString/0",
+    "ToString/1",
+    "get_AsInt/0",
+    "set_AsInt/1",
+    "get_AsFloat/0",
+    "set_AsFloat/1",
+    "get_AsDouble/0",
+    "set_AsDouble/1",
+    "get_AsBool/0",
+    "set_AsBool/1",
+    "get_AsArray/0",
+    "get_AsObject/0",
+    "op_Implicit/1",
+    "op_Implicit/1",
+    "op_Equality/2",
+    "op_Inequality/2",
+    "Equals/1",
+    "GetHashCode/0",
+    "Escape/1",
+    "Parse/1",
+    "Serialize/1",
+    "SaveToStream/1",
+    "SaveToCompressedStream/1",
+    "SaveToCompressedFile/1",
+    "SaveToCompressedBase64/0",
+    "SaveToFile/1",
+    "SaveToBase64/0",
+    "Deserialize/1",
+    "LoadFromCompressedFile/1",
+    "LoadFromCompressedStream/1",
+    "LoadFromCompressedBase64/1",
+    "LoadFromStream/1",
+    "LoadFromFile/1",
+    "LoadFromBase64/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.SimpleJSON.JSONArray": {
+   "parent": "<14655>",
+   "fields": [
+    "m_List"
+   ],
+   "methods": [
+    "get_Item/1",
+    "set_Item/2",
+    "get_Item/1",
+    "set_Item/2",
+    "get_Count/0",
+    "Add/2",
+    "Remove/1",
+    "Remove/1",
+    "get_Childs/0",
+    "GetEnumerator/0",
+    "ToString/0",
+    "ToString/1",
+    "Serialize/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.SimpleJSON.JSONClass": {
+   "parent": "<14655>",
+   "fields": [
+    "m_Dict"
+   ],
+   "methods": [
+    "get_Item/1",
+    "set_Item/2",
+    "get_Item/1",
+    "set_Item/2",
+    "get_Count/0",
+    "Add/2",
+    "Remove/1",
+    "Remove/1",
+    "Remove/1",
+    "get_Childs/0",
+    "GetEnumerator/0",
+    "ToString/0",
+    "ToString/1",
+    "Serialize/1",
+    ".ctor/0"
+   ]
+  },
+  "I2.Loc.SimpleJSON.JSONData": {
+   "parent": "<14655>",
+   "fields": [
+    "m_Data"
+   ],
+   "methods": [
+    "get_Value/0",
+    "set_Value/1",
+    ".ctor/1",
+    ".ctor/1",
+    ".ctor/1",
+    ".ctor/1",
+    ".ctor/1",
+    "ToString/0",
+    "ToString/1",
+    "Serialize/1"
+   ]
+  },
+  "I2.Loc.SimpleJSON.JSONLazyCreator": {
+   "parent": "<14655>",
+   "fields": [
+    "m_Node",
+    "m_Key"
+   ],
+   "methods": [
+    ".ctor/1",
+    ".ctor/2",
+    "Set/1",
+    "get_Item/1",
+    "set_Item/2",
+    "get_Item/1",
+    "set_Item/2",
+    "Add/1",
+    "Add/2",
+    "op_Equality/2",
+    "op_Inequality/2",
+    "Equals/1",
+    "GetHashCode/0",
+    "ToString/0",
+    "ToString/1",
+    "get_AsInt/0",
+    "set_AsInt/1",
+    "get_AsFloat/0",
+    "set_AsFloat/1",
+    "get_AsDouble/0",
+    "set_AsDouble/1",
+    "get_AsBool/0",
+    "set_AsBool/1",
+    "get_AsArray/0",
+    "get_AsObject/0"
+   ]
+  },
+  "I2.Loc.SimpleJSON.JSON": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "Parse/1"
+   ]
+  },
+  "AudioType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Music",
+    "Sound",
+    "UISound"
+   ],
+   "methods": []
+  },
+  "Hellmade.Sound.Audio": {
+   "parent": "<15996>",
+   "fields": [
+    "<AudioID>k__BackingField",
+    "<Type>k__BackingField",
+    "<IsPlaying>k__BackingField",
+    "<Paused>k__BackingField",
+    "<Stopping>k__BackingField",
+    "<Activated>k__BackingField",
+    "<Pooled>k__BackingField",
+    "<Volume>k__BackingField",
+    "<AudioSource>k__BackingField",
+    "<Persist>k__BackingField",
+    "<FadeInSeconds>k__BackingField",
+    "<FadeOutSeconds>k__BackingField",
+    "audioCounter",
+    "clip",
+    "loop",
+    "mute",
+    "priority",
+    "pitch",
+    "stereoPan",
+    "spatialBlend",
+    "reverbZoneMix",
+    "dopplerLevel",
+    "spread",
+    "rolloffMode",
+    "max3DDistance",
+    "min3DDistance",
+    "targetVolume",
+    "initTargetVolume",
+    "tempFadeSeconds",
+    "fadeInterpolater",
+    "onFadeStartVolume",
+    "sourceTransform"
+   ],
+   "methods": [
+    "get_AudioID/0",
+    "set_AudioID/1",
+    "get_Type/0",
+    "set_Type/1",
+    "get_IsPlaying/0",
+    "set_IsPlaying/1",
+    "get_Paused/0",
+    "set_Paused/1",
+    "get_Stopping/0",
+    "set_Stopping/1",
+    "get_Activated/0",
+    "set_Activated/1",
+    "get_Pooled/0",
+    "set_Pooled/1",
+    "get_Volume/0",
+    "set_Volume/1",
+    "get_AudioSource/0",
+    "set_AudioSource/1",
+    "get_SourceTransform/0",
+    "set_SourceTransform/1",
+    "get_Clip/0",
+    "set_Clip/1",
+    "get_Loop/0",
+    "set_Loop/1",
+    "get_Mute/0",
+    "set_Mute/1",
+    "get_Priority/0",
+    "set_Priority/1",
+    "get_Pitch/0",
+    "set_Pitch/1",
+    "get_StereoPan/0",
+    "set_StereoPan/1",
+    "get_SpatialBlend/0",
+    "set_SpatialBlend/1",
+    "get_ReverbZoneMix/0",
+    "set_ReverbZoneMix/1",
+    "get_DopplerLevel/0",
+    "set_DopplerLevel/1",
+    "get_Spread/0",
+    "set_Spread/1",
+    "get_RolloffMode/0",
+    "set_RolloffMode/1",
+    "get_Max3DDistance/0",
+    "set_Max3DDistance/1",
+    "get_Min3DDistance/0",
+    "set_Min3DDistance/1",
+    "get_Persist/0",
+    "set_Persist/1",
+    "get_FadeInSeconds/0",
+    "set_FadeInSeconds/1",
+    "get_FadeOutSeconds/0",
+    "set_FadeOutSeconds/1",
+    ".ctor/8",
+    "CreateAudiosource/0",
+    "Play/0",
+    "Play/1",
+    "Stop/0",
+    "Pause/0",
+    "UnPause/0",
+    "Resume/0",
+    "SetVolume/1",
+    "SetVolume/2",
+    "SetVolume/3",
+    "Set3DDistances/2",
+    "Update/0"
+   ]
+  },
+  "Hellmade.Sound.EazySoundManager": {
+   "parent": "<15661>",
+   "fields": [
+    "<IgnoreDuplicateMusic>k__BackingField",
+    "<IgnoreDuplicateSounds>k__BackingField",
+    "<IgnoreDuplicateUISounds>k__BackingField",
+    "<GlobalVolume>k__BackingField",
+    "<GlobalMusicVolume>k__BackingField",
+    "<GlobalSoundsVolume>k__BackingField",
+    "<GlobalUISoundsVolume>k__BackingField",
+    "instance",
+    "musicAudio",
+    "soundsAudio",
+    "UISoundsAudio",
+    "audioPool",
+    "initialized"
+   ],
+   "methods": [
+    "get_Gameobject/0",
+    "get_IgnoreDuplicateMusic/0",
+    "set_IgnoreDuplicateMusic/1",
+    "get_IgnoreDuplicateSounds/0",
+    "set_IgnoreDuplicateSounds/1",
+    "get_IgnoreDuplicateUISounds/0",
+    "set_IgnoreDuplicateUISounds/1",
+    "get_GlobalVolume/0",
+    "set_GlobalVolume/1",
+    "get_GlobalMusicVolume/0",
+    "set_GlobalMusicVolume/1",
+    "get_GlobalSoundsVolume/0",
+    "set_GlobalSoundsVolume/1",
+    "get_GlobalUISoundsVolume/0",
+    "set_GlobalUISoundsVolume/1",
+    "get_Instance/0",
+    ".cctor/0",
+    "Init/0",
+    "OnEnable/0",
+    "OnDisable/0",
+    "OnSceneLoaded/2",
+    "Update/0",
+    "GetAudioTypeDictionary/1",
+    "GetAudioTypeIgnoreDuplicateSetting/1",
+    "UpdateAllAudio/1",
+    "RemoveNonPersistAudio/1",
+    "RestoreAudioFromPool/2",
+    "GetAudio/1",
+    "GetAudio/1",
+    "GetMusicAudio/1",
+    "GetMusicAudio/1",
+    "GetSoundAudio/1",
+    "GetSoundAudio/1",
+    "GetUISoundAudio/1",
+    "GetUISoundAudio/1",
+    "GetAudio/3",
+    "GetAudio/3",
+    "PrepareMusic/1",
+    "PrepareMusic/2",
+    "PrepareMusic/4",
+    "PrepareMusic/6",
+    "PrepareMusic/8",
+    "PrepareSound/1",
+    "PrepareSound/2",
+    "PrepareSound/2",
+    "PrepareSound/4",
+    "PrepareUISound/1",
+    "PrepareUISound/2",
+    "PrepareAudio/9",
+    "PlayMusic/1",
+    "PlayMusic/2",
+    "PlayMusic/4",
+    "PlayMusic/6",
+    "PlayMusic/8",
+    "PlaySound/1",
+    "PlaySound/2",
+    "PlaySound/2",
+    "PlaySound/4",
+    "PlayUISound/1",
+    "PlayUISound/2",
+    "PlayAudio/9",
+    "StopAll/0",
+    "StopAll/1",
+    "StopAllMusic/0",
+    "StopAllMusic/1",
+    "StopAllSounds/0",
+    "StopAllUISounds/0",
+    "StopAllAudio/2",
+    "PauseAll/0",
+    "PauseAllMusic/0",
+    "PauseAllSounds/0",
+    "PauseAllUISounds/0",
+    "PauseAllAudio/1",
+    "ResumeAll/0",
+    "ResumeAllMusic/0",
+    "ResumeAllSounds/0",
+    "ResumeAllUISounds/0",
+    "ResumeAllAudio/1",
+    ".ctor/0"
+   ]
+  },
+  "Bimiboo.unity_utils.QuitGameTitle.QuitGameTitle": {
+   "parent": "<15661>",
+   "fields": [
+    "fontGeneral",
+    "fontThai",
+    "quitGameLocalization"
+   ],
+   "methods": [
+    "GetDefaultLanguageQuitTitle/0",
+    "Start/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "Bimiboo.unity_utils.QuitGameScreen.QuitGamePopup": {
+   "parent": "<15661>",
+   "fields": [
+    "<Instance>k__BackingField",
+    "<OnAcceptClickHandler>k__BackingField",
+    "<IsPopupShowed>k__BackingField",
+    "acceptButton",
+    "declineButton",
+    "blackout",
+    "_hidePosition",
+    "_duration",
+    "_blackOutFade",
+    "_rectTransform",
+    "_graphicRaycaster",
+    "_tweenSequence"
+   ],
+   "methods": [
+    "get_Instance/0",
+    "set_Instance/1",
+    "get_OnAcceptClickHandler/0",
+    "set_OnAcceptClickHandler/1",
+    "get_IsPopupShowed/0",
+    "set_IsPopupShowed/1",
+    "Awake/0",
+    "ShowPopup/0",
+    "HidePopup/0",
+    "OnAcceptClick/0",
+    "TogglePopup/1",
+    "OnCompleteMove/1",
+    "OnDestroy/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "Bimiboo.unity_utils.BackButton.EscapeButtonClickHandler": {
+   "parent": "<15661>",
+   "fields": [
+    "FrameDelta",
+    "_frameCounter",
+    "_instance",
+    "OnBackButtonClicked"
+   ],
+   "methods": [
+    "add_OnBackButtonClicked/1",
+    "remove_OnBackButtonClicked/1",
+    "Awake/0",
+    "Update/0",
+    "Subscribe/1",
+    "Unsubscribe/1",
+    ".ctor/0"
+   ]
+  },
+  "Data": {
+   "parent": "<15996>",
+   "fields": [
+    "name",
+    "crc"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.AssetBundleManager": {
+   "parent": "<15661>",
+   "fields": [
+    "activeAssetBundle",
+    "url",
+    "testBuildNumber",
+    "testPlatform"
+   ],
+   "methods": [
+    "Start/0",
+    "CheckForChanges/0",
+    "OnRequestCompleted/1",
+    "AddCacheAtPath/1",
+    "Update/0",
+    "LoadAssetBundle/3",
+    "DownloadBundle/4",
+    "IsBundleDownloaded/1",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "UnityUtils.BundlesController": {
+   "parent": "<17484>",
+   "fields": [
+    "scenesAsSeperateBundles",
+    "productName"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.ClearCache": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "OnButtonClicked/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.CustomIntroScene": {
+   "parent": "<14348>",
+   "fields": [
+    "spineIntro",
+    "CanvasGO",
+    "progresBar",
+    "progresBarPrefab"
+   ],
+   "methods": [
+    "StartGame/0",
+    "SetAnimation/0",
+    "OnEndSpineTrigger/1",
+    "OnDownloadCompleted/2",
+    "ShowProgress/1",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.MenuItemController": {
+   "parent": "<15661>",
+   "fields": [
+    "nameOfDownloadingScene",
+    "progresBarPrefab",
+    "progresBar"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    "DownloadContent/0",
+    "OnAssetBundleFailed/0",
+    "OnAssetBundleLoaded/2",
+    "LoadScene/2",
+    "ShowProgress/1",
+    "LoadScene/1",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.Actions": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "AnimationTime/2",
+    "MoveOverSeconds/3",
+    "MoveOverSpeed/3",
+    "MoveOverSecondsByRectTransform/3",
+    "ChildrenOfGameobject/1",
+    "GetChildrenOfGameobject/1",
+    "ScaleOverSeconds/3",
+    "RotateOverSeconds/3",
+    "RotateOverSeconds/3",
+    "ChangeColorOverTime/3",
+    "FadeOverTime/3",
+    "FadeOverTime/3",
+    "FadeOverTime/3",
+    "ChangeColorOverTime/3",
+    "LoadScene/1",
+    "getScreenSizeInPoints/1",
+    "ConvertV3ToV2/1",
+    "IsObjectInCollider/2",
+    "ActionWrong/2",
+    "LoadPNG/1"
+   ]
+  },
+  "OnWriteComplete": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/1",
+    "BeginInvoke/3",
+    "EndInvoke/1"
+   ]
+  },
+  "UnityUtils.BigFileTransfer": {
+   "parent": "<15661>",
+   "fields": [
+    "instance",
+    "log",
+    "dataPool",
+    "threadPool",
+    "completedFlagPool",
+    "callbackPool"
+   ],
+   "methods": [
+    "Awake/0",
+    "WriteAllBytesAsync/3",
+    "NowCheckForResourceUnload/1",
+    "SaveDataThreaded/1",
+    "SaveDataTaskThreaded/1",
+    "CallCB/2",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.CommonAudioClips": {
+   "parent": "<17484>",
+   "fields": [
+    "clickClip",
+    "parentalGateNumberClickClip",
+    "parentalGateRightClip",
+    "parentalGateWrongClip",
+    "getClip"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.DeviceInfo": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "IsIpad/0",
+    "IsDeviceLandscape/0",
+    "IsDeviceRatioBiggerThan2/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.FpsStats": {
+   "parent": "<15661>",
+   "fields": [
+    "fpsText",
+    "deltaTime"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.OpenUrl": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "OnUrlButtonPressed/1",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.RelativeStreching": {
+   "parent": "<15661>",
+   "fields": [
+    "width",
+    "height",
+    "initWidth",
+    "initHeight"
+   ],
+   "methods": [
+    "Start/0",
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "NetworkTypes": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "None",
+    "Mobile",
+    "WiFi"
+   ],
+   "methods": []
+  },
+  "UnityUtils.InternetManager": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "get_IsInternetWorking/0",
+    "get_NetworkType/0",
+    "CheckIsInternetConnected/0",
+    "CheckInternetType/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.InitialSettings": {
+   "parent": "<15661>",
+   "fields": [
+    "SkipIntroScene",
+    "audioFiles",
+    "orientation",
+    "spineDataAsset",
+    "spine",
+    "audioController",
+    "bgAudio",
+    "sceneToLoad",
+    "pathToAudios",
+    "firstNotificationInterval",
+    "repeatNotificationInterval",
+    "i2AppTitleKey"
+   ],
+   "methods": [
+    "Awake/0",
+    "ExceptionInLanguages/0",
+    "PreventLinkerFromStrippingCommonLocalizationReferences/0",
+    "SetAppOrientation/0",
+    "DisablingAnalytics/0",
+    "Start/0",
+    "CreateRateUpController/0",
+    "CreateBackgroundMusic/0",
+    "CreateSceneTransition/0",
+    "CreateShelfData/0",
+    "CreateLocalNotification/0",
+    "StartGame/0",
+    "SetAnimation/0",
+    "OnEndSpine/1",
+    "OnUserDefinedEvent/2",
+    "PlayFromList/2",
+    "PlaySoundEffect/1",
+    "SetupSoundManager/0",
+    "EnableMultiTouches/1",
+    "SetFPS/1",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.IntroScene": {
+   "parent": "<14348>",
+   "fields": [],
+   "methods": [
+    "StartGame/0",
+    ".ctor/0"
+   ]
+  },
+  "TimerStruct": {
+   "parent": "<19796>",
+   "fields": [
+    "days",
+    "hours",
+    "minutus",
+    "seconds"
+   ],
+   "methods": [
+    ".ctor/4"
+   ]
+  },
+  "UnityUtils.NotificationController": {
+   "parent": "<15661>",
+   "fields": [
+    "s_KeyToPermission",
+    "firstNotificationTimer",
+    "repeatNotificationTimer",
+    "i2AppTitleKey",
+    "firstNotificationMessage",
+    "repeatedNotificationMessage",
+    "textsByLanguage"
+   ],
+   "methods": [
+    "Start/0",
+    "Settings/4",
+    "RegisterForNotif/0",
+    "RequestNotificationPermission/0",
+    "RequestAuthorization/0",
+    "ScheduleIOSNotification/3",
+    "ScheduleAndroidNotification/4",
+    "OnApplicationQuit/0",
+    "OnApplicationPause/1",
+    "GetLocalizedText/2",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.RateUs": {
+   "parent": "<15661>",
+   "fields": [
+    "instance",
+    "RateUsDialoguePreferencesKey_Score",
+    "RateUsDialoguePreferencesKey_Rated",
+    "RateUsDialoguePreferencesKey_LastShownTime"
+   ],
+   "methods": [
+    "Start/0",
+    "GetScore/0",
+    "SetScore/1",
+    "SetRated/1",
+    "GetRated/0",
+    "IncreamentScore/1",
+    "ShowIfNeeded/2",
+    "ShowRateUsPopup/1",
+    "RequestReviewAmazon/1",
+    "RequestReviewAndroid/0",
+    ".ctor/0"
+   ]
+  },
+  "OriginColorToFade": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Black",
+    "White",
+    "Custom"
+   ],
+   "methods": []
+  },
+  "UnityUtils.SceneTransition": {
+   "parent": "<15661>",
+   "fields": [
+    "s_internalInstance",
+    "FadeStarted",
+    "FadeEnded",
+    "originColor",
+    "originColorToFade",
+    "previouSceneName"
+   ],
+   "methods": [
+    "get__instance/0",
+    "get_imageForTransition/0",
+    "add_FadeStarted/1",
+    "remove_FadeStarted/1",
+    "add_FadeEnded/1",
+    "remove_FadeEnded/1",
+    "Start/0",
+    "LoadSceneWithTransition/4",
+    "LoadScene/1",
+    "LoadSceneAsyncWithTransition/3",
+    "LoadSceneAsync/2",
+    "FadeIn/1",
+    "FadeOut/1",
+    "Fade/2",
+    "SetTransitionImageColor/1",
+    "SetRaycastTarget/1",
+    "SetPreviousSceneName/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.ScreenType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Tablet",
+    "Phone",
+    "LongPhone"
+   ],
+   "methods": []
+  },
+  "UnityUtils.ScreenUtils": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "ScreenSizeInPixels/0",
+    "ScreenWidthInPixels/0",
+    "ScreenHeightInPixels/0",
+    "ScreenSizeUI/1",
+    "ScreenWidthUI/2",
+    "ScreenHeightUI/2",
+    "ConstantValueUI/1",
+    "ScreenSize/0",
+    "ScreenWidth/1",
+    "ScreenHeight/1",
+    "ConstantValue/1",
+    "GetScreenInWorldPoint/2",
+    "GetUIScreenPosition/2",
+    "PointsToPixels/1",
+    "PointsToPixels/1",
+    "PointsToPixels/1",
+    "PixelsToPoints/1",
+    "PixelsToPoint/1",
+    "PixelsToPoint/1",
+    "GetScreenType/0",
+    "IsTablet/0",
+    "IsPhone/0",
+    "IsLongPhone/0",
+    "GetLongPhonePaddingUI/0",
+    "GetLongPhonePadding/0",
+    "GetDistanceToPutOnMove/0",
+    "GetDistanceToPutOnRelease/0",
+    ".ctor/0"
+   ]
+  },
+  "AudioSourceData": {
+   "parent": "<15996>",
+   "fields": [
+    "Source",
+    "AudioCode",
+    "IsMusic",
+    "Is3Dsound",
+    "SourceRequestedPos",
+    "RequestedVolume",
+    "OnPause",
+    "CachedTransform"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.AudioController": {
+   "parent": "<15996>",
+   "fields": [
+    "soundEnabled",
+    "musicEnabled",
+    "soundVolume",
+    "musicVolume",
+    "sourceMedia",
+    "presenter",
+    "audioCodeIndex"
+   ],
+   "methods": [
+    "UnityUtils.SoundManager.Audio.IAudioController.get_IsSoundEnabled/0",
+    "UnityUtils.SoundManager.Audio.IAudioController.get_IsMusicEnabled/0",
+    "UnityUtils.SoundManager.Audio.IAudioController.get_SoundVolume/0",
+    "UnityUtils.SoundManager.Audio.IAudioController.get_MusicVolume/0",
+    "SetSoundEnabled/1",
+    "SetMusicEnabled/1",
+    "SetSoundVolume/1",
+    "SetMusicVolume/1",
+    ".ctor/0",
+    "System.IDisposable.Dispose/0",
+    "UnityUtils.SoundManager.Audio.IMusicPlayer.PlayMusicClip/2",
+    "UnityUtils.SoundManager.Audio.IMusicPlayer.StopPlayingMusicClip/1",
+    "UnityUtils.SoundManager.Audio.IMusicPlayer.PausePlayingClip/1",
+    "UnityUtils.SoundManager.Audio.IMusicPlayer.ResumeClipIfInPause/1",
+    "UnityUtils.SoundManager.Audio.IMusicPlayer.IsMusicClipCodePlaying/1",
+    "UnityUtils.SoundManager.Audio.IAudioPlayer.PlayAudioClip2D/3",
+    "UnityUtils.SoundManager.Audio.IAudioPlayer.PlayAudioClip3D/5",
+    "UnityUtils.SoundManager.Audio.IAudioPlayer.StopPlayingClip/1",
+    "UnityUtils.SoundManager.Audio.IAudioPlayer.IsAudioClipCodePlaying/1",
+    "UnityUtils.SoundManager.Audio.IAudioPlayer.SetAudioListenerToPosition/1",
+    "UnityUtils.SoundManager.Audio.IAudioPlayer.SetSourcePositionTo/2",
+    "Initialization/0",
+    "ScanForEndedSources/0",
+    "SmartDestroy/1",
+    "<SetSoundEnabled>b__15_0/1",
+    "<SetMusicEnabled>b__16_0/1",
+    "<SetSoundVolume>b__17_0/1",
+    "<SetMusicVolume>b__18_0/1"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.AudioManager": {
+   "parent": "<15661>",
+   "fields": [
+    "audioController"
+   ],
+   "methods": [
+    "Awake/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.AudioPresenter": {
+   "parent": "<15661>",
+   "fields": [
+    "AudioListener"
+   ],
+   "methods": [
+    "Awake/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.BackgroundMusic": {
+   "parent": "<15661>",
+   "fields": [
+    "iMusicPlayer",
+    "iAudioController",
+    "gameBgMusicID",
+    "menuBgMusicID",
+    "menuMelody",
+    "gameMelody",
+    "_instance",
+    "SoundEndableSwitched"
+   ],
+   "methods": [
+    "add_SoundEndableSwitched/1",
+    "remove_SoundEndableSwitched/1",
+    "Start/0",
+    "PlayMainMenuBackgroundMusic/1",
+    "PlayMainMenuBackgroundMusic/1",
+    "PlayGameBackgroundMusic/1",
+    "PlayGameBackgroundMusic/1",
+    "PauseAllBackgroundMusics/0",
+    "MuteBackgroundMusic/1",
+    "IsBackgroundMusicMuted/0",
+    "SetVolume/1",
+    "SoundVolume/1",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.IAudioController": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "SetSoundEnabled/1",
+    "SetMusicEnabled/1",
+    "SetSoundVolume/1",
+    "SetMusicVolume/1",
+    "get_IsSoundEnabled/0",
+    "get_IsMusicEnabled/0",
+    "get_SoundVolume/0",
+    "get_MusicVolume/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.IAudioPlayer": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "PlayAudioClip2D/3",
+    "PlayAudioClip3D/5",
+    "StopPlayingClip/1",
+    "IsAudioClipCodePlaying/1",
+    "SetAudioListenerToPosition/1",
+    "SetSourcePositionTo/2"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.IMusicPlayer": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "PlayMusicClip/2",
+    "StopPlayingMusicClip/1",
+    "PausePlayingClip/1",
+    "ResumeClipIfInPause/1",
+    "IsMusicClipCodePlaying/1"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.SavableValue`1": {
+   "parent": "<15996>",
+   "fields": [
+    "playerPrefsPath",
+    "value",
+    "prevValue",
+    "OnChanged"
+   ],
+   "methods": [
+    "add_OnChanged/1",
+    "remove_OnChanged/1",
+    "get_Value/0",
+    "set_Value/1",
+    "get_PrevValue/0",
+    ".ctor/2",
+    "LoadFromPrefs/0",
+    "SaveToPrefs/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.SoundEffect": {
+   "parent": "<15996>",
+   "fields": [
+    "allPlayingSoundIds",
+    "allPlayingVoiceIds",
+    "allPlayingMusicIds",
+    "lastPlayingVoiceId",
+    "lastPlayingMusicId",
+    "lastPlayingMusicName"
+   ],
+   "methods": [
+    "PlaySound/4",
+    "StopSound/2",
+    "StopAllSounds/1",
+    "PlayVoice/4",
+    "StopVoice/2",
+    "StopAllVoice/1",
+    "PlayMusic/3",
+    "StopMusic/2",
+    "StopAllMusic/1",
+    "MuteMusic/2",
+    "MuteSound/2",
+    ".cctor/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.TestAudio": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "PlayMenuBgMusic/0",
+    "ChangeSceneToGame/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.SoundManager.Audio.TestGameAudio": {
+   "parent": "<15661>",
+   "fields": [
+    "sounds",
+    "audioPlayer"
+   ],
+   "methods": [
+    "Start/0",
+    "PlayGameBgMusic/0",
+    "PlayMenuBgMusic/0",
+    "PlayRandomSoundEffect/0",
+    ".ctor/0"
+   ]
+  },
+  "MetaJson": {
+   "parent": "<15996>",
+   "fields": [
+    "md5",
+    "root",
+    "data"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "ContentJson": {
+   "parent": "<15996>",
+   "fields": [
+    "badge",
+    "apps",
+    "md5"
+   ],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "ShelfItemInfo": {
+   "parent": "<15996>",
+   "fields": [
+    "bundleId",
+    "title",
+    "description",
+    "featured_title",
+    "featured_description",
+    "icon",
+    "banner",
+    "url",
+    "serverDefinedScore",
+    "score",
+    "countries"
+   ],
+   "methods": [
+    ".ctor/10"
+   ]
+  },
+  "UnityUtils.Shelf.ShelfData": {
+   "parent": "<15661>",
+   "fields": [
+    "apps",
+    "isAllShelfItemsDownloaded",
+    "_instance",
+    "badgeSprite",
+    "canShowShelf",
+    "_keyAppCount",
+    "_installed",
+    "_notInstalled",
+    "badgeName",
+    "notInstalledApps",
+    "hasOpenedTheMarket",
+    "cloneApps",
+    "shelfItemDictionary",
+    "_shelfUrl",
+    "_metadataJsonfUrl",
+    "shefPersistantDataPath",
+    "_listOfShelfItems",
+    "SHELF",
+    "SHELF_HASH",
+    "SHELF_URL",
+    "keyScorePrefix",
+    "APP_INSTALLED",
+    "APP_NOT_INSTALLED",
+    "languageCodeMap"
+   ],
+   "methods": [
+    "Start/0",
+    "CreatePathToSaveTextures/0",
+    "GetCurrentPlatform/0",
+    "GetShelfUrl/1",
+    "DownloadMetaJson/1",
+    "OnRequestCompleted/1",
+    "ValidateShelfMetadata/1",
+    "LoadMetadataJson/0",
+    "DownloadMetadataJson/0",
+    "GetFileNameFromUrl/1",
+    "GetShelfFilePath/1",
+    "DeleteFileIfExists/1",
+    "ParseJson/1",
+    "DownloadAppContents/1",
+    "DownloadImageAndSave/2",
+    "LoadBadgeFromCache/1",
+    "CheckAppIconsExist/0",
+    "CheckAppsCanBeOpened/0",
+    "CheckToShowShelf/0",
+    "ShelfRotationLogic/0",
+    "ResetScores/0",
+    "FilterAppsByStoreLocale/0",
+    "SortAppsByScore/1",
+    "OnNotInstalledAppHasOpened/1",
+    "OnCloseForParents/1",
+    "GetBundleIdInfo/1",
+    "HasShelfHash/0",
+    "GetCurrentAppStoreUrl/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "IconType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Banner",
+    "Icon"
+   ],
+   "methods": []
+  },
+  "UnityUtils.Shelf.ShelfForParents": {
+   "parent": "<15661>",
+   "fields": [
+    "smallBannerPrefab",
+    "bigBannerPrefab",
+    "allGames",
+    "loadingLayer",
+    "counter",
+    "shelfItems"
+   ],
+   "methods": [
+    "Start/0",
+    "LoadAllShelfItems/0",
+    "LoadImageAndSetup/2",
+    "LoadImageAndSetupWithTexture/2",
+    "OnCloseButtonPresses/0",
+    ".ctor/0"
+   ]
+  },
+  "ItemType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "BigBanner",
+    "SmallBanner"
+   ],
+   "methods": []
+  },
+  "UnityUtils.Shelf.ShelfItem": {
+   "parent": "<15661>",
+   "fields": [
+    "url",
+    "icon",
+    "title",
+    "description",
+    "bundleId",
+    "featuredText",
+    "appInfo",
+    "audioSource",
+    "clickSound",
+    "getNowButton",
+    "usedFontForThai",
+    "usedFontForAll",
+    "canOpenApp",
+    "canPressButton",
+    "itemType"
+   ],
+   "methods": [
+    "get_currentlyUsedFont/0",
+    "Start/0",
+    "SetItemType/1",
+    "SetItemInfo/2",
+    "OnGetNowButtonPressed/0",
+    "DisableButton/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.Shelf.ShelfScene": {
+   "parent": "<15661>",
+   "fields": [
+    "smallAppPrefab",
+    "bigAppPrefab",
+    "bigBannerIpad",
+    "bigBannerIphone",
+    "bigBanner",
+    "shelfItem",
+    "allGames",
+    "closeBtn",
+    "audioSource",
+    "clickSound",
+    "counter",
+    "shelfItems"
+   ],
+   "methods": [
+    "Start/0",
+    "OnDestroy/0",
+    "LoadAllShelfItems/0",
+    "LoadImageAndSetup/2",
+    "LoadImageAndSetupWithTexture/2",
+    "OnCloseButtonPresses/0",
+    "OnDisable/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.Shelf.ShelfSceneController": {
+   "parent": "<15661>",
+   "fields": [
+    "iphoneLandscapeDesign",
+    "notIphoneLandscapeDesign"
+   ],
+   "methods": [
+    "Start/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.IAP.IAPHandler": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "OnIAPRequestCompleted/1",
+    "OnRestoreProcessFinished/0",
+    "OnIAPInitialized/0",
+    "OnIAPInitializeFailed/0"
+   ]
+  },
+  "IAPState": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Idle",
+    "Purchasing",
+    "Restoring"
+   ],
+   "methods": []
+  },
+  "IAPEvent": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "None",
+    "Success",
+    "Failure",
+    "Canceled",
+    "Restored",
+    "Refreshed"
+   ],
+   "methods": []
+  },
+  "UnityUtils.IAP.IAPNonConsumable": {
+   "parent": "<15661>",
+   "fields": [
+    "m_StoreController",
+    "m_StoreExtensionProvider",
+    "m_AppleExtensions",
+    "m_GoogleExtensions",
+    "iapHandler",
+    "timerForIAPInitializing",
+    "actionNeededOnInitialize",
+    "parentalGate",
+    "iapProducts",
+    "_iapEvent",
+    "_instance"
+   ],
+   "methods": [
+    "get_iapEvent/0",
+    "set_iapEvent/1",
+    "Awake/0",
+    "SetHandler/1",
+    "RemoveHandler/0",
+    "ReinitializePurchasing/1",
+    "InitializePurchasing/0",
+    "OnPromotionalPurchase/1",
+    "DisableBlockingLayer/0",
+    "IsInitialized/0",
+    "OnInitialized/2",
+    "OnInitializeFailed/1",
+    "OnInitializeFailed/2",
+    "BuyProductID/1",
+    "RestorePurchases/0",
+    "ProcessPurchase/1",
+    "OnPurchaseFailed/2",
+    "OnPurchaseFailed/2",
+    "PurchaseFullVersion/0",
+    "FullVersionPrice/0",
+    "FullVersionPurchased/0",
+    "ProductPurchased/1",
+    "GetProductPriceFromStore/1",
+    "GetProductPriceInDecimalFromStore/1",
+    "Update/0",
+    ".ctor/0",
+    "<RestorePurchases>b__28_0/2"
+   ]
+  },
+  "UnityUtils.IAP.IapProducts": {
+   "parent": "<17484>",
+   "fields": [
+    "unlockGames",
+    "fullVersionProductId",
+    "allProductsId"
+   ],
+   "methods": [
+    "UnlockedGames/0",
+    "get_FullVersionProductId/0",
+    "get_AllProductsId/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.IAP.TestIAPPopup": {
+   "parent": "<15661>",
+   "fields": [
+    "purchaseFullVersionButton",
+    "restoreButton",
+    "textState",
+    "priceText",
+    "iAPNonConsumable"
+   ],
+   "methods": [
+    "Start/0",
+    "PurchasedFullVersion/0",
+    "PurchaseFailed/0",
+    "OnPurchaseButtonPressed/1",
+    "OnRestoreButtonPressed/0",
+    "OnIAPRequestCompleted/1",
+    "OnRestoreProcessFinished/0",
+    "OnIAPInitialized/0",
+    "OnIAPInitializeFailed/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.IAP.LoadingLayer": {
+   "parent": "<15661>",
+   "fields": [
+    "_clockwiseRotation",
+    "_loaderGo",
+    "_instance"
+   ],
+   "methods": [
+    "Start/0",
+    "ShowLoadingLayer/0",
+    "HideLoadingLayer/0",
+    ".ctor/0"
+   ]
+  },
+  "UnityUtils.CustomSpriteRendererExtension.SpriteRendererExtension": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "LoadAsyncAddressablesAssets/2",
+    "GetSize/1",
+    "GetWidth/1",
+    "GetHeight/1"
+   ]
+  },
+  "UnityUtils.CustomListExtension.ListExtension": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "Shuffle/1",
+    "Copy/1"
+   ]
+  },
+  "UnityUtils.CustomGameObjectExtension.GameObjectExtension": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "SetColor/3",
+    "SetImageColor/3",
+    "SetSpriteRendererColor/3",
+    "SetSkeletonGraphicColor/3",
+    "SetOpacity/3",
+    "SetImageOpacity/3",
+    "SetSpriteRendererOpacity/3",
+    "SetSkeletonGraphicOpacity/3",
+    "SetSkeletonAnimationOpacity/3",
+    "SetSortingLayer/3",
+    "SetOrderInLayer/3",
+    "SetSortingLayerAndOrderInLayer/4",
+    "IsSortingLayerValid/1",
+    "SetScaleX2D/2",
+    "SetScaleY2D/2",
+    "SetScale2D/3",
+    "SetScale2D/2",
+    "GetScaleX2D/1",
+    "GetScaleY2D/1",
+    "SetRotation2D/2",
+    "GetRotation2D/1",
+    "SetSize2D/3",
+    "SetWidth2D/2",
+    "SetHeight2D/2",
+    "GetSize2D/1",
+    "GetWidth2D/1",
+    "GetHeight2D/1",
+    "GetSpriteRenderer/1",
+    "SetToWorldPosition/2",
+    "SetToWorldPosition/2",
+    "SetToWorldPosition/3"
+   ]
+  },
+  "UnityUtils.CustomDOTweenExtension.DOTweenExtension": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DoKill/1",
+    "DoMove2D/6",
+    "DoRotate2D/6",
+    "DoScale2D/5",
+    "DoTransform2D/7"
+   ]
+  },
+  "UnityUtils.CustomDOTweenExtension.AnimationDuration": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "GetDefault/2",
+    "GetDefault/2"
+   ]
+  },
+  "UnityUtils.CustomAudioClipExtension.AudioClipExtension": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "LoadAsyncAddressablesAssets/2"
+   ]
+  },
+  "ScrollEase": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "BackOut",
+    "SineOut"
+   ],
+   "methods": []
+  },
+  "UnityUtils.CustomScrollView.MenuScrollview": {
+   "parent": "<15661>",
+   "fields": [
+    "orientation",
+    "scrollRect",
+    "scrollRectParent",
+    "allContentsPosition",
+    "allContentsAnchoredPosition",
+    "distanceBtwContents",
+    "scrollEase",
+    "nearestObjectInCenter",
+    "scrollItems",
+    "allMenuItemsName",
+    "_touchMoveDisplacements",
+    "_touchMoveTimeDeltas",
+    "spaceBtwObjects",
+    "prevPosition",
+    "startTouchPos",
+    "screenSizeInWrld",
+    "_touchMovePreviousTimestamp",
+    "scrollingDelta",
+    "_touchTotalTimeThreshold",
+    "maxPosition",
+    "isMoving",
+    "_bePressed",
+    "touchReleased",
+    "touchEnabled",
+    "audioSourceManager",
+    "scrollShortAC",
+    "scrollLongAC"
+   ],
+   "methods": [
+    "CreateScrollView/2",
+    "SetupScoll/1",
+    "OnPointerDown/1",
+    "OnDrag/1",
+    "OnPointerUp/1",
+    "OnTappedScrollView/2",
+    "OnItemClicked/1",
+    "OnItemPressed/1",
+    "OnItemReleased/1",
+    "OnInnerItemClicked/1",
+    "OnInnerItemPressed/1",
+    "OnInnerItemReleased/1",
+    "GetCurrentObjectInCenter/0",
+    "GetObjectRelativeToCenter/1",
+    "GetNextObjectToCenter/0",
+    "GetPreviousObjectToCenter/0",
+    "SetTouchEnabled/1",
+    "HandlePressLogic/1",
+    "HandleMoveLogic/1",
+    "MoveParalaxLayer/1",
+    "HandleReleaseLogic/1",
+    "MoveToMenuItemOnTap/1",
+    "GetEase/0",
+    "MoveToMenuItem/3",
+    "ScrollToItem/3",
+    "CalculateTouchMoveVelocity/0",
+    "GatherTouchMove/1",
+    "Update/0",
+    "GetScreenInWorldPoint/2",
+    ".ctor/0"
+   ]
+  },
+  "PaperPlaneTools.AlertAndroidAdapter": {
+   "parent": "<15996>",
+   "fields": [
+    "alertAndroid",
+    "onDismiss",
+    "gameObject"
+   ],
+   "methods": [
+    ".ctor/0",
+    "PaperPlaneTools.IAlertPlatformAdapter.SetOnDismiss/1",
+    "PaperPlaneTools.IAlertPlatformAdapter.Show/1",
+    "PaperPlaneTools.IAlertPlatformAdapter.Dismiss/0",
+    "PaperPlaneTools.IAlertPlatformAdapter.HandleEvent/2",
+    "onDismissCallback/0"
+   ]
+  },
+  "PaperPlaneTools.AlertAndroidOptions": {
+   "parent": "<15996>",
+   "fields": [
+    "DefaultCancelable",
+    "<Cancelable>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/0",
+    "get_Cancelable/0",
+    "set_Cancelable/1",
+    ".cctor/0"
+   ]
+  },
+  "PaperPlaneTools.AlertIOSOptions": {
+   "parent": "<15996>",
+   "fields": [
+    "DefaultPositiveButton",
+    "DefaultNegativeButton",
+    "DefaultNeutralButton",
+    "DefaultPreferableButton",
+    "DefaultButtonsAddOrder",
+    "<PositiveButton>k__BackingField",
+    "<NegativeButton>k__BackingField",
+    "<NeutralButton>k__BackingField",
+    "<PreferableButton>k__BackingField",
+    "<ButtonsAddOrder>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/0",
+    "get_PositiveButton/0",
+    "set_PositiveButton/1",
+    "get_NegativeButton/0",
+    "set_NegativeButton/1",
+    "get_NeutralButton/0",
+    "set_NeutralButton/1",
+    "get_PreferableButton/0",
+    "set_PreferableButton/1",
+    "get_ButtonsAddOrder/0",
+    "set_ButtonsAddOrder/1",
+    ".cctor/0"
+   ]
+  },
+  "PaperPlaneTools.AlertUnityUIAdapter": {
+   "parent": "<15661>",
+   "fields": [
+    "titleText",
+    "messageText",
+    "positiveButton",
+    "neutralButton",
+    "negativeButton",
+    "dismissPanel",
+    "onDismiss"
+   ],
+   "methods": [
+    "PaperPlaneTools.IAlertPlatformAdapter.SetOnDismiss/1",
+    "PaperPlaneTools.IAlertPlatformAdapter.Dismiss/0",
+    "PaperPlaneTools.IAlertPlatformAdapter.Show/1",
+    "PaperPlaneTools.IAlertPlatformAdapter.HandleEvent/2",
+    "SetButton/2",
+    ".ctor/0",
+    "<PaperPlaneTools.IAlertPlatformAdapter.Show>b__9_1/1"
+   ]
+  },
+  "PaperPlaneTools.IAlertPlatformAdapter": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "SetOnDismiss/1",
+    "Show/1",
+    "Dismiss/0",
+    "HandleEvent/2"
+   ]
+  },
+  "ButtonType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "POSITIVE",
+    "NEGATIVE",
+    "NEUTRAL"
+   ],
+   "methods": []
+  },
+  "PaperPlaneTools.Alert": {
+   "parent": "<15996>",
+   "fields": [
+    "<Title>k__BackingField",
+    "<Message>k__BackingField",
+    "<PositiveButton>k__BackingField",
+    "<NegativeButton>k__BackingField",
+    "<NeutralButton>k__BackingField",
+    "<Options>k__BackingField",
+    "<OnDismiss>k__BackingField",
+    "<Adapter>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/2",
+    "get_Title/0",
+    "set_Title/1",
+    "get_Message/0",
+    "set_Message/1",
+    "get_PositiveButton/0",
+    "set_PositiveButton/1",
+    "get_NegativeButton/0",
+    "set_NegativeButton/1",
+    "get_NeutralButton/0",
+    "set_NeutralButton/1",
+    "get_Options/0",
+    "set_Options/1",
+    "get_OnDismiss/0",
+    "set_OnDismiss/1",
+    "get_Adapter/0",
+    "set_Adapter/1",
+    "SetTitle/1",
+    "SetMessage/1",
+    "SetPositiveButton/2",
+    "SetNegativeButton/2",
+    "SetNeutralButton/2",
+    "AddOptions/1",
+    "SetOptions/1",
+    "SetOnDismiss/1",
+    "SetAdapter/1",
+    "Show/0",
+    "Dismiss/0"
+   ]
+  },
+  "PaperPlaneTools.AlertButton": {
+   "parent": "<15996>",
+   "fields": [
+    "<Title>k__BackingField",
+    "<Handler>k__BackingField"
+   ],
+   "methods": [
+    "get_Title/0",
+    "set_Title/1",
+    "get_Handler/0",
+    "set_Handler/1",
+    ".ctor/2"
+   ]
+  },
+  "PaperPlaneTools.AlertAndroid": {
+   "parent": "<15996>",
+   "fields": [
+    "buttons",
+    "OnDismiss",
+    "<Title>k__BackingField",
+    "<Message>k__BackingField",
+    "<Cancelable>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/2",
+    "SetPositiveButton/2",
+    "SetNegativeButton/2",
+    "SetNeutralButton/2",
+    "SetButton/3",
+    "get_Title/0",
+    "set_Title/1",
+    "get_Message/0",
+    "set_Message/1",
+    "get_Cancelable/0",
+    "set_Cancelable/1",
+    "Show/1",
+    "Dismiss/0",
+    "HandleButtonClick/1",
+    "HandleCancel/0",
+    "HandleDismiss/0"
+   ]
+  },
+  "Type": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Default",
+    "Cancel",
+    "Destructive"
+   ],
+   "methods": []
+  },
+  "PaperPlaneTools.AlertIOSButton": {
+   "parent": "<15996>",
+   "fields": [
+    "<WhichButton>k__BackingField",
+    "<Title>k__BackingField",
+    "<Handler>k__BackingField",
+    "<IsPreferable>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/4",
+    "get_WhichButton/0",
+    "set_WhichButton/1",
+    "get_Title/0",
+    "set_Title/1",
+    "get_Handler/0",
+    "set_Handler/1",
+    "get_IsPreferable/0",
+    "set_IsPreferable/1"
+   ]
+  },
+  "PaperPlaneTools.AlertManager": {
+   "parent": "<15996>",
+   "fields": [
+    "currentAdapter",
+    "currentAlert",
+    "queue",
+    "instance",
+    "<AlertFactory>k__BackingField"
+   ],
+   "methods": [
+    ".ctor/0",
+    "get_Instance/0",
+    "get_AlertFactory/0",
+    "set_AlertFactory/1",
+    "Show/1",
+    "Dismiss/1",
+    "HandleEvent/2",
+    "CreateAdapter/0",
+    "OnDismiss/0",
+    "ShowNext/0"
+   ]
+  },
+  "PaperPlaneTools.AlertMonoBehaviour": {
+   "parent": "<15661>",
+   "fields": [
+    "instance"
+   ],
+   "methods": [
+    "Start/0",
+    "OnDestroy/0",
+    "AlertAndroid_OnButtonClick/1",
+    "AlertAndroid_OnCancel/1",
+    "AlertAndroid_OnDismiss/1",
+    "AlertIOS_OnButtonClick/1",
+    "AlertIOS_OnDismiss/1",
+    ".ctor/0"
+   ]
+  },
+  "DanielLochner.Assets.SimpleScrollSnap.FileSelected": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "DanielLochner.Assets.SimpleScrollSnap.SlotMachine": {
+   "parent": "<15661>",
+   "fields": [
+    "slots"
+   ],
+   "methods": [
+    "OnSpin/0",
+    ".ctor/0"
+   ]
+  },
+  "DanielLochner.Assets.SimpleScrollSnap.DynamicContentController": {
+   "parent": "<15661>",
+   "fields": [
+    "panel",
+    "toggle",
+    "addInput",
+    "removeInput",
+    "toggleWidth",
+    "sss"
+   ],
+   "methods": [
+    "Awake/0",
+    "AddToFront/0",
+    "AddToBack/0",
+    "AddAtIndex/0",
+    "Add/1",
+    "RemoveFromFront/0",
+    "RemoveFromBack/0",
+    "RemoveAtIndex/0",
+    "Remove/1",
+    ".ctor/0"
+   ]
+  },
+  "DanielLochner.Assets.SimpleScrollSnap.Rotator": {
+   "parent": "<15661>",
+   "fields": [
+    "rotationSpeed"
+   ],
+   "methods": [
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "DanielLochner.Assets.SimpleScrollSnap.ExpandInformation": {
+   "parent": "<15661>",
+   "fields": [
+    "expanded"
+   ],
+   "methods": [
+    "Expand/0",
+    ".ctor/0"
+   ]
+  },
+  "MovementType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Fixed",
+    "Free"
+   ],
+   "methods": []
+  },
+  "MovementAxis": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Horizontal",
+    "Vertical"
+   ],
+   "methods": []
+  },
+  "Direction": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Up",
+    "Down",
+    "Left",
+    "Right"
+   ],
+   "methods": []
+  },
+  "SnapTarget": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Nearest",
+    "Previous",
+    "Next"
+   ],
+   "methods": []
+  },
+  "SizeControl": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Manual",
+    "Children",
+    "Fit"
+   ],
+   "methods": []
+  },
+  "TransitionEffect": {
+   "parent": "<15996>",
+   "fields": [
+    "minDisplacement",
+    "maxDisplacement",
+    "minValue",
+    "maxValue",
+    "defaultMinValue",
+    "defaultMaxValue",
+    "defaultMinDisplacement",
+    "defaultMaxDisplacement",
+    "showPanel",
+    "showDisplacement",
+    "showValue",
+    "label",
+    "function",
+    "defaultFunction",
+    "simpleScrollSnap"
+   ],
+   "methods": [
+    "get_Label/0",
+    "set_Label/1",
+    "get_MinValue/0",
+    "set_MinValue/1",
+    "get_MaxValue/0",
+    "set_MaxValue/1",
+    "get_MinDisplacement/0",
+    "set_MinDisplacement/1",
+    "get_MaxDisplacement/0",
+    "set_MaxDisplacement/1",
+    "get_Function/0",
+    "set_Function/1",
+    ".ctor/7",
+    "SetDefaultValues/5",
+    "Reset/0",
+    "GetValue/1"
+   ]
+  },
+  "DanielLochner.Assets.SimpleScrollSnap.SimpleScrollSnap": {
+   "parent": "<15661>",
+   "fields": [
+    "movementType",
+    "movementAxis",
+    "automaticallyLayout",
+    "sizeControl",
+    "size",
+    "automaticLayoutSpacing",
+    "leftMargin",
+    "rightMargin",
+    "topMargin",
+    "bottomMargin",
+    "infinitelyScroll",
+    "infiniteScrollingEndSpacing",
+    "useOcclusionCulling",
+    "startingPanel",
+    "swipeGestures",
+    "minimumSwipeSpeed",
+    "previousButton",
+    "nextButton",
+    "pagination",
+    "toggleNavigation",
+    "snapTarget",
+    "snappingSpeed",
+    "thresholdSnappingSpeed",
+    "hardSnap",
+    "useUnscaledTime",
+    "onPanelChanged",
+    "onPanelSelecting",
+    "onPanelSelected",
+    "onPanelChanging",
+    "onPanelChangedPagination",
+    "transitionEffects",
+    "dragging",
+    "selected",
+    "pressing",
+    "releaseSpeed",
+    "contentLength",
+    "releaseDirection",
+    "canvas",
+    "canvasRectTransform",
+    "canvasScaler",
+    "scrollRect",
+    "previousContentAnchoredPosition",
+    "velocity",
+    "panelGraphics",
+    "<CurrentPanel>k__BackingField",
+    "<TargetPanel>k__BackingField",
+    "<NearestPanel>k__BackingField",
+    "<PanelsRT>k__BackingField",
+    "<Panels>k__BackingField",
+    "<Toggles>k__BackingField"
+   ],
+   "methods": [
+    "get_Content/0",
+    "get_Viewport/0",
+    "get_CurrentPanel/0",
+    "set_CurrentPanel/1",
+    "get_TargetPanel/0",
+    "set_TargetPanel/1",
+    "get_NearestPanel/0",
+    "set_NearestPanel/1",
+    "get_PanelsRT/0",
+    "set_PanelsRT/1",
+    "get_Panels/0",
+    "set_Panels/1",
+    "get_Toggles/0",
+    "set_Toggles/1",
+    "get_NumberOfPanels/0",
+    "Awake/0",
+    "Start/0",
+    "Update/0",
+    "OnPointerDown/1",
+    "OnPointerUp/1",
+    "OnBeginDrag/1",
+    "OnDrag/1",
+    "OnEndDrag/1",
+    "Initialize/0",
+    "Validate/0",
+    "Setup/0",
+    "DisplacementFromCenter/1",
+    "DetermineNearestPanel/0",
+    "DetermineVelocity/0",
+    "SelectTargetPanel/0",
+    "SnapToTargetPanel/0",
+    "OnSelectingAndSnapping/0",
+    "OnOcclusionCulling/1",
+    "OnInfiniteScrolling/1",
+    "OnTransitionEffects/0",
+    "OnSwipeGestures/0",
+    "GoToPanel/1",
+    "GoToPreviousPanel/0",
+    "GoToNextPanel/0",
+    "AddToFront/1",
+    "AddToBack/1",
+    "Add/2",
+    "RemoveFromFront/0",
+    "RemoveFromBack/0",
+    "Remove/1",
+    "AddVelocity/1",
+    "GetDirection/0",
+    "GetNextPanelIndex/0",
+    "GetPreviousPanelIndex/0",
+    ".ctor/0"
+   ]
+  },
+  "SimpleDiskUtils.DiskUtils": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "CheckAvailableSpace/1",
+    "CheckTotalSpace/1",
+    "CheckBusySpace/1",
+    "DeleteFile/1",
+    "SaveFile/2",
+    "SaveFile/3",
+    "LoadFile/1",
+    "SaveTextFile/2",
+    "SaveTextFile/3",
+    "LoadTextFile/1",
+    "ObjectToByteArray/1",
+    "ByteArrayToObject/1",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.MainMenu.MainMenuPack": {
+   "parent": "<15661>",
+   "fields": [
+    "onClick",
+    "productType",
+    "packSprites",
+    "audioManager",
+    "isOpen",
+    "_packName",
+    "_packStaus",
+    "_eventSystem",
+    "_forParents",
+    "_packAnimation",
+    "_rectTransform",
+    "_menuImagesLoader",
+    "_inApp",
+    "_isClicked",
+    "_isAnim"
+   ],
+   "methods": [
+    "get_ProductType/0",
+    "Initialize/2",
+    "Start/0",
+    "CheckStatusCoroutine/0",
+    "Click/1",
+    "UpdateStatus/0",
+    "CheckPurchasedStatus/0",
+    "UpdatePaintedImages/0",
+    "LoadGallery/0",
+    "Update/0",
+    "ChangeScale/1",
+    "OnDestroy/0",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.MainMenu.MainMenuPackName": {
+   "parent": "<15661>",
+   "fields": [
+    "_canvasGroup",
+    "_rotationText"
+   ],
+   "methods": [
+    "Awake/0",
+    "UpdateText/1",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.MainMenu.MainMenuPackStatus": {
+   "parent": "<15661>",
+   "fields": [
+    "_shadow",
+    "_back",
+    "_lock"
+   ],
+   "methods": [
+    "SetActiveStatus/0",
+    "SetLockedStatus/0",
+    "StartAnimation/0",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.MainMenu.MainMenuScroll": {
+   "parent": "<15447>",
+   "fields": [
+    "_menuItems",
+    "_purchasePanel",
+    "_audioManager",
+    "_shelfCanvasController",
+    "_eventSystem",
+    "_forParents",
+    "_canvasGroup"
+   ],
+   "methods": [
+    "Start/0",
+    "OnInnerItemClicked/1",
+    "InitializeScroll/0",
+    "AppearAnim/0",
+    "DisappearAnim/0",
+    "OpenParentsPage/0",
+    "OnDestroy/0",
+    "OnInnerItemPressed/1",
+    "OnInnerItemReleased/1",
+    "OnItemClicked/1",
+    "OnItemPressed/1",
+    "OnItemReleased/1",
+    ".ctor/0",
+    "<AppearAnim>b__10_0/0",
+    "<OpenParentsPage>b__12_0/0"
+   ]
+  },
+  "Coloring.MainMenu.MenuImagesLoader": {
+   "parent": "<15996>",
+   "fields": [
+    "_path",
+    "oldFileName"
+   ],
+   "methods": [
+    ".ctor/0",
+    "GetSprites/2",
+    "MoveOldCache/2"
+   ]
+  },
+  "Coloring.Gallery.GalleryIcon": {
+   "parent": "<15661>",
+   "fields": [
+    "_iconTexture",
+    "_onClickIcon",
+    "_isClicable"
+   ],
+   "methods": [
+    "Start/0",
+    "SetClickEvent/1",
+    "LoadIcon/1",
+    "OnClick/0",
+    "AsyncLoadScene/2",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.Gallery.GalleryPack": {
+   "parent": "<15661>",
+   "fields": [
+    "onHide",
+    "_galleryIcons",
+    "_packType",
+    "oldFileName",
+    "_seq",
+    "_path",
+    "_timeSowingItem",
+    "_isStart",
+    "_packsId"
+   ],
+   "methods": [
+    "Start/0",
+    "MoveOldCache/1",
+    "ShowIcons/0",
+    "HideIcons/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "Coloring.Gallery.GalleryScroll": {
+   "parent": "<15661>",
+   "fields": [
+    "_leftButton",
+    "_rightButton",
+    "_backButton",
+    "_audioManager",
+    "_content",
+    "_leftPack",
+    "_rightPack",
+    "_inApp",
+    "_scrollRect",
+    "_seq",
+    "_loadGalleryPackCor",
+    "_activeGalleryPack",
+    "_activeGalleryRect",
+    "_activeGalleryPackId",
+    "_stepPacks",
+    "_isHavePack",
+    "_onScroling",
+    "_productTypes"
+   ],
+   "methods": [
+    "Start/0",
+    "OnEndDrag/1",
+    "LoadGalleryPack/2",
+    "CheckDownloadedPacks/0",
+    "ShowButtons/0",
+    "Hide/0",
+    "SetButtonsStatus/1",
+    "RemovePack/1",
+    "CheckPack/1",
+    "Back/0",
+    "AsyncLoadScene/2",
+    "OnDestroy/0",
+    ".ctor/0",
+    "<Start>b__18_2/0",
+    "<Start>b__18_3/0",
+    "<Start>b__18_0/0",
+    "<Start>b__18_1/0"
+   ]
+  },
+  "Coloring.ContentDelivery.ContentDeliveryController": {
+   "parent": "<15661>",
+   "fields": [
+    "_bundlePacks",
+    "_activePicture",
+    "_activeGallery",
+    "_loader",
+    "_queue",
+    "_currentDownloadingPack",
+    "_loaderCor",
+    "_progress",
+    "_isDownloading",
+    "<Instance>k__BackingField",
+    "<OnDownloadingProgress>k__BackingField",
+    "<OnStartDownloading>k__BackingField",
+    "<OnFinishDownloading>k__BackingField"
+   ],
+   "methods": [
+    "get_BundlePacks/0",
+    "get_Instance/0",
+    "set_Instance/1",
+    "get_OnDownloadingProgress/0",
+    "set_OnDownloadingProgress/1",
+    "get_OnStartDownloading/0",
+    "set_OnStartDownloading/1",
+    "get_OnFinishDownloading/0",
+    "set_OnFinishDownloading/1",
+    "Awake/0",
+    "DownloadPack/1",
+    "GetPackStatus/1",
+    "GetGalleryContent/0",
+    "LoadGalleryContent/1",
+    "LoadPicture/2",
+    "UnloadGallerycontent/0",
+    "UnloadPicture/0",
+    "GetPicture/2",
+    "SetPackStatus/2",
+    "LoadGalleryContentCor/1",
+    "LoadPictureCor/2",
+    "DownloadPackCor/1",
+    "StopLoading/0",
+    "CreateContent/0",
+    "CheckBundelePack/1",
+    "IsPackDownloaded/1",
+    "IsBundleDownloaded/1",
+    "CreateLoader/0",
+    ".ctor/0",
+    "<LoadGalleryContentCor>b__37_1/1",
+    "<LoadPictureCor>b__38_1/1",
+    "<DownloadPackCor>b__39_2/1",
+    "<DownloadPackCor>b__39_0/1",
+    "<DownloadPackCor>b__39_1/1"
+   ]
+  },
+  "Coloring.ContentDelivery.ContentDeliveryData": {
+   "parent": "<15996>",
+   "fields": [
+    "_waitOneSecond",
+    "_downloadedData",
+    "_currentData",
+    "_checkSum",
+    "_sumIsReceived"
+   ],
+   "methods": [
+    "get_SumIsReceived/0",
+    "LoadData/1",
+    "IsNeedDownload/1",
+    "SaveData/1",
+    "SaveFullData/0",
+    "LoadOldData/0",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.ContentDelivery.ContentDeliveryLoader": {
+   "parent": "<15661>",
+   "fields": [
+    "testBuildNumber",
+    "testPlatform",
+    "_url",
+    "_minMemoryForDownloading",
+    "_systemPopups",
+    "_data",
+    "<OnFail>k__BackingField"
+   ],
+   "methods": [
+    "get_OnFail/0",
+    "set_OnFail/1",
+    "get_SumIsReceived/0",
+    "Initialize/0",
+    "IsNeedDownload/1",
+    "DownloadBundle/3",
+    "SaveFullData/0",
+    "SetURL/0",
+    "AddCacheAtPath/1",
+    ".ctor/0"
+   ]
+  },
+  "Coloring.ContentDelivery.DataExtensions": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "ToJson/1",
+    "ToDeserialized/1"
+   ]
+  },
+  "Coloring.ContentDelivery.TypeError": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "NoConnection",
+    "NoMemory",
+    "Other"
+   ],
+   "methods": []
+  },
+  "Coloring.ContentDelivery.TypeStatus": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "NotDownloaded",
+    "Downloading",
+    "Downloaded",
+    "InQueue"
+   ],
+   "methods": []
+  },
+  "Coloring.ContentDelivery.SystemPopups": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "Show/1",
+    "AlertPopUp/2",
+    ".ctor/0"
+   ]
+  },
+  "GameContents.VladimirCompany.puzzlese4e80f298000474e93ff3c6628fd8cf0.Common.Scripts.SafeAreaCanvasHelper": {
+   "parent": "<15661>",
+   "fields": [
+    "SafeAreaRect",
+    "canvas",
+    "image",
+    "lastSafeArea"
+   ],
+   "methods": [
+    "Awake/0",
+    "Update/0",
+    "Start/0",
+    "ApplySafeArea/0",
+    ".ctor/0"
+   ]
+  },
+  "SimplePopup.SimplePopupButton": {
+   "parent": "<15996>",
+   "fields": [
+    "text",
+    "textColor",
+    "backgroundColor",
+    "gameObject",
+    "parentTransform",
+    "prefab",
+    "onClickEvent"
+   ],
+   "methods": [
+    ".ctor/0",
+    ".ctor/6",
+    "Create/0",
+    "Destroy/0",
+    "<Create>b__9_0/0"
+   ]
+  },
+  "SimplePopup.SimplePopupManager": {
+   "parent": "<15661>",
+   "fields": [
+    "_canvas",
+    "_canvasPrefab",
+    "_buttonPrefab",
+    "_eventSystem",
+    "_message",
+    "_messageColor",
+    "_backgroundColor",
+    "buttons",
+    "_instance",
+    "_showCoroutine",
+    "_hideCoroutine"
+   ],
+   "methods": [
+    "get_Instance/0",
+    "Awake/0",
+    "CreatePopup/1",
+    "CreatePopup/3",
+    "AddButton/2",
+    "AddButton/4",
+    "ShowPopup/0",
+    "HidePopup/0",
+    "showPopup/2",
+    "hidePopup/2",
+    "setPanel/0",
+    "destroyPreviousButtons/0",
+    ".ctor/0"
+   ]
+  },
+  "pingak9.IOSDateTimePickerMode": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Time",
+    "Date"
+   ],
+   "methods": []
+  },
+  "pingak9.MobileDateTimePicker": {
+   "parent": "<15661>",
+   "fields": [
+    "OnDateChanged",
+    "OnPickerClosed",
+    "formatDate"
+   ],
+   "methods": [
+    "CreateDate/6",
+    "CreateTime/2",
+    "DateChangedEvent/1",
+    "PickerClosedEvent/1",
+    ".ctor/0"
+   ]
+  },
+  "pingak9.MobileDialogConfirm": {
+   "parent": "<15661>",
+   "fields": [
+    "yesAction",
+    "noAction",
+    "title",
+    "message",
+    "yes",
+    "no",
+    "urlString"
+   ],
+   "methods": [
+    "Create/6",
+    "init/0",
+    "OnYesCallBack/1",
+    "OnNoCallBack/1",
+    ".ctor/0"
+   ]
+  },
+  "pingak9.MobileDialogInfo": {
+   "parent": "<15661>",
+   "fields": [
+    "okAction",
+    "title",
+    "message",
+    "ok"
+   ],
+   "methods": [
+    "Create/4",
+    "init/0",
+    "OnOkCallBack/1",
+    ".ctor/0"
+   ]
+  },
+  "pingak9.MobileDialogNeutral": {
+   "parent": "<15661>",
+   "fields": [
+    "acceptAction",
+    "neutralAction",
+    "declineAction",
+    "title",
+    "message",
+    "accept",
+    "neutral",
+    "decline"
+   ],
+   "methods": [
+    "Create/8",
+    "init/0",
+    "OnAcceptCallBack/1",
+    "OnNeutralCallBack/1",
+    "OnDeclineCallBack/1",
+    ".ctor/0"
+   ]
+  },
+  "pingak9.MobileNative": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "showDialogNeutral/6",
+    "showDialogConfirm/5",
+    "showInfoPopup/4",
+    "DismissCurrentAlert/0",
+    "showDatePicker/4",
+    "showTimePicker/1",
+    ".ctor/0"
+   ]
+  },
+  "pingak9.NativeDialog": {
+   "parent": "<15996>",
+   "fields": [
+    "CurrentDialogInfo",
+    "CurrentDialogConfirm",
+    "CurrentDialogNeutral",
+    "CurrentDialogPicker"
+   ],
+   "methods": [
+    ".ctor/0",
+    "OpenDialog/4",
+    "OpenDialog/6",
+    "OpenDialog/8",
+    "OpenDatePicker/6",
+    "OpenTimePicker/2",
+    "DestroyDialog/0"
+   ]
+  },
+  "BBToolkitUtilities.NativeBindings.MyNativeBindings": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "GetPrefferedLanguage/0",
+    "_getPreferenceLanguageString/0",
+    "openSettingIntent/0",
+    "GetBuildNumber/0",
+    "CanOpenApplication/1",
+    "OpenNotificationIntent/0",
+    "getSDKInt/0",
+    "GetVersionCode/1",
+    ".ctor/0"
+   ]
+  },
+  "BBToolkitUtilities.BBToolkitUtilities.TMP.LinkOpenerTMP": {
+   "parent": "<14998>",
+   "fields": [
+    "_alphaTag"
+   ],
+   "methods": [
+    "Start/0",
+    "OnPointerClick/1",
+    "GetLinkInfo/1",
+    "OnPointerDown/1",
+    "OnPointerUp/1",
+    "OnPointerExit/1",
+    "OnPointerEnter/1",
+    "SetLinkPressed/1",
+    "ResetPressedLinks/0",
+    ".ctor/0"
+   ]
+  },
+  "LinkDictionary": {
+   "parent": "<15996>",
+   "fields": [
+    "_name",
+    "<LinkId>k__BackingField",
+    "<AppleLink>k__BackingField",
+    "<GoogleLink>k__BackingField",
+    "<AmazonLink>k__BackingField"
+   ],
+   "methods": [
+    "get_LinkId/0",
+    "set_LinkId/1",
+    "get_AppleLink/0",
+    "set_AppleLink/1",
+    "get_GoogleLink/0",
+    "set_GoogleLink/1",
+    "get_AmazonLink/0",
+    "set_AmazonLink/1",
+    "SetLink/1",
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "BBToolkitUtilities.BBToolkitUtilities.AppUtils.Unity.LinkOpener": {
+   "parent": "<15661>",
+   "fields": [
+    "_linkDictionaries",
+    "_canOpenUrl"
+   ],
+   "methods": [
+    "OnButtonClick/1",
+    "OpenUrl/1",
+    "SetContactUsUrl/1",
+    "GoToUrl/1",
+    "FirstLetterToUpper/1",
+    "GetDomain/0",
+    "AddLink/1",
+    "ClearLinks/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.AdaptiveLayoutGroup": {
+   "parent": "<13422>",
+   "fields": [
+    "_isVertical"
+   ],
+   "methods": [
+    "get_IsVertical/0",
+    "set_IsVertical/1",
+    "CalculateLayoutInputHorizontal/0",
+    "CalculateLayoutInputVertical/0",
+    "SetLayoutHorizontal/0",
+    "SetLayoutVertical/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.Adjuster": {
+   "parent": "<15661>",
+   "fields": [
+    "_uiKitConfig",
+    "_isActivationProcessComplete"
+   ],
+   "methods": [
+    "get_IsTablet/0",
+    "get_IsHorizontal/0",
+    "get_IsVertical/0",
+    "get_IsVerticalPhone/0",
+    "get_IsHorizontalPhone/0",
+    "get_IsVerticalTablet/0",
+    "get_IsHorizontalTablet/0",
+    "UpdateLayout/0",
+    "OnRectTransformDimensionsChange/0",
+    "WaitAndUpdate/0",
+    "OnEnable/0",
+    "OnDisable/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.Checkbox": {
+   "parent": "<15661>",
+   "fields": [
+    "_background",
+    "_color",
+    "_pressedColor",
+    "<StateButton>k__BackingField"
+   ],
+   "methods": [
+    "get_StateButton/0",
+    "set_StateButton/1",
+    "ChangeState/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.FlipStateButton": {
+   "parent": "<18109>",
+   "fields": [],
+   "methods": [
+    "ChangeView/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.IAdaptive": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "UpdateLayout/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.InlineImage": {
+   "parent": "<14302>",
+   "fields": [],
+   "methods": [
+    "Update/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.SoundPlayer": {
+   "parent": "<15661>",
+   "fields": [
+    "_uiSounds",
+    "_clickCallback",
+    "_isPlaying"
+   ],
+   "methods": [
+    "Start/0",
+    "PlayClickSound/0",
+    "PlayClickSound/1",
+    "WaitForSound/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.StateButton": {
+   "parent": "<10819>",
+   "fields": [
+    "_stateImage",
+    "_stateColor",
+    "_isPressed"
+   ],
+   "methods": [
+    "get_IsPressedState/0",
+    "Awake/0",
+    "ChangeState/0",
+    "ResetState/0",
+    "ChangeView/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.Switcher": {
+   "parent": "<15661>",
+   "fields": [
+    "_slider"
+   ],
+   "methods": [
+    "ChangeState/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.TextAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_textField",
+    "_baseAlignment",
+    "_alignment"
+   ],
+   "methods": [
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.UIKitConfig": {
+   "parent": "<17484>",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUIElements.UIKit.UIKitSounds": {
+   "parent": "<17484>",
+   "fields": [
+    "<SoundClick>k__BackingField"
+   ],
+   "methods": [
+    "get_SoundClick/0",
+    "set_SoundClick/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ScreenUtils.BBTweener": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "ShowWithScale/1",
+    "HideWithScale/1",
+    "ShowWithSlide/1",
+    "HideWithSlide/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ScreenUtils.DimensionsChangeChecker": {
+   "parent": "<15661>",
+   "fields": [
+    "_onDimensionsChange",
+    "s_timeBetweenScreenChangeCalculations",
+    "_lastScreenChangeCalculationTime"
+   ],
+   "methods": [
+    "Awake/0",
+    "OnRectTransformDimensionsChange/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ScreenUtils.ScreenType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Tablet",
+    "Phone",
+    "LongPhone"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.ScreenUtils.ScreenUtils": {
+   "parent": "<15996>",
+   "fields": [
+    "s_referenceScreenWidth",
+    "s_referenceScreenHeight"
+   ],
+   "methods": [
+    "ScreenSizeInPixels/0",
+    "ScreenWidthInPixels/0",
+    "ScreenHeightInPixels/0",
+    "ScreenSizeUI/1",
+    "ScreenWidthUI/2",
+    "ScreenHeightUI/2",
+    "ConstantValueUI/1",
+    "ScreenSize/0",
+    "ScreenWidth/1",
+    "ScreenHeight/1",
+    "ConstantValue/1",
+    "IsThisPhone/0",
+    "DeviceDiagonalSizeInInches/0",
+    "GetDeviceType/0",
+    "GetAspectRatio/0",
+    "GetScreenInWorldPoint/2",
+    "GetUIScreenPosition/2",
+    "PointsToPixels/1",
+    "PointsToPixels/1",
+    "PointsToPixels/1",
+    "PixelsToPoints/1",
+    "PixelsToPoint/1",
+    "PixelsToPoint/1",
+    "GetScreenType/0",
+    "IsTablet/0",
+    "IsPhone/0",
+    "IsLongPhone/0",
+    "GetLongPhonePaddingUI/0",
+    "GetLongPhonePadding/0",
+    "GetDistanceToPutOnMove/0",
+    "GetDistanceToPutOnRelease/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.BoolVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.ColorVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.FloatVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    "ApplyChange/1",
+    "ApplyChange/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.IntVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    "ApplyChange/1",
+    "ApplyChange/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.PrefabVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.StringVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.Texture2DVariable": {
+   "parent": "<19807>",
+   "fields": [
+    "_value"
+   ],
+   "methods": [
+    "get_Value/0",
+    "SetValue/1",
+    "SetValue/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Variables.Variable": {
+   "parent": "<17484>",
+   "fields": [
+    "_manualMode",
+    "OnUpdate"
+   ],
+   "methods": [
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1",
+    "OnValidate/0",
+    "InvokeUpdate/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.AppBuild": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Start/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.DownUpScaler": {
+   "parent": "<15661>",
+   "fields": [
+    "_time",
+    "_scale",
+    "_useOriginalScale",
+    "_button",
+    "_originScale"
+   ],
+   "methods": [
+    "Awake/0",
+    "OnPointerDown/1",
+    "OnPointerUp/1",
+    "OnPointerExit/1",
+    "OnPointerEnter/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.FPSMeter": {
+   "parent": "<15661>",
+   "fields": [
+    "_fps",
+    "_deltaTime",
+    "_lastTapTime"
+   ],
+   "methods": [
+    "Awake/0",
+    "Update/0",
+    "Restart/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.Popup": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "Awake/0",
+    "Show/0",
+    "Hide/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.PostponedAction": {
+   "parent": "<15661>",
+   "fields": [
+    "_delay",
+    "_actionResponse",
+    "_coroutine"
+   ],
+   "methods": [
+    "InvokeAction/0",
+    "ResetActionDelay/0",
+    "Execute/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.Preloader": {
+   "parent": "<15661>",
+   "fields": [
+    "_speed",
+    "_circle"
+   ],
+   "methods": [
+    "Show/0",
+    "Hide/0",
+    "Rotate/0",
+    ".ctor/0",
+    "<Hide>b__3_0/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.Pulse": {
+   "parent": "<15661>",
+   "fields": [
+    "_pulseCount",
+    "_pulseTime",
+    "_pulseDelay",
+    "_pulseScale",
+    "_counter",
+    "_coroutine"
+   ],
+   "methods": [
+    "AnimationInOut/0",
+    "OnEnable/0",
+    "OnDisable/0",
+    "Play/0",
+    "Stop/0",
+    ".ctor/0",
+    "<AnimationInOut>b__6_0/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.SceneSwitcher": {
+   "parent": "<15661>",
+   "fields": [],
+   "methods": [
+    "GoToScene/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.ScreenTransition": {
+   "parent": "<15661>",
+   "fields": [
+    "<AutoMode>k__BackingField",
+    "originColor",
+    "originColorToFade",
+    "_instance",
+    "OnFadeOut"
+   ],
+   "methods": [
+    "get_ImageForTransition/0",
+    "get_AutoMode/0",
+    "set_AutoMode/1",
+    "SetMode/1",
+    "get_Instance/0",
+    "Start/0",
+    "add_OnFadeOut/1",
+    "remove_OnFadeOut/1",
+    "ShowBlinds/2",
+    "HideBlinds/1",
+    "SetEnabled/1",
+    "ForceToHide/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.SwipeableGallery": {
+   "parent": "<15661>",
+   "fields": [
+    "_container",
+    "_navigation",
+    "_autoplay",
+    "_hasNavigation",
+    "_isScalable",
+    "_transitionEase",
+    "_transitionTime",
+    "_autoplayInterval",
+    "_padding",
+    "_images",
+    "_size",
+    "_stepWidth",
+    "_currentImageIndex",
+    "_isMoving"
+   ],
+   "methods": [
+    "Awake/0",
+    "ResetSize/0",
+    "SetContent/1",
+    "CreateImages/0",
+    "Move/1",
+    "ResetToInfinitePosition/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.TweenMover": {
+   "parent": "<15661>",
+   "fields": [
+    "_appearPosition",
+    "_hidePosition",
+    "_appearEase",
+    "_hideEase",
+    "_duration"
+   ],
+   "methods": [
+    "get_Duration/0",
+    "SetAppearPositionY/1",
+    "Show/0",
+    "Hide/0",
+    "MoveX/2",
+    "MoveY/2",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Unity.WebContentRequester": {
+   "parent": "<15661>",
+   "fields": [
+    "_onRequestSuccess",
+    "_onRequestFail",
+    "_onTextureRequestSuccess"
+   ],
+   "methods": [
+    "SendRequest/1",
+    "GetRequest/1",
+    "DownloadImage/1",
+    "GetTextureRequest/1",
+    "SendPostRequest/2",
+    "PostRequest/2",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.AppPlayerPrefs": {
+   "parent": "<15996>",
+   "fields": [
+    "isDebug"
+   ],
+   "methods": [
+    "SetString/3",
+    "SetFloat/3",
+    "AddString/4",
+    "GetString/3",
+    "GetFloat/3",
+    "GetKey/2",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.AppSection": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Core",
+    "Gameplay",
+    "Parental",
+    "InApp",
+    "ABTest"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.AppStorage": {
+   "parent": "<15996>",
+   "fields": [
+    "<CdnDomain>k__BackingField"
+   ],
+   "methods": [
+    "get_CdnDomain/0",
+    "set_CdnDomain/1",
+    "SetDomain/1",
+    "SaveJSON/3",
+    "LoadJSON/2",
+    "SaveTexture2D/3",
+    "LoadTexture2D/2",
+    "GetPath/3",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.AppStorageKey": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Meta",
+    "Data",
+    "ImagesMd5",
+    "MusicVolume",
+    "SfxVolume",
+    "MainABTestStatus",
+    "UnknownExperiment",
+    "ParentalGate",
+    "Paywall",
+    "Orientation"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.DataLoader": {
+   "parent": "<15661>",
+   "fields": [
+    "_onLoadSuccess",
+    "_onLoadFail",
+    "_path",
+    "_assetName"
+   ],
+   "methods": [
+    "LoadAsset/0",
+    "LoadAssetHandler/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.ParentalGateType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "PARENTAL_DATE",
+    "PARENTAL_MATH_HARD",
+    "PARENTAL_MATH_EASY"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Storage.PaywallType": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "PAYWALL_ADV_1_OLD",
+    "PAYWALL_ADV_2",
+    "PAYWALL_ADV_3",
+    "PAYWALL_ADV_4"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.PlatformUtils.AppPlatform": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "Unknown",
+    "Amazon",
+    "Android",
+    "IOS"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.PlatformUtils.Utils": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "GetPlatformString/0",
+    "GetPlatform/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Events.CustomUnityEvent": {
+   "parent": "<19536>",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Events.StringUnityEvent": {
+   "parent": "<>c__DisplayClass4_0",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Events.Texture2DUnityEvent": {
+   "parent": "UnityEngine.Purchasing.FakeUDPExtension",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Events.AssetUnityEvent": {
+   "parent": "<>c__DisplayClass9_0",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Events.GameEvent": {
+   "parent": "<17484>",
+   "fields": [
+    "_eventListeners"
+   ],
+   "methods": [
+    "Invoke/0",
+    "AddListener/1",
+    "RemoveListener/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.AppUtils.Events.GameEventListener": {
+   "parent": "<15661>",
+   "fields": [
+    "_event",
+    "_response"
+   ],
+   "methods": [
+    "OnEnable/0",
+    "OnDisable/0",
+    "OnEventInvoked/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ABTestData": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ABTestRequest": {
+   "parent": "<15996>",
+   "fields": [
+    "<BundleId>k__BackingField",
+    "<Platform>k__BackingField",
+    "<ExperimentKeys>k__BackingField"
+   ],
+   "methods": [
+    "get_BundleId/0",
+    "set_BundleId/1",
+    "get_Platform/0",
+    "set_Platform/1",
+    "get_ExperimentKeys/0",
+    "set_ExperimentKeys/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ExperimentData": {
+   "parent": "<15996>",
+   "fields": [
+    "<ExperimentKey>k__BackingField",
+    "<VariantKey>k__BackingField"
+   ],
+   "methods": [
+    "get_ExperimentKey/0",
+    "set_ExperimentKey/1",
+    "get_VariantKey/0",
+    "set_VariantKey/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ExperimentResponseData": {
+   "parent": "<12621>",
+   "fields": [
+    "<Target>k__BackingField"
+   ],
+   "methods": [
+    "get_Target/0",
+    "set_Target/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.SuccessResponseData": {
+   "parent": "<15996>",
+   "fields": [
+    "<SuccessData>k__BackingField",
+    "<Error>k__BackingField"
+   ],
+   "methods": [
+    "get_SuccessData/0",
+    "set_SuccessData/1",
+    "get_Error/0",
+    "set_Error/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.StatusCodeData": {
+   "parent": "<15996>",
+   "fields": [
+    "SUCCESS",
+    "<StatusCode>k__BackingField"
+   ],
+   "methods": [
+    "get_StatusCode/0",
+    "set_StatusCode/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ABTestRequester": {
+   "parent": "<15661>",
+   "fields": [
+    "_requestUrl",
+    "_activeTests",
+    "_requestTestOnAwake",
+    "_testOnlyNewInstalls",
+    "_currentABTestType",
+    "_poster",
+    "_android",
+    "_ios",
+    "_amazon",
+    "_bundleId",
+    "_platform",
+    "_experimentKey",
+    "_useDebugOptions",
+    "_testingPlatforms"
+   ],
+   "methods": [
+    "HasTestOnThisPlatform/0",
+    "Awake/0",
+    "RequestABTest/0",
+    "OnSuccess/1",
+    "OnFail/0",
+    "ProcessExperiments/1",
+    "IsAppPreviouslyInstalled/0",
+    "SetTestingPlatforms/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ABTestResultPoster": {
+   "parent": "<15661>",
+   "fields": [
+    "_successUrl",
+    "_experimentKey",
+    "_variantKey",
+    "_useDebugOptions"
+   ],
+   "methods": [
+    "PostABTestSuccess/1",
+    "OnSuccess/1",
+    "OnFail/0",
+    "PostDebugSuccess/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ABTestStatus": {
+   "parent": "<12419>",
+   "fields": [
+    "value__",
+    "NotRequested",
+    "Launched",
+    "Success",
+    "Fail",
+    "SuccessFail"
+   ],
+   "methods": []
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ActiveABTestList": {
+   "parent": "<17484>",
+   "fields": [
+    "_thisAppActiveTests"
+   ],
+   "methods": [
+    "GetStorageKey/1",
+    "GetExperimentKeys/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ABTests.ABTestPair": {
+   "parent": "<15996>",
+   "fields": [
+    "<ExperimentKey>k__BackingField",
+    "<TestType>k__BackingField"
+   ],
+   "methods": [
+    "get_ExperimentKey/0",
+    "set_ExperimentKey/1",
+    "get_TestType/0",
+    "set_TestType/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ForParents.DropDownBehaviour": {
+   "parent": "<15661>",
+   "fields": [
+    "_button",
+    "_paragraph",
+    "_isOpenOnAwake"
+   ],
+   "methods": [
+    "Awake/0",
+    "ShowHide/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ForParents.OrientationToggleBehaviour": {
+   "parent": "<15661>",
+   "fields": [
+    "_buttonVertical",
+    "_buttonHorizontal",
+    "_orientationEvent"
+   ],
+   "methods": [
+    "Start/0",
+    "Toggle/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitUtilities.ForParents.ParentalMetaRequester": {
+   "parent": "<15661>",
+   "fields": [
+    "_url",
+    "_fileName"
+   ],
+   "methods": [
+    "Awake/0",
+    ".ctor/0"
+   ]
+  },
+  "_CalbackOnSuccess": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/0",
+    "BeginInvoke/2",
+    "EndInvoke/1"
+   ]
+  },
+  "_CalbackOnFailure": {
+   "parent": "<15755>",
+   "fields": [],
+   "methods": [
+    ".ctor/2",
+    "Invoke/0",
+    "BeginInvoke/2",
+    "EndInvoke/1"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ParentalGates.ParentalGateYear": {
+   "parent": "<15661>",
+   "fields": [
+    "listOfCells",
+    "allActiveNumbersInCells",
+    "listOfNumbers",
+    "currentCellToFill",
+    "exitDarkLayer",
+    "Shelf",
+    "audioSource",
+    "wrongSound",
+    "rightSound",
+    "clickSound",
+    "numberSound",
+    "parentalGateTitle",
+    "isfailedParentalGate",
+    "isClosingPopup",
+    "allNumbers_0_9",
+    "allNumbersDict",
+    "_instance",
+    "isPopupShown",
+    "_onSuccessCallback",
+    "_onFailureCallback"
+   ],
+   "methods": [
+    "get_IsPopupShown/0",
+    "Awake/0",
+    "Start/0",
+    "OnLocalize/0",
+    "OnDestroy/0",
+    "FirstLetterToUpper/1",
+    "ShowParentalGate/2",
+    "HideParentalGate/0",
+    "IsShown/0",
+    "OnNumberPressed/1",
+    "SetNumberToCell/3",
+    "OnClearButtonPressed/0",
+    "OnAllClearButtonPressed/0",
+    "OnAllCellsFilled/0",
+    "ConvertedYear/1",
+    "UnixTimeStampToDateTime/1",
+    "OnCloseButtonPressed/0",
+    ".ctor/0",
+    "<ShowParentalGate>b__29_0/0",
+    "<HideParentalGate>b__30_0/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.CalloutAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_leftContainer",
+    "_leftHeading",
+    "_leftParagraph",
+    "_rightContainer"
+   ],
+   "methods": [
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.CanvasAdjuster": {
+   "parent": "<9914>",
+   "fields": [],
+   "methods": [
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.ColumnAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_topContainer",
+    "_bottomContainer",
+    "_leftContainer",
+    "_rightContainer"
+   ],
+   "methods": [
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.FlexibleGrid3in1Adjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_paddings"
+   ],
+   "methods": [
+    "Start/0",
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.FooterAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_leftContainer",
+    "_rightContainer"
+   ],
+   "methods": [
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.ForParentsController": {
+   "parent": "<15661>",
+   "fields": [
+    "_settings",
+    "_useDefaultSettings",
+    "_canvas",
+    "_menu",
+    "_menuItemsContainer",
+    "_pagesContainer",
+    "_viewport",
+    "_preloader",
+    "_menuItemPrefab",
+    "_webContentRequester",
+    "_pagesData",
+    "_pagesContent",
+    "_activeItem",
+    "_currentMetaMd5Hash",
+    "_jsonData",
+    "_forParentsData",
+    "_localImages",
+    "_webImages",
+    "_webImagesCount"
+   ],
+   "methods": [
+    "Awake/0",
+    "Init/0",
+    "DestroyDefaultContent/0",
+    "CheckContentUpdate/1",
+    "SaveUpdatedContent/0",
+    "LoadExistContent/0",
+    "LoadLocalImages/0",
+    "LoadWebImages/0",
+    "OnTextureDownloaded/2",
+    "HidePreloader/0",
+    "ParseImageData/0",
+    "SetTextContent/0",
+    "CreateContent/0",
+    "ShowPage/1",
+    "UpdateLayout/0",
+    "SetVerticalCanvas/0",
+    "SetHorizontalCanvas/0",
+    "OnSystemBackButtonClick/0",
+    "OnBackButtonClick/0",
+    "OnDestroy/0",
+    ".ctor/0",
+    "<LoadWebImages>b__26_0/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.ForParentsSettings": {
+   "parent": "<17484>",
+   "fields": [
+    "<ActivePage>k__BackingField",
+    "<HiddenPages>k__BackingField",
+    "<HasMusicSwitch>k__BackingField",
+    "<HasSFXSwitch>k__BackingField",
+    "<HasOrientationButtons>k__BackingField",
+    "_hasOwnOrientation",
+    "_forParentsSceneOrientation",
+    "_originalOrientation",
+    "_originalLeft",
+    "_originalRight",
+    "_originalTop",
+    "_originalUpsideDown"
+   ],
+   "methods": [
+    "get_ActivePage/0",
+    "set_ActivePage/1",
+    "get_HiddenPages/0",
+    "set_HiddenPages/1",
+    "get_HasMusicSwitch/0",
+    "set_HasMusicSwitch/1",
+    "get_HasSFXSwitch/0",
+    "set_HasSFXSwitch/1",
+    "get_HasOrientationButtons/0",
+    "set_HasOrientationButtons/1",
+    "ApplyOrientation/0",
+    "ResetOrientation/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.ForParentsSceneOrientation": {
+   "parent": "<15996>",
+   "fields": [
+    "<OrientationLeft>k__BackingField",
+    "<OrientationRight>k__BackingField",
+    "<OrientationTop>k__BackingField",
+    "<OrientationBottom>k__BackingField"
+   ],
+   "methods": [
+    "get_OrientationLeft/0",
+    "set_OrientationLeft/1",
+    "get_OrientationRight/0",
+    "set_OrientationRight/1",
+    "get_OrientationTop/0",
+    "set_OrientationTop/1",
+    "get_OrientationBottom/0",
+    "set_OrientationBottom/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Grid2in1Adjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_idealCellSize",
+    "_paddings"
+   ],
+   "methods": [
+    "UpdateLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.MenuAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "s_itemsPaddingRight",
+    "s_itemsVerticalPaddingTop",
+    "s_itemsHorizontalPaddingTop",
+    "s_itemsHorizontalPhonePaddingTop",
+    "s_tabletMenuWidth",
+    "s_phoneMenuWidth",
+    "_menuTop",
+    "_back",
+    "_viewport",
+    "_menuItemsContainer",
+    "_fadeButton"
+   ],
+   "methods": [
+    "get_MenuTopHeight/0",
+    "UpdateLayout/0",
+    "SwitchMenu/0",
+    "SetScrollRectState/0",
+    "ApplyVerticalLayout/0",
+    "ApplyHorizontalLayout/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.MenuItemAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "s_menuCornersRadius",
+    "_button",
+    "_itemName",
+    "_smallName",
+    "_pointer",
+    "<Page>k__BackingField"
+   ],
+   "methods": [
+    "get_Page/0",
+    "set_Page/1",
+    "Init/4",
+    "Activate/0",
+    "ResetItem/0",
+    "UpdateLayoutManually/0",
+    "UpdateLayout/0",
+    "SetNameState/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.PageData": {
+   "parent": "<17484>",
+   "fields": [
+    "<Name>k__BackingField",
+    "<MenuIcon>k__BackingField",
+    "<Content>k__BackingField"
+   ],
+   "methods": [
+    "get_Name/0",
+    "set_Name/1",
+    "get_MenuIcon/0",
+    "set_MenuIcon/1",
+    "get_Content/0",
+    "set_Content/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.TwoOneColumnsAdjuster": {
+   "parent": "<9914>",
+   "fields": [
+    "_switchThreshold",
+    "_leftContainer",
+    "_rightContainer"
+   ],
+   "methods": [
+    "UpdateLayout/0",
+    "AdjustGalleriesSize/0",
+    "ResetGalleriesSize/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.DownloadsController": {
+   "parent": "<16312>",
+   "fields": [
+    "_musicLabel"
+   ],
+   "methods": [
+    "Start/0",
+    "SetUpPage/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.DownloadsContent": {
+   "parent": "<17484>",
+   "fields": [
+    "<Heading>k__BackingField",
+    "<Paragraph>k__BackingField",
+    "<DownloadsIcons>k__BackingField",
+    "OnUpdate",
+    "OnDelete"
+   ],
+   "methods": [
+    "get_Heading/0",
+    "set_Heading/1",
+    "get_Paragraph/0",
+    "set_Paragraph/1",
+    "get_DownloadsIcons/0",
+    "set_DownloadsIcons/1",
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1",
+    "add_OnDelete/1",
+    "remove_OnDelete/1",
+    "SetPageContent/1",
+    "SetPageContent/3",
+    "RemoveItem/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.DownloadsIcon": {
+   "parent": "<15996>",
+   "fields": [
+    "<Key>k__BackingField",
+    "<Icon>k__BackingField"
+   ],
+   "methods": [
+    "get_Key/0",
+    "set_Key/1",
+    "get_Icon/0",
+    "set_Icon/1",
+    ".ctor/2"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.FaqContent": {
+   "parent": "<17484>",
+   "fields": [
+    "<DropDowns>k__BackingField",
+    "OnUpdate"
+   ],
+   "methods": [
+    "get_DropDowns/0",
+    "set_DropDowns/1",
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1",
+    "SetPageContent/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.DropDownContent": {
+   "parent": "<15996>",
+   "fields": [
+    "_name",
+    "<Heading>k__BackingField",
+    "<Paragraph>k__BackingField"
+   ],
+   "methods": [
+    "get_Heading/0",
+    "set_Heading/1",
+    "get_Paragraph/0",
+    "set_Paragraph/1",
+    "SetContent/2",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.ForParentsMetaData": {
+   "parent": "<15996>",
+   "fields": [
+    "<Md5Hash>k__BackingField",
+    "<Domain>k__BackingField",
+    "<DataPath>k__BackingField"
+   ],
+   "methods": [
+    "get_Md5Hash/0",
+    "set_Md5Hash/1",
+    "get_Domain/0",
+    "set_Domain/1",
+    "get_DataPath/0",
+    "set_DataPath/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.ForParentsData": {
+   "parent": "<15996>",
+   "fields": [
+    "<ProductsData>k__BackingField",
+    "<HomeData>k__BackingField",
+    "<FaqData>k__BackingField"
+   ],
+   "methods": [
+    "get_ProductsData/0",
+    "set_ProductsData/1",
+    "get_HomeData/0",
+    "set_HomeData/1",
+    "get_FaqData/0",
+    "set_FaqData/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.HomepageData": {
+   "parent": "<14308>",
+   "fields": [
+    "<Title>k__BackingField",
+    "<Description>k__BackingField"
+   ],
+   "methods": [
+    "get_Title/0",
+    "set_Title/1",
+    "get_Description/0",
+    "set_Description/1",
+    ".ctor/2"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.PromoData": {
+   "parent": "<15996>",
+   "fields": [
+    "<Title>k__BackingField",
+    "<Description>k__BackingField",
+    "<ButtonUrl>k__BackingField",
+    "<ButtonTitle>k__BackingField",
+    "<ButtonIconPath>k__BackingField",
+    "<ButtonIconMd5>k__BackingField",
+    "<Attachments>k__BackingField",
+    "<ButtonImgData>k__BackingField"
+   ],
+   "methods": [
+    "get_Title/0",
+    "set_Title/1",
+    "get_Description/0",
+    "set_Description/1",
+    "get_ButtonUrl/0",
+    "set_ButtonUrl/1",
+    "get_ButtonTitle/0",
+    "set_ButtonTitle/1",
+    "get_ButtonIconPath/0",
+    "set_ButtonIconPath/1",
+    "get_ButtonIconMd5/0",
+    "set_ButtonIconMd5/1",
+    "get_Attachments/0",
+    "set_Attachments/1",
+    "get_ButtonImgData/0",
+    "set_ButtonImgData/1",
+    ".ctor/0",
+    "SetButtonImageData/2"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.DropDownData": {
+   "parent": "<15996>",
+   "fields": [
+    "<Question>k__BackingField",
+    "<Answer>k__BackingField"
+   ],
+   "methods": [
+    "get_Question/0",
+    "set_Question/1",
+    "get_Answer/0",
+    "set_Answer/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.ImageData": {
+   "parent": "<15996>",
+   "fields": [
+    "<Md5Hash>k__BackingField",
+    "<ImgPath>k__BackingField",
+    "<Texture>k__BackingField",
+    "OnUpdate"
+   ],
+   "methods": [
+    "get_Md5Hash/0",
+    "set_Md5Hash/1",
+    "get_ImgPath/0",
+    "set_ImgPath/1",
+    "get_Texture/0",
+    "set_Texture/1",
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1",
+    ".ctor/2",
+    "SetTexture/1"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.HomeContent": {
+   "parent": "<17484>",
+   "fields": [
+    "<Heading>k__BackingField",
+    "<Paragraph>k__BackingField",
+    "<ImgData>k__BackingField",
+    "OnUpdate"
+   ],
+   "methods": [
+    "get_Heading/0",
+    "set_Heading/1",
+    "get_Paragraph/0",
+    "set_Paragraph/1",
+    "get_ImgData/0",
+    "set_ImgData/1",
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1",
+    "SetPageContent/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.IDownloads": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "SetPageContent/3",
+    "add_OnDelete/1",
+    "remove_OnDelete/1"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.IParentalContent": {
+   "parent": "<-1>",
+   "fields": [],
+   "methods": [
+    "SetPageContent/1",
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.ProductsContent": {
+   "parent": "<17484>",
+   "fields": [
+    "<Promos>k__BackingField",
+    "OnUpdate"
+   ],
+   "methods": [
+    "get_Promos/0",
+    "set_Promos/1",
+    "add_OnUpdate/1",
+    "remove_OnUpdate/1",
+    "SetPageContent/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.PromoBlockContent": {
+   "parent": "<15996>",
+   "fields": [
+    "<Heading>k__BackingField",
+    "<Paragraph>k__BackingField",
+    "<ButtonName>k__BackingField",
+    "<ButtonClickUrl>k__BackingField",
+    "<ButtonIconData>k__BackingField",
+    "<Gallery>k__BackingField"
+   ],
+   "methods": [
+    "get_Heading/0",
+    "set_Heading/1",
+    "get_Paragraph/0",
+    "set_Paragraph/1",
+    "get_ButtonName/0",
+    "set_ButtonName/1",
+    "get_ButtonClickUrl/0",
+    "set_ButtonClickUrl/1",
+    "get_ButtonIconData/0",
+    "set_ButtonIconData/1",
+    "get_Gallery/0",
+    "set_Gallery/1",
+    "SetContent/1",
+    "GetGalleryContent/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.AboutUsFiller": {
+   "parent": "<16310>",
+   "fields": [
+    "_heading",
+    "_paragraph",
+    "_image"
+   ],
+   "methods": [
+    "Init/0",
+    "OnUpdate/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.DownloadsFiller": {
+   "parent": "<16310>",
+   "fields": [
+    "_heading",
+    "_paragraph",
+    "_deleteButton",
+    "_itemContainer",
+    "_icon"
+   ],
+   "methods": [
+    "Start/0",
+    "OnDeleteAll/0",
+    "Init/0",
+    "RemoveAllItems/0",
+    "RemoveItem/1",
+    "OnClick/1",
+    "ShowBin/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.FaqFiller": {
+   "parent": "<16310>",
+   "fields": [
+    "_offlineAmazon",
+    "_offlineAndroid",
+    "_offlineIOS",
+    "_firstDropDown"
+   ],
+   "methods": [
+    "Awake/0",
+    "Init/0",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.HomeFiller": {
+   "parent": "<16310>",
+   "fields": [
+    "_imageBlocks",
+    "_textBlocks",
+    "_buttons",
+    "_buttons2",
+    "_galleryImageCount"
+   ],
+   "methods": [
+    "Init/0",
+    "OnUpdate/1",
+    "OnUpdateGallery/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.PageFiller": {
+   "parent": "<15661>",
+   "fields": [
+    "_remoteContent"
+   ],
+   "methods": [
+    "Awake/0",
+    "OnDestroy/0",
+    "Init/0",
+    "AddExistingLinks/2",
+    "ExtractUrls/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.PageSetup": {
+   "parent": "<15661>",
+   "fields": [
+    "_settings"
+   ],
+   "methods": [
+    "SetUpPage/1",
+    ".ctor/0"
+   ]
+  },
+  "BimiBooUtils.BBToolkitAppIntegration.ForParents.Pages.SettingsController": {
+   "parent": "<16312>",
+   "fields": [
+    "<HasPurchase>k__BackingField",
+    "_musicLabel",
+    "_musicSwitcher",
+    "_sfxLabel",
+    "_sfxSwitcher",
+    "_orientationLabel",
+    "_orientationButtons",
+    "_restoreButton",
+    "_hideLoadingCoroutine"
+   ],
+   "methods": [
+    "get_HasPurchase/0",
+    "set_HasPurchase/1",
+    "Start/0",
+    "SetUpPage/1",
+    "OnMusicSwitchPressed/0",
+    "OnSFXSwitchPressed/0",
+    "OnRestoreButtonPressed/0",
+    "HideLoadingIfNoRestore/0",
+    "OpenSettings/0",
+    "OnIAPRequestCompleted/1",
+    "OnRestoreProcessFinished/0",
+    "OnIAPInitialized/0",
+    "OnIAPInitializeFailed/0",
+    ".ctor/0",
+    ".cctor/0"
+   ]
+  },
+  "DG.Tweening.DOTweenModuleAudio": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DOFade/3",
+    "DOPitch/3",
+    "DOSetFloat/4",
+    "DOComplete/2",
+    "DOKill/2",
+    "DOFlip/1",
+    "DOGoto/3",
+    "DOPause/1",
+    "DOPlay/1",
+    "DOPlayBackwards/1",
+    "DOPlayForward/1",
+    "DORestart/1",
+    "DORewind/1",
+    "DOSmoothRewind/1",
+    "DOTogglePause/1"
+   ]
+  },
+  "DG.Tweening.DOTweenModulePhysics": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DOMove/4",
+    "DOMoveX/4",
+    "DOMoveY/4",
+    "DOMoveZ/4",
+    "DORotate/4",
+    "DOLookAt/5",
+    "DOJump/6",
+    "DOPath/7",
+    "DOLocalPath/7",
+    "DOPath/4",
+    "DOLocalPath/4"
+   ]
+  },
+  "DG.Tweening.DOTweenModulePhysics2D": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DOMove/4",
+    "DOMoveX/4",
+    "DOMoveY/4",
+    "DORotate/3",
+    "DOJump/6",
+    "DOPath/7",
+    "DOLocalPath/7",
+    "DOPath/4",
+    "DOLocalPath/4"
+   ]
+  },
+  "DG.Tweening.DOTweenModuleSprite": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DOColor/3",
+    "DOFade/3",
+    "DOGradientColor/3",
+    "DOBlendableColor/3"
+   ]
+  },
+  "Utils": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "SwitchToRectTransform/2"
+   ]
+  },
+  "DG.Tweening.DOTweenModuleUI": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DOFade/3",
+    "DOColor/3",
+    "DOFade/3",
+    "DOColor/3",
+    "DOFade/3",
+    "DOFillAmount/3",
+    "DOGradientColor/3",
+    "DOFlexibleSize/4",
+    "DOMinSize/4",
+    "DOPreferredSize/4",
+    "DOColor/3",
+    "DOFade/3",
+    "DOScale/3",
+    "DOAnchorPos/4",
+    "DOAnchorPosX/4",
+    "DOAnchorPosY/4",
+    "DOAnchorPos3D/4",
+    "DOAnchorPos3DX/4",
+    "DOAnchorPos3DY/4",
+    "DOAnchorPos3DZ/4",
+    "DOAnchorMax/4",
+    "DOAnchorMin/4",
+    "DOPivot/3",
+    "DOPivotX/3",
+    "DOPivotY/3",
+    "DOSizeDelta/4",
+    "DOPunchAnchorPos/6",
+    "DOShakeAnchorPos/8",
+    "DOShakeAnchorPos/8",
+    "DOJumpAnchorPos/6",
+    "DONormalizedPos/4",
+    "DOHorizontalNormalizedPos/4",
+    "DOVerticalNormalizedPos/4",
+    "DOValue/4",
+    "DOColor/3",
+    "DOCounter/6",
+    "DOFade/3",
+    "DOText/6",
+    "DOBlendableColor/3",
+    "DOBlendableColor/3",
+    "DOBlendableColor/3",
+    "DOShapeCircle/6"
+   ]
+  },
+  "DG.Tweening.DOTweenModuleUnityVersion": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "DOGradientColor/3",
+    "DOGradientColor/4",
+    "WaitForCompletion/2",
+    "WaitForRewind/2",
+    "WaitForKill/2",
+    "WaitForElapsedLoops/3",
+    "WaitForPosition/3",
+    "WaitForStart/2",
+    "DOOffset/4",
+    "DOTiling/4",
+    "AsyncWaitForCompletion/1",
+    "AsyncWaitForRewind/1",
+    "AsyncWaitForKill/1",
+    "AsyncWaitForElapsedLoops/2",
+    "AsyncWaitForPosition/2",
+    "AsyncWaitForStart/1"
+   ]
+  },
+  "WaitForCompletion": {
+   "parent": "<11634>",
+   "fields": [
+    "t"
+   ],
+   "methods": [
+    "get_keepWaiting/0",
+    ".ctor/1"
+   ]
+  },
+  "WaitForRewind": {
+   "parent": "<11634>",
+   "fields": [
+    "t"
+   ],
+   "methods": [
+    "get_keepWaiting/0",
+    ".ctor/1"
+   ]
+  },
+  "WaitForKill": {
+   "parent": "<11634>",
+   "fields": [
+    "t"
+   ],
+   "methods": [
+    "get_keepWaiting/0",
+    ".ctor/1"
+   ]
+  },
+  "WaitForElapsedLoops": {
+   "parent": "<11634>",
+   "fields": [
+    "t",
+    "elapsedLoops"
+   ],
+   "methods": [
+    "get_keepWaiting/0",
+    ".ctor/2"
+   ]
+  },
+  "WaitForPosition": {
+   "parent": "<11634>",
+   "fields": [
+    "t",
+    "position"
+   ],
+   "methods": [
+    "get_keepWaiting/0",
+    ".ctor/2"
+   ]
+  },
+  "WaitForStart": {
+   "parent": "<11634>",
+   "fields": [
+    "t"
+   ],
+   "methods": [
+    "get_keepWaiting/0",
+    ".ctor/1"
+   ]
+  },
+  "DG.Tweening.DOTweenCYInstruction": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": []
+  },
+  "Physics": {
+   "parent": "<15996>",
+   "fields": [],
+   "methods": [
+    "SetOrientationOnPath/4",
+    "HasRigidbody2D/1",
+    "HasRigidbody/1",
+    "CreateDOTweenPathTween/6"
+   ]
+  },
+  "DG.Tweening.DOTweenModuleUtils": {
+   "parent": "<15996>",
+   "fields": [
+    "_initialized"
+   ],
+   "methods": [
+    "Init/0",
+    "Preserver/0"
+   ]
+  },
+  "__StaticArrayInitTypeSize=12": {
+   "parent": "<19796>",
+   "fields": [],
+   "methods": []
+  },
+  "__StaticArrayInitTypeSize=24": {
+   "parent": "<19796>",
+   "fields": [],
+   "methods": []
+  },
+  "__StaticArrayInitTypeSize=36": {
+   "parent": "<19796>",
+   "fields": [],
+   "methods": []
+  }
+ }
+}

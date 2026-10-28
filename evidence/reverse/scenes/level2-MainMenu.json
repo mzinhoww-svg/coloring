@@ -1,0 +1,6527 @@
+{
+ "level": "level2",
+ "scene": "MainMenu",
+ "serialized_file": "level2",
+ "externals": [
+  "globalgamemanagers.assets",
+  "Library/unity default resources",
+  "resources.assets",
+  "sharedassets2.assets"
+ ],
+ "object_count": 380,
+ "gameobject_count": 79,
+ "recttransform_count": 75,
+ "roots": [
+  {
+   "transform_id": 80,
+   "game_object_id": 1,
+   "name": "Main Camera",
+   "active": true,
+   "components": [
+    "Transform",
+    "Camera",
+    "AudioListener",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.EventSystems.Physics2DRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "local_position": [
+    0.0,
+    0.0,
+    -10.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 81,
+   "game_object_id": 4,
+   "name": "[LoadMenuImages]",
+   "active": false,
+   "components": [
+    "Transform",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "MonoBehaviour",
+     "script": null,
+     "assembly": null,
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 82,
+   "game_object_id": 16,
+   "name": "[InAppPurchaseManager]",
+   "active": true,
+   "components": [
+    "Transform",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "MonoBehaviour",
+     "script": "InAppPurchaseManager",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 83,
+   "game_object_id": 28,
+   "name": "EventSystem",
+   "active": true,
+   "components": [
+    "Transform",
+    "MonoBehaviour",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.EventSystems.EventSystem",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.EventSystems.StandaloneInputModule",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "local_position": [
+    0.0,
+    0.0,
+    -10.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    -0.0,
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 163,
+   "game_object_id": 7,
+   "name": "Canvas",
+   "active": true,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 1,
+     "sorting_order": 101,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": [
+     162,
+     168
+    ]
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": [
+    {
+     "transform_id": 162,
+     "game_object_id": 6,
+     "name": "Background",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.AspectRatioFitter",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.0,
+       0.0
+      ],
+      "anchor_max": [
+       0.0,
+       0.0
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       0.0,
+       0.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 163,
+      "children": []
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": []
+    },
+    {
+     "transform_id": 168,
+     "game_object_id": 12,
+     "name": "SafeArea [Not Actual]",
+     "active": true,
+     "components": [
+      "RectTransform"
+     ],
+     "component_detail": [],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.0,
+       0.0
+      ],
+      "anchor_max": [
+       1.0,
+       1.0
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       0.0,
+       0.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 163,
+      "children": [
+       165
+      ]
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": [
+      {
+       "transform_id": 165,
+       "game_object_id": 9,
+       "name": "Main Menu",
+       "active": true,
+       "components": [
+        "RectTransform"
+       ],
+       "component_detail": [],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.0,
+         0.0
+        ],
+        "anchor_max": [
+         1.0,
+         1.0
+        ],
+        "anchored_position": [
+         0.0,
+         0.0
+        ],
+        "size_delta": [
+         0.0,
+         0.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         -0.0,
+         -0.0,
+         -0.0,
+         1.0
+        ],
+        "father": 168,
+        "children": [
+         178
+        ]
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0
+       ],
+       "children": [
+        {
+         "transform_id": 178,
+         "game_object_id": 23,
+         "name": "Image",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "SafeAreaImage",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           45.0,
+           10.5
+          ],
+          "size_delta": [
+           19.43,
+           1527.9
+          ],
+          "pivot": [
+           0.0,
+           0.0
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           0.7,
+           0.7,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 165,
+          "children": [
+           179,
+           182
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          0.7,
+          0.7,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 179,
+           "game_object_id": 24,
+           "name": "Restore Button (1)",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour",
+            "MonoBehaviour",
+            "MonoBehaviour",
+            "MonoBehaviour",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Image",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Button",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "RestoreButton",
+             "assembly": "Assembly-CSharp.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.HorizontalLayoutGroup",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.ContentSizeFitter",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             0.0,
+             0.0
+            ],
+            "anchored_position": [
+             13.0,
+             41.0
+            ],
+            "size_delta": [
+             0.0,
+             61.75
+            ],
+            "pivot": [
+             0.0,
+             0.0
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             -0.0,
+             -0.0,
+             -0.0,
+             1.0
+            ],
+            "father": 178,
+            "children": [
+             177,
+             175
+            ]
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+           ],
+           "children": [
+            {
+             "transform_id": 177,
+             "game_object_id": 22,
+             "name": "Image",
+             "active": true,
+             "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "MonoBehaviour"
+             ],
+             "component_detail": [
+              {
+               "class": "MonoBehaviour",
+               "script": "UnityEngine.UI.Image",
+               "assembly": "UnityEngine.UI.dll",
+               "enabled": true
+              }
+             ],
+             "depth": 5,
+             "rect": {
+              "anchor_min": [
+               0.0,
+               0.0
+              ],
+              "anchor_max": [
+               0.0,
+               0.0
+              ],
+              "anchored_position": [
+               0.0,
+               0.0
+              ],
+              "size_delta": [
+               57.81,
+               60.662
+              ],
+              "pivot": [
+               0.0,
+               0.0
+              ],
+              "local_position": [
+               0.0,
+               0.0,
+               0.0
+              ],
+              "local_scale": [
+               1.0,
+               1.0,
+               1.0
+              ],
+              "local_rotation": [
+               0.0,
+               0.0,
+               0.0,
+               1.0
+              ],
+              "father": 179,
+              "children": []
+             },
+             "local_position": [
+              0.0,
+              0.0,
+              0.0
+             ],
+             "local_scale": [
+              1.0,
+              1.0,
+              1.0
+             ],
+             "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+             ],
+             "children": []
+            },
+            {
+             "transform_id": 175,
+             "game_object_id": 20,
+             "name": "Text (TMP)",
+             "active": true,
+             "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "MonoBehaviour",
+              "MonoBehaviour"
+             ],
+             "component_detail": [
+              {
+               "class": "MonoBehaviour",
+               "script": "TMPro.TextMeshProUGUI",
+               "assembly": "Unity.TextMeshPro.dll",
+               "enabled": true
+              },
+              {
+               "class": "MonoBehaviour",
+               "script": "I2.Loc.Localize",
+               "assembly": "Assembly-CSharp.dll",
+               "enabled": true
+              }
+             ],
+             "depth": 5,
+             "rect": {
+              "anchor_min": [
+               0.0,
+               0.0
+              ],
+              "anchor_max": [
+               0.0,
+               0.0
+              ],
+              "anchored_position": [
+               0.0,
+               0.0
+              ],
+              "size_delta": [
+               669.04,
+               60.3
+              ],
+              "pivot": [
+               0.0,
+               0.5
+              ],
+              "local_position": [
+               0.0,
+               0.0,
+               0.0
+              ],
+              "local_scale": [
+               1.0,
+               1.0,
+               1.0
+              ],
+              "local_rotation": [
+               0.0,
+               0.0,
+               0.0,
+               1.0
+              ],
+              "father": 179,
+              "children": []
+             },
+             "local_position": [
+              0.0,
+              0.0,
+              0.0
+             ],
+             "local_scale": [
+              1.0,
+              1.0,
+              1.0
+             ],
+             "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+             ],
+             "children": []
+            }
+           ]
+          },
+          {
+           "transform_id": 182,
+           "game_object_id": 27,
+           "name": "For Parents",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Image",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Button",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             1.0
+            ],
+            "anchor_max": [
+             0.0,
+             1.0
+            ],
+            "anchored_position": [
+             13.0,
+             178.529
+            ],
+            "size_delta": [
+             253.0,
+             104.0
+            ],
+            "pivot": [
+             0.0,
+             1.0
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.4286,
+             1.4286,
+             1.0
+            ],
+            "local_rotation": [
+             -0.0,
+             -0.0,
+             -0.0,
+             1.0
+            ],
+            "father": 178,
+            "children": [
+             166
+            ]
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.4286,
+            1.4286,
+            1.0
+           ],
+           "local_rotation": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+           ],
+           "children": [
+            {
+             "transform_id": 166,
+             "game_object_id": 10,
+             "name": "Text (TMP)",
+             "active": true,
+             "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "MonoBehaviour",
+              "MonoBehaviour"
+             ],
+             "component_detail": [
+              {
+               "class": "MonoBehaviour",
+               "script": "TMPro.TextMeshProUGUI",
+               "assembly": "Unity.TextMeshPro.dll",
+               "enabled": true
+              },
+              {
+               "class": "MonoBehaviour",
+               "script": "I2.Loc.Localize",
+               "assembly": "Assembly-CSharp.dll",
+               "enabled": true
+              }
+             ],
+             "depth": 5,
+             "rect": {
+              "anchor_min": [
+               0.5,
+               0.5
+              ],
+              "anchor_max": [
+               0.5,
+               0.5
+              ],
+              "anchored_position": [
+               0.0,
+               -3.3
+              ],
+              "size_delta": [
+               173.8,
+               35.94
+              ],
+              "pivot": [
+               0.5,
+               0.5
+              ],
+              "local_position": [
+               0.0,
+               0.0,
+               0.0
+              ],
+              "local_scale": [
+               1.0,
+               1.0,
+               1.0
+              ],
+              "local_rotation": [
+               0.0,
+               0.0,
+               0.0,
+               1.0
+              ],
+              "father": 182,
+              "children": []
+             },
+             "local_position": [
+              0.0,
+              0.0,
+              0.0
+             ],
+             "local_scale": [
+              1.0,
+              1.0,
+              1.0
+             ],
+             "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+             ],
+             "children": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "transform_id": 171,
+   "game_object_id": 15,
+   "name": "Scroll",
+   "active": true,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour",
+    "CanvasGroup",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 0,
+     "sorting_order": 0,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "Coloring.MainMenu.MainMenuScroll",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": []
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 180,
+   "game_object_id": 25,
+   "name": "InAppPurchasePanel",
+   "active": false,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 0,
+     "sorting_order": 200,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "IAPMainMenuPanel",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": [
+     172,
+     174,
+     181
+    ]
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": [
+    {
+     "transform_id": 172,
+     "game_object_id": 17,
+     "name": "fade-area",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Button",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.0,
+       0.0
+      ],
+      "anchor_max": [
+       1.0,
+       1.0
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       0.0,
+       0.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 180,
+      "children": []
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": []
+    },
+    {
+     "transform_id": 174,
+     "game_object_id": 19,
+     "name": "FullversionIAP",
+     "active": true,
+     "components": [
+      "RectTransform"
+     ],
+     "component_detail": [],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.5,
+       0.5
+      ],
+      "anchor_max": [
+       0.5,
+       0.5
+      ],
+      "anchored_position": [
+       307.71,
+       0.0
+      ],
+      "size_delta": [
+       100.0,
+       100.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.5,
+       1.5,
+       1.5
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 180,
+      "children": [
+       167,
+       170,
+       160,
+       169,
+       173
+      ]
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.5,
+      1.5,
+      1.5
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": [
+      {
+       "transform_id": 167,
+       "game_object_id": 11,
+       "name": "fullversionSpine",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "Spine.Unity.SkeletonGraphic",
+         "assembly": "spine-unity.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         1.0,
+         -287.0
+        ],
+        "size_delta": [
+         703.0,
+         666.241
+        ],
+        "pivot": [
+         0.5174,
+         -0.0
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         0.73,
+         0.73,
+         0.73
+        ],
+        "local_rotation": [
+         -0.0,
+         -0.0,
+         -0.0,
+         1.0
+        ],
+        "father": 174,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        0.73,
+        0.73,
+        0.73
+       ],
+       "local_rotation": [
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0
+       ],
+       "children": []
+      },
+      {
+       "transform_id": 170,
+       "game_object_id": 14,
+       "name": "button-unlock",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Button",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         -11.241,
+         -236.4
+        ],
+        "size_delta": [
+         335.0,
+         151.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         0.73,
+         0.73,
+         0.73
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 174,
+        "children": [
+         183,
+         159,
+         161
+        ]
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        0.73,
+        0.73,
+        0.73
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": [
+        {
+         "transform_id": 183,
+         "game_object_id": 29,
+         "name": "Image",
+         "active": false,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "I2.Loc.Localize",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.5,
+           0.5
+          ],
+          "anchor_max": [
+           0.5,
+           0.5
+          ],
+          "anchored_position": [
+           0.0,
+           34.59
+          ],
+          "size_delta": [
+           151.0,
+           44.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 170,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 159,
+         "game_object_id": 2,
+         "name": "price",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Text",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.5,
+           0.5
+          ],
+          "anchor_max": [
+           0.5,
+           0.5
+          ],
+          "anchored_position": [
+           0.0,
+           -23.039
+          ],
+          "size_delta": [
+           160.0,
+           76.078
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 170,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 161,
+         "game_object_id": 5,
+         "name": "Text (TMP) (2)",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "TMPro.TextMeshProUGUI",
+           "assembly": "Unity.TextMeshPro.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "TMProCurve",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "I2.Loc.Localize",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.5,
+           0.5
+          ],
+          "anchor_max": [
+           0.5,
+           0.5
+          ],
+          "anchored_position": [
+           4.925,
+           36.367
+          ],
+          "size_delta": [
+           169.85,
+           47.555
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.3699,
+           1.3699,
+           1.3699
+          ],
+          "local_rotation": [
+           -0.0,
+           -0.0,
+           -0.0,
+           1.0
+          ],
+          "father": 170,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.3699,
+          1.3699,
+          1.3699
+         ],
+         "local_rotation": [
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0
+         ],
+         "children": []
+        }
+       ]
+      },
+      {
+       "transform_id": 160,
+       "game_object_id": 3,
+       "name": "Text (TMP) (1)",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "TMPro.TextMeshProUGUI",
+         "assembly": "Unity.TextMeshPro.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "TMProCurve",
+         "assembly": "Assembly-CSharp.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "I2.Loc.Localize",
+         "assembly": "Assembly-CSharp.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         -7.334,
+         237.87
+        ],
+        "size_delta": [
+         394.792,
+         91.315
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         -0.0,
+         -0.0,
+         -0.0,
+         1.0
+        ],
+        "father": 174,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0
+       ],
+       "children": []
+      },
+      {
+       "transform_id": 169,
+       "game_object_id": 13,
+       "name": "text",
+       "active": false,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "I2.Loc.Localize",
+         "assembly": "Assembly-CSharp.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         -11.241,
+         225.7
+        ],
+        "size_delta": [
+         741.0,
+         213.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         0.55,
+         0.55,
+         0.55
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 174,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        0.55,
+        0.55,
+        0.55
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": []
+      },
+      {
+       "transform_id": 173,
+       "game_object_id": 18,
+       "name": "sale",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         178.0,
+         -158.0
+        ],
+        "size_delta": [
+         152.0,
+         123.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         0.73,
+         0.73,
+         0.73
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 174,
+        "children": [
+         176
+        ]
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        0.73,
+        0.73,
+        0.73
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": [
+        {
+         "transform_id": 176,
+         "game_object_id": 21,
+         "name": "percent",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Text",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           1.0,
+           1.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 173,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "transform_id": 181,
+     "game_object_id": 26,
+     "name": "close-button",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Button",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       1.0,
+       1.0
+      ],
+      "anchor_max": [
+       1.0,
+       1.0
+      ],
+      "anchored_position": [
+       -100.0,
+       -100.0
+      ],
+      "size_delta": [
+       126.627,
+       124.444
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       0.75,
+       0.75,
+       0.75
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 180,
+      "children": []
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      0.75,
+      0.75,
+      0.75
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": []
+    }
+   ]
+  },
+  {
+   "transform_id": 187,
+   "game_object_id": 33,
+   "name": "ParentalGateMathCanvas",
+   "active": true,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour",
+    "CanvasGroup",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 0,
+     "sorting_order": 1000,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "ParentalGateMathUtils.ParentalGateMath",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": [
+     201,
+     185
+    ]
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": [
+    {
+     "transform_id": 201,
+     "game_object_id": 47,
+     "name": "CloseLayer",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Button",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.0,
+       0.0
+      ],
+      "anchor_max": [
+       1.0,
+       1.0
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       0.0,
+       0.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 187,
+      "children": []
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": []
+    },
+    {
+     "transform_id": 185,
+     "game_object_id": 31,
+     "name": "Panel",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "CanvasGroup"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.5,
+       0.5
+      ],
+      "anchor_max": [
+       0.5,
+       0.5
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       874.0,
+       823.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 187,
+      "children": [
+       199,
+       198,
+       200,
+       197,
+       164
+      ]
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": [
+      {
+       "transform_id": 199,
+       "game_object_id": 45,
+       "name": "Numbers",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.GridLayoutGroup",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.0,
+         0.0
+        ],
+        "anchor_max": [
+         1.0,
+         0.0
+        ],
+        "anchored_position": [
+         0.0,
+         6.39
+        ],
+        "size_delta": [
+         0.0,
+         407.4
+        ],
+        "pivot": [
+         0.5,
+         0.0
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 185,
+        "children": [
+         231,
+         214,
+         219,
+         222,
+         217,
+         226,
+         224,
+         216,
+         223,
+         220
+        ]
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": [
+        {
+         "transform_id": 231,
+         "game_object_id": 77,
+         "name": "1",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           215
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 215,
+           "game_object_id": 61,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 231,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 214,
+         "game_object_id": 60,
+         "name": "2",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           229
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 229,
+           "game_object_id": 75,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 214,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 219,
+         "game_object_id": 65,
+         "name": "3",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           228
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 228,
+           "game_object_id": 74,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 219,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 222,
+         "game_object_id": 68,
+         "name": "4",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           233
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 233,
+           "game_object_id": 79,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 222,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 217,
+         "game_object_id": 63,
+         "name": "5",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           225
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 225,
+           "game_object_id": 71,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 217,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 226,
+         "game_object_id": 72,
+         "name": "6",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           221
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 221,
+           "game_object_id": 67,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 226,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 224,
+         "game_object_id": 70,
+         "name": "7",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           218
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 218,
+           "game_object_id": 64,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 224,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 216,
+         "game_object_id": 62,
+         "name": "8",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           230
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 230,
+           "game_object_id": 76,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 216,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 223,
+         "game_object_id": 69,
+         "name": "9",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           232
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 232,
+           "game_object_id": 78,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 223,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 220,
+         "game_object_id": 66,
+         "name": "0",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Button",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "ParentalGateMathUtils.ButtonController",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 199,
+          "children": [
+           227
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 227,
+           "game_object_id": 73,
+           "name": "number",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "TMPro.TextMeshProUGUI",
+             "assembly": "Unity.TextMeshPro.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             1.0,
+             1.0
+            ],
+            "anchored_position": [
+             0.0,
+             -1.2
+            ],
+            "size_delta": [
+             0.0,
+             0.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 220,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "transform_id": 198,
+       "game_object_id": 44,
+       "name": "Math",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.HorizontalLayoutGroup",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "ParentalGateMathUtils.MathController",
+         "assembly": "Assembly-CSharp.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         0.0,
+         86.0
+        ],
+        "size_delta": [
+         750.0,
+         177.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 185,
+        "children": [
+         189,
+         190,
+         184,
+         195,
+         191,
+         196,
+         193,
+         188,
+         192
+        ]
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": [
+        {
+         "transform_id": 189,
+         "game_object_id": 35,
+         "name": "Text (TMP)",
+         "active": false,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "TMPro.TextMeshProUGUI",
+           "assembly": "Unity.TextMeshPro.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           1.0,
+           1.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           0.0,
+           0.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 190,
+         "game_object_id": 36,
+         "name": "n",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           64.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 184,
+         "game_object_id": 30,
+         "name": "n",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           62.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 195,
+         "game_object_id": 41,
+         "name": "+",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           78.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 191,
+         "game_object_id": 37,
+         "name": "n",
+         "active": false,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           62.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 196,
+         "game_object_id": 42,
+         "name": "n",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           66.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 193,
+         "game_object_id": 39,
+         "name": "=",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           78.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        },
+        {
+         "transform_id": 188,
+         "game_object_id": 34,
+         "name": "a",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           64.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": [
+           194
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 194,
+           "game_object_id": 40,
+           "name": "Image",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Image",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.5
+            ],
+            "anchor_max": [
+             0.0,
+             0.5
+            ],
+            "anchored_position": [
+             18.0,
+             0.0
+            ],
+            "size_delta": [
+             36.0,
+             164.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             0.0,
+             0.0,
+             0.0,
+             1.0
+            ],
+            "father": 188,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 192,
+         "game_object_id": 38,
+         "name": "a",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Image",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           0.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           0.0
+          ],
+          "size_delta": [
+           64.0,
+           86.0
+          ],
+          "pivot": [
+           0.5,
+           0.5
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 198,
+          "children": [
+           186
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 186,
+           "game_object_id": 32,
+           "name": "Image",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Image",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.5
+            ],
+            "anchor_max": [
+             0.0,
+             0.5
+            ],
+            "anchored_position": [
+             18.0,
+             0.0
+            ],
+            "size_delta": [
+             36.0,
+             164.0
+            ],
+            "pivot": [
+             0.5,
+             0.5
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             -0.0,
+             -0.0,
+             -0.0,
+             1.0
+            ],
+            "father": 192,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "transform_id": 200,
+       "game_object_id": 46,
+       "name": "CloseBtn",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Button",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         1.0,
+         1.0
+        ],
+        "anchor_max": [
+         1.0,
+         1.0
+        ],
+        "anchored_position": [
+         -24.7,
+         -20.8
+        ],
+        "size_delta": [
+         78.0,
+         78.0
+        ],
+        "pivot": [
+         1.0,
+         1.0
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         -0.0,
+         -0.0,
+         -0.0,
+         1.0
+        ],
+        "father": 185,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0
+       ],
+       "children": []
+      },
+      {
+       "transform_id": 197,
+       "game_object_id": 43,
+       "name": "TitleText",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Text",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "ParentalGateMathUtils.ParetalGateTitle",
+         "assembly": "Assembly-CSharp.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.0,
+         1.0
+        ],
+        "anchor_max": [
+         1.0,
+         1.0
+        ],
+        "anchored_position": [
+         0.0,
+         -30.2
+        ],
+        "size_delta": [
+         -204.0,
+         204.6
+        ],
+        "pivot": [
+         0.5,
+         1.0
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 185,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": []
+      },
+      {
+       "transform_id": 164,
+       "game_object_id": 8,
+       "name": "ClearBtn",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        },
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Button",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         313.15,
+         86.0
+        ],
+        "size_delta": [
+         65.0,
+         51.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 185,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "transform_id": 204,
+   "game_object_id": 50,
+   "name": "Shelf Canvas Controller",
+   "active": true,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 1,
+     "sorting_order": 100,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "ShelfCanvasController",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": [
+     202
+    ]
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": [
+    {
+     "transform_id": 202,
+     "game_object_id": 48,
+     "name": "ShelfPopupButton",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Button",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Mask",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       1.0,
+       0.0
+      ],
+      "anchor_max": [
+       1.0,
+       0.0
+      ],
+      "anchored_position": [
+       0.0,
+       -361.0
+      ],
+      "size_delta": [
+       295.0,
+       355.0
+      ],
+      "pivot": [
+       1.0,
+       0.0
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      "father": 204,
+      "children": [
+       203,
+       205
+      ]
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "children": [
+      {
+       "transform_id": 203,
+       "game_object_id": 49,
+       "name": "Image",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         10.8,
+         -43.3
+        ],
+        "size_delta": [
+         224.0,
+         224.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 202,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": []
+      },
+      {
+       "transform_id": 205,
+       "game_object_id": 51,
+       "name": "badge",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.5,
+         0.5
+        ],
+        "anchor_max": [
+         0.5,
+         0.5
+        ],
+        "anchored_position": [
+         0.0,
+         0.0
+        ],
+        "size_delta": [
+         298.0,
+         361.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 202,
+        "children": []
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "transform_id": 207,
+   "game_object_id": 53,
+   "name": "SimplifyCanvas",
+   "active": true,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 0,
+     "sorting_order": 0,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": [
+     212,
+     206
+    ]
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": [
+    {
+     "transform_id": 212,
+     "game_object_id": 58,
+     "name": "Blackout",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "Canvas",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "Canvas",
+       "render_mode": 2,
+       "sorting_order": 0,
+       "pixel_perfect": false
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.GraphicRaycaster",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": false
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Button",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.0,
+       0.0
+      ],
+      "anchor_max": [
+       1.0,
+       1.0
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       0.0,
+       0.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       -0.0,
+       -0.0,
+       -0.0,
+       1.0
+      ],
+      "father": 207,
+      "children": []
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      -0.0,
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "children": []
+    },
+    {
+     "transform_id": 206,
+     "game_object_id": 52,
+     "name": "QuitGamePopup",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "Bimiboo.unity_utils.QuitGameScreen.QuitGamePopup",
+       "assembly": "Assembly-CSharp.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.5,
+       0.5
+      ],
+      "anchor_max": [
+       0.5,
+       0.5
+      ],
+      "anchored_position": [
+       0.0,
+       -1200.0
+      ],
+      "size_delta": [
+       1200.0,
+       600.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       -0.0,
+       -0.0,
+       -0.0,
+       1.0
+      ],
+      "father": 207,
+      "children": [
+       208
+      ]
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      -0.0,
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "children": [
+      {
+       "transform_id": 208,
+       "game_object_id": 54,
+       "name": "Background",
+       "active": true,
+       "components": [
+        "RectTransform",
+        "CanvasRenderer",
+        "MonoBehaviour"
+       ],
+       "component_detail": [
+        {
+         "class": "MonoBehaviour",
+         "script": "UnityEngine.UI.Image",
+         "assembly": "UnityEngine.UI.dll",
+         "enabled": true
+        }
+       ],
+       "depth": 2,
+       "rect": {
+        "anchor_min": [
+         0.0,
+         0.0
+        ],
+        "anchor_max": [
+         1.0,
+         1.0
+        ],
+        "anchored_position": [
+         0.0,
+         0.0
+        ],
+        "size_delta": [
+         0.0,
+         0.0
+        ],
+        "pivot": [
+         0.5,
+         0.5
+        ],
+        "local_position": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "local_scale": [
+         1.0,
+         1.0,
+         1.0
+        ],
+        "local_rotation": [
+         0.0,
+         0.0,
+         0.0,
+         1.0
+        ],
+        "father": 206,
+        "children": [
+         213,
+         209
+        ]
+       },
+       "local_position": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "local_scale": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "local_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+       ],
+       "children": [
+        {
+         "transform_id": 213,
+         "game_object_id": 59,
+         "name": "ButtonsHolder",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.HorizontalLayoutGroup",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.ContentSizeFitter",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.0,
+           0.0
+          ],
+          "anchor_max": [
+           1.0,
+           0.0
+          ],
+          "anchored_position": [
+           0.0,
+           211.0
+          ],
+          "size_delta": [
+           0.0,
+           125.0
+          ],
+          "pivot": [
+           0.5,
+           0.0
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 208,
+          "children": [
+           211,
+           210
+          ]
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": [
+          {
+           "transform_id": 211,
+           "game_object_id": 57,
+           "name": "AcceptButton",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Image",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Button",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             0.0,
+             0.0
+            ],
+            "anchored_position": [
+             0.0,
+             0.0
+            ],
+            "size_delta": [
+             276.0,
+             277.082
+            ],
+            "pivot": [
+             0.0,
+             0.0
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             -0.0,
+             -0.0,
+             -0.0,
+             1.0
+            ],
+            "father": 213,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+           ],
+           "children": []
+          },
+          {
+           "transform_id": 210,
+           "game_object_id": 56,
+           "name": "DeclineButton",
+           "active": true,
+           "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "MonoBehaviour",
+            "MonoBehaviour"
+           ],
+           "component_detail": [
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Image",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            },
+            {
+             "class": "MonoBehaviour",
+             "script": "UnityEngine.UI.Button",
+             "assembly": "UnityEngine.UI.dll",
+             "enabled": true
+            }
+           ],
+           "depth": 4,
+           "rect": {
+            "anchor_min": [
+             0.0,
+             0.0
+            ],
+            "anchor_max": [
+             0.0,
+             0.0
+            ],
+            "anchored_position": [
+             0.0,
+             0.0
+            ],
+            "size_delta": [
+             276.0,
+             277.082
+            ],
+            "pivot": [
+             1.0,
+             0.0
+            ],
+            "local_position": [
+             0.0,
+             0.0,
+             0.0
+            ],
+            "local_scale": [
+             1.0,
+             1.0,
+             1.0
+            ],
+            "local_rotation": [
+             -0.0,
+             -0.0,
+             -0.0,
+             1.0
+            ],
+            "father": 213,
+            "children": []
+           },
+           "local_position": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "local_scale": [
+            1.0,
+            1.0,
+            1.0
+           ],
+           "local_rotation": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+           ],
+           "children": []
+          }
+         ]
+        },
+        {
+         "transform_id": 209,
+         "game_object_id": 55,
+         "name": "Title",
+         "active": true,
+         "components": [
+          "RectTransform",
+          "CanvasRenderer",
+          "MonoBehaviour",
+          "MonoBehaviour"
+         ],
+         "component_detail": [
+          {
+           "class": "MonoBehaviour",
+           "script": "UnityEngine.UI.Text",
+           "assembly": "UnityEngine.UI.dll",
+           "enabled": true
+          },
+          {
+           "class": "MonoBehaviour",
+           "script": "Bimiboo.unity_utils.QuitGameTitle.QuitGameTitle",
+           "assembly": "Assembly-CSharp.dll",
+           "enabled": true
+          }
+         ],
+         "depth": 3,
+         "rect": {
+          "anchor_min": [
+           0.5,
+           1.0
+          ],
+          "anchor_max": [
+           0.5,
+           1.0
+          ],
+          "anchored_position": [
+           0.0,
+           -7.0
+          ],
+          "size_delta": [
+           1080.1,
+           260.0
+          ],
+          "pivot": [
+           0.5,
+           1.0
+          ],
+          "local_position": [
+           0.0,
+           0.0,
+           0.0
+          ],
+          "local_scale": [
+           1.0,
+           1.0,
+           1.0
+          ],
+          "local_rotation": [
+           0.0,
+           0.0,
+           0.0,
+           1.0
+          ],
+          "father": 208,
+          "children": []
+         },
+         "local_position": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "local_scale": [
+          1.0,
+          1.0,
+          1.0
+         ],
+         "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+         ],
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

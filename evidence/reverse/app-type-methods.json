@@ -1,0 +1,3493 @@
+{
+  "evidence_id": "APK-REV-IL2CPP-002",
+  "source_member": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+  "note": "Signatures and declaration order from metadata. Parameter and field TYPE indices are not resolved (Il2CppMetadataRegistration lives in libil2cpp.so).",
+  "types": {
+    "PopupView": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 1,
+      "fields": [
+        "txtLog"
+      ],
+      "methods": [
+        {
+          "name": "DebugLog",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnDialogInfo",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnDialogConfirm",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnDialogNeutral",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnDatePicker",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnTimePicker",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": "<OnDialogInfo>b__2_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDialogConfirm>b__3_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDialogConfirm>b__3_1",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDialogNeutral>b__4_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDialogNeutral>b__4_1",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDialogNeutral>b__4_2",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDatePicker>b__5_0",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnDatePicker>b__5_1",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnTimePicker>b__6_0",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnTimePicker>b__6_1",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        }
+      ]
+    },
+    "ChangePatternTileScale": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 4,
+      "fields": [
+        "patternNames",
+        "scaleXs",
+        "scaleYs",
+        "tileTransform"
+      ],
+      "methods": [
+        {
+          "name": "ChangeTileScale",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ColoringPage": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 21,
+      "fields": [
+        "_buttonsTablet",
+        "_buttonsStandart",
+        "_tools",
+        "layersSelection",
+        "loadImage",
+        "paintable",
+        "paintableSecondary",
+        "texture",
+        "btnTrash",
+        "btnTrashTablet",
+        "btnUndo",
+        "btnUndoTablet",
+        "layerSelection",
+        "audioManager",
+        "_back",
+        "_frontground",
+        "_p3DButtonClearAll",
+        "_seq",
+        "layersPrefab",
+        "selectedBoardName",
+        "theTime"
+      ],
+      "methods": [
+        {
+          "name": "Awake",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SetupSecondaryPaintable",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "LoadPrefab",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnButtonSave",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnButtonUndo",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnButtonTrash",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "Update",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": "<OnButtonSave>b__25_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<OnButtonTrash>b__27_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        }
+      ]
+    },
+    "DinamicInterval": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 3,
+      "fields": [
+        "_hitScreenFill",
+        "_minInterval",
+        "_maxInterval"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Update",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "LayerSelection": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 5,
+      "fields": [
+        "_mask",
+        "_paintable",
+        "_paintableSecondary",
+        "displayParticles",
+        "<IsDrawing>k__BackingField"
+      ],
+      "methods": [
+        {
+          "name": "get_IsDrawing",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_IsDrawing",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SetMask",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnPointerDown",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "OnPointerUp",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "PaintOnSecondyBoard",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CheckBoardName",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "LoadStrokes": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 1,
+      "fields": [
+        "strokeTextures"
+      ],
+      "methods": [
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "Paintable": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 3,
+      "fields": [
+        "_texture",
+        "_paintableTexture",
+        "_p3DPaintable"
+      ],
+      "methods": [
+        {
+          "name": "Initialize",
+          "params": 2,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "Undo",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SetActivePainting",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PaintablesController": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 4,
+      "fields": [
+        "_paintablePrefab",
+        "_backTexture",
+        "_paintables",
+        "_quantityPaitables"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "Clear",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SetActivePainting",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PaletteColor": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 2,
+      "fields": [
+        "_rectTransform",
+        "_image"
+      ],
+      "methods": [
+        {
+          "name": "SetColor",
+          "params": 2,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "GetColor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SetSprite",
+          "params": 4,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "GetSprite",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "CheckPosition",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SetPosition",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PaletteContent": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 12,
+      "fields": [
+        "_paletteColorPrefab",
+        "_managePhysicalBrushes",
+        "_typePalette",
+        "_rectTransform",
+        "_paletteColors",
+        "_lastPaletteColor",
+        "_maxPosition",
+        "_minPosition",
+        "_positionY",
+        "_activeId",
+        "_currentId",
+        "<OnChangeColor>k__BackingField"
+      ],
+      "methods": [
+        {
+          "name": "get_OnChangeColor",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_OnChangeColor",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "OnEnable",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Create",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "Update",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CheckCurrentColor",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "IsOpenedColor",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CheckPosition",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PaletteController": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 4,
+      "fields": [
+        "_paletteContent",
+        "_contentRect",
+        "_seq",
+        "_isDrag"
+      ],
+      "methods": [
+        {
+          "name": "get_GetContent",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2182
+        },
+        {
+          "name": "Create",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnPointerClick",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "OnBeginDrag",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "OnEndDrag",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "MoveScroll",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CheckBrush",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SetPosition",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PaletteLock": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 1,
+      "fields": [
+        "_locks"
+      ],
+      "methods": [
+        {
+          "name": "SwithStatus",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "Palettes": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 4,
+      "fields": [
+        "_paletteControllers",
+        "_lock",
+        "_activePalette",
+        "IsInitialize"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SetPalettePosition",
+          "params": 2,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SetLock",
+          "params": 3,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ActivatePaletteController",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "Brush": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 12,
+      "fields": [
+        "brushType",
+        "outline",
+        "color",
+        "manageTools",
+        "_audioManager",
+        "_managePhysicalBrushes",
+        "_palettes",
+        "_audioSource",
+        "_currentBrush",
+        "_seq",
+        "_idColor",
+        "isEnabledBrush"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Starter",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "GetBrushType",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "EnableOutline",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "DisableOutline",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SetColor",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ChangeColor",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ChangeSprite",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnPointerDown",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ManagePalettes": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 3,
+      "fields": [
+        "paletteType",
+        "palette",
+        "lockPanel"
+      ],
+      "methods": [
+        {
+          "name": "get_activeBrush",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2177
+        },
+        {
+          "name": "OnEnable",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "FixedUpdate",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ActivateLockPanel",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnColorChanged",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnColorChanging",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "GetPaletteType",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "MoveToPanel",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CheckOpened",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "RestrictMovement",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "MoveLockPanel",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ManagePhysicalBrushes": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 10,
+      "fields": [
+        "tileScale",
+        "drawColors",
+        "drawColorsShines",
+        "drawColorsPatterns",
+        "drawPatterns",
+        "typePatterns",
+        "pixelsPerMultiplierPatterns",
+        "drawShines",
+        "physicalBrushes",
+        "<CurrentCollor>k__BackingField"
+      ],
+      "methods": [
+        {
+          "name": "get_CurrentCollor",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_CurrentCollor",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "get_GetColors",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2182
+        },
+        {
+          "name": "get_GetPatterns",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2182
+        },
+        {
+          "name": "get_GetTypePatterns",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2182
+        },
+        {
+          "name": "get_PixelsPerMultiplierPatterns",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2182
+        },
+        {
+          "name": "get_GetShines",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2182
+        },
+        {
+          "name": "OnEnable",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ActivateBrush",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "DisableBrushes",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ChangeColor",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "GetAverageColor",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ManageTools": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 7,
+      "fields": [
+        "colors",
+        "shines",
+        "patterns",
+        "brushes",
+        "palettes",
+        "_audioManager",
+        "_colorChanging"
+      ],
+      "methods": [
+        {
+          "name": "GetPattern",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "GetShine",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnEnable",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "UpdateBrushPresets",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "InitialBrushesSetup",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ChangeBrushColorOrSprite",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "EnableCorrespondingPalette",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ChangeCurrentPaletteItem",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PaletteItem": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 3,
+      "fields": [
+        "itemID",
+        "palette",
+        "_mousePos"
+      ],
+      "methods": [
+        {
+          "name": "OnPointerDown",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "OnPointerUp",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "MoveToPanel",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "RestrictMovement",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ToolsManager": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 27,
+      "fields": [
+        "physicalBrushes",
+        "activePhysicalBrush",
+        "allBrushes",
+        "allBrushesForTablet",
+        "buttonsPanel",
+        "buttonsPanelForTablet",
+        "toolsPanel",
+        "toolsPanelForTablet",
+        "secondaryFillBrush",
+        "activeBrush",
+        "activeColor",
+        "activePattern",
+        "activeShine",
+        "drawColors",
+        "drawPatterns",
+        "drawShines",
+        "colorPickerPatterns",
+        "slotPrefab",
+        "palettes",
+        "contents",
+        "shineBrushTextures",
+        "patternBrushTextures",
+        "paletteColors",
+        "paletteShines",
+        "triangle",
+        "_paintable",
+        "tileScale"
+      ],
+      "methods": [
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ColoringPageDataManager": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15996>",
+      "field_count": 6,
+      "fields": [
+        "OnActiveBrushChanged",
+        "OnActiveColorIDChanged",
+        "OnActivePaletteChanged",
+        "_activePalette",
+        "_lastActiveColorID",
+        "_activeBrush"
+      ],
+      "methods": [
+        {
+          "name": "add_OnActiveBrushChanged",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "remove_OnActiveBrushChanged",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "add_OnActiveColorIDChanged",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "remove_OnActiveColorIDChanged",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "add_OnActivePaletteChanged",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "remove_OnActivePaletteChanged",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "get_GetActivePalette",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_SetActivePalette",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "GetLastActiveColorID",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 150
+        },
+        {
+          "name": "SetLastActiveColorID",
+          "params": 2,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 150
+        },
+        {
+          "name": "ResetActiveColors",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 150
+        },
+        {
+          "name": "get_GetActiveBrush",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_SetActiveBrush",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "ResetActiveBrush",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 150
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": ".cctor",
+          "params": 0,
+          "access": "private",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6289
+        }
+      ]
+    },
+    "DataManager": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15996>",
+      "field_count": 11,
+      "fields": [
+        "ActiveBrush",
+        "selectedColoringBoardName",
+        "oldCaches",
+        "previousScene",
+        "nextScene",
+        "currentRAM",
+        "_selectedProductType",
+        "IDs",
+        "PackInfo",
+        "boardNames",
+        "cocosNames"
+      ],
+      "methods": [
+        {
+          "name": "get_SelectedProductType",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_SelectedProductType",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "GetProductID",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 150
+        },
+        {
+          "name": "GetProductID",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 150
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": ".cctor",
+          "params": 0,
+          "access": "private",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6289
+        }
+      ]
+    },
+    "GalleryMenu": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 11,
+      "fields": [
+        "topics",
+        "galleryMenuScroll",
+        "buttonLeft",
+        "buttonRight",
+        "eventSystem",
+        "packsToRemove",
+        "audioManager",
+        "galleryPacks",
+        "_addressableGalleryPrefabs",
+        "time",
+        "panelIndex"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Update",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "WaitLoadGallery",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SelectedTopicUpdate",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "GetTopicIndex",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "UpdateTopicAtIndex",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CheckForPurchasedPacks",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "RemoveLockedGames",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "HideNavigationButtons",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnButtonBack",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnButtonLeft",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnButtonRight",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnGalleryIconClick",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "RemoveListenerFromIcons",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "AsyncLoadScene",
+          "params": 2,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "EnableTouch",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "AutoTouchEnabler",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "DisableOtherPanels",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnPanelChange",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnDisable",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "IntroSceneColoring": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 14348>",
+      "field_count": 1,
+      "fields": [
+        "spine"
+      ],
+      "methods": [
+        {
+          "name": "StartGame",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "SetAnimation",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "ColoringMainMenuManager": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 4,
+      "fields": [
+        "scroll",
+        "allPacks",
+        "audioManager",
+        "restoreButton"
+      ],
+      "methods": [
+        {
+          "name": "Awake",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ShowLastSelectedPack",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OpenParentsPage",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "PlayScrollSound",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": "<OpenParentsPage>b__7_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        }
+      ]
+    },
+    "ItemsAnimation": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 8,
+      "fields": [
+        "duration",
+        "coefficient",
+        "upDownMove",
+        "rotation",
+        "leftRightMove",
+        "rectTransform",
+        "_seq",
+        "_startPosition"
+      ],
+      "methods": [
+        {
+          "name": "Initialize",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "StartAnim",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "StopAnim",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "DoUpDownMove",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "DoRotation",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Randomize",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "DoLeftRightMove",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnDestroy",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "PackAnimation": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 1,
+      "fields": [
+        "_itemsAnimations"
+      ],
+      "methods": [
+        {
+          "name": "Initialize",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "StartAnim",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "StopAnim",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "MenuController": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15447>",
+      "field_count": 1,
+      "fields": [
+        "menuItemprefab"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnItemClicked",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "OnItemPressed",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "OnItemReleased",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "OnInnerItemClicked",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "OnInnerItemPressed",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "OnInnerItemReleased",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 198
+        },
+        {
+          "name": "OnForParentsPressed",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": "<OnForParentsPressed>b__8_0",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        }
+      ]
+    },
+    "DisplayParticles": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 6,
+      "fields": [
+        "mousePos",
+        "scriptedParticle",
+        "particle",
+        "cam",
+        "audioManager",
+        "particles"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "Update",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ButtonUp",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "ButtonDown",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "DestroyAllParticles",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "LoadImage": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 9,
+      "fields": [
+        "_path",
+        "_pathWhiteTexture",
+        "oldFileName",
+        "paintablesController",
+        "_paintableBack",
+        "paintable",
+        "paintableMenuIcons",
+        "texture",
+        "GCTextures"
+      ],
+      "methods": [
+        {
+          "name": "Awake",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ClearTextures",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "Load",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "CreateTexture",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "MoveOldCache",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "DestroyBackTexture",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "LoadTexture",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SetSprite",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "LoadSecondaryTexture",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "SaveImage": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 13,
+      "fields": [
+        "newTexture",
+        "iconTexture",
+        "mainMenuTexture",
+        "path",
+        "paintablesController",
+        "paintable",
+        "paintableMenuIcons",
+        "displayParticles",
+        "audioManager",
+        "_draw",
+        "_layerSelectionManager",
+        "_camera",
+        "_p3DButtonClearAll"
+      ],
+      "methods": [
+        {
+          "name": "Awake",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "OnSave",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "SaveCameraView",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "CopyPaintedTextureToEmptyTexture",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ConvertTextureToPNG",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "SceneInformation": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "",
+      "flags": "0x100181",
+      "parent": "<type 15996>",
+      "field_count": 1,
+      "fields": [
+        "<CrossSceneInformation>k__BackingField"
+      ],
+      "methods": [
+        {
+          "name": "get_CrossSceneInformation",
+          "params": 0,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        },
+        {
+          "name": "set_CrossSceneInformation",
+          "params": 1,
+          "access": "public",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2198
+        }
+      ]
+    },
+    "UnityUtils.SoundManager.Audio.AudioController": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "UnityUtils.SoundManager.Audio",
+      "flags": "0x100001",
+      "parent": "<type 15996>",
+      "field_count": 7,
+      "fields": [
+        "soundEnabled",
+        "musicEnabled",
+        "soundVolume",
+        "musicVolume",
+        "sourceMedia",
+        "presenter",
+        "audioCodeIndex"
+      ],
+      "methods": [
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioController.get_IsSoundEnabled",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2529
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioController.get_IsMusicEnabled",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2529
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioController.get_SoundVolume",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2529
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioController.get_MusicVolume",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": true,
+          "access_flags": 2529
+        },
+        {
+          "name": "SetSoundEnabled",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "SetMusicEnabled",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "SetSoundVolume",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": "SetMusicVolume",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 486
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": "System.IDisposable.Dispose",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IMusicPlayer.PlayMusicClip",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IMusicPlayer.StopPlayingMusicClip",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IMusicPlayer.PausePlayingClip",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IMusicPlayer.ResumeClipIfInPause",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IMusicPlayer.IsMusicClipCodePlaying",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioPlayer.PlayAudioClip2D",
+          "params": 3,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioPlayer.PlayAudioClip3D",
+          "params": 5,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioPlayer.StopPlayingClip",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioPlayer.IsAudioClipCodePlaying",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioPlayer.SetAudioListenerToPosition",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "UnityUtils.SoundManager.Audio.IAudioPlayer.SetSourcePositionTo",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": true,
+          "abstract": false,
+          "special": false,
+          "access_flags": 481
+        },
+        {
+          "name": "Initialization",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ScanForEndedSources",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SmartDestroy",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<SetSoundEnabled>b__15_0",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<SetMusicEnabled>b__16_0",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<SetSoundVolume>b__17_0",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "<SetMusicVolume>b__18_0",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        }
+      ]
+    },
+    "Coloring.Gallery.GalleryIcon": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "Coloring.Gallery",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 3,
+      "fields": [
+        "_iconTexture",
+        "_onClickIcon",
+        "_isClicable"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "SetClickEvent",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "LoadIcon",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "OnClick",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "AsyncLoadScene",
+          "params": 2,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    },
+    "Coloring.Gallery.GalleryPack": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "Coloring.Gallery",
+      "flags": "0x100101",
+      "parent": "<type 15661>",
+      "field_count": 9,
+      "fields": [
+        "onHide",
+        "_galleryIcons",
+        "_packType",
+        "oldFileName",
+        "_seq",
+        "_path",
+        "_timeSowingItem",
+        "_isStart",
+        "_packsId"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "MoveOldCache",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "ShowIcons",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "HideIcons",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        },
+        {
+          "name": ".cctor",
+          "params": 0,
+          "access": "private",
+          "static": true,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6289
+        }
+      ]
+    },
+    "BimiBooUtils.BBToolkitUIElements.UIKit.SoundPlayer": {
+      "image": "Assembly-CSharp.dll",
+      "namespace": "BimiBooUtils.BBToolkitUIElements.UIKit",
+      "flags": "0x100001",
+      "parent": "<type 15661>",
+      "field_count": 3,
+      "fields": [
+        "_uiSounds",
+        "_clickCallback",
+        "_isPlaying"
+      ],
+      "methods": [
+        {
+          "name": "Start",
+          "params": 0,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": "PlayClickSound",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "PlayClickSound",
+          "params": 1,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 134
+        },
+        {
+          "name": "WaitForSound",
+          "params": 1,
+          "access": "private",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": false,
+          "access_flags": 129
+        },
+        {
+          "name": ".ctor",
+          "params": 0,
+          "access": "public",
+          "static": false,
+          "virtual": false,
+          "abstract": false,
+          "special": true,
+          "access_flags": 6278
+        }
+      ]
+    }
+  }
+}

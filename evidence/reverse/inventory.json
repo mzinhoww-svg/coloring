@@ -1,0 +1,989 @@
+{
+  "evidence_set": "APK-REV",
+  "artifact": {
+    "name": "coloring-1-116(2).apk",
+    "sha256": "1bb17ff5d70eae1a4287d67832deccfc5f24ae23948db4667842756f418d9d95",
+    "bytes": 135423615
+  },
+  "classification": {
+    "facts": "names, path ids, geometry, colours and symbols read from serialized data",
+    "inferences": "runtime creation of paint layers, fill routing, brush parameterisation",
+    "unknowns": "undo depth, save format, address->bundle mapping, on-device pixels"
+  },
+  "key_numbers": {
+    "coloring_page": {
+      "canvas_scalers": [
+        {
+          "canvas_path_id": 300,
+          "path": "Background",
+          "render_mode": 1,
+          "sorting_order": -1,
+          "canvas_scaler": {
+            "ui_scale_mode": 1,
+            "reference_pixels_per_unit": 100.0,
+            "reference_resolution": [
+              800.0,
+              1080.0
+            ],
+            "screen_match_mode": 0,
+            "match_width_or_height": 1.0
+          }
+        },
+        {
+          "canvas_path_id": 301,
+          "path": "Draw/DrawCanvas",
+          "render_mode": 0,
+          "sorting_order": 0,
+          "canvas_scaler": {
+            "ui_scale_mode": 1,
+            "reference_pixels_per_unit": 100.0,
+            "reference_resolution": [
+              800.0,
+              1080.0
+            ],
+            "screen_match_mode": 0,
+            "match_width_or_height": 1.0
+          }
+        },
+        {
+          "canvas_path_id": 302,
+          "path": "Purchase panel",
+          "render_mode": 0,
+          "sorting_order": 7,
+          "canvas_scaler": {
+            "ui_scale_mode": 1,
+            "reference_pixels_per_unit": 100.0,
+            "reference_resolution": [
+              1600.0,
+              1000.0
+            ],
+            "screen_match_mode": 0,
+            "match_width_or_height": 1.0
+          }
+        },
+        {
+          "canvas_path_id": 303,
+          "path": "Draw/Canvas",
+          "render_mode": 0,
+          "sorting_order": 0,
+          "canvas_scaler": {
+            "ui_scale_mode": 0,
+            "reference_pixels_per_unit": 100.0,
+            "reference_resolution": [
+              800.0,
+              600.0
+            ],
+            "screen_match_mode": 0,
+            "match_width_or_height": 0.0
+          }
+        },
+        {
+          "canvas_path_id": 304,
+          "path": "LoadingLayerCanvas",
+          "render_mode": 0,
+          "sorting_order": 9999,
+          "canvas_scaler": {
+            "ui_scale_mode": 0,
+            "reference_pixels_per_unit": 100.0,
+            "reference_resolution": [
+              800.0,
+              600.0
+            ],
+            "screen_match_mode": 0,
+            "match_width_or_height": 0.0
+          }
+        }
+      ],
+      "tools": {
+        "marker": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              400.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        },
+        "pencil": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              260.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        },
+        "brush": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              130.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        },
+        "spray": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              0.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        },
+        "fill": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              -130.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        },
+        "shine": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              -260.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        },
+        "pattern": {
+          "rect": {
+            "anchor_min": [
+              0.5,
+              0.5
+            ],
+            "anchor_max": [
+              0.5,
+              0.5
+            ],
+            "anchored_position": [
+              43.3,
+              -400.0
+            ],
+            "size_delta": [
+              260.0,
+              140.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          },
+          "components": [
+            "RectTransform",
+            "CanvasRenderer",
+            "UnityEngine.UI.Image",
+            "Brush"
+          ]
+        }
+      },
+      "buttons": {
+        "ButtonsPanel": {
+          "Save": {
+            "anchor_min": [
+              0.5,
+              1.0
+            ],
+            "anchor_max": [
+              0.5,
+              1.0
+            ],
+            "anchored_position": [
+              0.0,
+              -115.0
+            ],
+            "size_delta": [
+              150.0,
+              150.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "Trash": {
+            "anchor_min": [
+              0.5,
+              0.0
+            ],
+            "anchor_max": [
+              0.5,
+              0.0
+            ],
+            "anchored_position": [
+              0.0,
+              291.0
+            ],
+            "size_delta": [
+              150.0,
+              150.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "Undo": {
+            "anchor_min": [
+              0.5,
+              0.0
+            ],
+            "anchor_max": [
+              0.5,
+              0.0
+            ],
+            "anchored_position": [
+              0.0,
+              115.0
+            ],
+            "size_delta": [
+              150.0,
+              150.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "ButtonsPanelTablet": {
+          "Save": {
+            "anchor_min": [
+              0.5,
+              1.0
+            ],
+            "anchor_max": [
+              0.5,
+              1.0
+            ],
+            "anchored_position": [
+              -18.65,
+              -57.0
+            ],
+            "size_delta": [
+              194.0,
+              132.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              0.8,
+              0.8,
+              0.8
+            ],
+            "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "Trash": {
+            "anchor_min": [
+              0.5,
+              0.0
+            ],
+            "anchor_max": [
+              0.5,
+              0.0
+            ],
+            "anchored_position": [
+              10.8,
+              57.8
+            ],
+            "size_delta": [
+              100.0,
+              100.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "Undo": {
+            "anchor_min": [
+              0.5,
+              0.0
+            ],
+            "anchor_max": [
+              0.5,
+              0.0
+            ],
+            "anchored_position": [
+              -99.1,
+              57.8
+            ],
+            "size_delta": [
+              100.0,
+              100.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "palettes": [
+        {
+          "name": "PatternsScrollPalette",
+          "rect": {
+            "anchor_min": [
+              1.0,
+              0.5
+            ],
+            "anchor_max": [
+              1.0,
+              0.5
+            ],
+            "anchored_position": [
+              706.19,
+              0.0
+            ],
+            "size_delta": [
+              156.0,
+              1080.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "name": "ShinesScrollPalette",
+          "rect": {
+            "anchor_min": [
+              1.0,
+              0.5
+            ],
+            "anchor_max": [
+              1.0,
+              0.5
+            ],
+            "anchored_position": [
+              706.19,
+              0.0
+            ],
+            "size_delta": [
+              156.0,
+              1080.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "name": "ColorsScrollPalette",
+          "rect": {
+            "anchor_min": [
+              1.0,
+              0.5
+            ],
+            "anchor_max": [
+              1.0,
+              0.5
+            ],
+            "anchored_position": [
+              706.19,
+              0.0
+            ],
+            "size_delta": [
+              156.0,
+              1080.0
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "local_position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "local_rotation": [
+              -0.0,
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    "palette": {
+      "count": 40,
+      "colors": [
+        "#A62E27",
+        "#E84E46",
+        "#E07673",
+        "#F1B1B0",
+        "#EB8745",
+        "#EFAA77",
+        "#F2C6A5",
+        "#F9DA49",
+        "#FDFB60",
+        "#F9EEA2",
+        "#878E2B",
+        "#ADB63A",
+        "#CBF04D",
+        "#3F8B26",
+        "#5CC63A",
+        "#80F95C",
+        "#409074",
+        "#5DCBA3",
+        "#77F6CC",
+        "#4499AA",
+        "#5DCAE2",
+        "#9ED3DC",
+        "#27529F",
+        "#3E77DB",
+        "#9FC2F6",
+        "#6A31A7",
+        "#A056F1",
+        "#D3B3F6",
+        "#9932A8",
+        "#DB4FF0",
+        "#E8A4F4",
+        "#AB3D71",
+        "#E7579A",
+        "#EEA1C7",
+        "#5C4535",
+        "#837062",
+        "#686D71",
+        "#A5ABB2",
+        "#313335",
+        "#FFFFFF"
+      ]
+    },
+    "brushes": {
+      "shines": 15,
+      "patterns": 20
+    },
+    "pages": {
+      "page_prefab_count": 135,
+      "regions_total": 2061,
+      "regions_per_page": {
+        "min": 6,
+        "max": 35,
+        "mean": 15.27
+      },
+      "collider_points_per_region": {
+        "min": 4,
+        "max": 1498,
+        "mean": 79.6
+      },
+      "texture_sizes_observed": [
+        "1024x1024",
+        "1346x1346",
+        "512x512"
+      ]
+    },
+    "metadata": {
+      "types": 9580,
+      "methods": 67529,
+      "fields": 38744,
+      "images": 87,
+      "type_definition_bytes": 88,
+      "method_definition_bytes": 32,
+      "image_definition_bytes": 40
+    },
+    "addressables": {
+      "internal_ids": 578,
+      "page_prefabs": 135,
+      "providers": [
+        "UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider",
+        ""
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "evidence/reverse/REPORT.md",
+      "bytes": 22500,
+      "sha256": "1d9d29ff5c3cc71228bbdb314c7c8ced6a62c9d0ec64b80206fe2433d8e44ef4"
+    },
+    {
+      "path": "evidence/reverse/addressables.json",
+      "bytes": 19814,
+      "sha256": "03cd20688f4a1bd9ec41418fbeb92b1172d245b42817487ca8dd898d51563d05"
+    },
+    {
+      "path": "evidence/reverse/apk-identity.json",
+      "bytes": 31497,
+      "sha256": "468242cce00dfd6fa561725777828f45b4ea3a5bf9e9ea03382c0ec0d82efbef"
+    },
+    {
+      "path": "evidence/reverse/app-type-methods.json",
+      "bytes": 86754,
+      "sha256": "ad38b0c791be8065a937e451729a40e2569bee05526f7b912e16620a2004d752"
+    },
+    {
+      "path": "evidence/reverse/app-types-index.json",
+      "bytes": 157420,
+      "sha256": "09c1d1d8226ab434ff841f71618dfe5952d28be462d77b87eed82a9ceff997a0"
+    },
+    {
+      "path": "evidence/reverse/coloring-page-facts.json",
+      "bytes": 17398,
+      "sha256": "c9054dc7af93e20a27193190db609cd9ec0551b431ca6c8d5081ac4cf147ea2a"
+    },
+    {
+      "path": "evidence/reverse/il2cpp-summary.json",
+      "bytes": 13787,
+      "sha256": "df3e7042613a97e78ad792326f007ea33075e097f4072580e3f9e3356e91fed7"
+    },
+    {
+      "path": "evidence/reverse/media-inventory.json",
+      "bytes": 608931,
+      "sha256": "25f4f77918dd479ff9e62254087e15ee682992100ab2b6aed85a596e61d2e4b0"
+    },
+    {
+      "path": "evidence/reverse/pages-inventory.json",
+      "bytes": 1971355,
+      "sha256": "432bf2fee4aa4aee167c21b8e1e3e8116c594bd025301ef6a48d27e3b65d4b23"
+    },
+    {
+      "path": "evidence/reverse/palette-and-brushes.json",
+      "bytes": 20550,
+      "sha256": "f49931b9445e4f96a34618b0045d5b034e747528a51fb0799c44781850a121c5"
+    },
+    {
+      "path": "evidence/reverse/scenes/level0-PreloadScene.json",
+      "bytes": 1205,
+      "sha256": "f1a37dcf1a8363c0621de3d2dc1d618751f356d0f5dfdee74aeea7c3e2ca842b"
+    },
+    {
+      "path": "evidence/reverse/scenes/level1-IntroScene.json",
+      "bytes": 21584,
+      "sha256": "40568f6b7bd2192626a41f10f6f559cf4606b6150d9d3881ed3371d3cdd5b101"
+    },
+    {
+      "path": "evidence/reverse/scenes/level2-MainMenu.json",
+      "bytes": 125411,
+      "sha256": "214f289b160b414a8df612945307b5f8b9d3c4c45c6001b0e9b3fe66ad98466a"
+    },
+    {
+      "path": "evidence/reverse/scenes/level3-GalleryMenu.json",
+      "bytes": 186243,
+      "sha256": "9087b630686de181b5686c673d85fc0492dcbae3b34ff20788be0c4ccc1c88c0"
+    },
+    {
+      "path": "evidence/reverse/scenes/level4-ColoringPage.json",
+      "bytes": 234164,
+      "sha256": "2371d365ab3967a0fdda22e9371db706243f78507322e419c41f07edaa724dfe"
+    },
+    {
+      "path": "evidence/reverse/scenes/level5-ShelfScene.json",
+      "bytes": 103225,
+      "sha256": "3075281624887fd2a2fe9979c11b75d38f4a6580eb1991118297658ed4622b2d"
+    },
+    {
+      "path": "evidence/reverse/scenes/level6-EmptyScene.json",
+      "bytes": 3588,
+      "sha256": "9483a6e1187b11e6e56238cd56015e748d23618c77a7c3911948bae32b7df370"
+    },
+    {
+      "path": "evidence/reverse/scenes/level7-ForParents.json",
+      "bytes": 750423,
+      "sha256": "ed41c9db8483058715e8b9617c29e30c790e36ba9e1bdd97735d4a6581fad1ed"
+    },
+    {
+      "path": "evidence/reverse/scenes/summary.json",
+      "bytes": 2801,
+      "sha256": "5cf4cea7c354a070808e34a9ed949a8dca05393a711e9bbbb6f195dd4053d7f1"
+    },
+    {
+      "path": "evidence/reverse/script-inventory.json",
+      "bytes": 77512,
+      "sha256": "81bcebac4a7008a5a108d0e13158dc347f5c11e9f9fdf76074c902e3a855b41e"
+    },
+    {
+      "path": "evidence/reverse/unity-inventory.json",
+      "bytes": 1562,
+      "sha256": "f7a24845a36bebb9c7c8cbb8cf7c4a87cc134374e141a603503af15e1ee583f1"
+    },
+    {
+      "path": "evidence/reverse/unity-named-objects.json",
+      "bytes": 2831333,
+      "sha256": "16c4a364324d956f6a5d6476350daaabc5747fd7caac7718e8c6e15fe28c52fe"
+    }
+  ],
+  "private_working_data": [
+    ".private/reverse/apk/ (extracted APK members, git-ignored)",
+    ".private/reverse/il2cpp-types.json",
+    ".private/reverse/il2cpp-type-graph.json",
+    ".private/reverse/unity-objects-by-type.json",
+    ".private/reverse/script-usage-by-file.json",
+    ".private/reverse/scripts-all.json"
+  ],
+  "rights": "Art, fonts, audio and text remain private reference with unconfirmed rights.",
+  "reproduce": "tools/reverse/01_extract.py .. 13_inventory.py (see REPORT.md section 12)"
+}

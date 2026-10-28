@@ -1,0 +1,230 @@
+{
+ "level": "level6",
+ "scene": "EmptyScene",
+ "serialized_file": "level6",
+ "externals": [
+  "globalgamemanagers.assets",
+  "Library/unity default resources",
+  "sharedassets4.assets"
+ ],
+ "object_count": 18,
+ "gameobject_count": 3,
+ "recttransform_count": 2,
+ "roots": [
+  {
+   "transform_id": 4,
+   "game_object_id": 3,
+   "name": "Main Camera",
+   "active": true,
+   "components": [
+    "Transform",
+    "Camera",
+    "AudioListener",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "MonoBehaviour",
+     "script": "UnloadResourcesOnLoad",
+     "assembly": "Assembly-CSharp.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "local_position": [
+    0.0,
+    0.0,
+    -10.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": []
+  },
+  {
+   "transform_id": 12,
+   "game_object_id": 1,
+   "name": "Background",
+   "active": true,
+   "components": [
+    "RectTransform",
+    "Canvas",
+    "MonoBehaviour",
+    "MonoBehaviour"
+   ],
+   "component_detail": [
+    {
+     "class": "Canvas",
+     "render_mode": 1,
+     "sorting_order": -1,
+     "pixel_perfect": false
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.CanvasScaler",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    },
+    {
+     "class": "MonoBehaviour",
+     "script": "UnityEngine.UI.GraphicRaycaster",
+     "assembly": "UnityEngine.UI.dll",
+     "enabled": true
+    }
+   ],
+   "depth": 0,
+   "rect": {
+    "anchor_min": [
+     0.0,
+     0.0
+    ],
+    "anchor_max": [
+     0.0,
+     0.0
+    ],
+    "anchored_position": [
+     0.0,
+     0.0
+    ],
+    "size_delta": [
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     0.0
+    ],
+    "local_position": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_scale": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "father": 0,
+    "children": [
+     13
+    ]
+   },
+   "local_position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_scale": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rotation": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "children": [
+    {
+     "transform_id": 13,
+     "game_object_id": 2,
+     "name": "Background",
+     "active": true,
+     "components": [
+      "RectTransform",
+      "CanvasRenderer",
+      "MonoBehaviour",
+      "MonoBehaviour"
+     ],
+     "component_detail": [
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.Image",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      },
+      {
+       "class": "MonoBehaviour",
+       "script": "UnityEngine.UI.AspectRatioFitter",
+       "assembly": "UnityEngine.UI.dll",
+       "enabled": true
+      }
+     ],
+     "depth": 1,
+     "rect": {
+      "anchor_min": [
+       0.0,
+       0.0
+      ],
+      "anchor_max": [
+       0.0,
+       0.0
+      ],
+      "anchored_position": [
+       0.0,
+       0.0
+      ],
+      "size_delta": [
+       0.0,
+       0.0
+      ],
+      "pivot": [
+       0.5,
+       0.5
+      ],
+      "local_position": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "local_scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "local_rotation": [
+       -0.0,
+       -0.0,
+       -0.0,
+       1.0
+      ],
+      "father": 12,
+      "children": []
+     },
+     "local_position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "local_rotation": [
+      -0.0,
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "children": []
+    }
+   ]
+  }
+ ]
+}
