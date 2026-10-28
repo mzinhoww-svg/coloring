@@ -93,12 +93,16 @@ export async function buildOffline(options = {}) {
   }
 
   entries.sort((a, b) => (a.url < b.url ? -1 : a.url > b.url ? 1 : 0));
-  const version = computeVersion(entries);
 
   const swSource = await readFile(swPath, 'utf8').catch(() => null);
   if (swSource === null) {
     throw new Error(`missing service worker at ${swPath}. public/sw.js must be copied by Vite (default publicDir).`);
   }
+  // Worker code changes must also invalidate the cache, even when assets are
+  // identical. Normalize the stamp so re-running the script is idempotent.
+  const workerRevision = createHash('sha256').update(normalizeWorkerForHash(swSource)).digest('hex');
+  const version = computeVersion(entries, workerRevision);
+
   const stampedSw = stampServiceWorker(swSource, version);
   await writeFile(swPath, stampedSw);
 
@@ -124,12 +128,17 @@ export async function buildOffline(options = {}) {
 /* Manifest generation                                                       */
 /* ------------------------------------------------------------------------- */
 
-export function computeVersion(entries) {
+export function computeVersion(entries, workerRevision = '') {
   const fingerprint = entries
     .map((entry) => `${entry.url}\u0000${entry.size}\u0000${entry.hash}`)
     .sort()
+    .concat(`worker\u0000${workerRevision}`)
     .join('\n');
   return createHash('sha256').update(fingerprint).digest('hex').slice(0, VERSION_LENGTH);
+}
+
+function normalizeWorkerForHash(source) {
+  return source.replace(/(const\s+BUILD_VERSION\s*=\s*)(['"])[^'"]*\2/, "const BUILD_VERSION = '__OFFLINE_BUILD_VERSION__'");
 }
 
 export function stampServiceWorker(source, version) {

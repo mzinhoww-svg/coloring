@@ -122,7 +122,7 @@ function manifestFor(assets, version = 'abc123abc123abc1') {
 async function loadWorker(options = {}) {
   const assets = new Map(
     options.assets ?? [
-      ['/index.html', '<!doctype html><html><body><div id="app">coloring-shell</div></body></html>'],
+      ['/index.html', options.indexHtml ?? '<!doctype html><html><body><div id="app">coloring-shell</div></body></html>'],
       ['/assets/index-abc123.js', 'console.log("app shell");'],
       ['/assets/chunk-def456.js', 'export const drawings = ["original-a"];'],
       ['/assets/index-abc123.css', 'body{background:#101828}'],
@@ -365,6 +365,25 @@ describe('service worker offline navigation', () => {
     }
   });
 
+  it('injects an app-scope base tag so relative Vite URLs survive deep links', async () => {
+    const worker = await loadWorker({
+      indexHtml:
+        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">' +
+        '<script type="module" src="./assets/index-abc123.js"></script></head>' +
+        '<body><div id="app">coloring-shell</div></body></html>',
+    });
+    await worker.install();
+    worker.state.offline = true;
+
+    const response = await worker.request(navigationRequest('https://app.test/drawing/42'));
+    const html = await response.text();
+    assert.match(html, /<head><base href="https:\/\/app\.test\/">/);
+    assert.match(html, /src="\.\/assets\/index-abc123\.js"/);
+
+    const indexOnly = await (await worker.caches.open(worker.cacheName)).match('/index.html');
+    assert.doesNotMatch(await indexOnly.text(), /<base href=/, 'the verified index entry must stay byte-identical');
+  });
+
   it('serves precached assets offline and ignores query strings used for cache busting', async () => {
     const worker = await loadWorker();
     await worker.install();
@@ -428,6 +447,23 @@ describe('service worker lifecycle and repair', () => {
     assert.ok(worker.requests.some((request) => request.startsWith('/assets/chunk-def456.js')), 'asset must be re-fetched');
     const repaired = await worker.caches.open(worker.cacheName);
     assert.ok(repaired.has('/assets/chunk-def456.js'));
+  });
+
+  it('reports not ready when the navigation shell alias is missing and repairs it', async () => {
+    const worker = await loadWorker();
+    await worker.install();
+    const cache = await worker.caches.open(worker.cacheName);
+    cache.remove('https://app.test/');
+    cache.remove('https://app.test');
+
+    const broken = await worker.sendMessage({ type: 'VERIFY_OFFLINE', requestId: 'alias-1' });
+    assert.equal(broken.ready, false);
+    assert.equal(broken.error, 'shell-alias-missing');
+
+    const repaired = await worker.sendMessage({ type: 'PREPARE_OFFLINE', requestId: 'alias-2' });
+    assert.equal(repaired.ready, true);
+    const restored = await worker.caches.open(worker.cacheName);
+    assert.ok(await restored.match('https://app.test/'));
   });
 
   it('rebuilds a hash-corrupted cache on PREPARE_OFFLINE', async () => {

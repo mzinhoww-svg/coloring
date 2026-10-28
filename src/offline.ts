@@ -83,6 +83,7 @@ let verifyPromise: Promise<OfflineState> | null = null;
 let sequence = 0;
 let updateTimer: ReturnType<typeof setInterval> | null = null;
 let globalListenersAttached = false;
+const observedRegistrations = new WeakSet<ServiceWorkerRegistration>();
 let lastVerifiedAt = 0;
 let verifyDebounce: ReturnType<typeof setTimeout> | null = null;
 
@@ -371,6 +372,9 @@ function attachGlobalListeners(): void {
   globalListenersAttached = true;
 
   try {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      void verifyNow();
+    });
     navigator.serviceWorker.addEventListener('message', (event: MessageEvent<WorkerReply | null>) => {
       const data = event.data;
       if (!data || typeof data !== 'object') return;
@@ -411,6 +415,8 @@ function attachGlobalListeners(): void {
 
 function attachRegistrationListeners(target: ServiceWorkerRegistration): void {
   if (typeof target.addEventListener !== 'function') return;
+  if (observedRegistrations.has(target)) return;
+  observedRegistrations.add(target);
 
   target.addEventListener('updatefound', () => {
     const installing = target.installing;
