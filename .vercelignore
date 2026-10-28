@@ -1,0 +1,57 @@
+# Upload filter for the existing "coloring" Vercel project.
+# Vercel installs dependencies and runs the build in the cloud, so the upload
+# only needs source, tests, public assets and build tooling. Nothing private,
+# proprietary or generated should ever leave this machine.
+
+# Proprietary / private inputs — never uploaded or served
+*.apk
+*.aab
+*.apks
+*.ipa
+*.zip
+.private/
+.private
+evidence/design/
+evidence/runtime/
+.venv/
+venv/
+.maestri/
+.worktrees/
+.vercel/
+
+# Credentials and local configuration
+.env
+.env.*
+**/.env
+**/.env.*
+**/.npmrc
+**/.netrc
+**/credentials*
+**/*.pem
+**/*.p12
+**/*.pfx
+**/*.key
+**/*.keystore
+**/*.jks
+**/id_rsa*
+**/id_ed25519*
+.config/
+secrets/
+
+# Reverse-engineering and design scratch material (not needed to build or serve)
+docs/
+evidence/
+tools/reverse/
+scripts/poc/
+
+# Build and test artifacts — Vercel rebuilds these from source
+node_modules/
+dist/
+coverage/
+.vite/
+.vercel/output/
+playwright-report/
+test-results/
+blob-report/
+*.log
+.DS_Store

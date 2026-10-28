@@ -1,0 +1,243 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - feat/**
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Least privilege: this workflow only reads the repository and runs local checks.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CI: 'true'
+
+jobs:
+  build-and-test:
+    name: Build, unit, offline and release config
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (matches the Vercel project runtime)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # No cache: npm caching requires a committed package-lock.json, and the
+      # release config must not depend on files owned by another workstream.
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Type-check and build
+        run: npm run build
+
+      # The offline post-processor is not yet part of "npm run build"
+      # (package.json is owned by the app workstream). Running it here keeps CI
+      # and the Vercel buildCommand on the same, real production pipeline.
+      - name: Generate offline precache and stamp the service worker
+        run: node tools/build-offline.mjs
+
+      - name: Offline / PWA test suite
+        run: node --test "tests/offline/**/*.test.mjs"
+
+      - name: Verify release configuration and build artifacts
+        run: |
+          node --input-type=module <<'NODE'
+          import { createHash } from 'node:crypto';
+          import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+          import path from 'node:path';
+
+          const failures = [];
+          const check = (ok, message) => {
+            if (ok) {
+              console.log(`ok   ${message}`);
+            } else {
+              failures.push(message);
+              console.error(`FAIL ${message}`);
+            }
+          };
+          const read = (file) => readFileSync(file, 'utf8');
+
+          /* ---- vercel.json: pipeline and response headers ------------------ */
+          const config = JSON.parse(read('vercel.json'));
+          check(config.framework === 'vite', 'vercel.json uses the vite framework');
+          check(config.outputDirectory === 'dist', 'vercel.json deploys dist/');
+          check(
+            /npm run build/.test(config.buildCommand ?? ''),
+            'vercel.json runs the real Vite build',
+          );
+          check(
+            /build-offline\.mjs/.test(config.buildCommand ?? ''),
+            'vercel.json runs the offline post-processor after Vite',
+          );
+
+          const headersFor = (source) => {
+            const entry = (config.headers ?? []).find((item) => item.source === source);
+            if (!entry) return {};
+            return Object.fromEntries(
+              entry.headers.map(({ key, value }) => [key.toLowerCase(), value]),
+            );
+          };
+
+          const sw = headersFor('/sw.js');
+          check(/no-cache/.test(sw['cache-control'] ?? ''), '/sw.js is not cached (no-cache)');
+          check(/no-store/.test(sw['cache-control'] ?? ''), '/sw.js is not stored (no-store)');
+          check(
+            /must-revalidate/.test(sw['cache-control'] ?? ''),
+            '/sw.js is revalidated (must-revalidate)',
+          );
+          check(sw['service-worker-allowed'] === '/', '/sw.js allows scope /');
+          check(
+            /javascript/.test(sw['content-type'] ?? ''),
+            '/sw.js is served as JavaScript',
+          );
+
+          const offlineManifest = headersFor('/offline-manifest.json');
+          check(
+            /no-store/.test(offlineManifest['cache-control'] ?? ''),
+            '/offline-manifest.json has no-store',
+          );
+          check(
+            /json/.test(offlineManifest['content-type'] ?? ''),
+            '/offline-manifest.json is served as JSON',
+          );
+
+          const webManifest = headersFor('/manifest.webmanifest');
+          check(
+            /manifest\+json/.test(webManifest['content-type'] ?? ''),
+            '/manifest.webmanifest is served as application/manifest+json',
+          );
+
+          const assets = headersFor('/assets/(.*)');
+          check(
+            /immutable/.test(assets['cache-control'] ?? ''),
+            '/assets/(.*) is immutable',
+          );
+
+          /* ---- rewrites must never shadow real static files --------------- */
+          const shellRewrites = (config.rewrites ?? []).filter(
+            (rule) => rule.destination === '/index.html',
+          );
+          check(shellRewrites.length > 0, 'an SPA shell fallback rewrite exists');
+          const protectedPaths = [
+            '/sw.js',
+            '/offline-manifest.json',
+            '/manifest.webmanifest',
+            '/icons/icon-192.png',
+            '/icons/icon.svg',
+            '/assets/index-abc123.js',
+            '/gallery/assets/index-abc123.js',
+            '/favicon.ico',
+          ];
+          for (const rule of shellRewrites) {
+            // Vercel wraps the configured source as ^(?:<source>)$; mirror that
+            // exactly so the check matches the deployed route.
+            const pattern = new RegExp(`^(?:${rule.source})$`);
+            for (const p of protectedPaths) {
+              check(!pattern.test(p), `rewrite "${rule.source}" does not shadow ${p}`);
+            }
+            for (const p of ['/', '/gallery', '/drawing/42']) {
+              check(pattern.test(p), `rewrite serves the app shell for ${p}`);
+            }
+          }
+
+          /* ---- .vercelignore keeps private inputs out of the deployment --- */
+          const ignore = read('.vercelignore');
+          for (const pattern of ['*.apk', '.private/', '.env', 'node_modules/']) {
+            check(ignore.includes(pattern), `.vercelignore excludes ${pattern}`);
+          }
+
+          /* ---- dist/ is a complete, stamped, offline-ready build ---------- */
+          const manifestPath = 'dist/offline-manifest.json';
+          check(existsSync(manifestPath), 'dist/offline-manifest.json exists');
+          const manifest = JSON.parse(read(manifestPath));
+          check(
+            Number.isInteger(manifest.entries?.length) && manifest.entries.length > 0,
+            'offline manifest lists precache entries',
+          );
+
+          const swSource = read('dist/sw.js');
+          const stamped = swSource.match(/const BUILD_VERSION = '([^']+)'/);
+          check(Boolean(stamped), 'dist/sw.js contains a stamped BUILD_VERSION');
+          check(
+            stamped?.[1] === manifest.version,
+            'dist/sw.js version matches the offline manifest',
+          );
+
+          for (const entry of manifest.entries ?? []) {
+            const file = path.join('dist', entry.url.replace(/^\/+/, ''));
+            if (!existsSync(file) || !statSync(file).isFile()) {
+              check(false, `precache entry exists: ${entry.url}`);
+              continue;
+            }
+            const bytes = readFileSync(file);
+            const hash = createHash('sha256').update(bytes).digest('hex');
+            check(
+              bytes.byteLength === entry.size && hash === entry.hash,
+              `precache entry matches size and sha256: ${entry.url}`,
+            );
+          }
+
+          const walk = (dir) =>
+            readdirSync(dir, { withFileTypes: true }).flatMap((item) => {
+              const full = path.join(dir, item.name);
+              return item.isDirectory() ? walk(full) : [full];
+            });
+          const built = walk('dist');
+          check(
+            built.some((file) => file.endsWith('.js')),
+            'dist contains a JavaScript bundle',
+          );
+          for (const file of built) {
+            check(
+              !/\.(apk|aab|apks|ipa|zip|map)$/i.test(file) &&
+                !/(^|\/)\.(env|private|git)/.test(file),
+              `no private or disallowed artifact in dist: ${file}`,
+            );
+          }
+
+          if (failures.length > 0) {
+            console.error(`\n${failures.length} release check(s) failed`);
+            process.exit(1);
+          }
+          console.log('\nAll release checks passed');
+          NODE
+
+      # Playwright is not a dependency of this repository yet. Run it only when
+      # a Playwright config exists (so its own testDir is used and the vitest
+      # *.test.ts files are never collected), and install it without touching
+      # package.json/package-lock.json.
+      - name: Playwright QA (only when a suite is present)
+        if: ${{ hashFiles('playwright.config.*') != '' }}
+        run: |
+          npm install --no-save --no-audit --no-fund @playwright/test@latest
+          npx playwright install --with-deps chromium
+          npx playwright test --config "$(ls playwright.config.* | head -n 1)"
+
+      - name: Upload public build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+          if-no-files-found: error
+          retention-days: 7
