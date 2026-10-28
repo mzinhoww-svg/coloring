@@ -4,6 +4,9 @@ Estado: produto ainda não implementado. Nenhum teste funcional, visual ou de pr
 
 Executado: inventário ZIP, cabeçalho de metadados IL2CPP e probes de capacidades.
 Evidência estática: `python3 tools/inspect_apk.py`.
+Resultado: 197 membros, IL2CPP v29, 212 símbolos candidatos; SHA-256 confere com o Astra.
+`aapt dump badging` e `dump xmltree` executados com sucesso; identidade em docs/APK_FINDINGS.md.
+Ref main remota lida após publicação do checkpoint documental.
 
 ## Suite de aceite a implementar pelo DeepSeek
 
