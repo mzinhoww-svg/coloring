@@ -26,6 +26,13 @@ fluxos de jogo que se beneficiem de cenas físicas/temporizadas. Não escolhidos
 Experimento discriminante: stroke contínuo com touch, fill em região, máscara,
 undo/redo e snapshot/restore em desenho de tamanho observado, medindo latência e memória.
 
+Experimento executado por Tinta em Chromium headless, canvas 800×800: construção
+da máscara 28,9 ms; cinco fills com máximo 4,7 ms; restauração de snapshot 3,4 ms;
+codificação PNG 20,5 ms, PNG 55.052 bytes; heap observado 22 MB. Esses números são
+do ensaio desktop, não garantia mobile. Escolha: Canvas2D com line-art separada,
+fill baseado na máscara original e histórico de patches limitado. Medir no browser
+integrado e revisar se o uso real demonstrar necessidade de WebGL.
+
 ## ADR-004 — ativos e publicação (aceita)
 
 APK e arte extraída são referência privada. Presença no APK não concede licença.
