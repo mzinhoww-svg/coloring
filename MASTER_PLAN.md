@@ -1,6 +1,6 @@
 # Coloring — plano mestre
 
-Estado: descoberta e engenharia reversa estática em andamento; produto não implementado/publicado.
+Estado: engenharia reversa dinâmica e implementação paralela em andamento; produção ainda não homologada.
 
 ## Objetivo e restrições
 

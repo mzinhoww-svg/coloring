@@ -3,8 +3,8 @@
 - GitHub: https://github.com/mzinhoww-svg/coloring.
 - Metadata remoto confirmado pela integração: repo público, vazio, branch padrão main, push permitido.
 - Vercel destino: coloring / mzinhoww-gmailcoms-projects.
-- API Vercel do projeto: 403, autorização de time necessária.
-- Vínculo GitHub↔Vercel: **não confirmado**.
+- API MCP teve 403; CLI autorizada acessa projeto existente.
+- Vínculo GitHub↔Vercel: confirmado por GET /v9/projects/coloring via CLI, repo coloring, org mzinhoww-svg, produção main.
 - Commit do jogo: nenhum.
 - Checkpoint documental na main: `c2a6fc19e64c75a6bf6200dfa90e395ffae221dd`, confirmado por leitura da ref remota.
 - URL de produção do jogo: nenhuma entregue/verificada.

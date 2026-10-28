@@ -11,3 +11,6 @@ evidence/design/
 
 .worktrees/
 .venv/
+
+.maestri/
+.vercel
