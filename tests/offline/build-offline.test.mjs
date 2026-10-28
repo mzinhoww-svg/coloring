@@ -203,6 +203,21 @@ describe('build-offline manifest generation', () => {
     assert.equal(swSecond, swFirst, 're-running must not corrupt the stamped worker');
   });
 
+  it('changes the version when only the service worker code changes', async () => {
+    const firstDist = await makeDist();
+    const secondDist = await makeDist();
+    await writeFile(
+      path.join(secondDist, 'sw.js'),
+      `${await readFile(path.join(secondDist, 'sw.js'), 'utf8')}\n// worker revision 2\n`,
+    );
+    const first = await buildOffline({ distDir: firstDist, quiet: true });
+    const second = await buildOffline({ distDir: secondDist, quiet: true });
+    assert.notEqual(second.version, first.version);
+    assert.ok(
+      (await readFile(path.join(secondDist, 'sw.js'), 'utf8')).includes(`const BUILD_VERSION = '${second.version}';`),
+    );
+  });
+
   it('changes the version when a bundled chunk changes', async () => {
     const before = await readOfflineManifest(dist);
     await writeFile(path.join(dist, 'assets/chunk-def456.js'), 'export const drawings = ["original-a", "original-c"];\n');

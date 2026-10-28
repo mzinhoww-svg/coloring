@@ -1,18 +1,25 @@
 {
   "id": "./",
-  "name": "Coloring — pintar e relaxar",
-  "short_name": "Coloring",
-  "description": "Jogo de colorir original com galerias, ferramentas de pintura e progresso salvo no próprio dispositivo.",
+  "name": "Rabisco — colorir, criar, guardar",
+  "short_name": "Rabisco",
+  "description": "Rabisco é um jogo de colorir original para o navegador: nove galerias, ferramentas de pintura e suas obras salvas no aparelho.",
   "lang": "pt-BR",
   "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "any",
-  "background_color": "#101828",
-  "theme_color": "#123A46",
-  "categories": ["games", "entertainment", "lifestyle"],
+  "background_color": "#fbf4e7",
+  "theme_color": "#fbf4e7",
+  "categories": [
+    "games",
+    "entertainment",
+    "lifestyle"
+  ],
   "icons": [
     {
       "src": "icons/icon-192.png",

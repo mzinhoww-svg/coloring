@@ -171,6 +171,7 @@ async function precache(version, manifest) {
     const meta = await readMeta(existing);
     const missing = await verifyEntries(existing, manifest.entries, true);
     if (meta && meta.version === version && missing.length === 0) {
+      await aliasShell(existing, manifest);
       await writeManifestAndMeta(existing, version, manifest);
       return cacheName;
     }
@@ -229,11 +230,39 @@ async function aliasShell(cache, manifest) {
     if (fallbackEntry) shell = await cache.match(fallbackEntry.href);
   }
   if (!shell) return;
+  const shellWithBase = await withAppBase(shell);
   const scope = scopeUrl().href;
-  const aliases = [scope, scope.replace(/\/$/, ''), absoluteUrl(SHELL_FILE)];
+  const aliases = [scope, scope.replace(/\/$/, '')];
   for (const alias of aliases) {
     if (alias === shellHref) continue;
-    if (!(await cache.match(alias))) await cache.put(alias, shell.clone());
+    await cache.put(alias, shellWithBase.clone());
+  }
+}
+
+/*
+ * Vite can emit relative URLs (base: "./"). Served from a deep link such as
+ * /drawing/42 they would resolve to /drawing/assets/... and break offline
+ * navigation. The precached /index.html stays byte-identical for hash
+ * verification; the shell aliases get an explicit <base> pointing at the app
+ * scope, so every relative URL resolves correctly from any route.
+ */
+async function withAppBase(response) {
+  try {
+    const contentType = response.headers.get('content-type') || '';
+    if (contentType && contentType.indexOf('text/html') === -1) return response;
+    const html = await response.text();
+    if (/<base\s/i.test(html)) return response;
+    const baseTag = '<base href="' + scopeUrl().href + '">';
+    const rewritten = /<head(\s[^>]*)?>/i.test(html)
+      ? html.replace(/<head(\s[^>]*)?>/i, (match) => match + baseTag)
+      : baseTag + html;
+    const headers = new Headers(response.headers);
+    headers.delete('content-length');
+    headers.delete('content-encoding');
+    headers.set('cache-control', 'no-store');
+    return new Response(rewritten, { status: response.status, statusText: response.statusText, headers });
+  } catch (error) {
+    return response;
   }
 }
 
@@ -345,11 +374,14 @@ async function verifyActiveCache(manifest, checkHashes) {
   }
   const cache = await caches.open(cacheName);
   const missing = await verifyEntries(cache, manifest.entries, checkHashes);
-  return {
-    ready: missing.length === 0,
-    missing,
-    reason: missing.length === 0 ? null : 'precache-incomplete',
-  };
+  if (missing.length > 0) {
+    return { ready: false, missing, reason: 'precache-incomplete' };
+  }
+  const shellAlias = await cache.match(scopeUrl().href).catch(() => null);
+  if (!shellAlias) {
+    return { ready: false, missing: [], reason: 'shell-alias-missing' };
+  }
+  return { ready: true, missing: [], reason: null };
 }
 
 /* ------------------------------------------------------------------------- */
@@ -398,7 +430,7 @@ function activeCache() {
 async function matchShell(cache) {
   if (!cache) return null;
   const scope = scopeUrl().href;
-  const candidates = [absoluteUrl(SHELL_FILE), scope, scope.replace(/\/$/, '')];
+  const candidates = [scope, scope.replace(/\/$/, ''), absoluteUrl(SHELL_FILE)];
   for (const candidate of candidates) {
     try {
       const response = await cache.match(candidate);

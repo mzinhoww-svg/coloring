@@ -1,4 +1,4 @@
-# Offline / PWA layer
+# Offline / PWA layer (Rabisco)
 
 Owned by the offline engineer. Files:
 
@@ -6,7 +6,7 @@ Owned by the offline engineer. Files:
 |---|---|
 | `src/offline.ts` | `registerOffline()` / `prepareOffline()` client contract |
 | `public/sw.js` | versioned, atomic, self-verifying service worker |
-| `public/manifest.webmanifest` | installable manifest, `pt-BR`, `standalone` |
+| `public/manifest.webmanifest` | installable Rabisco manifest, `pt-BR`, `standalone` |
 | `public/icons/*` | original palette + brush icons (any and maskable, 192/512) |
 | `tools/build-offline.mjs` | post-`vite build` manifest, hashes, SW stamping, PWA validation |
 | `tests/offline/*` | dependency-free `node:test` unit/integration tests |
@@ -59,18 +59,22 @@ window.addEventListener('load', () => void prepareOffline(), { once: true });
 
    If the app is ever mounted below the root, build with
    `node tools/build-offline.mjs --base /sub/` and keep `base` consistent.
+   `base: './'` also works offline: the worker serves the shell with a
+   `<base href="...">` for the app scope, so deep links such as `/drawing/42`
+   resolve relative chunks correctly. The verified `/index.html` cache entry is
+   never rewritten.
 
 3. `index.html` — required tags (all same-origin):
 
    ```html
    <link rel="manifest" href="/manifest.webmanifest" />
-   <meta name="theme-color" content="#123A46" />
+   <meta name="theme-color" content="#fbf4e7" />
    <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192.png" />
    <meta name="mobile-web-app-capable" content="yes" />
    <meta name="apple-mobile-web-app-capable" content="yes" />
-   <meta name="apple-mobile-web-app-title" content="Coloring" />
+   <meta name="apple-mobile-web-app-title" content="Rabisco" />
    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
    ```
 
@@ -118,7 +122,7 @@ npm run test:offline          # node --test "tests/offline/**/*.test.mjs"
 ```
 
 The build step writes `dist/offline-manifest.json`, stamps
-`dist/sw.js` with a content hash, and verifies:
+`dist/sw.js` with a content hash (assets **and** worker code), and verifies:
 
 - every deployable file is hashed (including all Vite chunks and dependencies);
 - `index.html` exists and at least one JS chunk is present;
@@ -143,3 +147,24 @@ excluded from the precache list.
 6. Remove one entry from Cache Storage and reload: the UI must not show
    "offline ready"; `prepareOffline()` must repair the cache and only then set
    `ready: true`.
+
+## Evidence captured on 2026-10-28
+
+Real Vite 7 build (`base: './'`) served on a fresh localhost origin, exercised
+in the Maestri Chromium portal at 390×844:
+
+- install reported `ready: true` with controller and a single
+  `coloring-offline-v1-<version>` cache containing every manifest entry;
+- with the HTTP server stopped, a cold navigation to `/drawing/42` and
+  `/gallery/` still booted the app, injected `<base href="http://localhost:4199/">`,
+  reported `ready: true` and `online: false`;
+- an IndexedDB sentinel survived the offline reloads;
+- a rebuild with new content produced a new version, activated on the next
+  load, deleted the old cache, kept IndexedDB intact, and booted offline again;
+- deleting the cached shell alias made `VERIFY_OFFLINE` return
+  `shell-alias-missing`; `PREPARE_OFFLINE` restored it and returned `ready: true`;
+- deleting a precached icon returned `precache-incomplete` with the missing URL,
+  and `PREPARE_OFFLINE` re-fetched it.
+
+Reproduce with `npm run build`, `npm run preview`, then DevTools → Application →
+Service Workers/Cache Storage. Automated evidence: `npm run test:offline`.
