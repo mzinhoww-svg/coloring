@@ -1,43 +1,32 @@
 # Coloring — plano mestre
 
-Estado: engenharia reversa dinâmica e implementação paralela em andamento; produção ainda não homologada.
+Estado: integração local validada; release desta árvore ainda não foi enviada à Vercel. Branch `feat/integration`, base `84d0fb3`, alterações não commitadas.
 
 ## Objetivo e restrições
 
-Reconstruir o APK como jogo web mobile-first instalável e offline, com pintura,
-galerias e progresso persistente. Referência primária: `coloring-1-116(2).apk`.
-Repositório exclusivo: https://github.com/mzinhoww-svg/coloring, main.
-Projeto exclusivo Vercel: coloring, scope mzinhoww-gmailcoms-projects.
-Codex orquestra; OpenCode Go/DeepSeek executa engenharia/software/QA.
-Astra do Codex conduz design por autorização explícita de 2026-10-28.
-Não substituir DeepSeek, inventar evidência ou publicar ativos sem direito de uso.
-Decisões rotineiras e publicação já autorizadas; não pedir confirmação novamente.
+Reconstruir o APK como jogo web mobile-first instalável, offline e com progresso persistente. Repositório: `github.com/mzinhoww-svg/coloring`; projeto Vercel existente: `coloring` em `mzinhoww-gmailcoms-projects`. Codex orquestra; OpenCode Go/DeepSeek executa tarefas técnicas; Lumen/Claude Opus foi autorizado nesta rodada para glitter/layout. Astra permanece preferência para decisões de design. APK e payload de arte/fontes/áudio continuam privados; só publicar código próprio e ativos originais.
 
-## Fases e critérios
+## Fases e estado
 
-1. Descoberta: APK e REA localizados; verificar acesso, executor, repo e projeto.
-2. Engenharia reversa: inventário estático; runtime Android; telas e fluxos equivalentes.
-3. Especificação: matriz observação/inferência/desconhecido; direitos dos conteúdos.
-4. Arquitetura: comparar Canvas, PixiJS e Phaser com experimento do motor de pintura.
-5. Implementação: galerias, pintura, ferramentas, gestos, IndexedDB, PWA e offline.
-6. QA: testes funcionais, visuais, touch, persistência, migração e recuperação.
-7. Publicação: commit GitHub, vínculo Vercel verificado e deploy no projeto existente.
-8. Aceite: E2E da URL publicada, cold reload offline e recuperação do desenho offline.
+1. **Descoberta** — concluída: repo, integração Vercel, APK, REA e modelo executor verificados.
+2. **Engenharia reversa** — análise estática concluída; runtime limitado, sem screenshot de emulador utilizável.
+3. **Especificação/paridade** — matriz atualizada em `FEATURE_PARITY.md`; fatos estáticos separados de inferências e lacunas.
+4. **Arquitetura** — Canvas2D escolhido após ensaio de máscara, fill, histórico e snapshot; ver ADR-003.
+5. **Jogo** — 9 galerias/141 vetores originais, 40 cores, pintura, fill, undo/redo web, IndexedDB, glitter procedural e layout responsivo implementados.
+6. **QA local** — 61 unit, 43 offline, 14 testes do smoke checker, build e 35 E2E passaram no preview local; inclui tela cheia e fluxo real de pintar/reabrir offline em 4 viewports. Smoke HTTP da produção ainda aponta para o bundle antigo.
+7. **Publicação** — pendente: commitar/push da branch, revisar preview e publicar no projeto já vinculado.
+8. **Aceite** — pendente: E2E e smoke na URL nova, cold reopen offline, pintura/retomada offline e verificação de headers.
 
-Nenhuma fase posterior pode ser declarada pronta apenas por build verde.
-Escala de agentes acompanha trabalho independente e capacidade real, até 16 no Maestri.
-Não criar 16 agentes sem executor disponível ou tarefas prontas para execução.
+## Próxima sequência
 
-## Contratos propostos, ainda sujeitos ao experimento
+1. Revisar diff final e documentos de continuidade; manter artefatos QA gerados fora do commit.
+2. Commit e push em `feat/integration`, aguardar preview Git/Vercel.
+3. Rodar smoke estrito e E2E no preview; corrigir falhas.
+4. Fast-forward para `main` e validar produção com smoke, E2E e offline real.
+5. Atualizar `DEPLOYMENT_STATUS.md`, `FEATURE_PARITY.md` e nota conectada Maestri.
 
-- Conteúdo: `Drawing { id, packId, title, source, license, preview, layers }`.
-- Engine: carregar desenho, ferramenta/cor, pointer input, undo/redo, snapshot e restore.
-- Persistência: IndexedDB transacional por drawingId, versão de schema, snapshot e revisões.
-- Offline: manifesto de recursos com hash; indicar pronto só após verificar cada recurso.
-- UI: galeria/pintura separadas do renderer; design Astra entrega especificação evidenciada.
-- QA: cada recurso da FEATURE_PARITY deve apontar evidência original e teste web.
+A árvore final passou 35/35 E2E, 61/61 unit tests, 43/43 offline tests e 14/14 testes do smoke checker; build produz JS 111.45 kB, CSS 31.07 kB e 9 entradas offline (240.4 KiB). Tela cheia adicionada e testada no Chromium; fluxo offline real passou no preview local. Branch ainda sem commit/deploy.
 
-Dividir worktrees só depois de recuperar/verificar o estado remoto; um dono por módulo.
-Manter os nove documentos de continuidade atualizados a cada marco material.
+## Lacunas conhecidas
 
-Transferência autorizada ao DeepSeekNexo quando90%quotaCodex usada; estado em HANDOFF_DEEPSEEK.md.
+Padrões, spray e variantes de shine não implementados; não há screenshot do APK em emulador; o layout web é baseado em geometria estática; nenhuma versão desta árvore foi publicada. Documentar essas divergências e não declarar equivalência visual não medida.

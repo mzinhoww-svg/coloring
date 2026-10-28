@@ -243,7 +243,7 @@ jobs:
         run: |
           npm install --no-save --no-audit --no-fund @playwright/test@latest
           npx playwright install --with-deps chromium
-          npx playwright test --config "$(ls playwright.config.* | head -n 1)"
+          E2E_MODE=preview npx playwright test --config "$(ls playwright.config.* | head -n 1)"
 
       - name: Upload public build output
         uses: actions/upload-artifact@v4

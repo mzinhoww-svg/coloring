@@ -1,21 +1,21 @@
-# Impedimentos e recuperação
+# Bloqueios e divergências — 2026-10-28
 
-## Resolvidos em 2026-10-28 após ampliação das permissões
+## Bloqueios de release
 
-- Maestri IPC acessível; presets e nota conectada localizados com segurança.
-- OpenCode 2.0.28 executou `opencode-go/deepseek-v4.1-flash`: EXECUTOR_READY.
-- Git shell acessível; checkout remoto estabelecido preservando APK e evidências locais.
-- Vercel CLI autenticada e projeto correto acessível; vínculo github coloring/main confirmado.
-- ADB acessível; APK instalado no Android ARM64 por `--no-streaming`.
-- UnityPy, Pillow, numpy e lz4 disponíveis na .venv de análise privada.
-- ANR inicial System UI recuperado; galeria de 15 animais capturada em execução.
+- Esta integração ainda não foi commitada, enviada ao GitHub ou publicada na Vercel.
+- Sem bloqueio técnico local conhecido; próximo gate é preview Vercel e CI após push.
+- O smoke de `https://coloring-woad.vercel.app` está saudável, mas mostra bundle antigo. Deve ser repetido após deploy.
 
-## Limitações atuais
+## Lacunas de fidelidade/aceite
 
-- Direitos de redistribuição dos ativos originais não confirmados: usar referência privada e arte própria.
-- Maestri Floors detecta raiz errada (~) e rejeitou isolamento. Worktrees nativos do Codex criados:
-  a66e/coloring feat/web-game e b448/coloring feat/offline-qa. Divisão de arquivos explícita.
-- API Vercel MCP exigia consentimento; CLI autorizada existente resolveu acesso sem alterar escopo.
-- UI original e demais mecânicas ainda em observação; não afirmar paridade completa.
+- Sem screenshots do APK em emulador; layout web paisagem foi aproximado por geometria serializada.
+- Padrões, spray e variantes shine do APK não foram reproduzidos; glitter procedural é alternativa original.
+- O original não foi observado em portrait; UI portrait é comportamento web próprio.
+- O APK/arte extraída não têm licença confirmada para redistribuição; nenhum payload do APK vai ao build.
 
-Nenhuma credencial registrada neste documento; nota privada não compartilhada com executores.
+## Resolvidos em 2026-10-28
+
+- Acesso Maestri, OpenCode/DeepSeek, Git e CLI Vercel confirmados.
+- Projeto Vercel correto `coloring` e vínculo GitHub com o repo confirmado.
+- Build, 61 unit tests, 43 offline tests, 14 testes do checker e 35 E2E no preview local passaram; teste offline real de pintar e reabrir sem rede confirmado.
+- Botão fullscreen passa E2E Chromium; workflow CI configurado para rodar E2E com o build preview.

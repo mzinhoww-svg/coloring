@@ -9,6 +9,8 @@
  * Everything here is DOM-free so it can be unit tested in Node.
  */
 
+import { glitterTile, writeFinishedPixel, type FinishTile } from './finish'
+
 export interface Region {
   /** 1 = pixel belongs to the selected connected region. */
   mask: Uint8Array
@@ -241,9 +243,11 @@ export function paintRegionBox(
 }
 
 /**
- * Fills only pixels in the selected flood-fill region with a deterministic
- * glitter grain. Keeping the mask check here guarantees the texture cannot
- * cross line art or leak into a neighbouring region.
+ * Fills only pixels in the selected flood-fill region with the base colour
+ * plus the glitter texture. The tile is sampled in canvas coordinates, so the
+ * bucket shows exactly the sparkles a glitter brush would leave on the same
+ * pixels. Keeping the mask check here guarantees the texture cannot cross line
+ * art or leak into a neighbouring region.
  */
 export function paintGlitterRegionBox(
   rgba: Uint8ClampedArray,
@@ -252,7 +256,7 @@ export function paintGlitterRegionBox(
   boxX: number,
   boxY: number,
   color: Rgb,
-  seed = 0,
+  tile: FinishTile = glitterTile(),
 ): number {
   const boxHeight = rgba.length / 4 / boxWidth
   let painted = 0
@@ -261,18 +265,10 @@ export function paintGlitterRegionBox(
     if (boxRow < 0 || boxRow >= boxHeight) continue
     const row = y * region.width
     for (let x = region.minX; x <= region.maxX; x++) {
-      const regionIndex = row + x
-      if (region.mask[regionIndex] === 0) continue
-      const p = (boxRow * boxWidth + (x - boxX)) * 4
-      const noiseValue = Math.sin((x + seed) * 127.1 + (y - seed) * 311.7) * 43758.5453
-      const noise = noiseValue - Math.floor(noiseValue)
-      const variation = noise > 0.91 ? 0.82 : noise < 0.035 ? -0.28 : 0
-      const vary = (channel: number) =>
-        Math.round(variation > 0 ? channel + (255 - channel) * variation : channel * (1 + variation))
-      rgba[p] = vary(color.r)
-      rgba[p + 1] = vary(color.g)
-      rgba[p + 2] = vary(color.b)
-      rgba[p + 3] = 255
+      const boxColumn = x - boxX
+      if (boxColumn < 0 || boxColumn >= boxWidth) continue
+      if (region.mask[row + x] === 0) continue
+      writeFinishedPixel(rgba, (boxRow * boxWidth + boxColumn) * 4, color, tile, x, y)
       painted++
     }
   }

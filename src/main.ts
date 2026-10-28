@@ -1,5 +1,6 @@
 import './style.css'
 import { packs, drawings, getDrawingSvg } from './content/art'
+import { basePalette } from './content/palette'
 import { prepareOffline, registerOffline } from './offline'
 import { WORK_SIZE, PaintingEngine, type HistoryState, type ToolId } from './engine/painting-engine'
 import type { PaintFinish } from './engine/brushes'
@@ -29,32 +30,8 @@ interface DrawingMeta {
   title: string
 }
 
-const PALETTE = [
-  '#e85d78',
-  '#f28e5b',
-  '#f7c548',
-  '#a8d95f',
-  '#57c785',
-  '#2fae9f',
-  '#57c7e8',
-  '#5b8def',
-  '#8d7bf0',
-  '#c47ae8',
-  '#e87ab8',
-  '#8d5b3f',
-  '#ffd9c9',
-  '#fff1a8',
-  '#d9f4c7',
-  '#c4eef0',
-  '#d7e3ff',
-  '#eadcff',
-  '#f6d7ef',
-  '#ffffff',
-  '#2d2a32',
-  '#6b7280',
-  '#b7bcc5',
-  '#d9a441',
-]
+/** The 40 colours serialized in the original APK, in their recovered order. */
+const PALETTE = basePalette.map((color) => color.hex.toLowerCase())
 
 const TOOL_KEYS: Record<string, ToolId> = {
   b: 'brush',
@@ -90,6 +67,8 @@ type IconName =
   | 'warning'
   | 'cloud'
   | 'sparkle'
+  | 'expand'
+  | 'compress'
 
 const ICONS: Record<IconName, string> = {
   brush:
@@ -128,6 +107,10 @@ const ICONS: Record<IconName, string> = {
     '<path d="M7 18h9.5a3.5 3.5 0 0 0 .4-7 5.5 5.5 0 0 0-10.6 1.3A3 3 0 0 0 7 18Z"/>',
   sparkle:
     '<path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z"/>',
+  expand:
+    '<path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/>',
+  compress:
+    '<path d="M8 3v3a2 2 0 0 1-2 2H3M16 3v3a2 2 0 0 0 2 2h3M8 21v-3a2 2 0 0 0-2-2H3M16 21v-3a2 2 0 0 1 2-2h3"/>',
 }
 
 function icon(name: IconName, className = 'icon'): string {
@@ -265,6 +248,7 @@ class ColoringApp {
       if (document.visibilityState === 'hidden') void this.flushSave()
     })
     document.addEventListener('click', this.handleGlobalClick)
+    document.addEventListener('fullscreenchange', this.handleFullscreenChange)
     await this.render()
   }
 
@@ -696,8 +680,8 @@ class ColoringApp {
     this.root.innerHTML = `
       <div class="studio" data-testid="studio">
         <header class="studio-bar">
-          <button class="icon-button" data-action="back" aria-label="Voltar para a galeria">${icon(
-            'back',
+          <button class="icon-button is-done" data-action="back" aria-label="Concluir e voltar para a galeria" title="Concluir">${icon(
+            'check',
           )}</button>
           <div class="studio-title">
             <span class="studio-emoji" aria-hidden="true">${escapeHtml(pack.emoji)}</span>
@@ -715,6 +699,9 @@ class ColoringApp {
               '',
             )}</span></span>
             ${this.soundButton()}
+            <button class="icon-button" data-action="fullscreen" data-testid="fullscreen-toggle" aria-label="Ativar tela cheia" title="Ativar tela cheia" aria-pressed="false"${
+              this.fullscreenSupported() ? '' : ' disabled'
+            }>${icon('expand')}</button>
           </div>
         </header>
         <main class="studio-main">
@@ -752,9 +739,9 @@ class ColoringApp {
               <div class="palette" data-testid="palette" role="group" aria-label="Cores">
                 ${PALETTE.map(
                   (color, index) =>
-                    `<button class="swatch${index === 0 ? ' is-selected' : ''}" style="--swatch:${color}" data-color="${color}" aria-label="Cor ${index + 1}" aria-pressed="${
-                      index === 0
-                    }"></button>`,
+                    `<button class="swatch${index === 0 ? ' is-selected' : ''}" style="--swatch:${color}" data-color="${color}" aria-label="${escapeHtml(
+                      basePalette[index].name,
+                    )}" title="${escapeHtml(basePalette[index].name)}" aria-pressed="${index === 0}"></button>`,
                 ).join('')}
                 <button class="swatch swatch-glitter" data-finish="glitter" data-testid="palette-glitter" aria-label="Glitter para pincel ou balde" aria-pressed="false" title="Glitter para pincel ou balde">
                   ${icon('glitter')}
@@ -805,11 +792,13 @@ class ColoringApp {
     })
     this.engine = engine
     this.activeDrawingId = drawing.id
-      engine.setColor(PALETTE[0])
+    engine.setColor(PALETTE[0])
+    this.studioRoot.style.setProperty('--tool-color', safeColor(PALETTE[0]))
     engine.setSize(16)
     this.selectTool(engine.tool)
 
     this.bindStudioControls(engine)
+    this.updateFullscreenButton()
     window.addEventListener('keydown', this.handleKeyDown)
     this.updateOfflineControls()
 
@@ -893,6 +882,9 @@ class ColoringApp {
         case 'save':
           void this.flushSave()
           break
+        case 'fullscreen':
+          void this.toggleFullscreen()
+          break
         default:
           break
       }
@@ -932,6 +924,8 @@ class ColoringApp {
     if (!this.engine) return
     this.engine.setColor(color)
     this.engine.setFinish('solid')
+    // Tools show the active colour, like the tinted part of each APK tool.
+    this.studioRoot?.style.setProperty('--tool-color', safeColor(color))
     this.root.querySelectorAll<HTMLElement>('[data-color], [data-finish]').forEach((button) => {
       const active = button.dataset.color === color
       button.classList.toggle('is-selected', active)
@@ -1056,8 +1050,45 @@ class ColoringApp {
 
   private async leaveStudio(): Promise<void> {
     await this.flushSave()
+    if (document.fullscreenElement === this.studioRoot) {
+      await document.exitFullscreen().catch(() => undefined)
+    }
     const drawing = drawings.find((candidate) => candidate.id === this.activeDrawingId)
     window.location.hash = drawing ? packHref(drawing.packId) : '#/'
+  }
+
+  private fullscreenSupported(): boolean {
+    return document.fullscreenEnabled && typeof document.documentElement.requestFullscreen === 'function'
+  }
+
+  private handleFullscreenChange = (): void => {
+    this.updateFullscreenButton()
+  }
+
+  private updateFullscreenButton(): void {
+    const button = this.root.querySelector<HTMLButtonElement>('[data-testid="fullscreen-toggle"]')
+    const studio = this.studioRoot
+    if (!button || !studio) return
+    const active = document.fullscreenElement === studio
+    const label = active ? 'Sair da tela cheia' : 'Ativar tela cheia'
+    button.setAttribute('aria-label', label)
+    button.setAttribute('aria-pressed', String(active))
+    button.title = this.fullscreenSupported() ? label : 'Tela cheia indisponível neste navegador'
+    button.innerHTML = icon(active ? 'compress' : 'expand')
+  }
+
+  private async toggleFullscreen(): Promise<void> {
+    const studio = this.studioRoot
+    if (!studio || !this.fullscreenSupported()) return
+    try {
+      if (document.fullscreenElement === studio) {
+        await document.exitFullscreen()
+      } else {
+        await studio.requestFullscreen()
+      }
+    } catch {
+      this.toast('Não foi possível ativar a tela cheia neste navegador.', 'warning')
+    }
   }
 
   private teardownStudio(): void {

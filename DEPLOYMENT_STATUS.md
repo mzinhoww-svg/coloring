@@ -1,17 +1,20 @@
-# Publicação
+# Publicação — estado em 2026-10-28
 
-- GitHub: https://github.com/mzinhoww-svg/coloring.
-- Metadata remoto confirmado pela integração: repo público, vazio, branch padrão main, push permitido.
-- Vercel destino: coloring / mzinhoww-gmailcoms-projects.
-- API MCP teve 403; CLI autorizada acessa projeto existente.
-- Vínculo GitHub↔Vercel: confirmado por GET /v9/projects/coloring via CLI, repo coloring, org mzinhoww-svg, produção main.
-- Commit do jogo: nenhum.
-- Checkpoint documental na main: `c2a6fc19e64c75a6bf6200dfa90e395ffae221dd`, confirmado por leitura da ref remota.
-- URL de produção do jogo: nenhuma entregue/verificada.
-- Build, preview, produção e E2E produção: não executados.
+- **Repo:** `https://github.com/mzinhoww-svg/coloring`, remoto `origin`, branch ativa `feat/integration`.
+- **Base local:** `84d0fb3 feat: deliver Rabisco coloring game web app`; alterações da rodada ainda não commitadas.
+- **Vercel:** `coloring`, scope `mzinhoww-gmailcoms-projects`; `vercel project inspect --non-interactive` confirmou o projeto correto, root `.` e runtime Node 24.
+- **Git Integration:** vínculo GitHub do projeto com `mzinhoww-svg/coloring`, produção acompanhando `main`, já confirmado anteriormente.
+- **Configuração local:** `vercel.json` define Vite, build `npm run build`, saída `dist`, cabeçalhos do SW/manifest/assets e fallback SPA protegido.
+- **URL pública existente:** `https://coloring-woad.vercel.app`; smoke estrito passou 52/52, mas o bundle servido é anterior à paleta de 40 cores e às mudanças de layout/glitter desta árvore.
+- **Preview/commit desta integração:** nenhum ainda.
+- **QA local atual:** 61 unit, 43 offline, build, 14 testes do smoke checker e 35 E2E em `preview` passaram; fullscreen e pintura/reabertura offline cobertos.
+- **APK:** artefato debug local já existe; não faz parte deste release web.
 
-Não criar projeto paralelo, não usar outro scope e não publicar referência proprietária.
-Após acesso, inspecionar projeto, vinculação Git e configuração antes de alterar.
+## Próximo release
 
-Checkpoint: arte135 e PWA integrados main; engine/UI em feat/web-game.
-VercelCLIlinked existente,GitIntegrationconfirmada.Nenhum deploy de JOGO validado ainda.
+1. Revisão final da árvore e commit/push em `feat/integration`; usar preview criado pela Git Integration.
+2. Executar `node scripts/production-smoke.mjs --strict --url <preview>` e E2E com `BASE_URL`.
+3. Corrigir findings; só então fast-forward a `main` para produção.
+4. Repetir smoke, E2E e reload offline real na URL pública nova; registrar commit e evidências.
+
+Não declarar produção atualizada até que o smoke mostre o bundle desta integração e a aplicação seja exercitada no browser real.

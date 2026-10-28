@@ -941,6 +941,12 @@ img {
     var(--cream);
 }
 
+.studio:fullscreen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .studio-bar {
   position: relative;
   z-index: 10;
@@ -2024,6 +2030,326 @@ input[type="range"] {
 
   .stage-hint {
     display: none;
+  }
+}
+
+/* Concludes the page and returns to the gallery, like the original's green check. */
+.icon-button.is-done {
+  color: #fff;
+  border-color: transparent;
+  background: #3fb44f;
+  box-shadow: 0 6px 16px rgba(32, 120, 52, 0.28);
+}
+
+.icon-button.is-done:hover {
+  background: #35a244;
+}
+
+/* ---------- ColoringPage proportions (landscape) ----------
+ * Serialized APK scene (level4 ColoringPage): CanvasScaler 800×1080 matching
+ * height, so one unit is the viewport height / 1080. ButtonsPanel 228 units on
+ * the left, a square board, the palette strip 156 units and the ToolsPanel 291
+ * units flush right (tool items 260×140, 130 apart). Columns are also capped
+ * by width so narrower landscape screens keep the painting area. Portrait
+ * keeps the web layout: the original was never observed in portrait.
+ */
+@media (orientation: landscape) and (min-width: 700px) {
+  .studio {
+    --u: calc(100dvh / 1080);
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 6vmax 2.4vmax at 6% 44%, rgba(255, 255, 255, 0.5) 58%, transparent 61%),
+      radial-gradient(ellipse 4.5vmax 2vmax at 10% 40%, rgba(255, 255, 255, 0.5) 58%, transparent 61%),
+      linear-gradient(180deg, #32afdb 0%, #40bfd6 46%, #67d8d9 100%);
+  }
+
+  .studio-main {
+    grid-template-columns:
+      min(max(96px, calc(228 * var(--u))), 13vw)
+      minmax(0, 1fr)
+      min(max(60px, calc(156 * var(--u))), 9vw)
+      min(max(112px, calc(291 * var(--u))), 15vw);
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: "actions stage palette tools";
+    max-width: none;
+    gap: clamp(8px, 1.4vw, 18px);
+    padding: clamp(8px, 1.4vw, 18px) 0 clamp(8px, 1.4vw, 18px) clamp(8px, 1.4vw, 18px);
+  }
+
+  .stage-column {
+    grid-area: stage;
+  }
+
+  .stage-frame {
+    padding: 6px;
+    border: none;
+    background: transparent;
+  }
+
+  .canvas-host {
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(9, 60, 82, 0.28);
+  }
+
+  .stage-hint {
+    display: none;
+  }
+
+  .tool-rail {
+    display: contents;
+  }
+
+  .tool-rail > .rail-section {
+    min-height: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .tool-rail > .rail-section:nth-child(1) > .rail-heading,
+  .tool-rail > .rail-section:nth-child(3) > .rail-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  /* ToolsPanel: one column of horizontal tools attached to the right edge. */
+  .tool-rail > .rail-section:nth-child(1) {
+    grid-area: tools;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tool-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: max(4px, calc(14 * var(--u)));
+    overflow: visible;
+    padding: 0;
+  }
+
+  .tool-button {
+    position: relative;
+    flex: 0 1 calc(140 * var(--u));
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px 0 14px;
+    border: 2px solid transparent;
+    border-right: none;
+    border-radius: 999px 0 0 999px;
+    background: rgba(255, 253, 248, 0.94);
+    box-shadow: 0 8px 18px rgba(9, 60, 82, 0.16);
+    color: var(--ink-soft);
+    font-size: 0.74rem;
+    text-align: left;
+  }
+
+  .tool-button::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 10px;
+    height: 46%;
+    border-radius: 999px;
+    background: var(--tool-color, var(--coral));
+    box-shadow: inset 0 0 0 1px rgba(37, 50, 75, 0.2);
+  }
+
+  .tool-button[data-tool="eraser"]::before {
+    background: #f6a8b8;
+  }
+
+  .tool-button .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .tool-button:hover {
+    background: #fff;
+    transform: translateX(-3px);
+  }
+
+  .tool-button.is-selected {
+    color: var(--ink);
+    border-color: var(--ink);
+    background: #fff;
+    transform: translateX(-8px);
+  }
+
+  /* Colour palette strip: one scrolling column of swatches. */
+  .tool-rail > .rail-section:nth-child(3) {
+    grid-area: palette;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 40px;
+    background: rgba(255, 253, 248, 0.94);
+    box-shadow: 0 10px 24px rgba(9, 60, 82, 0.18);
+  }
+
+  .palette {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: max(6px, calc(12 * var(--u)));
+    min-height: 0;
+    padding: 6px 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+  }
+
+  .swatch {
+    flex: 0 0 auto;
+    width: clamp(34px, calc(104 * var(--u)), 72px);
+  }
+
+  .swatch-glitter {
+    order: -1;
+  }
+
+  /* ButtonsPanel: size on top, trash and undo at the bottom. */
+  .tool-rail > .rail-section:nth-child(2) {
+    grid-area: actions;
+    align-self: start;
+    padding: 10px;
+    border-radius: 22px;
+    background: rgba(255, 253, 248, 0.94);
+    box-shadow: 0 8px 18px rgba(9, 60, 82, 0.16);
+  }
+
+  .size-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .size-preview {
+    width: 100%;
+    height: 40px;
+  }
+
+  .tool-rail > .rail-section.rail-actions {
+    grid-area: actions;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .action-row {
+    display: contents;
+  }
+
+  .action-button {
+    flex-direction: column;
+    gap: 4px;
+    min-height: clamp(44px, calc(118 * var(--u)), 96px);
+    border: none;
+    border-radius: 24px;
+    background: rgba(255, 253, 248, 0.95);
+    box-shadow: 0 8px 18px rgba(9, 60, 82, 0.16);
+  }
+
+  .action-button .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .action-button[data-action="export"] {
+    order: 1;
+  }
+
+  .action-button[data-action="clear"] {
+    order: 2;
+  }
+
+  .action-button[data-action="undo"] {
+    order: 3;
+  }
+
+  .action-button[data-action="redo"] {
+    order: 4;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 700px) and (max-height: 520px) {
+  .studio {
+    min-height: 320px;
+  }
+
+  .studio-bar {
+    gap: 8px;
+    padding-block: 4px;
+  }
+
+  .studio-bar .icon-button,
+  .studio-emoji {
+    width: 34px;
+    height: 34px;
+  }
+
+  .studio-title p {
+    display: none;
+  }
+
+  .save-chip,
+  .studio-bar .status-pill {
+    min-height: 32px;
+  }
+
+  .studio-main {
+    padding-block: 6px;
+  }
+
+  .tool-button span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .tool-rail > .rail-section:nth-child(2) {
+    padding: 6px;
+  }
+
+  .size-preview {
+    display: none;
+  }
+
+  .tool-rail > .rail-section.rail-actions {
+    gap: 5px;
+  }
+
+  .action-button {
+    flex-direction: row;
+    min-height: 40px;
+  }
+
+  .action-button span {
+    display: none;
+  }
+
+  .tool-button {
+    gap: 6px;
+    padding: 0 6px 0 10px;
+    font-size: 0.62rem;
+  }
+
+  .tool-button .icon {
+    width: 20px;
+    height: 20px;
   }
 }
 

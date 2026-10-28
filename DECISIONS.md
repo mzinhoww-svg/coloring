@@ -47,3 +47,11 @@ Glitter é uma opção de pintura selecionada na paleta, separada das ferramenta
 O acabamento aplica-se ao pincel ativo e ao balde; o balde texturiza a região
 delimitada pela arte original. A textura fica na camada de pintura comum para
 que undo/redo, exportação e salvamento continuem funcionando.
+
+## ADR-006 — Layout paisagem guiado por geometria serializada (aceita, 2026-10-28)
+
+Usar CanvasScaler 800×1080 e as larguras serializadas das faixas para aproximar a tela web em landscape; limitar as colunas pela largura disponível e manter o layout portrait existente porque o APK não foi observado em retrato. Capturas web verificam clipping/overflow e usabilidade, não paridade de pixels. A ausência de screenshot do APK permanece uma lacuna explícita.
+
+## ADR-007 — Assets próprios e paleta recuperada como dados (aceita, 2026-10-28)
+
+Os 40 hexes serializados podem ser reutilizados como dados de cor; não redistribuir sprites, texturas, fontes ou áudio do APK. Novos desenhos são vetores originais. Glitter é procedural e compartilhado pelo pincel e pelo balde; variantes originais de padrões/shine ficam como trabalho futuro.

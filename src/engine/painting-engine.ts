@@ -1,6 +1,5 @@
 import {
   TOOLS,
-  drawGlitterStamp,
   drawStamp,
   isBufferedTool,
   stampSpacing,
@@ -10,6 +9,7 @@ import {
   type PaintFinish,
   type ToolId,
 } from './brushes'
+import { composeFinishOverlay, glitterTile } from './finish'
 import { clientToCanvas, type Point } from './geometry'
 import { PatchHistory, type Patch } from './history'
 import { stripPaperWhite } from './line-art'
@@ -53,6 +53,8 @@ interface ActiveStroke {
   maxX: number
   maxY: number
   seed: number
+  /** Area whose glitter overlay is stale since the last refresh. */
+  glitterDirty: Bounds | null
 }
 
 interface Bounds {
@@ -113,10 +115,14 @@ export class PaintingEngine {
   private readonly colorCanvas: HTMLCanvasElement
   private readonly lineCanvas: HTMLCanvasElement
   private readonly bufferCanvas: HTMLCanvasElement
+  private readonly glitterCanvas: HTMLCanvasElement
+  private readonly glitterMaskCanvas: HTMLCanvasElement
   private readonly displayCtx: CanvasRenderingContext2D
   private readonly colorCtx: CanvasRenderingContext2D
   private readonly lineCtx: CanvasRenderingContext2D
   private readonly bufferCtx: CanvasRenderingContext2D
+  private readonly glitterCtx: CanvasRenderingContext2D
+  private readonly glitterMaskCtx: CanvasRenderingContext2D
   private readonly history = new PatchHistory()
   private readonly callbacks: EngineCallbacks
 
@@ -159,18 +165,28 @@ export class PaintingEngine {
     this.bufferCanvas = document.createElement('canvas')
     this.bufferCanvas.width = width
     this.bufferCanvas.height = height
+    this.glitterCanvas = document.createElement('canvas')
+    this.glitterCanvas.width = width
+    this.glitterCanvas.height = height
+    this.glitterMaskCanvas = document.createElement('canvas')
+    this.glitterMaskCanvas.width = width
+    this.glitterMaskCanvas.height = height
 
     const display = this.canvas.getContext('2d')
     const color = this.colorCanvas.getContext('2d', { willReadFrequently: true })
     const line = this.lineCanvas.getContext('2d', { willReadFrequently: true })
     const buffer = this.bufferCanvas.getContext('2d', { willReadFrequently: true })
-    if (!display || !color || !line || !buffer) {
+    const glitter = this.glitterCanvas.getContext('2d')
+    const glitterMask = this.glitterMaskCanvas.getContext('2d', { willReadFrequently: true })
+    if (!display || !color || !line || !buffer || !glitter || !glitterMask) {
       throw new Error('Este navegador não oferece Canvas 2D.')
     }
     this.displayCtx = display
     this.colorCtx = color
     this.lineCtx = line
     this.bufferCtx = buffer
+    this.glitterCtx = glitter
+    this.glitterMaskCtx = glitterMask
 
     this.canvas.addEventListener('pointerdown', this.handlePointerDown)
     this.canvas.addEventListener('pointermove', this.handlePointerMove)
@@ -221,6 +237,7 @@ export class PaintingEngine {
     this.boundary = null
     this.colorCtx.clearRect(0, 0, this.width, this.height)
     this.bufferCtx.clearRect(0, 0, this.width, this.height)
+    this.clearGlitterLayers()
     this.lineCtx.clearRect(0, 0, this.width, this.height)
 
     const svgUrl = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }))
@@ -361,6 +378,14 @@ export class PaintingEngine {
       ctx.drawImage(this.bufferCanvas, 0, 0)
       ctx.restore()
     }
+    // Glitter lives on its own overlay so later solid stamps can never cover
+    // the sparkles of earlier stamps in the same gesture.
+    if (this.active && this.active.finish === 'glitter') {
+      ctx.save()
+      ctx.globalAlpha = isBufferedTool(this.active.tool) ? strokeAlpha(this.active.tool) : 1
+      ctx.drawImage(this.glitterCanvas, 0, 0)
+      ctx.restore()
+    }
     ctx.drawImage(this.lineCanvas, 0, 0)
   }
 
@@ -443,6 +468,7 @@ export class PaintingEngine {
     if (isBufferedTool(this.tool)) {
       this.bufferCtx.clearRect(0, 0, this.width, this.height)
     }
+    this.clearGlitterLayers()
     this.active = {
       pointerId: event.pointerId,
       tool: this.tool,
@@ -456,8 +482,10 @@ export class PaintingEngine {
       maxX: 0,
       maxY: 0,
       seed: this.saveCounter++ * 101,
+      glitterDirty: null,
     }
     this.stampAt(point.x, point.y, this.pressure(event))
+    this.refreshGlitter()
     this.callbacks.onSound?.('stroke')
     this.scheduleRender()
   }
@@ -472,6 +500,7 @@ export class PaintingEngine {
       const point = this.eventPoint(raw)
       this.lineTo(point.x, point.y, this.pressure(raw))
     }
+    this.refreshGlitter()
     this.scheduleRender()
   }
 
@@ -521,22 +550,56 @@ export class PaintingEngine {
       active.color,
       seed,
     )
+    const margin = result.radius * 1.12 + 2
     if (active.finish === 'glitter' && active.tool !== 'eraser') {
-      drawGlitterStamp(target, x, y, result.radius, active.color, seed)
+      // The mask receives the very same stamp, so the glitter overlay follows
+      // the real paint coverage, soft edges included.
+      drawStamp(this.glitterMaskCtx, active.tool, x, y, pressure, active.size, '#000', seed)
+      const dirty = active.glitterDirty
+      active.glitterDirty = {
+        minX: Math.min(dirty?.minX ?? x - margin, x - margin),
+        minY: Math.min(dirty?.minY ?? y - margin, y - margin),
+        maxX: Math.max(dirty?.maxX ?? x + margin, x + margin),
+        maxY: Math.max(dirty?.maxY ?? y + margin, y + margin),
+      }
     }
-    const margin = result.radius + 2
     active.minX = Math.min(active.minX, x - margin)
     active.minY = Math.min(active.minY, y - margin)
     active.maxX = Math.max(active.maxX, x + margin)
     active.maxY = Math.max(active.maxY, y + margin)
   }
 
+  /**
+   * Re-derives the glitter overlay where the stroke changed: the shared world
+   * tile, kept only where the mask says paint landed. Running it per input
+   * batch keeps the texture visible while the finger is still moving.
+   */
+  private refreshGlitter(): void {
+    const active = this.active
+    if (!active?.glitterDirty) return
+    const bounds = clampBounds(active.glitterDirty, this.width, this.height)
+    active.glitterDirty = null
+    if (!bounds) return
+    const width = bounds.maxX - bounds.minX + 1
+    const height = bounds.maxY - bounds.minY + 1
+    const pixels = this.glitterMaskCtx.getImageData(bounds.minX, bounds.minY, width, height)
+    composeFinishOverlay(pixels.data, bounds.minX, bounds.minY, width, height, glitterTile(), pixels.data)
+    this.glitterCtx.putImageData(pixels, bounds.minX, bounds.minY)
+  }
+
+  private clearGlitterLayers(): void {
+    this.glitterCtx.clearRect(0, 0, this.width, this.height)
+    this.glitterMaskCtx.clearRect(0, 0, this.width, this.height)
+  }
+
   private finishStroke(commit: boolean): void {
     const active = this.active
     if (!active) return
+    if (commit) this.refreshGlitter()
     this.active = null
     if (!commit) {
       this.bufferCtx.clearRect(0, 0, this.width, this.height)
+      this.clearGlitterLayers()
       return
     }
 
@@ -546,6 +609,16 @@ export class PaintingEngine {
       this.colorCtx.drawImage(this.bufferCanvas, 0, 0)
       this.colorCtx.restore()
       this.bufferCtx.clearRect(0, 0, this.width, this.height)
+    }
+
+    // Composite the whole gesture's glitter over the finished stroke in one
+    // pass. Buffered tools keep their translucent stroke opacity.
+    if (active.finish === 'glitter' && active.tool !== 'eraser') {
+      this.colorCtx.save()
+      this.colorCtx.globalAlpha = isBufferedTool(active.tool) ? strokeAlpha(active.tool) : 1
+      this.colorCtx.drawImage(this.glitterCanvas, 0, 0)
+      this.colorCtx.restore()
+      this.clearGlitterLayers()
     }
 
     const bounds = clampBounds(
@@ -587,7 +660,7 @@ export class PaintingEngine {
     const before = this.colorCtx.getImageData(box.x, box.y, box.width, box.height)
     const working = new Uint8ClampedArray(before.data)
     if (this.finish === 'glitter') {
-      paintGlitterRegionBox(working, box.width, region, box.x, box.y, rgb, this.saveCounter++)
+      paintGlitterRegionBox(working, box.width, region, box.x, box.y, rgb, glitterTile())
     } else {
       paintRegionBox(working, box.width, region, box.x, box.y, rgb)
     }

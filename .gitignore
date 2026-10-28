@@ -16,3 +16,5 @@ evidence/design/
 .vercel
 
 node_modules
+# Generated browser QA reports and traces
+/evidence/qa/artifacts/

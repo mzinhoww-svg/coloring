@@ -57,22 +57,6 @@ function hash(seed: number): number {
   return value - Math.floor(value)
 }
 
-function lighten(hex: string, amount: number): string {
-  const value = hex.replace('#', '')
-  const full =
-    value.length === 3
-      ? value
-          .split('')
-          .map((c) => c + c)
-          .join('')
-      : value.padEnd(6, 'f')
-  const r = parseInt(full.slice(0, 2), 16)
-  const g = parseInt(full.slice(2, 4), 16)
-  const b = parseInt(full.slice(4, 6), 16)
-  const mix = (channel: number) => Math.round(channel + (255 - channel) * amount)
-  return `rgb(${mix(r)}, ${mix(g)}, ${mix(b)})`
-}
-
 export interface StampResult {
   radius: number
 }
@@ -162,32 +146,6 @@ export function drawStamp(
     }
     case 'fill':
       return { radius: 0 }
-  }
-}
-
-/** Adds the selected glitter finish to whichever brush is active. */
-export function drawGlitterStamp(
-  ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  radius: number,
-  color: string,
-  seed: number,
-): void {
-  for (let i = 0; i < 4; i++) {
-    const angle = hash(seed + i * 13 + 5) * Math.PI * 2
-    const distance = radius * Math.sqrt(hash(seed + i * 17 + 21)) * 0.88
-    const sx = x + Math.cos(angle) * distance
-    const sy = y + Math.sin(angle) * distance
-    const sparkleRadius = Math.max(0.7, radius * (0.09 + hash(seed + i * 19 + 2) * 0.13))
-    ctx.fillStyle = lighten(color, 0.62 + hash(seed + i * 23 + 9) * 0.34)
-    ctx.beginPath()
-    ctx.moveTo(sx, sy - sparkleRadius)
-    ctx.lineTo(sx + sparkleRadius * 0.36, sy)
-    ctx.lineTo(sx, sy + sparkleRadius)
-    ctx.lineTo(sx - sparkleRadius * 0.36, sy)
-    ctx.closePath()
-    ctx.fill()
   }
 }
 

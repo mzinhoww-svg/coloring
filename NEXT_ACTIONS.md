@@ -1,12 +1,9 @@
-# Próximas ações
+# Próximas ações — Coloring
 
-Leia HANDOFF_DEEPSEEK.md (completo) e TASK_BOARD.md. Não reiniciar análise.
+1. Revisar os diffs e documentos atualizados; não incluir relatórios HTML gerados como fonte do produto.
+2. Commit e push em `feat/integration`; aguardar preview Vercel.
+3. Validar preview com smoke estrito + E2E. Testar headers e deep links.
+4. Publicar em `main` no projeto Vercel existente e repetir smoke/E2E/offline na produção.
+5. Atualizar a nota Maestri com URL, commit e evidências.
 
-1. Integrar commit final Tinta à main, reusar arte e PWA já integrados.
-2. Sincronizar última versão offline e scripts build/test:offline; conferir branding.
-3. Corrigir UI creme/coral para semelhança geométrica/cores com original,tendo capturas reais.
-4. QA Prisma: E2Edesktop/tablet/mobile,pintura,touch,save/retomar e coldreopen offline.
-5. Corrigir findings importantes,headers/configVercel/CI,vercelignore sem conteúdo privado.
-6. Build/test,commit/push,deployprojetoexistente; testar URL efetivamente publicada.
-7. Atualizar docs e nota Maestri coloring-entrega-e-progresso com URL/commit/evidências.
-8. Fechar memória PROJ038 e validar. Não declarar DONE antes do aceite real.
+Pendências de paridade para próxima iteração: padrões procedurais originais, spray e variantes shine; captura do layout de pintura no APK em execução. Não compartilhar payload extraído do APK.

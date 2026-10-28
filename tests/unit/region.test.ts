@@ -10,6 +10,7 @@ import {
   paintGlitterRegionBox,
   regionBox,
 } from '../../src/engine/region'
+import { createGlitterTile } from '../../src/engine/finish'
 
 function rgba(width: number, height: number, fill: [number, number, number, number]): Uint8ClampedArray {
   const data = new Uint8ClampedArray(width * height * 4)
@@ -216,8 +217,8 @@ describe('paintGlitterRegionBox', () => {
     const second = new Uint8ClampedArray(size * size * 4)
     const rgb = { r: 230, g: 90, b: 120 }
 
-    expect(paintGlitterRegionBox(first, size, region, 0, 0, rgb, 7)).toBe(size * size)
-    paintGlitterRegionBox(second, size, region, 0, 0, rgb, 7)
+    expect(paintGlitterRegionBox(first, size, region, 0, 0, rgb, createGlitterTile(size, 7))).toBe(size * size)
+    paintGlitterRegionBox(second, size, region, 0, 0, rgb, createGlitterTile(size, 7))
     expect(Array.from(first)).toEqual(Array.from(second))
     expect(new Set(Array.from({ length: size * size }, (_, i) => Array.from(first.slice(i * 4, i * 4 + 3)).join(','))).size).toBeGreaterThan(1)
   })
