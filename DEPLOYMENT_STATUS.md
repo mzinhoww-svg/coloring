@@ -6,8 +6,9 @@
 - **Git Integration:** vínculo GitHub do projeto com `mzinhoww-svg/coloring`, produção acompanhando `main`, já confirmado anteriormente.
 - **Configuração local:** `vercel.json` define Vite, build `npm run build`, saída `dist`, cabeçalhos do SW/manifest/assets e fallback SPA protegido.
 - **URL pública existente:** `https://coloring-woad.vercel.app`; smoke estrito passou 52/52, mas o bundle servido é anterior à paleta de 40 cores e às mudanças de layout/glitter desta árvore.
-- **Preview/commit desta integração:** nenhum ainda.
-- **QA local atual:** 61 unit, 43 offline, build, 14 testes do smoke checker e 35 E2E em `preview` passaram; fullscreen e pintura/reabertura offline cobertos.
+- **Preview da branch `feat/integration`:** `https://coloring-hduer0nps-mzinhoww-gmailcoms-projects.vercel.app`, READY, commit `15320a4`.
+- **QA local atual:** 61 unit, 43 offline, build, 15 testes do smoke checker e 35 E2E em `preview` passaram; fullscreen e pintura/reabertura offline cobertos.
+- **Smoke Vercel preview:** 52 pass, 0 warn, 0 fail com `--vercel-curl`; hashes do shell e dos 8 demais recursos bateram após pedir à Vercel que omita Toolbar de injeção para automação.
 - **APK:** artefato debug local já existe; não faz parte deste release web.
 
 ## Próximo release

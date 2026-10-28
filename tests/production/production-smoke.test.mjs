@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
-import { readFile, rm, stat, writeFile } from 'node:fs/promises';
+import { chmod, mkdtemp, readFile, rm, stat, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { after, afterEach, beforeEach, describe, it } from 'node:test';
 import { promisify } from 'node:util';
@@ -231,6 +232,68 @@ describe('production smoke on the real build output', () => {
 });
 
 describe('production smoke CLI contract', () => {
+  it('skips Vercel Toolbar injection for authenticated preview checks', async () => {
+    const site = await buildSite();
+    const server = await serve(site.dir, { headers: true });
+    const temp = await mkdtemp(path.join(tmpdir(), 'coloring-fake-vercel-'));
+    const fakeVercel = path.join(temp, 'vercel');
+    const argsLog = path.join(temp, 'args.jsonl');
+    await writeFile(
+      fakeVercel,
+      String.raw`#!/usr/bin/env node
+import { appendFile, readFile, stat, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+const args = process.argv.slice(2);
+await appendFile(process.env.VERCEL_ARGS_LOG, JSON.stringify(args) + '\n');
+const curlArgs = args.slice(args.indexOf('--') + 1);
+const outputPath = curlArgs[curlArgs.indexOf('--output') + 1];
+const headersPath = curlArgs[curlArgs.indexOf('--dump-header') + 1];
+const pathname = new URL(args[1], 'https://fixture.invalid').pathname;
+let file = path.join(process.env.SMOKE_FIXTURE_DIR, decodeURIComponent(pathname).replace(/^\/+/, ''));
+if (pathname.endsWith('/')) file = path.join(file, 'index.html');
+let status = 200;
+try { await stat(file); } catch {
+  if (/^\/(assets|icons)\//.test(pathname)) status = 404;
+  else file = path.join(process.env.SMOKE_FIXTURE_DIR, 'index.html');
+}
+const body = status === 200 ? await readFile(file) : Buffer.from('not found');
+await writeFile(outputPath, body);
+const extension = path.extname(file);
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.webmanifest': 'application/manifest+json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
+const headers = ['content-type: ' + (types[extension] ?? 'application/octet-stream')];
+if (pathname === '/sw.js') headers.push('cache-control: no-cache, no-store, must-revalidate', 'service-worker-allowed: /');
+else if (pathname === '/offline-manifest.json') headers.push('cache-control: no-store');
+else if (/^\/assets\//.test(pathname)) headers.push('cache-control: public, max-age=31536000, immutable');
+else if (/^\/icons\//.test(pathname)) headers.push('cache-control: public, max-age=3600');
+await writeFile(headersPath, 'HTTP/1.1 ' + status + ' OK\r\n' + headers.join('\r\n') + '\r\n\r\n');
+`,
+      { mode: 0o755 },
+    );
+    await chmod(fakeVercel, 0o755);
+    try {
+      const result = await smoke([server.origin, '--strict', '--vercel-curl'], {
+        VERCEL_BIN: fakeVercel,
+        VERCEL_ARGS_LOG: argsLog,
+        SMOKE_FIXTURE_DIR: site.dir,
+      });
+      assert.equal(result.code, 0, result.stdout + result.stderr);
+      const calls = (await readFile(argsLog, 'utf8'))
+        .trim()
+        .split('\n')
+        .map((line) => JSON.parse(line));
+      assert.ok(calls.length > 0);
+      for (const args of calls) {
+        const headerIndex = args.indexOf('--header');
+        assert.notEqual(headerIndex, -1, 'every authenticated request disables toolbar injection');
+        assert.equal(args[headerIndex + 1], 'x-vercel-skip-toolbar: 1');
+      }
+    } finally {
+      await server.close();
+      await rm(site.dir, { recursive: true, force: true });
+      await rm(temp, { recursive: true, force: true });
+    }
+  });
+
   it('exits with 2 and prints usage when no URL is given', async () => {
     const { code, stderr } = await smoke([]);
 

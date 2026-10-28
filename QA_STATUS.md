@@ -6,8 +6,8 @@
 | Build | `npm run build` | Passou; TypeScript + Vite + offline postprocessor; JS 111.45 kB, CSS 31.07 kB; 9 arquivos offline, 240.4 KiB |
 | Offline/PWA | `npm run test:offline` | 43/43 |
 | E2E produção local | `E2E_MODE=preview ./node_modules/.bin/playwright test` | 35/35; desktop, tablet landscape, phone portrait, ferramentas, pintura, persistência, rotação, tela cheia e service worker com reload offline real |
-| Smoke production checker | `node --test "tests/production/**/*.test.mjs"` | 14/14 |
-| Smoke HTTP URL pública existente | `node scripts/production-smoke.mjs --strict --url https://coloring-woad.vercel.app` | 52 pass, 0 warn, 0 fail; bundle é anterior a esta integração |
+| Smoke production checker | `node --test "tests/production/**/*.test.mjs"` | 15/15 |
+| Smoke preview Vercel | `node scripts/production-smoke.mjs --strict --url <preview> --vercel-curl` | 52 pass, 0 warn, 0 fail; manifesto e hashes íntegros, sem toolbar injetada na resposta automatizada |
 | Layout web | Capturas nos 4 viewports | Canvas 789/665/323/352 px; overflowX 0 reportado |
 | Glitter | Chrome desktop | Máscara sem brilho fora da tinta; undo igual ao snapshot; pincel e balde testados |
 

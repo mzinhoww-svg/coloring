@@ -296,6 +296,8 @@ async function vercelCurlRequest(url, deployment, options) {
         base.origin,
         '--yes',
         '--',
+        '--header',
+        'x-vercel-skip-toolbar: 1',
         '--silent',
         '--show-error',
         '--max-time',

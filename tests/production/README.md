@@ -55,7 +55,7 @@ Use `--strict` contra produção; no preview local alguns avisos são esperados.
 ## Autenticação sem tocar em segredo
 
 `--vercel-curl` executa cada requisição como
-`vercel curl <path> --deployment <url> -- --silent --output <tmp> --dump-header <tmp>`
+`vercel curl <path> --deployment <url> -- --header "x-vercel-skip-toolbar: 1" --silent --output <tmp> --dump-header <tmp>`
 e lê status/corpo do arquivo temporário. O script não lê, não imprime e não
 repassa token, cookie ou bypass secret; não desativa Deployment Protection.
 Sem a flag, se a resposta for uma página da Vercel Authentication, o smoke para
@@ -83,8 +83,4 @@ redação de token na URL, execução no `dist/` real e contrato da CLI.
 | Preview `vite preview` local (`dist/`) | padrão | 47 pass · 5 warn · 0 fail (avisos de headers/fallback do preview) |
 | Preview Vercel protegido | `--vercel-curl` | endpoints principais OK; ver nota abaixo |
 
-Nota do preview: o host injeta
-`<script src="https://vercel.live/.../feedback.js">` no HTML de previews, então
-`/index.html` no ar tem 1229 B contra 1066 B do manifest offline e a checagem de
-tamanho/SHA falha. Isso **não** se reproduz no alias público (1066 B, SHA ok) e
-não é um defeito do app; por isso a referência de produção é o alias público.
+Nota do preview: a Vercel injeta o Toolbar no HTML quando ativado para previews, o que altera o hash do shell e pode falsear a checagem offline. O transporte autenticado do smoke envia `x-vercel-skip-toolbar: 1` (método oficial para automação), mantendo verificação integral de SHA-256 nos bytes entregues pela aplicação. A rodada no preview `coloring-hduer0nps-mzinhoww-gmailcoms-projects.vercel.app` passou 52/52 com `--strict --vercel-curl` em 2026-10-28.

@@ -13,7 +13,7 @@ Reconstruir o APK como jogo web mobile-first instalável, offline e com progress
 3. **Especificação/paridade** — matriz atualizada em `FEATURE_PARITY.md`; fatos estáticos separados de inferências e lacunas.
 4. **Arquitetura** — Canvas2D escolhido após ensaio de máscara, fill, histórico e snapshot; ver ADR-003.
 5. **Jogo** — 9 galerias/141 vetores originais, 40 cores, pintura, fill, undo/redo web, IndexedDB, glitter procedural e layout responsivo implementados.
-6. **QA local** — 61 unit, 43 offline, 14 testes do smoke checker, build e 35 E2E passaram no preview local; inclui tela cheia e fluxo real de pintar/reabrir offline em 4 viewports. Smoke HTTP da produção ainda aponta para o bundle antigo.
+6. **QA local** — 61 unit, 43 offline, 15 testes do smoke checker, build e 35 E2E passaram no preview local; inclui tela cheia e fluxo real de pintar/reabrir offline em 4 viewports. Smoke HTTP da produção ainda aponta para o bundle antigo.
 7. **Publicação** — pendente: commitar/push da branch, revisar preview e publicar no projeto já vinculado.
 8. **Aceite** — pendente: E2E e smoke na URL nova, cold reopen offline, pintura/retomada offline e verificação de headers.
 
@@ -25,7 +25,7 @@ Reconstruir o APK como jogo web mobile-first instalável, offline e com progress
 4. Fast-forward para `main` e validar produção com smoke, E2E e offline real.
 5. Atualizar `DEPLOYMENT_STATUS.md`, `FEATURE_PARITY.md` e nota conectada Maestri.
 
-A árvore final passou 35/35 E2E, 61/61 unit tests, 43/43 offline tests e 14/14 testes do smoke checker; build produz JS 111.45 kB, CSS 31.07 kB e 9 entradas offline (240.4 KiB). Tela cheia adicionada e testada no Chromium; fluxo offline real passou no preview local. Branch ainda sem commit/deploy.
+A árvore final passou 35/35 E2E, 61/61 unit tests, 43/43 offline tests e 14/15 testes do smoke checker; build produz JS 111.45 kB, CSS 31.07 kB e 9 entradas offline (240.4 KiB). Tela cheia adicionada e testada no Chromium; fluxo offline real passou no preview local. Branch publicada no preview Vercel do commit `15320a4`; smoke estrito 52/52. Produção ainda está no commit anterior.
 
 ## Lacunas conhecidas
 
