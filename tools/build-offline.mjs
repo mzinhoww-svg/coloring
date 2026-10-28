@@ -309,6 +309,15 @@ async function validateWebManifest(distDir) {
   if (!/name=["']theme-color["']/i.test(indexSource)) {
     warnings.push('index.html does not declare <meta name="theme-color">');
   }
+  if (!/<link[^>]+rel=["']icon["']/i.test(indexSource)) {
+    warnings.push('index.html does not link a favicon/icon');
+  }
+  if (!/apple-touch-icon/i.test(indexSource)) {
+    warnings.push('index.html does not link rel="apple-touch-icon" (iOS install)');
+  }
+  if (!/mobile-web-app-capable/i.test(indexSource)) {
+    warnings.push('index.html does not declare <meta name="mobile-web-app-capable">');
+  }
 
   return { manifest, warnings };
 }
