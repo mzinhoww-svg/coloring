@@ -44,6 +44,9 @@ evidence/
 tools/reverse/
 scripts/poc/
 
+# Native wrapper (Capacitor/Android) — not part of the web deployment
+mobile-wrapper/
+
 # Build and test artifacts — Vercel rebuilds these from source
 node_modules/
 dist/

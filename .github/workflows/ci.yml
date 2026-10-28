@@ -48,17 +48,14 @@ jobs:
       - name: Unit tests
         run: npm test
 
-      - name: Type-check and build
+      # `npm run build` owns tsc, Vite and the offline post-processor
+      # (tsc --noEmit && vite build && node tools/build-offline.mjs). CI and
+      # vercel.json both delegate to it, so the precache is generated once.
+      - name: Build
         run: npm run build
 
-      # The offline post-processor is not yet part of "npm run build"
-      # (package.json is owned by the app workstream). Running it here keeps CI
-      # and the Vercel buildCommand on the same, real production pipeline.
-      - name: Generate offline precache and stamp the service worker
-        run: node tools/build-offline.mjs
-
       - name: Offline / PWA test suite
-        run: node --test "tests/offline/**/*.test.mjs"
+        run: npm run test:offline
 
       - name: Verify release configuration and build artifacts
         run: |
@@ -83,12 +80,26 @@ jobs:
           check(config.framework === 'vite', 'vercel.json uses the vite framework');
           check(config.outputDirectory === 'dist', 'vercel.json deploys dist/');
           check(
-            /npm run build/.test(config.buildCommand ?? ''),
-            'vercel.json runs the real Vite build',
+            config.buildCommand === 'npm run build',
+            'vercel.json delegates the build to "npm run build"',
           );
           check(
-            /build-offline\.mjs/.test(config.buildCommand ?? ''),
-            'vercel.json runs the offline post-processor after Vite',
+            !/build-offline\.mjs/.test(config.buildCommand ?? ''),
+            'vercel.json does not generate the offline precache a second time',
+          );
+
+          const packageJsonPath = 'package.json';
+          check(existsSync(packageJsonPath), 'package.json is committed (build entry point)');
+          const packageJson = existsSync(packageJsonPath)
+            ? JSON.parse(read(packageJsonPath))
+            : { scripts: {} };
+          const buildOwnsOffline = /build-offline/.test(packageJson.scripts?.build ?? '');
+          check(
+            buildOwnsOffline,
+            'package.json "build" owns the offline step (tsc + vite build + build-offline.mjs)',
+          );
+          console.log(
+            `info "npm run build" ${buildOwnsOffline ? 'owns' : 'does not own'} the offline step`,
           );
 
           const headersFor = (source) => {
@@ -163,7 +174,7 @@ jobs:
 
           /* ---- .vercelignore keeps private inputs out of the deployment --- */
           const ignore = read('.vercelignore');
-          for (const pattern of ['*.apk', '.private/', '.env', 'node_modules/']) {
+          for (const pattern of ['*.apk', '.private/', '.env', 'node_modules/', 'mobile-wrapper/']) {
             check(ignore.includes(pattern), `.vercelignore excludes ${pattern}`);
           }
 
