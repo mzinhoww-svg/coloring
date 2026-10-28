@@ -192,3 +192,11 @@ com `maestri ask --raw`, usando `opencode mini --standalone --model opencode-go/
 e prompt para ler briefs/estado já preservados. Não mandar texto natural para shell nem
 interromper operações de escrita; aguardar término e preservar trabalho. Prisma já usa mini.
 Nota conectada de entrega tem nome CLI exato `coloring-entrega-e-progresso`.
+
+## Verificações finais antes da ativação
+
+Manifest confirmado por leitura JSON na raiz E no a66e: name Rabisco — colorir,criar,guardar;
+short_name Rabisco; theme_color/background_color #fbf4e7. Reclamações repetidas de Tinta
+sobre manifesto escuro são anteriores à sincronização; confirmar arquivo atual antes de agir.
+Coordenação repetiu41unit tests e buildVite com sucesso. Ainda falta buildscript permanente
+pósprocessadoroffline e vercel.json headers/CI. Última quota89%usada/11%restante.
