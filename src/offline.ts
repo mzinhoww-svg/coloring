@@ -162,6 +162,8 @@ async function boot(): Promise<void> {
     registration = await withTimeout(navigator.serviceWorker.ready, settings.activationTimeoutMs, 'activation-timeout');
   } catch (error) {
     publish({ ready: false, online: onlineHint(), error: errorCode(error) });
+    startUpdateChecks();
+    void requestUpdateCheck();
     return;
   }
 
@@ -398,7 +400,9 @@ function attachGlobalListeners(): void {
       publish({ ...state, online: false });
       void verifyNow();
     });
-    window.addEventListener('pagehide', () => applyWaitingUpdate());
+    window.addEventListener('pagehide', (event) => {
+      if (!event.persisted) applyWaitingUpdate();
+    });
   }
 
   if (typeof document !== 'undefined') {
