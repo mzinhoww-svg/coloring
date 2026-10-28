@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title">
+  <title id="title">Coloring — paleta e pincel</title>
+  <rect width="512" height="512" rx="112" fill="#123A46"/>
+  <ellipse cx="236" cy="306" rx="150" ry="124" fill="#FFF4DF" stroke="#0B2027" stroke-width="16"/>
+  <ellipse cx="170" cy="348" rx="40" ry="33" fill="#123A46"/>
+  <circle cx="322" cy="262" r="26" fill="#FF6B5E"/>
+  <circle cx="360" cy="318" r="23" fill="#FFC24B"/>
+  <circle cx="306" cy="372" r="20" fill="#35C4A8"/>
+  <circle cx="250" cy="398" r="18" fill="#5B8DEF"/>
+  <line x1="432" y1="78" x2="330" y2="180" stroke="#0B2027" stroke-width="52" stroke-linecap="round"/>
+  <line x1="432" y1="78" x2="330" y2="180" stroke="#F2A65A" stroke-width="40" stroke-linecap="round"/>
+  <line x1="338" y1="172" x2="305" y2="205" stroke="#0B2027" stroke-width="56" stroke-linecap="round"/>
+  <line x1="338" y1="172" x2="305" y2="205" stroke="#C9D6DA" stroke-width="44" stroke-linecap="round"/>
+  <path d="M312 194 L270 244 Q248 268 238 270 Q244 246 258 226 L292 184 Z" fill="#6B4634" stroke="#0B2027" stroke-width="6" stroke-linejoin="round"/>
+</svg>
