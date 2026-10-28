@@ -1,0 +1,21 @@
+{
+  "name": "coloring-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Original offline-capable coloring game for the web",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node tools/build-offline.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:offline": "node --test \"tests/offline/**/*.test.mjs\"",
+    "poc": "node scripts/poc/run-poc.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^3.2.4"
+  }
+}

@@ -40,3 +40,10 @@ Publicar somente código próprio, conteúdos autorizados ou substitutos própri
 Não publicar APK, credenciais, transcrições, logs brutos ou catálogos proprietários integrais.
 GitHub integração permitiu leitura/escrita; usar esse caminho autorizado quando shell não tem rede.
 Não contornar consentimento Vercel nem restrições do sistema operacional.
+
+## ADR-005 — glitter é acabamento da paleta (aceita, 2026-10-28)
+
+Glitter é uma opção de pintura selecionada na paleta, separada das ferramentas.
+O acabamento aplica-se ao pincel ativo e ao balde; o balde texturiza a região
+delimitada pela arte original. A textura fica na camada de pintura comum para
+que undo/redo, exportação e salvamento continuem funcionando.

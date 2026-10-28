@@ -213,13 +213,37 @@ async function fetchAsset(href) {
       if (!response) throw new Error('precache-no-response:' + href);
       if (response.type === 'opaque') throw new Error('precache-opaque:' + href);
       if (!response.ok) throw new Error('precache-http-' + response.status + ':' + href);
-      return response;
+      return normalizeForCache(response);
     } catch (error) {
       lastError = error;
       if (attempt === 0) await delay(200);
     }
   }
   throw lastError || new Error('precache-failed:' + href);
+}
+
+/*
+ * Hosting servers (vite preview, some CDNs) answer with `Vary: Origin` even
+ * for same-origin assets. The precache request has no Origin header, while the
+ * page requests `crossorigin` scripts/styles with one, so `cache.match(request)`
+ * would miss every asset offline. Cached copies therefore drop Vary and the
+ * per-response caching headers: the worker owns freshness, not the CDN.
+ */
+function normalizeForCache(response) {
+  try {
+    const headers = new Headers(response.headers);
+    headers.delete('vary');
+    headers.delete('cache-control');
+    headers.delete('pragma');
+    headers.delete('expires');
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
+  } catch (error) {
+    return response;
+  }
 }
 
 async function aliasShell(cache, manifest) {
@@ -476,6 +500,14 @@ async function handleAsset(request) {
     try {
       const cached = await cache.match(request, { ignoreSearch: true });
       if (cached) return cached;
+    } catch (error) {
+      /* fall through to the URL-only match */
+    }
+    try {
+      // Header-insensitive retry: entries cached by older versions can still
+      // carry a Vary header that makes request-based matching miss.
+      const byUrl = await cache.match(new URL(request.url).pathname, { ignoreSearch: true });
+      if (byUrl) return byUrl;
     } catch (error) {
       /* fall through to the network */
     }

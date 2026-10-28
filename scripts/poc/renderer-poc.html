@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Canvas2D renderer proof of concept</title>
+<style>
+  body { font: 14px/1.4 system-ui, sans-serif; margin: 24px; background: #111; color: #eee; }
+  canvas { background: #fff; border-radius: 8px; width: 400px; height: 400px; }
+  pre { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>Canvas2D renderer proof of concept</h1>
+<p>Measures boundary-mask fill, continuous stroke stamping, bounded undo patches and PNG snapshot on the same 800×800 artwork used by the web product.</p>
+<canvas id="art" width="800" height="800"></canvas>
+<pre id="result">running…</pre>
+<script>
+(() => {
+  const SIZE = 800
+  const art = document.getElementById('art')
+  const ctx = art.getContext('2d', { willReadFrequently: true })
+  const lineArt = document.createElement('canvas')
+  lineArt.width = SIZE; lineArt.height = SIZE
+  const lctx = lineArt.getContext('2d', { willReadFrequently: true })
+
+  // Synthetic line-art with narrow gaps, curves and enclosed regions,
+  // standing in for an Astra SVG until src/content/art.ts exists.
+  function drawLineArt() {
+    lctx.clearRect(0, 0, SIZE, SIZE)
+    lctx.fillStyle = '#fff'
+    lctx.fillRect(0, 0, SIZE, SIZE)
+    lctx.strokeStyle = '#20202a'
+    lctx.lineCap = 'round'
+    lctx.lineJoin = 'round'
+    lctx.lineWidth = 7
+    // outer frame
+    lctx.strokeRect(40, 40, 720, 720)
+    // large circle with inner circle
+    lctx.beginPath(); lctx.arc(270, 280, 150, 0, Math.PI * 2); lctx.stroke()
+    lctx.beginPath(); lctx.arc(270, 280, 70, 0, Math.PI * 2); lctx.stroke()
+    // overlapping rounded boxes
+    lctx.beginPath(); lctx.roundRect(470, 120, 210, 190, 24); lctx.stroke()
+    lctx.beginPath(); lctx.roundRect(520, 220, 210, 190, 24); lctx.stroke()
+    // wave strip with thin walls
+    lctx.beginPath()
+    for (let x = 40; x <= 760; x += 4) {
+      const y = 600 + Math.sin(x / 42) * 55
+      if (x === 40) lctx.moveTo(x, y); else lctx.lineTo(x, y)
+    }
+    lctx.stroke()
+    lctx.beginPath(); lctx.moveTo(40, 690); lctx.lineTo(760, 690); lctx.stroke()
+    // tiny eye dots / details
+    for (let i = 0; i < 6; i++) {
+      lctx.beginPath(); lctx.arc(180 + i * 34, 280, 9, 0, Math.PI * 2); lctx.fillStyle = '#20202a'; lctx.fill()
+    }
+  }
+
+  function buildBoundary(imageData, width, height) {
+    const { data } = imageData
+    const n = width * height
+    const boundary = new Uint8Array(n)
+    for (let i = 0, p = 0; i < n; i++, p += 4) {
+      const alpha = data[p + 3]
+      if (alpha === 0) continue
+      const lum = 0.2126 * data[p] + 0.7152 * data[p + 1] + 0.0722 * data[p + 2]
+      if (lum < 178) boundary[i] = 1
+    }
+    return boundary
+  }
+
+  // Dilate once so the anti-aliased line edge never leaks into a fill.
+  function dilate(mask, width, height) {
+    const out = new Uint8Array(mask.length)
+    for (let y = 0; y < height; y++) {
+      const row = y * width
+      for (let x = 0; x < width; x++) {
+        const i = row + x
+        if (mask[i]) { out[i] = 1; continue }
+        if ((x > 0 && mask[i - 1]) || (x < width - 1 && mask[i + 1]) ||
+            (y > 0 && mask[i - width]) || (y < height - 1 && mask[i + width])) out[i] = 1
+      }
+    }
+    return out
+  }
+
+  function nearestOpen(boundary, width, height, sx, sy) {
+    sx = Math.max(0, Math.min(width - 1, sx | 0))
+    sy = Math.max(0, Math.min(height - 1, sy | 0))
+    if (!boundary[sy * width + sx]) return sy * width + sx
+    for (let r = 1; r <= 10; r++) {
+      for (let dy = -r; dy <= r; dy++) {
+        for (let dx = -r; dx <= r; dx++) {
+          if (Math.max(Math.abs(dx), Math.abs(dy)) !== r) continue
+          const x = sx + dx, y = sy + dy
+          if (x < 0 || y < 0 || x >= width || y >= height) continue
+          const i = y * width + x
+          if (!boundary[i]) return i
+        }
+      }
+    }
+    return -1
+  }
+
+  function floodRegion(boundary, width, height, sx, sy) {
+    const start = nearestOpen(boundary, width, height, sx, sy)
+    if (start < 0) return null
+    const out = new Uint8Array(width * height)
+    const queue = new Int32Array(width * height)
+    let head = 0, tail = 0
+    out[start] = 1
+    queue[tail++] = start
+    let minX = width, minY = height, maxX = 0, maxY = 0, count = 0
+    while (head < tail) {
+      const i = queue[head++]
+      const x = i % width
+      const y = (i / width) | 0
+      count++
+      if (x < minX) minX = x
+      if (x > maxX) maxX = x
+      if (y < minY) minY = y
+      if (y > maxY) maxY = y
+      if (x > 0 && !boundary[i - 1] && !out[i - 1]) { out[i - 1] = 1; queue[tail++] = i - 1 }
+      if (x < width - 1 && !boundary[i + 1] && !out[i + 1]) { out[i + 1] = 1; queue[tail++] = i + 1 }
+      if (y > 0 && !boundary[i - width] && !out[i - width]) { out[i - width] = 1; queue[tail++] = i - width }
+      if (y < height - 1 && !boundary[i + width] && !out[i + width]) { out[i + width] = 1; queue[tail++] = i + width }
+    }
+    return { mask: out, count, minX, minY, maxX, maxY }
+  }
+
+  function stampStroke(context, points, color, width) {
+    context.save()
+    context.globalCompositeOperation = 'source-over'
+    context.fillStyle = color
+    context.strokeStyle = color
+    context.lineCap = 'round'
+    context.lineJoin = 'round'
+    context.lineWidth = width
+    context.beginPath()
+    context.moveTo(points[0].x, points[0].y)
+    for (let i = 1; i < points.length; i++) context.lineTo(points[i].x, points[i].y)
+    context.stroke()
+    context.restore()
+  }
+
+  function percentile(values, p) {
+    const s = [...values].sort((a, b) => a - b)
+    return s[Math.min(s.length - 1, Math.max(0, Math.round((s.length - 1) * p)))]
+  }
+
+  async function run() {
+    const result = { renderer: 'Canvas2D', size: SIZE, ua: navigator.userAgent }
+    drawLineArt()
+
+    const t0 = performance.now()
+    const source = lctx.getImageData(0, 0, SIZE, SIZE)
+    const boundary = dilate(buildBoundary(source, SIZE, SIZE), SIZE, SIZE)
+    result.maskBuildMs = +(performance.now() - t0).toFixed(2)
+
+    const color = document.createElement('canvas')
+    color.width = SIZE; color.height = SIZE
+    const cctx = color.getContext('2d', { willReadFrequently: true })
+
+    // 5 fills on regions of different sizes, including the thin wave strip.
+    const taps = [[270, 280], [270, 150], [570, 180], [400, 640], [91, 91]]
+    const fillTimes = []
+    let lastRegion = null
+    for (const [x, y] of taps) {
+      const t = performance.now()
+      const region = floodRegion(boundary, SIZE, SIZE, x, y)
+      if (!region) continue
+      lastRegion = region
+      const img = cctx.getImageData(0, 0, SIZE, SIZE)
+      for (let i = 0; i < region.mask.length; i++) {
+        if (!region.mask[i]) continue
+        const p = i * 4
+        img.data[p] = 74; img.data[p + 1] = 144; img.data[p + 2] = 226; img.data[p + 3] = 255
+      }
+      cctx.putImageData(img, 0, 0)
+      fillTimes.push(performance.now() - t)
+    }
+    result.fillMs = fillTimes.map((v) => +v.toFixed(2))
+    result.fillMsMax = +Math.max(...fillTimes).toFixed(2)
+    result.fillRegionPixels = lastRegion ? lastRegion.count : 0
+
+    // Live stroke: 1200 pointer samples along a long curve, one path per frame batch.
+    const points = []
+    for (let i = 0; i < 1200; i++) {
+      const a = (i / 1200) * Math.PI * 2
+      points.push({ x: 400 + Math.cos(a) * 260 * Math.cos(a * 0.5), y: 400 + Math.sin(a) * 260 })
+    }
+    const strokeTimes = []
+    for (let frame = 0; frame < 20; frame++) {
+      const batch = points.slice(frame * 60, (frame + 1) * 60)
+      const t = performance.now()
+      stampStroke(cctx, batch, 'rgba(232,92,120,0.95)', 18)
+      strokeTimes.push(performance.now() - t)
+    }
+    result.strokeBatchMsMedian = +percentile(strokeTimes, 0.5).toFixed(2)
+    result.strokeBatchMsP95 = +percentile(strokeTimes, 0.95).toFixed(2)
+    result.strokeSamples = points.length
+
+    // Bounded undo patch for the stroke bounding box.
+    const t1 = performance.now()
+    const before = document.createElement('canvas')
+    before.width = SIZE; before.height = SIZE
+    before.getContext('2d').drawImage(color, 0, 0)
+    const snapshot = before.getContext('2d').getImageData(0, 0, SIZE, SIZE)
+    const restore = cctx.getImageData(0, 0, SIZE, SIZE)
+    cctx.putImageData(snapshot, 0, 0)
+    cctx.putImageData(restore, 0, 0)
+    result.snapshotRestoreMs = +(performance.now() - t1).toFixed(2)
+    result.fullSnapshotBytes = snapshot.data.byteLength
+    result.patchBytesStrokeBBox = lastRegion
+      ? (lastRegion.maxX - lastRegion.minX + 1) * (lastRegion.maxY - lastRegion.minY + 1) * 8
+      : 0
+
+    // Composite line art above color layer (locked-line behaviour).
+    ctx.clearRect(0, 0, SIZE, SIZE)
+    ctx.drawImage(color, 0, 0)
+    ctx.drawImage(lineArt, 0, 0)
+
+    const t2 = performance.now()
+    const png = await new Promise((resolve) => color.toBlob(resolve, 'image/png'))
+    result.pngEncodeMs = +(performance.now() - t2).toFixed(2)
+    result.pngBytes = png ? png.size : 0
+    result.heapMB = performance.memory ? +(performance.memory.usedJSHeapSize / 1048576).toFixed(1) : null
+    result.ok = true
+    document.getElementById('result').textContent = JSON.stringify(result, null, 2)
+    document.title = 'POC_DONE ' + JSON.stringify(result)
+  }
+
+  run().catch((error) => {
+    document.getElementById('result').textContent = 'ERROR ' + (error && error.stack ? error.stack : error)
+    document.title = 'POC_ERROR ' + error
+  })
+})()
+</script>
+</body>
+</html>

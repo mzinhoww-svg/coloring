@@ -1,0 +1,20 @@
+{
+  "name": "rabisco-android-wrapper",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Android packaging for the Rabisco coloring app (local bundled assets, no remote URL)",
+  "type": "module",
+  "scripts": {
+    "web:build": "npm --prefix .. run build && node ../tools/build-offline.mjs --dist ../dist",
+    "sync": "npm run web:build && cap sync android",
+    "build:debug": "./scripts/build-debug.sh",
+    "install:debug": "./scripts/install-debug.sh",
+    "package:final": "./scripts/package-final.sh",
+    "toolchain": "./scripts/toolchain-check.sh"
+  },
+  "devDependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/cli": "8.6.0",
+    "@capacitor/core": "8.6.0"
+  }
+}

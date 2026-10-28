@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- The app bundle is served from the WebView's local https origin.
+         No cleartext and no remote origins are permitted. -->
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

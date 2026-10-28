@@ -1,0 +1,14 @@
+{
+  "appId": "com.aurimar.rabisco",
+  "appName": "Rabisco",
+  "webDir": "../dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false,
+    "allowNavigation": []
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#fbf4e7"
+  }
+}
